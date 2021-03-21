@@ -1,0 +1,167 @@
+@import "~bulma/sass/utilities/mixins";
+
+$navbar-item-img-max-height: 2.25rem;
+$navbar-item-color: white;
+$navbar-item-hover-color: $darker-green;
+$navbar-dropdown-background-color: $green;
+
+.navbar-menu {
+	@include touch {
+		margin-top: 20px;
+	}
+}
+
+.is-active {
+	color: $dark !important;
+}
+
+.navbar-item {
+	font-size: 14px;
+	font-weight: $weight-semibold;
+	letter-spacing: 0.1px;
+
+	@include touch {
+		font-size: 1rem;
+	}
+
+	&.navbar-center {
+		flex-grow: 1;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+a.navbar-burger {
+	color: white !important;
+}
+
+.navbar {
+	&.is-transparent,
+	.is-transparent {
+		background-color: transparent !important;
+		background-image: none !important;
+	}
+	&.container {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.navbar-brand.header-logo {
+		.navbar-item {
+			width: 210px;
+			padding-left: 0;
+			margin-left: -4px;
+
+			@include desktop {
+				padding-left: 7px;
+				margin-left: 0;
+			}
+
+			img {
+				border: none;
+			}
+		}
+	}
+
+	@include desktop {
+		.navbar-brand.header-logo {
+			width: 100%;
+			max-width: 210px;
+		}
+	}
+}
+
+@include touch {
+	.navbar-menu {
+		background-color: #00c27d80 !important;
+		padding: 0 !important;
+		.nested.navbar-item.dropdown {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.navbar-item.login, .field {
+			display: inline-flex;
+		}
+		.navbar-item.login {
+			margin: 1rem 0.75rem;
+		}
+		.field {
+			float: right;
+			margin-top: 5px;
+		}
+	}
+}
+
+.nested.dropdown {
+	&:hover > .dropdown-menu {
+		display: block;
+	}
+	@include touch {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		padding-bottom: 0;
+	}
+	&:last-child {
+		@include touch {
+			border-bottom: 0;
+		}
+	}
+	.dropdown-menu {
+		top: -12px;
+		margin-left: 100%;
+		box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
+		.dropdown-content {
+			border-radius: 0;
+			box-shadow: none;
+			@include touch {
+				background-color: transparent;
+				padding-bottom: 0;
+			}
+		}
+		@include touch {
+			margin-left: 0;
+			width: 100%;
+			position: relative;
+			display: block;
+			box-shadow: none
+		}
+	}
+	.dropdown-trigger {
+		span {
+			font-size: 14px;
+			font-weight: $weight-semibold;
+			letter-spacing: 0.1px;
+		}
+		button::after {
+			content: '>';
+			color: $green;
+			position: absolute;
+			right: 0;
+			@include touch {
+				display: none;
+			}
+		}
+		button {
+			padding: 0px 0px;
+			border: 0px;
+			height: 1em;
+			width: 100%;
+			justify-content: left;
+			&:hover {
+				color: $green;
+			}
+			@include touch {
+				background-color: transparent;
+				color: $white;
+				font-size: 1.5rem !important;
+				cursor: default;
+				&:hover {
+					color: $white;
+				}
+			}
+		}
+		@include touch {
+			button {
+				display: none;
+			}
+		}
+	}
+}

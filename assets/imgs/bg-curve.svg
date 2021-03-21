@@ -1,0 +1,18 @@
+<svg width="1440" height="618" viewBox="0 0 1440 618" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1442" height="464" transform="matrix(1 0 0 -1 -2 464)" fill="url(#paint0_linear)"/>
+<path d="M-2 596L713.194 464L1440 596V464H-2V596Z" fill="#F8FCFF"/>
+<g style="mix-blend-mode:multiply">
+<rect width="1442" height="464" transform="matrix(1 0 0 -1 -2 486)" fill="url(#paint1_linear)"/>
+<path d="M-2 618L713.194 486L1440 618V486H-2V618Z" fill="#F8FCFF"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="721" y1="0" x2="721" y2="464" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F8FCFF"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="721" y1="0" x2="721" y2="464" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F8FCFF"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+</defs>
+</svg>

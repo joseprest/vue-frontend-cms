@@ -1,0 +1,74 @@
+// @import '~bulma/sass/utilities/initial-variables';
+$header-padding-vertical: 3rem;
+
+header{
+	background: $green;
+	padding-bottom: 0 !important;
+
+	.navbar{
+		.container{
+			padding-bottom: 20px !important;
+		}
+	}
+
+	.header {
+		padding-top: $header-padding-vertical;
+		padding-bottom: 0;
+
+		.title, .subtitle {
+			color: white;
+		}
+	}
+}
+
+#header-bg {
+	position: absolute;
+	height: 1000px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	transform: skewY(-25deg);
+	transform-origin: 0;
+	background: #00c27d;
+	overflow: hidden;
+	z-index: 2;
+
+	span {
+		height: 230px;
+		position: absolute;
+
+		&:first-child {
+			width: 45%;
+			left: 0%;
+			top: 0%;
+			height: 280px;
+			transform: skewY(6deg);
+			background: linear-gradient(to right, #2CDE8A, rgba(0, 213, 135, 0));
+		}
+
+		&:nth-child(2) {
+			top: 50%;
+			right: -16.6666%;
+			width: 54%;
+			background: linear-gradient(to left, #2CDE8A, rgba(0, 213, 135, 0));
+			height: 280px;
+		}
+
+		&:nth-child(3) {
+			bottom: 0%;
+			left: 0%;
+			width: 50%;
+			max-height: 600px;
+			background: linear-gradient(to right, #2CDE8A, rgba(0, 207, 132, 0));
+		}
+
+		&:nth-child(4) {
+			bottom: 0%;
+			left: 45%;
+			width: 20%;
+			max-height: 600px;
+			background: linear-gradient(to right, #2CDE8A, rgba(0, 207, 132, 0));
+		}
+
+	}
+}

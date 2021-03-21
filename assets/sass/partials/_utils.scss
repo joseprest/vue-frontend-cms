@@ -1,0 +1,48 @@
+.w-100 {
+	width: 100%;
+}
+
+@each $sp in $spacing {
+	.mt-#{$sp} {
+		margin-top: #{$sp}px !important;
+	}
+	.mb-#{$sp} {
+		margin-bottom: #{$sp}px !important;
+	}
+	.pt-#{$sp} {
+		padding-top: #{$sp}px !important;
+	}
+	.pb-#{$sp} {
+		padding-bottom: #{$sp}px !important;
+	}
+
+	@include tablet {
+		.mt-#{$sp}-tablet {
+			margin-top: #{$sp}px !important;
+		}
+		.mb-#{$sp}-tablet {
+			margin-bottom: #{$sp}px !important;
+		}
+		.pt-#{$sp}-tablet {
+			padding-top: #{$sp}px !important;
+		}
+		.pb-#{$sp}-tablet {
+			padding-bottom: #{$sp}px !important;
+		}
+	}
+
+	@include desktop {
+		.mt-#{$sp}-desktop {
+			margin-top: #{$sp}px !important;
+		}
+		.mb-#{$sp}-desktop {
+			margin-bottom: #{$sp}px !important;
+		}
+		.pt-#{$sp}-desktop {
+			padding-top: #{$sp}px !important;
+		}
+		.pb-#{$sp}-desktop {
+			padding-bottom: #{$sp}px !important;
+		}
+	}
+}

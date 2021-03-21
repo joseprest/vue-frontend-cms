@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+@import 'partials/variables';
+@import 'partials/colors';
+@import 'partials/button';
+@import 'partials/input';
+@import 'partials/text';
+@import 'partials/globals';
+@import 'partials/navbar';
+@import 'partials/footer';
+@import 'partials/mobile';
+@import 'partials/tablet';
+@import 'partials/header';
+@import 'partials/select';
+@import 'partials/pricing';
+@import 'partials/utils';
+@import 'partials/image';
+@import 'partials/steps';
+@import 'logo_bubbles';
+@import 'partials/bulma';
+@import 'partials/fonts';
+
+// @import "~hooper/dist/hooper.css";
+
+.container {
+  z-index: 10;
+  font-size: 1.125rem;
+  @include mobile {
+    font-size: 1.3rem;
+  }
+}
+
+.section {
+  position: relative;
+}
+
+.align-center {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@include touch {
+  .align-center-touch {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.vertical-aligned {
+  align-items: center;
+  justify-content: center;
+}
+
+.is-flex-column {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.align-flex-start {
+  align-items: flex-start;
+}
+
+.align-flex-end {
+  align-items: flex-end;
+}
+
+.divider-title {
+  width: 100%;
+  margin-right: 2em;
+  margin-left: 2em;
+  background: rgba(255, 255, 255, 0.3%);
+  height: 1px;
+}
+
+.is-borderless {
+  border: 0 none !important;
+}
+
+.is-transparent {
+  background: transparent !important;
+}
+
+.has-background-gray-dark {
+  background: $gray-dark;
+}
+
+.has-background-light-gradient {
+  background-image: linear-gradient(to bottom, #f8fcff, #f5fafe);
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@include widescreen {
+  .facility-header-img {
+    width: 75% !important;
+  }
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+@include mobile {
+  body {
+    overflow-x: hidden;
+  }
+
+  .facility-management-10x {
+    margin-top: 3rem !important;
+  }
+}
+
+// Fix for modal position on IE
+@media screen and (min-width: 769px) {
+  .modal-content {
+    margin: 0 20px !important;
+  }
+}
+
+// .card-image {
+// 	padding: 0 !important;
+// 	min-height: auto !important;
+// }
+.card > .card-image {
+  box-shadow: none !important;
+}

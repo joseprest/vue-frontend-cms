@@ -1,0 +1,102 @@
+* {
+  &:focus,
+  &:active {
+    outline: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+.breadcrumb {
+  @include mobile {
+    ul {
+      li {
+        display: flex !important;
+        width: 100%;
+        border: 1px solid rgba($blue-dark, 0.05);
+        padding: 5px 15px;
+      }
+      li.is-active {
+        &:before {
+          display: none;
+        }
+        a {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.fold-container {
+  padding: 64px 0;
+  background-color: white;
+  position: relative;
+  strong {
+    color: #27364d;
+    font-weight: 600;
+  }
+}
+
+.fold-divider {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  height: 1px;
+  background-image: linear-gradient(to right, white, #eaf1f6, white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.fold-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+.mt-15 {
+  margin-top: 15px !important;
+}
+.mt-20 {
+  margin-top: 20px !important;
+}
+.mt-25 {
+  margin-top: 25px !important;
+}
+.mt-30 {
+  margin-top: 30px !important;
+}
+.ml-10 {
+  margin-left: 10px !important;
+}
+.mr-10 {
+  margin-right: 10px !important;
+}
+
+.new-icon {
+  background: url('/imgs/icons/new.svg') no-repeat center / 26px;
+  height: 26px;
+  width: 26px;
+  display: block;
+  margin: 0 8px;
+}
+
+ul {
+  li {
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .fold-container {
+    padding: 60px 0;
+  }
+}

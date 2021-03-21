@@ -1,0 +1,112 @@
+@import '~bulma/sass/utilities/_all.sass';
+
+@mixin animation-button-shadow() {
+  transition: all 0.15s ease;
+}
+@mixin no-button-shadow() {
+  box-shadow: none;
+}
+
+.button {
+  white-space: unset;
+  line-height: 0 !important;
+
+  @include mobile {
+    width: 100%;
+    &.break-line-mobile {
+      padding-top: 2rem !important;
+      display: contents;
+    }
+  }
+
+  &.btn-big {
+    padding-bottom: 1.5em !important;
+    padding-top: 1.5em !important;
+  }
+
+  &.is-text {
+    text-decoration: none !important;
+
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+
+  // &.is-success {
+  //   a {
+  //     color: $green !important;
+  //   }
+  // }
+
+  // &.inverted {
+  //   background: rgba($white, 0.3);
+  //   color: $white;
+  //   border: 0;
+  //   &:hover,
+  //   &:focus {
+  //     color: $dark;
+  //   }
+  // }
+
+  &.is-backgroundless {
+    background: transparent !important;
+  }
+
+  &.has-shadow {
+    @include animation-button-shadow();
+    // box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+    &:focus {
+      box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+        0 3px 6px rgba(0, 0, 0, 0.08) !important;
+    }
+
+    &:hover {
+      @include animation-button-shadow();
+      transform: translateY(-1px);
+      box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+        0 3px 6px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &.has-background-primary-transparent {
+    background: #{$turquoise}20;
+    text-decoration: underline;
+    border-radius: 100px;
+    padding: 1.5em 2em;
+  }
+
+  // Link Buttons
+  &.is-link {
+    &:hover,
+    &:focus {
+      background-color: hsla(194, 98%, 60%, 1) !important;
+    }
+
+    &:active {
+      background-color: hsla(194, 98%, 40%, 1) !important;
+      @include animation-button-shadow();
+      @include no-button-shadow();
+    }
+  }
+}
+
+@include mobile {
+  .buttons > div {
+    width: 100%;
+    margin-right: 0 !important;
+    .button {
+      margin-bottom: 1.5rem;
+    }
+  }
+  .button {
+    white-space: normal !important;
+    line-height: 1.2rem !important;
+    height: auto !important;
+  }
+  .button.btn-big {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+  }
+}

@@ -1,0 +1,53 @@
+// @import '~bulma/sass/utilities/mixins';
+$footer-background-color: $green;
+
+.footer {
+	position: relative;
+	padding: 2rem 1.5rem !important;
+
+	hr {
+		background-color: rgba(255, 255, 255, 0.25);
+		height: 1px;
+	}
+
+	a,
+	p,
+	h4,
+	strong {
+		color: white;
+	}
+
+	.column {
+		p {
+			line-height: 2.5rem;
+			margin-top: 1rem;
+		}
+	}
+
+	.level {
+		p {
+			font-weight: 300;
+		}
+	}
+
+	.list-follow-us {
+		display: inline-flex;
+
+		figure {
+			margin-right: 10px;
+
+			img {
+				border: none;
+			}
+		}
+
+		li:not(:first-child) {
+			margin-left: 5px;
+		}
+	}
+
+	.list-auth {
+		display: flex;
+		flex-direction: column;
+	}
+}

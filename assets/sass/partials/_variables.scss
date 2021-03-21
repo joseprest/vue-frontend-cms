@@ -1,0 +1,66 @@
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+@import "colors";
+
+$family-sans-serif: "Poppins", Arial, Helvetica, sans-serif;
+
+$gap: 32px; // original 64px;
+$tablet: 671px;
+$desktop: 881px; // + (2 * $gap);
+$widescreen: 1041px; // + (2 * $gap);
+$fullhd: 1161px;
+// $fullhd-enabled: false;
+
+// space constatns used in margin/padding utility classes
+$spacing: 0 15 25 35 50;
+
+$turquoise: #29d193;
+$green: #2bc47b;
+$green-neon: #06ea84;
+$red: #c43e2b;
+$cyan: #2dbdff;
+$blue: #10c3fc;
+$blue-light: #c9dbeb;
+$blue-medium: #99b2c5;
+$blue-dark: #34455e;
+$gray-dark: #27364d;
+$gray-darker: #27364d;
+$gray-light: #7d7d7d;
+$gray-lighter: #d8d8d8;
+$yellow: rgb(255, 255, 0);
+$light: #f5fafe;
+
+// $link-hover: hsla(194, 98%, 60%, 1);
+
+$body-background-color: white;
+$body-color: $gray-dark;
+$hr-background-color: #e9eff3;
+
+$size-2: 2.3rem;
+$size-6: 1.125rem;
+$size-7: 0.9rem;
+$size-8: 0.8125rem;
+$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7 $size-8;
+$section-padding: 4rem 1.5rem;
+$section-padding-medium: 6.25rem 1.5rem;
+
+$box-shadow: 1px 1px 5px rgba($black, 0.25);
+
+@import "~bulma/sass/utilities/derived-variables";
+
+$darker-green: #30443b;
+$addColors: (
+	"darker-green": (
+		$darker-green,
+		findColorInvert($darker-green)
+	),
+	"green-neon": (
+		$green-neon,
+		findColorInvert($green-neon)
+	)
+);
+$colors: map-merge($colors, $addColors);
+
+$button-padding-horizontal: 1.5em;
+// $button-padding-vertical: calc(1.5em - 1px);
+$button-padding-vertical: 1.25em;

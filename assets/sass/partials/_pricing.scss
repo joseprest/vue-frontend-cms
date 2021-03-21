@@ -1,0 +1,15 @@
+.pricing-page {
+	.section {
+		.container {
+			@include widescreen {
+				max-width: $desktop;
+				width: $desktop;
+			}
+
+			// @include fullhd {
+			// 	max-width: $widescreen;
+			// 	width: $widescreen;
+			// }
+		}
+	}
+}

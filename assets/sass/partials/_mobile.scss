@@ -1,0 +1,20 @@
+// @import '~bulma/sass/utilities/mixins';
+
+@include mobile {
+	.is-reversed-mobile {
+		flex-direction: column-reverse !important;
+	}
+
+	.is-flex-column-mobile {
+		display: flex !important;
+		flex-direction: column !important;
+	}
+
+	.is-paddingless-mobile {
+		padding: 0 !important;
+	}
+
+	.button.mobile-unheight {
+		height: unset !important;
+	}
+}
