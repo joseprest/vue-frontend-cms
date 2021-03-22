@@ -6,11 +6,13 @@
           <ws-title align="left">
             {{ cmsData.title }}
           </ws-title>
-          <ws-link :link="cmsData.link" :url="cmsData.url" class="mt-20" />
+          <ws-link :url="cmsData.url" class="mt-20">
+            {{ cmsData.button }}
+          </ws-link>
         </div>
         <div class="column is-6 is-12-touch animation">
           <ws-image
-            :src="$getUrlFromCms(cmsData.image.url)"
+            :src="$getImageUrlFromCms(cmsData.image)"
             :alt="cmsData.title"
           />
         </div>

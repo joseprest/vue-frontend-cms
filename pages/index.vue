@@ -6,6 +6,15 @@
       v-if="cmsData.unify"
       :cms-data="cmsData.unify"
     />
+    <index-plug-and-play
+      v-if="cmsData.plug_play"
+      :cms-data="cmsData.plug_play"
+    />
+    <index-connect-all v-if="cmsData.connect" :cms-data="cmsData.connect" />
+    <customer-stories
+      v-if="cmsData.customer_stories"
+      :cms-data="cmsData.customer_stories"
+    />
   </div>
 </template>
 

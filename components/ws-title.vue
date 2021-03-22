@@ -1,7 +1,7 @@
 <template>
   <div class="ws-title" :class="[color, getTextAlignment]">
     <h2
-      v-if="title"
+      v-if="title || $slots.default"
       class="ws-title__title"
       :class="[color, `size-${size}`, { 'no-green-bar': !showGreenBar }]"
     >
@@ -11,7 +11,7 @@
     </h2>
     <span v-if="beta" class="beta" :class="locale">Beta</span>
     <p
-      v-if="description"
+      v-if="description || $slots.description"
       class="ws-title__description"
       :class="[color, getTextAlignment]"
     >
@@ -20,7 +20,7 @@
       </slot>
     </p>
     <p
-      v-if="description2"
+      v-if="description2 || $slots.description2"
       class="mt-10 ws-title__description"
       :class="[color, getTextAlignment]"
     >
@@ -131,7 +131,8 @@ $size-draw-small: 50px;
       font-size: $size-4;
       padding-top: 20px;
       &:before {
-        background: url('/imgs/title-divider-small.svg') no-repeat center;
+        background: url('~/assets/imgs/title-divider-small.svg') no-repeat
+          center;
         width: $size-draw-small;
       }
     }
@@ -140,7 +141,8 @@ $size-draw-small: 50px;
       color: white;
 
       &:before {
-        background: url('/imgs/title-divider-white.svg') no-repeat center;
+        background: url('~/assets/imgs/title-divider-white.svg') no-repeat
+          center;
       }
     }
 
@@ -153,7 +155,7 @@ $size-draw-small: 50px;
 
     &:before {
       content: '';
-      background: url('/imgs/title-divider.svg') no-repeat center;
+      background: url('~/assets/imgs/title-divider.svg') no-repeat center;
       position: absolute;
       top: 0;
       left: 0;

@@ -1,10 +1,10 @@
 <template>
   <img
+    v-lazy-load
     :v-scroll-reveal="{ delay, reset, distance, origin, easing }"
     :data-src="src"
     :src-placeholder="placeholder"
     :alt="alt"
-    v-lazy-load
   />
 </template>
 
@@ -18,7 +18,7 @@ export default {
     },
     placeholder: {
       type: String,
-      default: require('@/assets/imgs/empty.gif'),
+      default: require('~/assets/imgs/empty.gif'),
     },
     alt: {
       type: String,

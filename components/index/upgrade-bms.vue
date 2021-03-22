@@ -4,13 +4,14 @@
       <ws-title :title="cmsData.title" align="left" />
       <div class="animation">
         <ws-image
-          :src="$getUrlFromCms(cmsData.image.url)"
+          :src="$getImageUrlFromCms(cmsData.image)"
           class="building"
           :delay="200"
           :reset="false"
           :alt="cmsData.title"
         />
       </div>
+      <div class="notification is-danger">Missing button dropdown here</div>
       <!-- CTA -->
       <!-- TODO: To implement this, create a global component button-discover-our-products and add this to strapi -->
       <!-- <div class="cta">
