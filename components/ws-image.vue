@@ -1,11 +1,14 @@
 <template>
-  <img
-    v-lazy-load
-    :v-scroll-reveal="{ delay, reset, distance, origin, easing }"
-    :data-src="src"
-    :src-placeholder="placeholder"
-    :alt="alt"
-  />
+  <div>
+    <img
+      v-lazy-load
+      v-bind="$attrs"
+      :data-src="src"
+      :src-placeholder="placeholder"
+      :alt="alt"
+    />
+    {{ $attrs }}
+  </div>
 </template>
 
 <script>
@@ -19,30 +22,6 @@ export default {
     placeholder: {
       type: String,
       default: require('~/assets/imgs/empty.gif'),
-    },
-    alt: {
-      type: String,
-      default: '',
-    },
-    delay: {
-      type: Number,
-      default: 0,
-    },
-    reset: {
-      type: Boolean,
-      default: false,
-    },
-    distance: {
-      type: String,
-      default: null,
-    },
-    origin: {
-      type: String,
-      default: null,
-    },
-    easing: {
-      type: String,
-      default: null,
     },
   },
 }

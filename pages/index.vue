@@ -1,20 +1,14 @@
 <template>
-  <div>
-    <index-header v-if="cmsData.header" :cms-data="cmsData.header" />
-    <index-upgrade-bms v-if="cmsData.upgrade" :cms-data="cmsData.upgrade" />
-    <index-collect-unify-bms-data
-      v-if="cmsData.unify"
-      :cms-data="cmsData.unify"
-    />
-    <index-plug-and-play
-      v-if="cmsData.plug_play"
-      :cms-data="cmsData.plug_play"
-    />
-    <index-connect-all v-if="cmsData.connect" :cms-data="cmsData.connect" />
-    <customer-stories
-      v-if="cmsData.customer_stories"
-      :cms-data="cmsData.customer_stories"
-    />
+  <div v-if="Object.keys(cmsData).length > 0">
+    <index-header :cms-data="cmsData.header" />
+    <index-upgrade-bms :cms-data="cmsData.upgrade" />
+    <index-collect-unify-bms-data :cms-data="cmsData.unify" />
+    <index-plug-and-play :cms-data="cmsData.plug_play" />
+    <index-connect-all :cms-data="cmsData.connect" />
+    <customer-stories :cms-data="cmsData.customer_stories" />
+    <index-how-it-works :cms-data="cmsData.how_it_works" />
+    <index-get-demo />
+    <index-clients :cms-data="cmsData.clients" />
   </div>
 </template>
 

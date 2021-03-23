@@ -13,9 +13,11 @@
             </div>
             <div id="plug">
               <ws-image
-                distance="-30px"
-                origin="left"
-                easing="ease-out"
+                :v-scroll-reveal="{
+                  distance: '-30px',
+                  origin: 'left',
+                  easing: 'ease-out',
+                }"
                 :src="$getImageUrlFromCms(cmsData.image)"
                 class="plug"
                 alt="elements"
