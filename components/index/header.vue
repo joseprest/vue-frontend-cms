@@ -1,5 +1,6 @@
 <template>
   <header class="section main-header">
+    <Navbar :home="true" />
     <div v-if="cmsData" class="container header">
       <div class="columns is-vcentered is-multiline">
         <div id="columnapi" class="column is-12">
@@ -72,6 +73,8 @@
 </template>
 
 <script>
+import Navbar from './../Navbar.vue'
+
 export default {
   name: 'IndexHeader',
 
@@ -144,6 +147,9 @@ export default {
       return UA && /msie|trident/.test(UA)
     },
   },
+  components: {
+    Navbar,
+  },
 }
 </script>
 
@@ -154,12 +160,13 @@ $min-height-for-video: 558px;
 .main-header {
   background: #eaeaea;
   position: relative;
+  padding-top: 0;
   height: 100%;
   margin-bottom: 3rem;
 
   .container {
     width: 90vw;
-    max-width: 90vw;
+    max-width: 90vw !important;
     padding-left: 0;
     padding-right: 0;
 
