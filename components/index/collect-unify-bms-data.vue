@@ -37,10 +37,10 @@ export default {
 <style lang="scss" scoped>
 section {
   background: linear-gradient(180deg, #f5fafe -25%, rgba(#f5fafe, 0.5) 120%);
-  padding-top: 13rem;
+  padding-top: 13rem !important;
   padding-bottom: 5rem;
   @include touch {
-    padding-top: 6rem;
+    padding-top: 6rem !important;
     padding-bottom: 4rem;
   }
 }

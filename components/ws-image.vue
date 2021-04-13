@@ -7,7 +7,7 @@
       :src-placeholder="placeholder"
       :alt="alt"
     />
-    {{ $attrs }}
+    <!-- {{ $attrs }}   -->
   </div>
 </template>
 

@@ -16,46 +16,10 @@
           :alt="cmsData.title"
         />
       </div>
-      <div class="notification is-danger">Missing button dropdown here</div>
       <!-- CTA -->
-      <!-- TODO: To implement this, create a global component button-discover-our-products and add this to strapi -->
-      <!-- <div class="cta">
-        <div class="dropdown is-hoverable mt-35">
-          <div class="dropdown-trigger">
-            <button
-              class="button is-success inverted has-text-weight-semibold has-shadow btn-big is-uppercase"
-            >
-              <span>{{ $t('benefits.howitworks.cta.box.title') }}</span>
-            </button>
-          </div>
-          <div id="dropdown-menu" class="dropdown-menu" role="menu">
-            <div class="dropdown-content">
-              <div class="dropdown-item">
-                <router-link
-                  :to="$t('urls.products.box.url')"
-                  class="title"
-                  @click.native="action"
-                >
-                  {{ $t('urls.products.box.label') }}
-                  <div class="subtitle">
-                    {{ $t('urls.products.box.subtitle') }}
-                  </div>
-                </router-link>
-                <router-link
-                  :to="$t('urls.products.hub.url')"
-                  class="title"
-                  @click.native="action"
-                >
-                  {{ $t('urls.products.hub.label') }}
-                  <div class="subtitle">
-                    {{ $t('urls.products.hub.subtitle') }}
-                  </div>
-                </router-link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+      <button-discover-our-products
+        :cms-data="cmsData.ButtonDiscoverOurProducts"
+      />
     </div>
   </section>
 </template>
