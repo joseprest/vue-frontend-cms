@@ -1,3 +1,5 @@
+const langDir = 'lang'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -54,6 +56,21 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/style-resources',
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          { code: 'en', name: 'En', iso: 'en-US', file: 'en.js' },
+          { code: 'fr', name: 'Fr', iso: 'fr-FR', file: 'fr.js' },
+          { code: 'de', name: 'De', iso: 'de-DE', file: 'de.js' },
+        ],
+        langDir,
+        defaultLocale: 'en',
+        vueI18n: {
+          fallbackLocale: 'en',
+        },
+      },
+    ],
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     [

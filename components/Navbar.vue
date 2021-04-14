@@ -343,9 +343,13 @@
                   :class="{ 'is-black': home }"
                   @change="changedLanguage"
                 >
-                  <option value="en">En</option>
-                  <option value="fr">Fr</option>
-                  <option value="de">De</option>
+                  <option
+                    v-for="loc in $i18n.locales"
+                    :key="loc.code"
+                    :value="loc.code"
+                  >
+                    {{ loc.name }}
+                  </option>
                 </select>
               </div>
               <div class="icon is-small is-left">
@@ -377,8 +381,6 @@
 import normalLogo from '@/assets/imgs/wattsense-header-logo.svg'
 import IcoArrow from '@/assets/imgs/icons/link-arrow-white.svg?inline'
 import greenLogo from '@/assets/imgs/logo.svg'
-// import i18n from '@/lang/lang'
-// import { EventBus } from '@/event-bus'
 
 export default {
   components: {
@@ -394,7 +396,7 @@ export default {
   data() {
     return {
       showMenu: false,
-      // locale: i18n.locale,
+      locale: this.$i18n.locale,
     }
   },
 
@@ -411,7 +413,7 @@ export default {
   },
 
   mounted() {
-    // this.locale = localStorage.getItem('locale') || i18n.locale
+    this.locale = localStorage.getItem('locale') || this.$i18n.locale
   },
 
   methods: {
