@@ -19,6 +19,10 @@ export default {
       type: String,
       default: '',
     },
+    alt: {
+      type: String,
+      default: '',
+    },
     placeholder: {
       type: String,
       default: require('~/assets/imgs/empty.gif'),
