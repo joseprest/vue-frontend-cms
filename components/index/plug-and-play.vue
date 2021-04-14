@@ -1,10 +1,11 @@
 <template>
-  <section class="section">
+  <section class="section pnp">
     <div class="container">
       <div class="columns">
         <div class="column is-half is-full-mobile">
           <div class="plugplay">
             <div id="background">
+              <!-- TODO: do something with ws-image to replicate the "position:absolute" behaviour of original image -->
               <ws-image
                 :src="require('~/assets/imgs/home/plugplay/background.svg')"
                 class="background"
@@ -72,9 +73,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section {
+section.pnp {
   padding-top: 6rem;
-  padding-bottom: 13rem;
+  padding-bottom: 10rem;
   @include desktop-only {
     padding-bottom: 6rem;
   }

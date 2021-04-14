@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section class="section connect">
     <div class="container">
       <ws-title align="0">
         {{ cmsData.title }}
@@ -7,9 +7,7 @@
           {{ cmsData.description }}
         </template>
       </ws-title>
-      <ws-link :url="cmsData.learn_more_url" class="mt-25">
-        {{ cmsData.learn_more }} - add URL to CMS
-      </ws-link>
+      <button-simple :cms-data="cmsData.Button" class="mt-25" />
 
       <div class="animation is-hidden-touch">
         <ws-image
@@ -29,10 +27,15 @@
 </template>
 
 <script>
+import ButtonSimple from '@/components/button-simple'
 import { LogoBubbles } from '~/assets/js/index/logo-bubbles.js'
 
 export default {
   name: 'IndexConnectAll',
+
+  components: {
+    ButtonSimple,
+  },
 
   props: {
     cmsData: {
@@ -308,7 +311,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section {
+section.connect {
   padding-top: 6rem;
   padding-bottom: 6rem;
   @include desktop {

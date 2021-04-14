@@ -35,12 +35,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section {
+section.collect-unify {
   background: linear-gradient(180deg, #f5fafe -25%, rgba(#f5fafe, 0.5) 120%);
-  padding-top: 13rem !important;
+  padding-top: 13rem;
   padding-bottom: 5rem;
   @include touch {
-    padding-top: 6rem !important;
+    padding-top: 6rem;
     padding-bottom: 4rem;
   }
 }

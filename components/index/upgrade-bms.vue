@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section {
+section.upgrade-bms {
   padding-top: 4rem;
   padding-bottom: 0rem;
   position: relative;
