@@ -1,0 +1,164 @@
+{
+	"company": "Bouygues Energies & Services",
+	"logo": "bouygues/logo.png",
+	"title": "En moins d’une semaine, Bouygues Energies & Services accède à distance à 4 000 points de données d’un immeuble de bureaux.",
+	"subtitle": "En choisissant la solution Wattsense, la Cellule Performance Energétique de Bouygues Energies & Services a pu se connecter aux équipements de chauffage et de refroidissement d’un immeuble de bureaux de 3900 m² et commencer à recueillir les données en quelques jours seulement.",
+	"results": [
+		{
+			"value": "½",
+			"description": "journée d’installation sur site"
+		},
+		{
+			"value": "15",
+			"description": "équipements connectés"
+		},
+		{
+			"value": "4000",
+			"description": " propriétés disponibles"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "A propos de Bouygues Energies & Services",
+				"description": "Acteur global de la transition énergétique, numérique et industrielle. Bouygues Energies & Services propose des solutions et services sur-mesure pour les infrastructures, les bâtiments et les process."
+			}
+		],
+		"footer": [
+			{
+				"title": "Équipements connectés",
+				"description": "15"
+			},
+			{
+				"title": "Propriétés",
+				"description": "200"
+			},
+			{
+				"title": "Intervalle",
+				"description": "5 Minutes"
+			}
+		]
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"content": "Ses clients veulent la plupart du temps optimiser à la fois leur consommation énergétique et leur confort d’utilisation, exercice périlleux cherchant à rapprocher des impératifs contradictoires. Bouygues Energies & Services a donc besoin de disposer du maximum de données en provenance des équipements des bâtiments qui lui sont confiés, pour pouvoir les analyser et intervenir en retour."
+		},
+		{
+			"type": "paragraph",
+			"content": "Malheureusement, la mise en place traditionnelle d’un système de Gestion Technique de Bâtiments (GTB) est longue et coûteuse, donc souvent réservée aux bâtiments les plus grands et les plus complexes où elle peut trouver à s’amortir. Lorsqu’elle existe, la GTB reste spécifique au bâtiment pour lequel elle a été conçue, nécessite une intervention lourde sur place pour toute modification et s’interface difficilement avec les outils modernes de pilotage distant."
+		},
+		{
+			"type": "paragraph",
+			"content": "La Cellule Performance Energétique recherchait donc de nouvelles solutions innovantes dans le domaine du smart building."
+		},
+		{
+			"type": "paragraph",
+			"content": "De son côté, après plusieurs mois de développement, Wattsense disposait d’une solution en version Beta, composée d’un module électronique - la Box - et d’une plateforme Cloud, pour se connecter à distance aux bâtiments. Le moment semblait idéal pour tester la solution en grandeur réelle sur de vrais sites “vivants”."
+		},
+		{
+			"type": "quote",
+			"content": "\"Notre service (la Cellule Performance Energétique) a particulièrement besoin d’accès aux données techniques des bâtiments que nous exploitons. A travers Wattsense, nous avons trouvé une solution efficace, fiable et à prix compétitif pour avoir accès à distance aux données de consommations ainsi que de fonctionnement des installations techniques des bâtiments.<br><br>La fonctionnalité de commande à distance est également très appréciable pour nos équipes d’exploitation, puisque nous sommes désormais capables de redémarrer nos équipements techniques à distance. Wattsense nous a permis d’accompagner davantage notre client Evergreen dans leur démarche d’amélioration de la performance énergétique de leur bâtiment.<br><br>En sus, la réactivité, le professionnalisme et le sens de l’écoute de l’équipe de Wattsense nous ont pleinement satisfaits de notre premier PoC, et en appelle d’autres.\"",
+			"author": "Thomas Margot",
+			"author-position": "Ingénieur Energéticien Pôle Technique Tertiaire FM France, Bouygues Energies & Services"
+		},
+
+		{
+			"type": "paragraph",
+			"title": "Contexte",
+			"content": "Bouygues Energies & Services a décidé de tester la solution Wattsense sur un site aisément accessible pour la Cellule Performance Energétique, et d’une structure suffisamment standard pour que le test soit significatif."
+		},
+		{
+			"type": "paragraph",
+			"content": "Evergreen est un bâtiment tertiaire de trois niveaux (deux étages) implanté à Ecully, à côté de Lyon. Il développe une surface de bureaux d’environ 3900 m²,. Bouygues Energies & Services en assure le Facility Management depuis 2013, mais n’a pas d’engagement sur la performance énergétique du bâtiment."
+		},
+		{
+			"type": "paragraph",
+			"content": "Une pompe à chaleur réversible, permettant la production de chaud et de froid, est installée sur le toit ; les bureaux sont équipés de ventilo-convecteurs."
+		},
+		{
+			"type": "paragraph",
+			"content": "Le bâtiment dispose d’un système de GTB vieillissant qui fonctionne avec une version assez ancienne du protocole de communication BACnet. L’accès au réseau de GTB n’est possible que sur place et les données qu’il recueille sont réservées principalement à la société qui l’a installé. La solution Wattsense permet à Bouygues Energies & Services d’augmenter la satisfaction de son client Evergreen sur le volet énergie en donnant accès à ces données."
+		},
+
+		{
+			"type": "image",
+			"src": "bouygues/building.jpg",
+			"alt": "Bâtiment Evergreen",
+			"caption": "Bâtiment Evergreen"
+		},
+
+		{
+			"type": "paragraph",
+			"title": "Défis",
+			"content": "Bouygues Energies & Services souhaitait récupérer à distance les données des équipements de chauffage et de refroidissement, de façon non intrusive, sous un format aisément exploitable."
+		},
+
+
+		{
+			"type": "paragraph",
+			"title": "Solution",
+			"content": "Après une visite du site avec le responsable Evergreen et le référent Bouygues Energies & Services, la Box a été installée en décembre 2018 par l’équipe Wattsense dans une armoire technique au rez-de-chaussée ; elle a été connectée à un routeur du réseau de GTB."
+		},
+		{
+			"type": "paragraph",
+			"content": "En raison d’un signal GSM de qualité médiocre dans le bâtiment, une antenne a été ajoutée."
+		},
+		{
+			"type": "paragraph",
+			"content": "L’équipe Wattsense s’est d’abord connectée sur place à la Box, a scanné le réseau BACnet et a listé tous les équipements communiquant selon ce protocole. Quinze matériels ont été identifiés, principalement des groupes de production de froid ou de chaleur et des compteurs électriques."
+		},
+		{
+			"type": "paragraph",
+			"content": "Cette première phase a été menée dans la matinée."
+		},
+		{
+			"type": "paragraph",
+			"content": "De retour au bureau, l’équipe s’est connectée à la Box à distance et a lancé son logiciel de reconnaissance automatique BACnet. Compte-tenu de la version BACnet ancienne utilisée dans le bâtiment, certaines données restaient inaccessibles ; l’équipe a donc rapidement développé une version spécifique du logiciel."
+		},
+		{
+			"type": "paragraph",
+			"content": "Deux jours plus tard, 4 000 propriétés différentes ont été détectées et ont pu être remontées vers la plateforme Wattsense. Un fichier répertoriant toutes les propriétés disponibles a été envoyé à Bouygues Energies & Services qui en a sélectionné environ 200, à suivre avec un intervalle de 5 minutes. Les autres demeurent accessibles et peuvent être activées à la demande."
+		},
+		{
+			"type": "paragraph",
+			"content": "Fin décembre 2018, la Box a fait l’objet d’une mise à jour à distance de ses logiciels embarqués, sans interruption de service."
+		},
+		{
+			"type": "paragraph",
+			"content": "Désormais, Wattsense envoie mensuellement à Bouygues Energies & Services un fichier facilement exploitable répertoriant les données moyennes horaires des 20 propriétés les plus pertinentes."
+		},
+
+
+
+		{
+			"type": "paragraph",
+			"title": "Résultats",
+			"content": "Bouygues Energies & Services a surtout apprécié la facilité d’installation de la Box sur le site Evergreen et la rapidité avec laquelle il a pu accéder à toutes les données utiles du bâtiment sans avoir à s’y déplacer."
+		},
+		{
+			"type": "paragraph",
+			"content": "D’ailleurs, dès janvier, il a adressé à son client un rapport mensuel sur les performances de la pompe à chaleur et sur les données de confort d’utilisation. Cet outil de gestion permettra au propriétaire d’effectuer des arbitrages et pourra donner lieu à la mise en place de consignes différentes."
+		},
+		{
+			"type": "paragraph",
+			"content": "Bouygues Energies & Services a également été séduit par la qualité du service Wattsense : tous les besoins spécifiques qu’il a pu exprimer ont été pris en compte et mis en place rapidement. Pour l’analyse des flux de données sur sa « console utilisateur », par exemple, plusieurs fonctionnalités ont été développées et ajoutées : possibilité de renommer les propriétés, échelles différentes selon les diagrammes, possibilité de zoomer sur des zones précises des diagrammes, extraction mensuelle des données en format csv."
+		},
+		{
+			"type": "paragraph",
+			"content": "Il a enfin été très sensible à la possibilité de mettre à jour la solution à distance sans perte de données."
+		},
+		{
+			"type": "paragraph",
+			"content": "De façon plus générale, dans la solution Wattsense, Bouygues Energies & Services apprécie de pouvoir accéder à distance aux données de tous les bus de communication couramment utilisés, indépendamment de l’architecture du bâtiment, et à un coût très compétitif qui lui permet d’envisager la connexion de plus petites surfaces."
+		},
+		{
+			"type": "paragraph",
+			"content": "Pouvoir déterminer précisément et de façon détaillée comment s’effectue la consommation énergétique d’un bâtiment lui permettra d’élaborer avec le propriétaire et/ou l’occupant la stratégie d’optimisation adaptée à leurs objectifs. Et la possibilité d’envoyer à distance des consignes de fonctionnement aux équipements ouvre à terme de très intéressantes perspectives en matière d’efficacité énergétique et de qualité de service."
+		},
+		{
+			"type": "paragraph",
+			"content": "Le test Evergreen, une première réalisation disruptive qui en appelle d'autres."
+		}
+	]
+}

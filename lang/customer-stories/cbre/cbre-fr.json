@@ -1,0 +1,196 @@
+{
+	"company": "CBRE",
+	"logo": "cbre/logo.png",
+	"title": "CBRE optimise la maintenance et la performance énergétique des stations-services SHELL.",
+	"subtitle": "",
+	"results": [
+		{
+			"value": "1 ",
+			"description": "Journée d’installation sur site"
+		},
+		{
+			"value": "1",
+			"description": "Box"
+		},
+		{
+			"value": "34",
+			"description": "Équipements connectés"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "Numéro 1 mondial de l’immobilier d’entreprise, CBRE propose ses services aux entreprises, propriétaires, investisseurs du monde entier.",
+				"description": "CBRE, exploitant des stations-service SHELL souhaite utiliser l’IoT et des régulateurs RVL pour améliorer l’exploitation à distance des bâtiments dont il a la gestion.",
+				"noBorder": true
+			}
+		],
+		"footer": []
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"content": "<a href=\"http://www.cbre.fr\" target=\"blank\">CBRE</a>, exploitant des stations-service SHELL sur le territoire français souhaite utiliser l’IoT pour améliorer l’exploitation à distance des bâtiments dont il a la gestion.<br/><br/>Son besoin : une solution complète, facile à mettre en place et à utiliser. Pour y répondre, les équipes d’Adeunis, Energisme et Wattsense se sont retrouvées et ont collaboré à l’élaboration de la solution la plus adaptée."
+		},
+		{
+			"type": "table",
+			"title": "Les acteurs du projet",
+			"content": "<table class=\"cbre\"><tr><th>SHELL</th><td>Commercialise des produits et services pétroliers dans le monde. SHELL exploite 85 stations-services en France.</td></tr><tr><th>CBRE GWS</th><td>Réalise l’ensemble des opérations de maintenance sur le réseau de stations-services SHELL dans 17 pays.</td></tr><tr><th>CBRE</th><td>N°1 du conseil immobilier en entreprise. Accompagne CBRE GWS dans la stratégie de développement durable de SHELL.</td></tr><tr><th>WATTSENSE</th><td>Construit une infrastructure informatique pour la gestion des bâtiments grâce à une Box et une API.</td></tr><tr><th>ENERGISME</th><td>Fournit des plateformes logicielles dédiées à la performance énergétique et environnementale.</td></tr><tr><th>ADEUNIS</th><td>Conçoit des capteurs connectés. Accompagne à la stratégie de déploiement.</td></tr></table>"
+		},
+		{
+			"type": "image",
+			"src": "cbre/iot-actors-fr.jpg",
+			"alt": "actors",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"title": "CHALLENGE",
+			"content": "SHELL, géant du secteur pétrolier, s'est engagé à réduire au niveau mondial ses émissions de gaz à effet de serre via un plan d'actions CO2.<br/><br/>En 2017, la multinationale adopte des objectifs à long terme : une <strong>réduction de moitié de l'empreinte carbone de ses produits énergétiques</strong> d'ici à 2050, avec une première étape de 20% de réduction d'ici à 2035.<br/><br/>CBRE GWS, exploitant de l’ensemble des stations-service SHELL sur le territoire européen (6000 sites dans 17 pays) les accompagne à la mise en application de ce plan. Une campagne d’audits énergétiques menée sur les stations-services a montré un manque d’accès aux données de consommation. Afin de récupérer ces données pour les analyser, la solution de l’IoT a été étudiée.<br/><br/>L'IoT, constitue un outil apportant des solutions nouvelles pour <strong>faciliter l’exploitation, la maintenance et l’efficacité énergétique</strong> des stations-service et cela même sur plusieurs sites distants. La solution mise en place doit permettre de mutualiser les compétences entre les différents sites pour plus d’optimisations."
+		},
+		{
+			"type": "image",
+			"src": "cbre/shell.jpg",
+			"alt": "Shell",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"title": "SOLUTIONS",
+			"content": "<strong>Accompagnement</strong>"
+		},
+		{
+			"type": "paragraph",
+			"content": "Conjointement, les équipes ont pris le temps d’analyser les bâtiments et leurs activités pour définir la structure du projet et établir les cas d’application. Si l’objectif initial était bien de détecter les applications possibles de l’IoT pour <strong>optimiser les performances énergétiques</strong>, il est ressorti des différents échanges que d’autres applications liées, pouvaient également être mises en place, notamment pour <strong>optimiser le suivi des équipements</strong> et leur maintenance, améliorer le bien-être des usagers du site ou encore répondre à des enjeux réglementaires.<br/><br/>Afin de démontrer le fonctionnement du concept et d’étudier les différents cas d’application possible, il a été décidé de le déployer sur un site pilote : la station-service SHELL présente sur l’autoroute A7, aire de Roussillon. L’objectif de cette première étape est de tester les hypothèses émises, analyser les premiers résultats et décider, selon la pertinence des informations traitée du modèle à dupliquer sur les autres stations-services."
+		},
+		{
+			"type": "paragraph",
+			"content": "<strong>Réseau privé LoRaWAN</strong>"
+		},
+		{
+			"type": "paragraph",
+			"content": "Dans ce projet, CBRE recherchait une meilleure qualité de signal sur le site , un potentiel d'évolutivité, l'utilisation de nombreux capteurs avec une consommation de batterie raisonnable, tout en respectant la confidentialité des données et la gestion de la donnée en local.<br/><br/>Afin de confirmer la bonne couverture du réseau LoRaWAN et guider les équipes dans l’installation des capteurs, une revue de site et un radio-mapping ont été effectué par Adeunis et CBRE. Cette étude a été effectuée à l’aide d’un <a href=\"https://www.adeunis.com/produit/ftd-testeur-de-reseau/\" target=\"_blank\">Field-Test-Device</a>, permettant de mesurer l’état du réseau disponible en différents points. Au vu de la disposition du site (bâtiments sur 3 niveaux), il a été décidé d’utiliser un <strong>réseau privé LoRaWAN</strong> via la Box Wattsense pour optimiser la couverture sur l’ensemble des points de  température ambiante, humidité, ouverture des portes, entre autres (plus de 20). Avec les informations obtenues, l’emplacement des capteurs a ainsi pu être définie."
+		},
+		{
+			"type": "image",
+			"src": "cbre/lorawan-fr.jpg",
+			"alt": "LoRaWAN",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"content": "Avec un réseau privé LoRaWAN, CBRE peut lui-même connecter un système interne de gestion sans avoir besoin d'utiliser l'Internet et administrer sa flotte de capteurs IoT ainsi que son infrastructure réseau."
+		},
+		{
+			"type": "link",
+			"title": "En savoir + sur les différences entre un réseau privé LoRaWAN et un réseau LoRaWAN public",
+			"url": "https://blog.wattsense.com/fr/lorawan-reseau-prive-public/",
+			"target": "_blank"
+		},
+		{
+			"type": "paragraph",
+			"content": "<strong>Régulation de circuits de chauffage</strong>"
+		},
+		{
+			"type": "paragraph",
+			"content": "CBRE devait accéder à distance aux données de température des régulateurs de chauffage pour vérifier que les consignes de chauffage sont respectées.<br/><br/>Des <strong>régulateurs Siemens RVL</strong> utilisent le protocole de communication fermé <strong>LPB</strong> (Local Process Bus) pour la transmission des données. Se trouver face à des protocoles fermés, tels que LPB, peut représenter un réel inconvénient pour les propriétaires et les gestionnaires de sites. Les fabricants ne leur proposent en effet que des opportunités d’amélioration limitées et une gamme de périphériques coûteux.<br/><br/>Avec la Box Wattsense, CBRE peut accéder rapidement aux Siemens RVLs 480 pour suivre des données de température et optimiser des circuits de chauffage."
+		},
+		{
+			"type": "link",
+			"title": "En savoir + sur comment piloter à distance les régulateurs de chauffage Siemens RVL",
+			"url": "https://blog.wattsense.com/fr/pilotez-a-distance-siemens-rvl/?utm_source=adeunis&utm_medium=blog&utm_campaign=shell",
+			"target": "_blank"
+		},
+		{
+			"type": "quote",
+			"content": "\"La solution Wattsense nous a permis à la fois de rationaliser les coûts d’abonnement en centralisant l’ensemble des capteurs sur un seul concentrateur. Cela nous a également permis de valoriser des données déjà existantes des chaufferies en se connectant directement aux automates et donc sans installation de capteurs complémentaires.\"",
+			"author": "Théo Savre",
+			"author-position": "Direction du Développement Durable, CBRE."
+		},
+		{
+			"type": "paragraph",
+			"title": "DEPLOIEMENT - INSTALLATION",
+			"content": "Le déploiement et l’installation de l’ensemble de la solution ont donc été réalisés sur le site pilote. La solution se compose des éléments suivants :"
+		},
+		{
+			"type": "bullets",
+			"content": [
+				"<strong>Le service de communication</strong> Wattsense qui centralise les données du bâtiment et assure la connectivité des équipements en chaufferie : deux régulateurs de chauffage (LPB) et 32 capteurs (LoRaWAN). L’installation a été réalisée en une journée.",
+				"Les <strong>capteurs IoT</strong> d’Adeunis qui collectent et transmettent les données.",
+				"<strong>La plateforme Big Data</strong> et IoT d’Energisme qui offre un tableau de bord et un outil d’aide à la décision pour toute la gestion et l’optimisation de l’exploitation quotidienne des sites SHELL."
+			]
+		},
+		{
+			"type": "image",
+			"src": "cbre/box.png",
+			"alt": "Wattsense Box",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"title": "RESULTATS",
+			"content": "La solution déployée est fiable et permet une remontée de données qualitatives, elle assure un gain de temps considérable car les données sont disponibles rapidement et efficacement. Il n’est plus nécessaire de se déplacer pour avoir les informations."
+		},
+		{
+			"type": "bullets",
+			"content": [
+				"Amélioration des performances énergétiques.",
+				"Réduction des coûts d’exploitation.",
+				"Amélioration du bien-être des usagers.",
+				"Optimisation des circuits de chauffage."
+			]
+		},
+		{
+			"type": "paragraph",
+			"title": "ANNEXE",
+			"content": "Les cas d’application :"
+		},
+		{
+			"type": "accordeon",
+			"title": "<strong>1 - Suivi de la légionnelle / Limitation des risques sanitaires</strong>",
+			"content": "<ul><li><strong>Besoin :</strong> Relever et contrôler la température de la boucle ECS, pour prévenir les risques de prolifération de la légionelle.<br/>Depuis 2010, tous les ERP sont légalement tenus de contrôler la température de l’eau présente dans leurs circuits d’ECS (Eau Chaude Sanitaire). Celle-ci doit être maintenue à au moins 55°C entre le point de mise en distribution et le point de puisage. Seuil en dessous duquel la bactérie mortelle de la légionelle peut proliférer.</li><li><strong>Solution :</strong> installation de capteurs IoT TEMP2S</li><li><strong>Bénéfices :</strong><ul><li>Respect de la réglementation</li><li>Limitation des risques sanitaires</li><li>Réduction des coûts d’exploitation et de maintenance</li></ul></li></ul>",
+			"urltitle": "En savoir + sur le suivi de la légionelle",
+			"urllink": "https://wattsense.com/fr/ressources/experiences-client/ibis-confluence-temperature",
+			"urltarget": "_blank"
+		},
+		{
+			"type": "accordeon",
+			"title": "<strong>2 - Suivi de la température des chambres froides / Limitation des risques sanitaires</strong>",
+			"content": "<ul><li><strong>Besoin :</strong> Suivi de la température des meubles réfrigérés, open chiller et chambres froides (positives et négatives).<br/>Les aliments présents dans les meubles réfrigérés ou les chambres froides des restaurants doivent être conservés dans une plage de température fixe afin d’éviter tout risque de dégradation voire d’intoxication alimentaire.<br/>Il est donc nécessaire de connaître en continu la température de ces équipements et d’être alerté au plus tôt en cas de dépassement de seuil et donc de défaillance.</li><li><strong>Solution :</strong> installation de capteurs TEMP</li><li><strong>Bénéfices :</strong><ul><li>Limitation des risques sanitaires</li><li>Réduction des coûts d’exploitation et de maintenance</li><li>Gain de temps et optimisation de l’organisation des services d’exploitation</li></ul></li></ul>",
+			"urltitle": "En savoir + sur le suivi de la température en chambre froide",
+			"urllink": "https://wattsense.com/fr/ressources/experiences-client/ibis-confluence-temperature",
+			"urltarget": "_blank"
+		},
+		{
+			"type": "accordeon",
+			"title": "<strong>3 - Suivi de la température dans la zone de stockage des déchets / Limitation des risques sanitaires</strong>",
+			"content": "<ul><li><strong>Besoin :</strong> Suivi de la température dans la zone de stockage des déchets.<br/>Cette zone, doit être maintenue dans une plage de température fixe. La température ambiante, ainsi que l’ouverture des portes (accès extérieur au bâtiment) sont donc contrôlées.</li><li><strong>Solution :</strong> installation de capteurs TEMP + CONTACT SENSOR</li><li><strong>Bénéfices :</strong><ul><li>Limitation des risques sanitaires</li><li>Réduction des coûts d’exploitation et de maintenance</li><li>Gain de temps et optimisation de l’organisation des services d’exploitation</li></ul></li></ul>",
+			"urltitle": "En savoir + sur le suivi de la température en zone tempérée",
+			"urllink": "https://www.adeunis.com/zenner-connect-clinique-chaine-du-froid/",
+			"urltarget": "_blank"
+		},
+		{
+			"type": "accordeon",
+			"title": "<strong>4 - Suivi de la température ambiante dans les espaces recevant du public / Confort des usagers</strong>",
+			"content": "<ul><li><strong>Besoin :</strong> connaître en temps réel la température ambiante et l’humidité des espaces utilisés par le public (boutique, hall, espace restaurant). Tout dépassement de seuil est enregistré et déclenche une alerte permettant d’agir au plus vite pour détecter et solutionner le dysfonctionnement.</li><li><strong>Solution :</strong> installation de capteurs COMFORT</li><li><strong>Bénéfices :</strong><ul><li>Garantie du confort et de la satisfaction des clients</li><li>Réduction des coûts d’exploitation et de maintenance</li><li>Amélioration de la performance énergétique et la santé du bâtiment</li></ul></li></ul>",
+			"urltitle": "En savoir + sur le suivi de la température ambiante",
+			"urllink": "https://wattsense.com/fr/ressources/experiences-client/ibis-confluence-restaurant",
+			"urltarget": "_blank"
+		},
+		{
+			"type": "accordeon",
+			"title": "<strong>5 - Contrôle du niveau des cuves à incendie / Sécurité du site</strong>",
+			"content": "<ul><li><strong>Besoin :</strong> Être alerté en cas de baisse trop importante du niveau d’eau présente dans les cuves à incendie afin d’éviter tout risque de non-disponibilité en cas d’incendie.</li><li><strong>Solution :</strong> installation de capteurs DOUBLE LEVEL SENSOR</li><li><strong>Bénéfices :</strong><ul><li>Limitation des risques sécuritaires</li><li>Réduction des coûts d’exploitation et de maintenance</li><li>Gain de temps et optimisation de l’organisation des services d’exploitation</li></ul></li></ul>"
+		},
+		{
+			"type": "accordeon",
+			"title": "<strong>6 - Détection de fuite sur cuve d’hydrocarbure / Sécurité du site</strong>",
+			"content": "<ul><li><strong>Besoin :</strong> Être informé, via une alerte lors de la détection d’une fuite dans les cuves d’hydrocarbures.</li><li><strong>Solution :</strong> installation de capteurs DRY-CONTACTS</li><li><strong>Bénéfices :</strong><ul><li>Limitation des risques sécuritaires</li><li>Réduction des coûts d’exploitation et de maintenance</li><li>Gain de temps et optimisation de l’organisation des services d’exploitation</li></ul></li></ul>"
+		},
+		{
+			"type": "accordeon",
+			"title": "<strong>7 - Bouton d’arrêt d’urgence / Sécurité du site</strong>",
+			"content": "<ul><li><strong>Besoin :</strong> Être informé, via une alerte lors de l’enclenchement du système d’urgence sur les pistes de prise de carburant.</li><li><strong>Solution :</strong> installation de capteurs DRY-CONTACTS</li><li><strong>Bénéfices :</strong><ul><li>Limitation des risques sécuritaires</li><li>Réduction des coûts d’exploitation et de maintenance</li><li>Gain de temps et optimisation de l’organisation des services d’exploitation</li></ul></li></ul>"
+		}
+	]
+}

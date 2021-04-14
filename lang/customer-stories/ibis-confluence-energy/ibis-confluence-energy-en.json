@@ -1,0 +1,110 @@
+{
+	"company": "Ibis Confluence",
+	"logo": "ibis-confluence-energy/logo.png",
+	"title": "Adeunis, Energisme and Wattsense have developed a turnkey solution to monitor and follow the evolution of energy consumption",
+	"subtitle": "",
+	"results": [
+		{
+			"description": "Reduce operating costs"
+		},
+		{
+			"description": "Meet regulatory objectives"
+		},
+		{
+			"description": "Improve the energy performance of the building"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "About Ibis Confluence",
+				"description": "Founded in 1974, Ibis is the strong economic brand in Accor's portfolio, which in 2011 chose to concentrate Etap Hotel and All Seasons into Ibis budget and Ibis Styles."
+			}
+		],
+		"footer": [
+			{
+				"title": "Installed Boxes",
+				"description": "1"
+			},
+			{
+				"title": "Datapoints collected",
+				"description": "42"
+			},
+			{
+				"title": "Equipement connected",
+				"description": "11"
+			}
+		]
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"title": "Context",
+			"content": "The Ibis Confluence (ACCOR group) consists of two entities: Ibis Budget and Ibis Style, spread over a 7-storey building containing respectively 84 and 95 rooms. Both hotels offer an economical hotel offer, elaborated and intended for a business and leisure clientele."
+		},
+		{
+		  "type": "image",
+			"src": "ibis-confluence-energy/ibis.jpg",
+			"alt": "Ibis image",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"title": "Challenges",
+			"content": "The number of French hotels, cafés and restaurants represents approximately 7% of all commercial buildings in France. These buildings are now directly concerned by the reduction of their energy consumption with the implementation of the tertiary decree on the 1st of October 2019. Through this decree, the law requires all tertiary buildings (over 1000m2) to significantly reduce their energy consumption in the coming years."
+		},
+		{
+			"type": "paragraph",
+			"content": "Notice: Article L. 111-10-3 of the French Building and Housing Code requires the implementation of actions to reduce final energy consumption in existing buildings for tertiary use. This is in order to achieve a reduction in final energy consumption for all buildings subject to the obligation of at least 40% in 2030, 50% in 2040 and 60% in 2050, compared to 2010."
+		},
+		{
+			"type": "paragraph",
+			"content": "These buildings are major energy consumers: 241 kWh/m2/year, with an average energy bill of 21.6 €/m2/year1. In a hotel, there are many expense items: lighting, kitchen, laundry, heating, air conditioning, ventilation... And above all, many people travel every day. And more particularly customers, who are often less careful to their energy expenses than at home: a customer consumes on average twice as many liters of water in a hotel as at home."
+		},
+		{
+			"type": "paragraph",
+			"content": "Considering the reduction of energy consumption is therefore an important concern for the Ibis Confluence hotel, both for regulatory and environmental aspects. The challenge is therefore to find solutions to reduce energy consumption and to monitor their evolution over time."
+		},
+		{
+			"title": "Solution",
+			"type": "paragraph",
+			"content": "<a href='https://www.adeunis.com/' target='_blank'>Adeunis</a>, <a href='https://www.energisme.com/fr/' target='_blank'>Energisme</a> and Wattsense have developed a turnkey solution to monitor and follow the evolution of energy consumption within the Ibis Confluence hotel."
+		},
+		{
+			"type": "paragraph",
+			"content": "This solution is currently based on:"
+		},
+		{
+			"type": "bullets",
+			"content": [
+				"The adeunis TIC and Pulse ATEX sensors, which measure the electricity and gas meters consumption respectively.",
+				"The Wattsense connectivity solution. Using the Wattsense box, the sensors, using LoRaWAN wireless technology, collect the data that is then consolidated in the Wattsense cloud, and forwarded to Energisme. ",
+				"The Energisme platform formats them and ensures the concrete visualization of the data collected, in order to allow their complete analysis."
+			]
+		},
+		{
+			"type": "paragraph",
+			"title": "Results",
+			"content": "Thanks to this solution, consumption data are collected automatically and in real time. No need to travel to find out the status of consumption. Their evolution can be easily analyzed. In addition, over-consumption or leaks are detected almost instantly thanks to an alerting system. Concrete actions to solve these possible malfunctions can therefore be implemented quickly."
+		},
+		{
+			"type": "paragraph",
+			"content": "Register for our <a href='https://wattsense.com?demo=true' target='_blank'>demo</a> and take a look in real-time to the data recuperated from the Ibis hotel."
+		},
+		{
+			"type": "image-list",
+			"images": [
+				{
+					"src": "ibis-confluence-energy/energisme.png",
+					"alt": "Energisme",
+					"link": "https://energisme.com/"
+				},
+				{
+					"src": "ibis-confluence-energy/adeunis.png",
+					"alt": "Adeunis",
+					"link": "https://www.adeunis.com/"
+				}
+			]
+		}
+	]
+}

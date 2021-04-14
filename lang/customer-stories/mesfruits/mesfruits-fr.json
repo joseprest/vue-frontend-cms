@@ -1,0 +1,176 @@
+{
+	"company": "MESFRUITS",
+	"logo": "mesfruits/logo.jpg",
+	"title": "MESFRUITS optimise la consommation de ses entrepôts frigorifiques en collaboration avec Eqinov et Wattsense.",
+	"subtitle": "",
+	"results": [
+		{
+			"description": "Aucun coût d’achat de matériel par MESFRUITS"
+		},
+		{
+			"description": "Installation simple (alimentation électrique)"
+		},
+		{
+			"description": "Configuration rapide et à distance de la Box"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "MESFRUITS, producteur de pommes innovant.",
+				"description": "",
+				"noBorder": true
+			}
+		],
+		"footer": []
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"title": "L’Entreprise en Bref",
+			"content": ""
+		},
+		{
+			"type": "bullets",
+			"content": [
+				"<strong>Activités :</strong> agréage, stockage, précalibrage, conditionnement et traçabilité des fruits.",
+				"<strong>2 Sites :</strong> Cavaillon et Saint Andiol. Région Provence-Alpes-Côte d’Azur.",
+				"<strong>Lignes de conditionnement :</strong> 13.",
+				"<strong>Chambres froides :</strong> 60.",
+				"<strong>Pommes/jour :</strong> 1 000 000.",
+				"<strong>Effectif :</strong> Plus de 100 personnes."
+			]
+		},
+		{
+			"type": "image",
+			"src": "mesfruits/buildings.jpg",
+			"alt": "Bâtiments",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"title": "LA PROBLÉMATIQUE",
+			"content": "<strong>Réduire la facture d’énergie des chambres froides.</strong>"
+		},
+		{
+			"type": "quote",
+			"content": "\"La facture d’énergie liée à la consommation électrique des chambres froides est un des premiers postes de dépenses de <a href='https://www.mesfruits.eu.com' target='_blank'>MESFRUITS</a> avec un pic de consommation pendant la période estivale.<br/><br/>Lors de nos échanges avec <a href='https://www.eqinov.com/' target='_blank'>Eqinov</a>, nous leur avons fait part de cet enjeu et de notre volonté d’optimiser la consommation du stockage frigorifique. Nous avons toujours eu un fort intérêt pour l’innovation. Flexibiliser la consommation électrique de nos groupes froids pour réduire notre facture d’électricité a donc été la solution privilégiée par MESFRUITS.\"",
+			"author": "Gildas Guibert",
+			"author-position": "Responsable Technique et R&D, MESFRUITS."
+		},
+		{
+			"type": "paragraph",
+			"title": "Zoom sur la flexibilité électrique :",
+			"content": "La flexibilité de consommation électrique consiste à moduler ponctuellement sa consommation d’électricité pour répondre aux besoins d’approvisionnement des fournisseurs ou d’équilibrage du système électrique. A titre d’exemple, le gestionnaire du réseau national peut faire appel aux entreprises consommatrices d’électricité en vue de faire varier leur consommation à la hausse ou à la baisse pour répondre à une congestion sur le réseau électrique."
+		},
+		{
+			"type": "paragraph",
+			"content": "On parle <a href=\"https://fr.wikipedia.org/wiki/Effacement_de_consommation_%C3%A9lectrique\" target=\"_blank\">d’effacement de consommation</a> lorsque l’on abaisse sa consommation électrique, en cas de pointe de consommation ou de pénurie de production. La flexibilité à la hausse consiste au contraire à augmenter sa consommation pour absorber l’électricité d’origine renouvelable en surplus. Dans un sens comme dans l’autre, adopter la flexibilité permet d’économiser jusqu’à 20 % sur le coût de l’électricité."
+		},
+		{
+			"title": "Solution",
+			"type": "paragraph",
+			"content": "<strong>Valoriser la flexibilité de consommation électrique des entrepôts frigorifiques.</strong>"
+		},
+		{
+			"type": "quote",
+			"content": "\"L’offre proposée par Eqinov est attractive car elle s’appuie sur le <strong>pilotage à distance du fonctionnement des groupes froids par leur Box DR’IVE©</strong>. Cette technologie est simple à installer et performante pour valoriser la flexibilité de manière optimale sans aucun coût d’acquisition ou d’installation à supporter.\"",
+			"author": "Gildas Guibert",
+			"author-position": "Responsable Technique et R&D, MESFRUITS."
+		},
+		{
+			"type": "image",
+			"src": "mesfruits/drive.jpg",
+			"alt": "Drive",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"content": "Les atouts de la solution <a href=\"https://www.eqinov.com/flexibilite/la-solution-drive/\">DR’IVE©</a> :"
+		},
+		{
+			"type": "bullets",
+			"content": [
+				"<strong>Libère les équipes opérationnelles du pilotage de la flexibilité de fonctionnement des groupes froids.</strong>",
+				"<strong>Aucun coût d’achat de matériel par MESFRUITS.</strong>",
+				"<strong>Installation simple (alimentation électrique).</strong>",
+				"<strong>Configuration rapide et à distance de la box par Eqinov.</strong>"
+			]
+		},
+		{
+			"type": "paragraph",
+			"title": "Mise en œuvre et respect des contraintes de production :",
+			"content": ""
+		},
+		{
+			"type": "quote",
+			"content": "\"La mise en place d’un tel projet nécessitait au préalable d’identifier nos besoins précis de froid et le tunnel de température à respecter dans les entrepôts. Eqinov a pris l’engagement de respecter nos contraintes de production. Au-delà du pilotage distant du fonctionnement de nos groupes froids, la solution DR’IVE© garantit la collecte des données de température dans les entrepôts ce qui nous permet de suivre le respect des engagements par Eqinov lors des activations de la flexibilité des groupes froids.\"",
+			"author": "Gildas Guibert",
+			"author-position": "Responsable Technique et R&D, MESFRUITS."
+		},
+		{
+			"type": "image",
+			"src": "mesfruits/natacha-hakwik.jpg",
+			"alt": "Natacha Hakwik",
+			"caption": ""
+		},
+		{
+			"type": "quote",
+			"content": "\"Nous avons conçu un programme de flexibilité adapté pour MESFRUITS ! Concrètement, Eqinov s’engage à ce que pendant la durée des effacements, les entrepôts ne dépassent pas une température de 5 degrés afin de ne pas altérer la qualité des fruits.\"",
+			"author": "Natacha Hakwik",
+			"author-position": "Directrice associée, Eqinov."
+		},
+		{
+			"type": "paragraph",
+			"title": "Zoom sur la solution DR’IVE",
+			"content": "La solution DR’IVE© est le fruit d’une étroite collaboration durant plusieurs mois entre la société Wattsense et Eqinov.<br/><br/>La solution développée par Wattsense a pour but de transformer en quelques heures un bâtiment existant non communiquant en un bâtiment connecté et intelligent. Elle repose sur un module électronique équipé de logiciels embarqués, la Box, facile à installer, et sur un service Cloud puissant, lesquels, une fois combinés, créent une infrastructure fiable, évolutive et sécurisée.<br/><br/>A l’issue des échanges avec Eqinov, la Box DR’IVE© est née pour répondre à la fois à l’enjeu de pilotage de la flexibilité de consommation électrique de tous les équipements présents dans les secteurs industriels, agricoles et tertiaires mais également de suivi et de contrôle d’indicateurs énergétiques ou de production.<br/><br/>Cette collaboration a permis à Eqinov d’être totalement autonome pour le déploiement de la Box, la collecte des données et le pilotage des équipements connectés aux sites de MESFRUITS."
+		},
+		{
+			"type": "quote",
+			"content": "\"Les technologies développées par Eqinov en faveur de la flexibilité de la consommation énergétique et des réseaux intelligents constituent un atout majeur pour le développement des énergies renouvelables, par nature confrontées à des problématiques de production intermittente et de stockage.<br/><br/>Les équipes Wattsense sont heureuses de pouvoir contribuer à ces enjeux environnementaux et économiques et très fières qu’Eqinov leur ait donné l’opportunité d’implémenter concrètement leur solution sur les sites de MESFRUITS.\"",
+			"author": "Louis Vermorel",
+			"author-position": "CEO et Fondateur, Wattsense."
+		},
+		{
+			"type": "paragraph",
+			"title": "Déploiement de la solution DR’IVE© pour MESFRUITS",
+			"content": "2 Boxes installées par MESFRUITS sur chacun de ses sites.<br/><br/>A distance, Eqinov pilote le fonctionnement des groupes de production de froid pour qu’ils répondent tant aux besoins de froid de MESFRUITS qu’aux besoins et contraintes du système électrique.<br/><br/>Eqinov met à la disposition de MESFRUITS les données de températures de ses entrepôts et son niveau de consommation électrique en temps réel."
+		},
+		{
+			"type": "quote",
+			"content": "\"Afin que l’installation soit la plus simple possible pour MESFRUITS, la Box DR’IVE© est câblée et logée dans un coffret par les équipes d’Eqinov. Ainsi, l’installation réalisée par MESFRUITS s’est résumée à un simple raccordement du coffret précâblé sur le réseau électrique et sur le réseau Ethernet. La Box DR’IVE© communique ensuite selon le protocole Modbus avec tout automate présent sur les sites, et en particulier ceux garantissant la régulation des groupes de production de froid.\"",
+			"author": "Natacha Hakwik",
+			"author-position": "Directrice associée, Eqinov."
+		},
+		{
+			"type": "image",
+			"src": "mesfruits/box.jpg",
+			"alt": "Boitier Drive",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"content": "<strong style=\"color:#29ba74\">Le Modbus c’est quoi ?</strong><br/><br/>Depuis les années 70, Modbus est un moyen de communication permettant l'échange de données entre des contrôleurs logiques programmables (PLC) et des ordinateurs. Il représente un protocole de communication incontournable dans le machine to machine pour l’industrie, le bâtiment et le secteur de l’énergie. Sa simplicité d’architecture, sa facilité d’intégration et sa haute fiabilité se révèlent idéales pour assurer de manière performante le pilotage ou la relève à distance d’équipements automatisés. <strong>L'automatisation industrielle</strong> et les systèmes de contrôle et d’acquisition de données en temps réel (SCADA) utilisent également le protocole Modbus de manière intensive."
+		},
+		{
+			"type": "paragraph",
+			"title": "Dreams©, plateforme interactive du pilotage de la flexibilité électrique :",
+			"content": "Wattsense a conçu une infrastructure permettant à la plateforme de pilotage de la flexibilité Dreams© d’Eqinov, de se connecter à tout type de bâtiment et de pouvoir ainsi être déployée aisément à grande échelle."
+		},
+		{
+			"type": "image",
+			"src": "mesfruits/dreams.jpg",
+			"alt": "Dreams",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"title": "À LA CLÉ ?",
+			"content": "En mettant à disposition du réseau électrique la flexibilité de consommation électrique de ses chambres froides, MESFRUITS bénéficie d’une prime financière chaque année de la part d’Eqinov."
+		},
+		{
+			"type": "paragraph",
+			"content": "En pratique : Après plusieurs tests effectués avec succès sur les sites, les deux Boxes DR’IVE© <strong>sont opérationnelles et flexibilisent de manière automatisée la consommation électrique des groupes de production de froid</strong> pour équilibrer le système électrique."
+		}
+	]
+}

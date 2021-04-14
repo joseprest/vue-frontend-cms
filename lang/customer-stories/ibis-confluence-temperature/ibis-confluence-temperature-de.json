@@ -1,0 +1,89 @@
+{
+	"company": "Ibis Confluence",
+	"logo": "ibis-confluence-temperature/logo.png",
+	"title": "Adeunis, Energisme und Wattsense haben eine Lösung entwickelt, mit der die Temperatur eines Warmwassernetzes überwacht, gesteuert und alarmiert werden kann.",
+	"subtitle": "",
+	"results": [
+		{
+			"description": "Antizipierung von Gesundheitsrisiken"
+		},
+		{
+			"description": "Vermeidung der Ausbreitung von Legionellen"
+		},
+		{
+			"description": "Verbesserung der Energieeffizienz und der Gebäudegesundheit"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "Über Ibis Confluence",
+				"description": "Ibis wurde 1974 gegründet und ist die starke Wirtschaftsmarke im Portfolio von Accor, welches sich 2011 entschied, Etap Hotel und All Seasons in Ibis Budget und Ibis Styles zu konsolidieren."
+			}
+		],
+		"footer": [
+			{
+				"title": " Installierte Boxen",
+				"description": "1"
+			},
+			{
+				"title": "Gesammelte Datenpunkte",
+				"description": "42"
+			},
+			{
+				"title": "Angeschlossene Geräte",
+				"description": "11"
+			}
+		]
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"title": "Herausforderungen",
+			"content": "In jeder Hotelstruktur hat die Kundenzufriedenheit Vorrang. Die Gewährleistung des Wohlergehens der Gäste ist und bleibt eines der Hauptanliegen des Direktors von IBIS Lyon Confluence. Zu den Faktoren, die dafür berücksichtigt werden müssen, gehören auch die Instandhaltung und die ordnungsgemäße Funktionsweise der sanitären Einrichtungen des Hotels, wie z. B. die Warmwassernetze (ECS)."
+		},
+		{
+			"type": "paragraph",
+			"content": "Eine schlechte Aufrechterhaltung dieser Netzwerke kann die Ursache für die Vermehrung der tödlichen <strong>Legionellenbakterien</strong> sein, welche für die Legionellenkrankheit verantwortlich sind. Die Gesundheitsrisiken der Hotelgäste sind daher erheblich. Die Nichtverbreitung dieser sicherzustellen und zu kontrollieren, ist es unerlässlich. Die Hotelgebäude (sowie allgemein die Gesundheitseinrichtungen (Krankenhauszentren, EHPAD) und die ERP-Einrichtungen (Einrichtungen, die die Öffentlichkeit empfangen) müssen Maßnahmen ergreifen, um die Warmwassernetze zu überwachen, zu kontrollieren und erforderlichenfalls so schnell wie möglich zu handeln."
+		},
+		{
+			"type": "image",
+			"src": "ibis-confluence-temperature/chambre.jpg",
+			"alt": "Ibis confluence",
+			"caption": ""
+		},
+		{
+			"title": "Lösung",
+			"type": "paragraph",
+			"content": "Wattsense, <a href='https://www.adeunis.com/' target='_blank'>Adeunis</a> und <a href='https://www.energisme.com/' target='_blank'>Energisme</a> haben eine Komplettlösung eingeführt, die die Überwachung, Kontrolle und Alarmierung über die Entwicklung der Temperatur des Warmwasser-Sanitärnetzes ermöglicht."
+		},
+		{
+			"type": "paragraph",
+			"content": "Diese Lösung basiert auf dem adeunis® TEMP 2S-Sensor, der Big Data IoT-Plattform von Energisme sowie dem Gebäudekonnektivitätsdienst von Wattsense, welcher aus der Wattsense-Box und dem Cloud-Dienst besteht. Der TEMP 2S-Sensor ermöglicht es, die Wassertemperatur an zwei unterschiedlichen Stellen im Heizkreis zu erfassen und einen Alarm auszulösen, sobald die Temperatur unter die Schwelle von 50°C fällt. Der Wattsense Cloud-Dienst sorgt gemeinsam mit der Box für die Übertragung von Daten an die Energisme-Plattform, welche diese Daten zuverlässig macht, sie abruft und Verantwortliche in Echtzeit warnt."
+		},
+		{
+			"type": "paragraph",
+			"title": "Ergebnisse",
+			"content": "Mit dieser Lösung muss sich der Wartungsmanager nicht mehr bewegen. Die Steuerung der Wassertemperatur im Wassernetz kann aus der Ferne erfolgen. Der Wartungsmanager wird in Echtzeit über Abweichungen informiert und kann so schnell wie möglich reagieren"
+		},
+		{
+			"type": "paragraph",
+			"content": "Fordern Sie unsere <a href='https://wattsense.com/?demo=true' target='_blank'>Demo</a> an und sehen Sie sich die vom Ibis Confluence Hotel gesammelten Daten in Echtzeit an."
+		},
+		{
+			"type": "image-list",
+			"images": [
+				{
+					"src": "ibis-confluence-temperature/energisme.png",
+					"alt": "Energisme",
+					"link": "https://energisme.com/"
+				},
+				{
+					"src": "ibis-confluence-temperature/adeunis.png",
+					"alt": "Adeunis",
+					"link": "https://www.adeunis.com/"
+				}
+			]
+		}
+	]
+}

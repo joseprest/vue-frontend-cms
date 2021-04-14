@@ -1,0 +1,114 @@
+{
+	"company": "Ibis Confluence",
+	"logo": "ibis-confluence-restaurant/logo.png",
+	"title": "Adeunis, Energisme and Wattsense have implemented a solution that transforms the Ibis Confluence manual air conditioning equipment into a smart system",
+	"subtitle": "",
+	"results": [
+		{
+			"description": "Reduce operating costs"
+		},
+		{
+			"description": "Guarantee comfort and customers satisfaction"
+		},
+		{
+			"description": "Improve the energy performance of the building"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "About Ibis Confluence",
+				"description": "Founded in 1974, Ibis is the strong economic brand in Accor's portfolio, which in 2011 chose to concentrate Etap Hotel and All Seasons into Ibis budget and Ibis Styles."
+			}
+		],
+		"footer": [
+			{
+				"title": " Installed Boxes",
+				"description": "1"
+			},
+			{
+				"title": "Datapoints collected",
+				"description": "42"
+			},
+			{
+				"title": "Equipement connected",
+				"description": "11"
+			}
+		]
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"title": "Context",
+			"content": "The Ibis Confluence (ACCOR group) consists of two entities: Ibis Budget and Ibis Style, spread over a 7-storey building containing respectively 84 and 95 rooms. Both hotels offer an economical hotel offer, elaborated and intended for a business and leisure clientele."
+		},
+		{
+		  "type": "image",
+			"src": "ibis-confluence-restaurant/restaurant-ibis.jpg",
+			"alt": "Ibis Confluence"
+		},
+		{
+			"type": "paragraph",
+			"title": "Challenges",
+			"content": "The main concern of the Ibis Confluence hotel is centered on the experience provided to its customers and their satisfaction. The working conditions and efficiency of the building equipment are the guarantors of the customer satisfaction."
+		},
+		{
+			"type": "paragraph",
+			"content": "The air conditioning system is an essential component of the hotel environment and its comfort, as it controls the temperature of rooms and public areas, including the restaurant."
+		},
+		{
+			"type": "paragraph",
+			"content": "In this hotel, the operation of the air conditioning is not connected to a building management system; it is managed manually and independently controlled and maintained by a technician. The proper functioning of the system depends on the physical presence of this professional in the hotel."
+		},
+
+		{
+			"type": "paragraph",
+			"content": "The air conditioning system has been providing the same level of standard efficiency for years, but no optimization has been sought until now to increase overall building performance. Equipment issues are detected and registered manually, particularly those that affect user comfort, but the data is not collected or digitally recorded."
+		},
+		{
+			"type" : "paragraph",
+			"content": "The technician receives no notification from the devices in place in case of emergency, breakdown or any other problem. The only indicator of a problem is a random check, a customer's complaint, or an employee's feedback."
+		},
+		{
+			 "type": "paragraph",
+			"content": "The ibis Confluence is proud to offer a welcoming, modern and comfortable setting for an affordable budget. However, non-communicating equipment can lead to operational costs, insufficient energy efficiency and inconvenience to customers. The lack of connectivity is a challenge for the hotel in terms of prevention, detection, resolution and traceability of issues."
+		},
+		{
+			"type": "paragraph",
+			"title": "Solution",
+			"content": "<a href='https://www.adeunis.com/' target='_blank'>Adeunis</a>, <a href='https://energisme.com/' target='_blank'>Energisme</a> and Wattsense have put in place a solution that transforms manual air conditioning equipment into an intelligent system allowing optimal monitoring of equipment and in particular the temperature and humidity of the building. We are focusing on the third floor corridor and the ground floor restaurant to demonstrate the utility of the solution."
+		},
+		{
+			"type": "paragraph",
+			"content": "The air conditioning system consists of a reversible heat pump <strong>AERMEC NRL 0700</strong> located on the roof of the building. The AERMEC equipment has been connected to the Wattsense Box using the Modbus communication protocol. The Box is installed in an electrical cabinet on the roof."
+		},
+		{
+			"type": "paragraph",
+			"content":"Now that the Box can communicate with the air conditioning system, it serves as a bridge to the Adeunis sensors so they can also connect to this system. Two Adeunis IoT sensors monitoring the temperature and humidity of the third floor corridor and the restaurant have been connected to the Box thanks to the wireless network technology <strong>LoRaWAN</strong>; they access the heating, ventilation and air conditioning system. The sensors collect and record comfort data that is consolidated in the Wattsense cloud service. All this qualified data is then transmitted to the Energisme platform via the cloud service."
+		},
+		{
+			"type": "paragraph",
+			"title": "Results",
+			"content": "With this solution, the technician is informed in real time of the temperature and humidity of the monitored areas. It can remotely verify and control this data, send remote instructions, avoid maintenance problems, and thus reduce costs, improve the operation of the installation and guarantee the comfort of customers."
+		},
+		{
+			"type": "paragraph",
+			"content": "Sign up for our <a href='https://wattsense.com/?demo=true' target='_blank'>demo</a> and watch in real-time the data collected from the Ibis Confluence hotel."
+		},
+		{
+			"type": "image-list",
+			"images": [
+				{
+					"src": "ibis-confluence-restaurant/energisme.png",
+					"alt": "Energisme",
+					"link": "https://energisme.com/"
+				},
+				{
+					"src": "ibis-confluence-restaurant/adeunis.png",
+					"alt": "Adeunis",
+					"link": "https://www.adeunis.com/"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,89 @@
+{
+	"company": "Ibis Confluence",
+	"logo": "ibis-confluence-temperature/logo.png",
+	"title": "Adeunis, Energisme et Wattsense ont mis en place une solution qui permet de suivre, contrôler et alerter sur la température des réseaux d’Eau Chaude Sanitaire.",
+	"subtitle": "",
+	"results": [
+		{
+			"description": "Anticiper les risques sanitaires"
+		},
+		{
+			"description": "Éviter la propagation de la légionelle"
+		},
+		{
+			"description": "Améliorer la performance énergétique et la santé du bâtiment"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "A propos de Ibis Confluence",
+				"description": "L’Ibis Confluence (groupe  ACCOR) se compose de deux entités : Ibis Budget et Ibis Style, répartis sur un bâtiment de 7 étages et contenant respectivement 84 et 95 chambres."
+			}
+		],
+		"footer": [
+			{
+				"title": "Boxes installées",
+				"description": "1"
+			},
+			{
+				"title": "Points de données collectés",
+				"description": "42"
+			},
+			{
+				"title": "Équipements",
+				"description": "11"
+			}
+		]
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"title": "Défis et Objectifs",
+			"content": "Dans toute structure hotellière, la satisfaction des clients est l’enjeu prioritaire. Garantir leur bien-être reste une des principales préoccupations du directeur de l’IBIS Lyon Confluence. Parmi les éléments à prendre en compte, le maintien en état et le bon fonctionnement des équipements sanitaires de l’hôtel, comme par exemple les réseaux d’eau chaude (ECS). "
+		},
+		{
+			"type": "paragraph",
+			"content": "Un mauvais entretien de ces réseaux peut être la cause de la prolifération de la bactérie mortelle <strong>légionelle</strong> , responsable de la maladie légionellose. Les risques pour la santé des clients de l’hôtel sont donc conséquents. Contrôler la non-prolifération de celle-ci est primordial. Les structures hotellières (et plus largement les Établissements de Santé (Centres Hospitaliers, EHPAD) et les ERP  (Etablissements Recevant du Public), doivent prendre des mesures pour surveiller les réseaux d’eau chaude sanitaire, les contrôler et agir dans les plus brefs délais en cas de besoin."
+		},
+		{
+			"type": "image",
+			"src": "ibis-confluence-temperature/chambre.jpg",
+			"alt": "Ibis confluence",
+			"caption": ""
+		},
+		{
+			"title": "Solution",
+			"type": "paragraph",
+			"content": "Wattsense, <a https://www.adeunis.com/' target='_blank'>Adeunis</a>, et <a https://www.energisme.com/fr/' target='_blank'>Energisme</a> ont mis en place une solution clé en main qui permet de suivre, contrôler et alerter sur l’évolution de la température des réseaux d’Eau Chaude Sanitaire."
+		},
+		{
+			"type": "paragraph",
+			"content": "Cette solution est basée sur le capteur TEMP 2S d’adeunis®, la plateforme <strong>Big Data</strong> et IoT Energisme et le service pour la connexion des bâtiments, Wattsense. Le capteur TEMP 2S permet de relever la température de l’eau en deux points distincts du circuit de chauffage et d’émettre une alerte lorsque la température descend en-dessous du seuil des 50°C. Le service Cloud Wattsense avec la Box assure la transmission des données vers la plateforme Energisme, qui les fiabilise, les restitue et prévient en temps réel les parties prenantes."
+		},
+		{
+			"type": "paragraph",
+			"title": "Résultats",
+			"content": "Avec cette solution, le gestionnaire de maintenance n’a plus besoin de se déplacer, le contrôle de la température de l’eau dans les réseaux d’ECS est effectué à distance. Il est informé en temps réel de tout dépassement de seuil et peut agir au plus vite."
+		},
+		{
+			"type": "paragraph",
+			"content": "Demandez une <a href='https://wattsense.com/fr?demo=true' target='_blank'>démo</a> et découvrez le suivis des données en direct de l'hôtel IBIS."
+		},
+		{
+			"type": "image-list",
+			"images": [
+				{
+					"src": "ibis-confluence-temperature/energisme.png",
+					"alt": "Energisme",
+					"link": "https://energisme.com/fr/"
+				},
+				{
+					"src": "ibis-confluence-temperature/adeunis.png",
+					"alt": "Adeunis",
+					"link": "https://www.adeunis.com/"
+				}
+			]
+		}
+	]
+}

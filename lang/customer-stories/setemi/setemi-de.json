@@ -1,0 +1,112 @@
+{
+	"company": "SETEMI",
+	"logo": "setemi/logo.png",
+	"title": "Setemi haben Ihren Heizraum mit Hilfe von Wattsense in weniger als einem Tag angeschlossen.",
+	"subtitle": "",
+	"results": [
+		{
+			"value": "1/2",
+			"description": "Installationstag vor Ort"
+		},
+		{
+			"value": "190",
+			"description": "Wohnungen"
+		},
+		{
+			"value": "10",
+			"description": "Mal günstiger als mit anderen Konnektivitätsdiensten"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "SETEMI, Entwickler für innovative Lösungen zur Verbesserung Ihrer Energieeffizienz.",
+				"description": "Das Unternehmen Setemi leistet Wartung und Instandhaltung an mehr als 1.500 Standorte, die ihm von seinen Kunden anvertraut wurden.",
+				"noBorder": false
+			}
+		],
+		"footer": [
+			{
+				"title": "Jahre Erfahrung",
+				"description": "40"
+			},
+			{
+				"title": "Einsatzstandorte",
+				"description": "1.500"
+			},
+			{
+				"title": "Mitarbeiter",
+				"description": "150"
+			}
+		]
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"title": "HINTERGRUND & HERAUSFORDERUNGEN",
+			"content": "<a href=\"http://www.setemi.fr\" target=\"blank\">Setemi</a> ist für den Betrieb und die Instandhaltung einer Eigentumswohnanlage mit 190 Wohneinheiten verantwortlich. Das Unternehmen unterzeichnete einen Wartungsvertrag für P1, P2, P3 * Typ thermische Anlagen (siehe Tabelle 1) mit der Verpflichtung, den Verbrauch zu überwachen und in jeder Wohnung eine Durchschnittstemperatur von 21° C am Tag und 19° C in der Nacht aufrechtzuerhalten.<br/><br/>Setemi war auf der Suche nach einer industrialisierten, flexiblen, zuverlässigen und kostengünstigen Lösung, die es ihnen ermöglichen würde, Geräte mit der von ihnen verwendeten Web-Energiemanagement-Plattform zu verbinden.<br/><br/>Die Hauptziele von Setemi waren:<br/>1) Erfüllung vertraglicher Verpflichtungen durch die Anbindung des Gebäudes und die Optimierung des Energieverbrauchs.<br/>2) Einschränkung der Vor-Ort-Besuche ihres technischen Personals."
+		},
+		{
+			"type": "quote",
+			"content": "\"Dank der Unterstützung von Ludovic Ventre, Technical Support Engineer bei Wattsense, konnten wir während der Installation unsere Ideen schnell umsetzen, was die Leistungsfähigkeit und Fortschrittlichkeit des Produkts eindrucksvoll demonstrierte.<br/><br/>Wir ziehen jetzt in Erwägung, die Daten der Wattsense Box zu ergänzen, um die Energieeffizienz weiter zu verbessern. Beispiel: Installation von Temperatursensoren in Modellwohnungen.\"",
+			"author": "Arnaud Kasparian",
+			"author-position": "CEO von Setemi."
+		},
+		{
+			"type": "table",
+			"title": "Wartungsvertrag",
+			"content": "<table class=\"setemi\"><thead><tr><th>P1 - Energieversorgung und -management</th><th>P2 - Fahrten und kleinere Wartungsdienste</th><th>P3 - Gesamtgarantie</th></tr></thead><tbody><tr><td>Umfasst die Lieferung und Fakturierung der gelieferten Energie. Im Falle von flüssigen oder festen Brennstoffen muss sich der Kunde nicht mehr um die Versorgung kümmern.</td><td>Umfasst einerseits die Verwaltung der Anlage durch Optimierung ihres Betriebs (Suche nach Einsparungen) und andererseits die Gewährleistung der routinemäßigen Wartung: Einschalten, Abschalten, Justierung, Reinigung, Beendigung der Wartungssaison, Kontrollbesuche usw.</td><td>Umfasst die Erneuerung und umfassende Wartung von Geräten und Komponenten sowie Personal. Die Vergütung erfolgt durch eine jährliche Pauschalgebühr, und die Vertragsdauer beträgt 5 Jahre.</td></tr></tbody></table>",
+			"legend": "*Tabelle 1"
+		},
+		{
+			"type": "paragraph",
+			"title": "LÖSUNG",
+			"content": "Eine der größten technischen Herausforderungen dieses Projekts ergab sich aus dem Fehlen eines Gebäudemanagementsystems (BMS). Deshalb richtete Setemi ein BMS-Netzwerk im Heizraum der Wohnanlage ein und nutzte die Wattsense Box, um die Daten auszulesen und ihre Monitoring-Lösung zu implementieren."
+		},
+		{
+			"type": "image",
+			"src": "setemi/solution.jpg",
+			"alt": "Lösung",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"content": "Die <a href=\"https://wattsense.com/de/produkte\">Wattsense Box</a> wurde für eine einfache und schnelle Installation entwickelt und vereinfacht die Anbindung von Anwendungen an Gebäude erheblich. Das Team von Setemi benötigte nur einen halben Tag für die Installation. Nachdem die Geräte eingerichtet waren, hatte Setemi über die Wattsense-Benutzerkonsole Zugriff auf die Gebäudedaten."
+		},
+		{
+			"type": "paragraph",
+			"content": "Die untenstehende Tabelle führt die angeschlossenen Geräte auf. Die aufgeführten Kommunikationsprotokolle sind in die Wattsense Box integriert, deren Zweck es ist, die in der Gebäudeverwaltung verwendeten Feldkommunikationsprotokolle zu vereinheitlichen."
+		},
+		{
+			"type": "image",
+			"src": "setemi/connected-equipment-de.jpg",
+			"alt": "Angeschlossene Geräte",
+			"caption": ""
+		},
+		{
+			"type": "table",
+			"title": "Angeschlossene Geräte",
+			"content": "<table><thead><tr><th>Anzahl</th><th>Gerät</th><th>Kommunikationsprotokoll</th></tr></thead><tbody><tr><td>6</td><td>Pumpen: Grundfos TPE3</td><td>Modbus</td></tr><tr><td>4</td><td>Boiler: De Dietrich C610-700</td><td>Diematic</td></tr><tr><td>3</td><td>Heizungsregler : Siemens RVL 480</td><td>LPB</td></tr><tr><td>1</td><td>Gaszähler</td><td>LoRaWAN</td></tr></tbody></table>",
+			"legend": "*Tabelle 2"
+		},
+		{
+			"type": "paragraph",
+			"content": "Erwähnenswert ist, dass die Boiler von De Dietrich zur Kommunikation das geschlossene Diematic-Protokoll verwenden. Um die Kommunikation und den Datenaustausch zwischen den Boilern und der Wattsense Box zu ermöglichen, wurde ein speziell entwickelter <a target=\"_blank\" href=\"https://blog.wattsense.com/connect-dietrich-equipment-remotely-wattsense-diematic-driver/\">Diematic-Treiber</a> in unsere Lösung integriert.<br/><br/>Nachdem die Box installiert und das Gebäude angeschlossen war, konnte das Team von Setemi seine Energieeffizienz-Anwendung problemlos über unsere API implementieren."
+		},
+		{
+			"type": "quote",
+			"content": "\"Geräte und Systeme für das Gebäudemanagement haben sich nach und nach zu einer Anhäufung inkompatibler Komponenten und undurchdringbarer Architekturen entwickelt, die eine Barriere zwischen Gebäuden und der modernen Softwareindustrie bilden.<br/><br/>Hier kommen wir ins Spiel, damit alle, die sich mit dem Energieverbrauch von Gebäuden auseinandersetzen, flexible und kostengünstige Optimierungslösungen realisieren können.\"",
+			"author": "Louis Vermorel",
+			"author-position": "CEO von Wattsense."
+		},
+		{
+			"type": "paragraph",
+			"title": "ERGEBNISSE",
+			"content": "Setemi gelang es, den Heizraum innerhalb von weniger als einem Tag kommunikationsfähig zu machen.<br/>Die Verkabelung und Konfiguration kann direkt von den Technikern von Setemi durchgeführt werden, wozu ein normaler Routine-Besuch vor Ort genutzt werden kann. Schluss mit Warten, bis Subunternehmer verfügbar sind."
+		},
+		{
+			"type": "paragraph",
+			"content": "Indem die Wattsense-Lösung den Fernzugriff auf den Gaszähler, die Parameter des Heizungsreglers ermöglicht und die Möglichkeit bietet, Steuerbefehle ferngesteuert zu ändern, unterstützte sie Setemi bei der Umsetzung ihrer vertraglichen Ziele hinsichtlich Energiemanagement und Wartung des Gebäudes."
+		}
+	]
+}

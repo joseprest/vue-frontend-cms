@@ -1,0 +1,2133 @@
+{
+	"about": {
+		"approach": {
+			"approach1": {
+				"text":
+					"While legacy players in the BMS industry rely on numerous PLCs, gateways, VPNs and automation engineering to connect assets, Wattsense applies state-of-the-art software technologies to make the field integration complexity a problem of the past.",
+				"title": "Solution rooted in code"
+			},
+			"approach2": {
+				"text":
+					"Our cloud-based services, extensive documentation, and admin console contain everything a business needs to deploy at scale its application.",
+				"title": "Industry-leading app connector"
+			},
+			"approach3": {
+				"text":
+					"Wattsense offers a flexible service, it allows to avoid hidden costs, reduce investment and choose apps freely to operate buildings.t. It is designed to serve the property management industry looking for agility.",
+				"title": "New business model"
+			},
+			"text":
+				"The internet has deeply transformed the world economy, and still the vast majority of building assets are still not connected and remain in an underperforming state which causes deficiencies for occupants, service providers, and owners.",
+			"title": "A new approach to an old problem"
+		},
+		"board": "The Board",
+		"clients": {
+			"text":
+				"Companies of all sizes in over 10 countries use Wattsense to start, run and scale the deployment of their apps in buildings.",
+			"title": "From startups to property giants"
+		},
+		"complexity": {
+			"actor1": "Customer application",
+			"protocols": {
+				"protocol1": "Modbus",
+				"protocol10": "Security",
+				"protocol11": "Configuration files",
+				"protocol12": "KNX",
+				"protocol13": "LPB",
+				"protocol14": "BSB",
+				"protocol15": "Manufacturers APIs",
+				"protocol16": "BMS integration",
+				"protocol17": "RS485",
+				"protocol18": "Admin",
+				"protocol19": "Diematic",
+				"protocol2": "BACnet",
+				"protocol3": "4G",
+				"protocol4": "M-Bus",
+				"protocol5": "LoRaWAN",
+				"protocol6": "VPNs",
+				"protocol7": "LonTalk",
+				"protocol8": "Gateways",
+				"protocol9": "PLCs"
+			},
+			"text":
+				"We build connectors to all the things that are found in buildings so our users don’t have to.",
+			"title": "Removing field complexity"
+		},
+		"footer": {
+			"text": "Come work with us"
+		},
+		"header": {
+			"subtitle":
+				"The <b>easiest</b>, <b>fastest</b> and <b>most affordable</b> way to deploy your app into buildings.",
+			"title": "About"
+		},
+		"mission": {
+			"subtext":
+				"Wattsense is a technology company that builds IT infrastructure for property management. Businesses of every size—from new startups to public companies—use our hardware and software to deploy applications in facilities.",
+			"text":
+				"Our mission is to make buildings more connected so that others can make them operate better."
+		},
+		"potential": {
+			"text":
+				"Despite the fast growth of new technologies to better manage properties, only a tiny fraction of the 40 million facilities in the world is benefiting from these advancements today.<br /><br />Legacy IT from equipment and BMS manufacturers, integration costs, and a shortage of automation engineers are constraining the impact of the PropTech industry.<br /><br />Removing the barriers to asset connectivity helps companies deliver higher technical staff efficiency, increase building occupant comfort and reduce significantly the energy footprint of buildings.",
+			"title": "The potential of building management technologies"
+		},
+		"stack": {
+			"level1": {
+				"text":
+					"Maintenance optimization, energy management, comfort control: deliver game-changing services to the property industry.",
+				"title": "Your app"
+			},
+			"level2": {
+				"text":
+					"Plug your app to a reliable, scalable and secure infrastructure.",
+				"title": "Cloud service"
+			},
+			"level3": {
+				"text":
+					"Connect-it-all device. Extra simple to install and yet powerful.",
+				"title": "Box"
+			},
+			"level4": {
+				"text":
+					"From small retail stores to airports, deploy your app in all buildings that come your way.",
+				"title": "Building"
+			},
+			"text":
+				"Wattsense combines <b>hardware</b> with <b>software</b> that enable client applications<br />to scale from one building to the next.",
+			"title": "The new connectivity stack"
+		},
+		"team": "The Team",
+		"who": {
+			"address": "39 chemin du Moulin Carron - 69570 Dardilly",
+			"facts": {
+				"text1": "Wattsense launched",
+				"text2": "Employees",
+				"text3": "In financing",
+				"title1": "2017",
+				"title2": "19",
+				"title3": "5M€"
+			},
+			"founder": "Founder",
+			"text":
+				"We are a technology start-up that works towards more connected facilities.",
+			"title": "Wattsense is located near Lyon, France."
+		}
+	},
+	"benefits": {
+		"clients": {
+			"title": {
+				"default": "Client references",
+				"facility-manager": "Trusted by leaders in the building sector",
+				"integrator":
+					"Some of the best in the building sector<br/>are using Wattsense",
+				"property-owner":
+					"Some of the best in the CRE industry<br/>are using Wattsense",
+				"proptech":
+					"Join innovative companies<br/>transforming the building industry"
+			}
+		},
+		"customer-stories": {
+			"link": "Check the full list",
+			"title": "Customer Stories",
+			"url": "/resources/customer-stories"
+		},
+		"engineering-services": {
+			"advantages": {
+				"advantage1": {
+					"description": "Description1",
+					"link": {
+						"title": "See use case",
+						"url": ""
+					},
+					"title": "Avantage1"
+				},
+				"advantage2": {
+					"description": "Description2",
+					"link": {
+						"title": "See use case",
+						"url": ""
+					},
+					"title": "Avantage2"
+				},
+				"advantage3": {
+					"description": "Description3",
+					"title": "Avantage3"
+				},
+				"advantage4": {
+					"description": "Description4",
+					"title": "Avantage4"
+				},
+				"title": "What’s in it for me?"
+			},
+			"header": {
+				"button": {
+					"title": "Request a Demo"
+				},
+				"subtitle": "Lorem ipsum",
+				"title": "Engineering Services"
+			}
+		},
+		"facility-manager": {
+			"advantages": {
+				"advantage1": {
+					"description":
+						"No more monthly trips to collect energy consumption data from your clients meters.",
+					"title": "Lower operational costs"
+				},
+				"advantage2": {
+					"description":
+						"Collect relevant data to better control BMS, and achieve higher energy performance.",
+					"title": "Exceed the expectactions of energy contracts"
+				},
+				"advantage3": {
+					"description":
+						"Deliver real-time monitoring services  with IoT solutions that are breaking new ground.",
+					"title": "Stand out from the competiton"
+				},
+				"title": "Increase ROI and improve energy performance contracts"
+			},
+			"header": {
+				"button": {
+					"title": "Request a Demo"
+				},
+				"subtitle":
+					"Win more contracts by quickly deploying IoT solutions, reducing operational costs and improving energy performance.",
+				"title": "Facility Managers"
+			}
+		},
+		"howitworks": {
+			"api": {
+				"description":
+					"An API to connect your applications securely at scale.",
+				"link": "View details",
+				"link2": "Hide details",
+				"more": {
+					"cafm": "CAFM - Computer-Aided Facility Management",
+					"cmms": "CMMS - Computerized Maintenance Management System",
+					"ems": "EMS - Energy Management System",
+					"pma": "Property manager application",
+					"tenant": "Tenant application"
+				},
+				"more-proptech": {
+					"confort": "Comfort control",
+					"energy": "Energy saving",
+					"longer": "Longer equipment lifetime",
+					"maintenance": "Maintenance efficiency",
+					"occupancy": "Occupancy management",
+					"smart": "Smart grid"
+				},
+				"title": "Application Programming Interface",
+				"url": ""
+			},
+			"box": {
+				"description":
+					"A building connectivity service that quickly collects data from technical assets and BMS.",
+				"title": "Wattsense<br/>Service"
+			},
+			"console": {
+				"description":
+					"Administrate your fleet of Boxes and access your data, logs, commands, user admin, etc.",
+				"title": "User<br/>console"
+			},
+			"cta": {
+				"box": {
+					"title": "Discover our products",
+					"url": "/products/box"
+				},
+				"hub": {
+					"title": "Discover the Hub",
+					"url": "/products/hub"
+				}
+			},
+			"desktop-console": {
+				"description":
+					"Connect in a few clicks, IoT sensors, equipment, and BMSs with intuitive and straightforward user navigation.",
+				"title": "Desktop Configuration Console"
+			},
+			"gateway": {
+				"description":
+					"Locally access the data of any LoRaWAN sensor and transform it into BACnet objects.",
+				"link": "Learn more",
+				"title": "LoRaWAN to BACnet gateway",
+				"url": "/lorawan-bacnet-gateway"
+			},
+			"hub": {
+				"description":
+					"An intuitive IoT gateway and powerful controller designed for on-premises building automation.",
+				"title": "The Wattsense<br/>Hub"
+			},
+			"smartbuilding": {
+				"description":
+					"Using BACnet, MQTT, RESTful API deploy your clients building maintenance apps in no time.",
+				"title": "Connect any Smart Building application"
+			},
+			"title": {
+				"default": "How does it work?",
+				"facility-manager":
+					"Create efficient FM strategies<br/>with quick access to field data",
+				"integrator":
+					"Building automation and control<br/>for all buildings is possible",
+				"property-owner":
+					"Optimize energy, comfort,<br/>occupancy and maintenance",
+				"proptech": "Create and control<br/>Building Management Systems"
+			},
+			"wizard": {
+				"description":
+					"Connect in a few clicks, IoT sensors, HVAC equipment, and BMSs.",
+				"title": "Configuration wizard"
+			}
+		},
+		"integrations": {
+			"link": "Check the full list",
+			"title": "Smart Building Integrations",
+			"url": "/resources/integrations"
+		},
+		"integrator": {
+			"advantages": {
+				"advantage1": {
+					"description":
+						"Combine the power of BMS and the agility of IoT to win more projects.",
+					"title": "A technology to make you stand out"
+				},
+				"advantage2": {
+					"description":
+						"Setting up a BMS is complicated. Wattsense is making it easier, faster, and smarter.",
+					"title": "Choose simplicity"
+				},
+				"advantage3": {
+					"description":
+						"Wattsense sells exclusively through partners. We are here to make your projects a success.",
+					"link": {
+						"title": "Become a partner"
+					},
+					"title": "Your preferred partner"
+				},
+				"title": "Make headway in the building automation industry"
+			},
+			"header": {
+				"button": {
+					"title": "Request a Demo"
+				},
+				"subtitle":
+					"Start selling leading IoT technology to your customers today while simplifying BMS integration.",
+				"title": "Integrators"
+			}
+		},
+		"property-owner": {
+			"advantages": {
+				"advantage1": {
+					"description":
+						"Connect to innovative, scalable services to better manage buildings.",
+					"title": "Get the latest Smart Building apps"
+				},
+				"advantage2": {
+					"description":
+						"Connect any device, equipment or BMS at a price that provides value to all buildings sizes.",
+					"title": "Affordable and open service"
+				},
+				"advantage3": {
+					"description":
+						"Share the data with every stakeholder: facility managers, tenants, integrators, etc.",
+					"title": "Keep control of your BMS"
+				},
+				"title": "Easily transform properties into Smart Buildings"
+			},
+			"header": {
+				"button": {
+					"title": "Request a Demo"
+				},
+				"subtitle":
+					"Collect and share data from buildings, offer occupants more comfort while creating value.",
+				"title": "Property Owners"
+			}
+		},
+		"proptech": {
+			"advantages": {
+				"advantage1": {
+					"description":
+						"Unlock your solution's growth potential by abstracting in buildings the chaos of the \"field\" layer.",
+					"title": "Technical scalability"
+				},
+				"advantage2": {
+					"description":
+						"A solution at a fair price that offers value for all building sizes. Easily build a BMS and acces the data from all devices.",
+					"title": "Open and affordable service"
+				},
+				"advantage3": {
+					"description":
+						"Engage in large deals with property owners and facility managers by creating standard contracts.",
+					"title": "Commercial predictability"
+				},
+				"title": "The digital future of building management"
+			},
+			"header": {
+				"button": {
+					"title": "Request a Demo"
+				},
+				"subtitle":
+					"Deploy your Smart Building apps in no time with an incomparable connectivity service.",
+				"title": "PropTechs"
+			}
+		},
+		"whydifferent": {
+			"allinone-box": {
+				"description":
+					"Our service is replacing 4 hardware devices: edge device, multi-protocol PLC, modem and IoT gateway.",
+				"link": "Check the full spec",
+				"title": "All-in-one",
+				"url":
+					"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/datasheet-box-en.pdf"
+			},
+			"allinone-hub": {
+				"description":
+					"1 Hub replaces 4 hardware devices: edge device, multi-protocol PLC, modem, and IoT gateway.",
+				"link": "Check the full spec",
+				"title": "All-in-one",
+				"url":
+					"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/datasheet-hub-en.pdf"
+			},
+			"cta": {
+				"box": {
+					"link": "Check our pricing",
+					"url": "/pricing/box"
+				},
+				"hub": {
+					"link": "Check our pricing",
+					"url": "/pricing/hub"
+				}
+			},
+			"fastdeploy": {
+				"description":
+					"With the Wattsense service it will only take 30 minutes to set up an automation network. If you have a hard time believing it, let us show you.",
+				"link": "Request a demo",
+				"title": "Fast to deploy"
+			},
+			"flexible-box": {
+				"description":
+					"For all buildings and all use cases with a variety of pricing plans to match the diversity of your projects.",
+				"title": "Flexible solution"
+			},
+			"flexible-hub": {
+				"description":
+					"For all buildings and all use cases with a variety of pricing plans to match the diversity of your projects.",
+				"title": "Flexible solution"
+			},
+			"install": {
+				"description":
+					"Anyone can do it! If you have a hard time believing it, let us show you.",
+				"link": "Request a demo",
+				"title": "Easy and fast to install",
+				"url": ""
+			},
+			"ondemand-box": {
+				"description":
+					"A variety of pricing plans to match the diversity of your projects. Stop paying for unexpected maintenance and updates.",
+				"link": "Check our pricing",
+				"title": "On-demand",
+				"url": "/pricing/box"
+			},
+			"ondemand-hub": {
+				"description":
+					"A variety of pricing plans to match the diversity of your projects.",
+				"link": "Check our pricing",
+				"title": "On-demand",
+				"url": "/pricing/hub"
+			},
+			"programmable": {
+				"description":
+					"Wattsense is a developer-first solution. Manual setup and control are fine when managing a few buildings. But to scale, programmable technologies are the only way.",
+				"link": "Check our API reference",
+				"title": "Everything programmable",
+				"url": "https://api.wattsense.com/"
+			},
+			"support": {
+				"description":
+					"We go beyond the ordinary to make the projects of our customers a success. Try us!",
+				"link": "Visit our Discuss page",
+				"title": "Tech support",
+				"url": "https://discuss.wattsense.com"
+			},
+			"title": {
+				"default": "Why is Wattsense different?",
+				"facility-manager":
+					"Unlock the potential of<br/>Facility Management technologies<br/>with Wattsense",
+				"integrator":
+					"Features to tackle the challenges<br/>of BMS integration",
+				"property-owner":
+					"Accurate and accessible building monitoring<br/>for better property management",
+				"proptech":
+					"Quickly deploy your energy<br/>and property management solutions"
+			}
+		}
+	},
+	"bms": {
+		"content": {
+			"button-see-less": "See less",
+			"button-see-more": "See more",
+			"title": "With Wattsense you can help buildings",
+			"topics": [
+				{
+					"content":
+						"HVAC systems have high service requirements. <b>Multiple times a year, they need maintenance checkups.</b> The technicians that provide that service are highly skilled and costly. As a reference, in Western Europe, a senior refrigeration technician earns up to 5000€/month.<br><br>Around the world, there are 500.000 <b>HVAC service professionals.</b> Their profitability and productivity are reduced by the time they spend driving their van from point A to point B. When a customer calls because its cold-room does not work, the only option the technician has is to drive there as soon as possible. The unalterable need for the onsite presence of the technician to assess and solve the problem delays the response time. HVAC professionals dream of apps which would help them monitor and control systems remotely.<br><br><b>Facility Management (FM)</b> integrates, within the built environment, people, places, and processes with the objective of improving the quality of life and the productivity of a business. By incorporating FM practices, you can deliver long-term asset sustainability while reducing energy costs and carbon footprints.",
+					"description":
+						"Reduce maintenance and reparation fees by helping facility managers and technicians monitor and control systems remotely through your app.",
+					"title": "Manage facilities"
+				},
+				{
+					"content":
+						"Flexible and affordable BMS software solutions will <b>change the daily lives of millions</b> as well as improve employees and customers satisfaction. Many buildings are confronted with iffy indoor climate regulations, even in modern constructions.",
+					"description":
+						"Create or implement a software solution that wins the thermostat war, and fixes BMS deficiencies that cause building occupants discomfort and frustration over temperature control.",
+					"title": "Deliver comfort"
+				},
+				{
+					"content":
+						"The difficulties to integrate energy-saving applications in buildings have a significant impact on the world's energy consumption. We designed an abstraction layer over the legacy <b>BMS infrastructure</b> so that any building can benefit from software upgrades powered by state of the art, digital companies.",
+					"description":
+						"Upgrade the BMS software and save 30% of the building industry energy consumption, 400B€ in bills, by easily and quickly deploying smart building applications.",
+					"title": "Save energy"
+				},
+				{
+					"content":
+						"Power grid operators must balance electricity demand and supply. The world’s transition to renewable energy sources represents a historical challenge for them. While legacy energy sources (gas, coal, nuclear, etc.) are relatively stable, renewable energies are highly variable creating much greater balance swings.<br><br>Demand response is a well-proven solution to reduce the energy demand when the supply cannot keep up. It allows to <b>down-size power grids</b> while maintaining continuity of service during peak demand. Currently, demand response programs cover about 3% of the load side. Used primarily by high-load industries (steel plants, hypermarkets, cement plants, etc.). Increasing the demand response coverage is a strategic topic for countries as each additional percentage point of world coverage <b>saves around 100B€ in power plants construction.</b> The financial and technical challenge of the energy transition pushes states to increase demand response incentives to expand the coverage ratio. Energy utilities and <a href=\"https://www.energyvortex.com/energydictionary/aggregator.html\" target=\"_blank\">aggregators</a> turn these incentives into increasingly attractive deals for energy consumers.<br><br><b>Two major factors can scale demand response offers:</b><ul><li>Minimal impact on the customer’s operations. To truly scale, there should be no impact at all.</li><li>Shortest return on investment. The ratio of (deployment cost) / (monthly value creation) is crucial.</li></ul><br><b>HVAC systems are the preferred loads for scalable demand response solutions because:</b><ul><li>They have high inertia (building masses, water loops, buffer tanks, cold rooms, among others) and can be operated as an energy battery with virtually no impact on the building occupants and operations.</li><li>They are high energy loads translating in sizeable demand response value creation.</li><li>The cost of the deployment with legacy solutions is very high. As an example, it costs 7.000€ for a 1.000m2 office building already equipped with a BMS or 21.000€ if there is no BMS. As stated by the French energy agency in 2017, this is a major limiting factor for demand response scalability.</li></ul>",
+					"description":
+						"Develop a demand response software solution that delivers no disruption of operation and offers tremendous value for the power grid. We believe that the deployment cost of demand response in buildings can be cut by ten and we are busy trying to deliver on that claim.",
+					"title": "Demand response"
+				}
+			]
+		},
+		"header": {
+			"description":
+				"9% of world energy is controlled by Building Management Systems",
+			"title": "BMS"
+		},
+		"whats-bms": {
+			"paragraph1":
+				"A <b>Building Management System is a computer-based system installed in buildings to manage and monitor equipment</b> such as air-conditioning, heating, ventilation, lighting, power systems, among others.",
+			"paragraph2":
+				"The hardware and software <b>technologies of the BMS were created in the 60’s.</b> Over the years, the BMS IT infrastructure grew organically and added layers of communication protocols, networks, and controls.",
+			"paragraph3":
+				"Fast forward to today, the BMS has evolved into a series of incompatible components and impenetrable architectures. Through our platform and services, we intend to break through this chaotic infrastructure and <b>provide access to all software developers</b>.",
+			"title": "What is BMS?"
+		}
+	},
+	"clients": {
+		"advizeo": {
+			"name": "Advizeo",
+			"url": "https://www.advizeo.io/"
+		},
+		"aveltys": {
+			"name": "Aveltys",
+			"url": "https://www.linkedin.com/company/aveltys/"
+		},
+		"bouygues": {
+			"name": "Bouygues Energies & Services",
+			"url": "https://www.bouygues-es.fr/"
+		},
+		"calidity": {
+			"name": "Calidity",
+			"url": "https://www.calidityapp.com/"
+		},
+		"cbre": {
+			"name": "CBRE",
+			"url": "https://www.cbre.com"
+		},
+		"citron": {
+			"name": "Citron",
+			"url": "https://citron.io/"
+		},
+		"deepki": {
+			"name": "Deepki",
+			"url": "https://www.deepki.com/"
+		},
+		"delphis": {
+			"name": "Delphis",
+			"url": "http://www.delphisgroup.gr/"
+		},
+		"deltaq": {
+			"name": "DeltaQ",
+			"url": "https://deltaq.io/"
+		},
+		"egain": {
+			"name": "Egain",
+			"url": "https://www.egain.io/"
+		},
+		"energisme": {
+			"name": "Energisme",
+			"url": "https://energisme.com/fr/"
+		},
+		"eqinov": {
+			"name": "Eqinov",
+			"url": "https://www.eqinov.com/"
+		},
+		"facilio": {
+			"name": "Facilio",
+			"url": "https://facilio.com/"
+		},
+		"hxperience": {
+			"name": "HXperience",
+			"url": "https://hxperience.com/"
+		},
+		"idex": {
+			"name": "Idex",
+			"url": "https://www.idex.fr/"
+		},
+		"intent": {
+			"name": "Intent",
+			"url": "https://intent.tech/"
+		},
+		"librafluides": {
+			"name": "Librafluides Concept",
+			"url": "http://librafluidesconcept.com/"
+		},
+		"nexity": {
+			"name": "Nexity",
+			"url": "https://www.nexity.fr/"
+		},
+		"setemi": {
+			"name": "Setemi",
+			"url": "http://www.setemi.fr/"
+		},
+		"sodexo": {
+			"name": "Sodexo",
+			"url": "https://fr.sodexo.com/"
+		},
+		"spie": {
+			"name": "Spie",
+			"url": "http://www.spie.com/"
+		},
+		"wizag": {
+			"name": "Wizag",
+			"url": "https://www.wisag.de/"
+		}
+	},
+	"compatibility": {
+		"compatible": "Compatible",
+		"development": "Under development",
+		"header": {
+			"subtitle":
+				"Check compatibility with your equipment. Connect it to a reliable, scalable and secure infrastructure.",
+			"title": "Compatibility"
+		},
+		"introduction":
+			"Quickly verify if the equipment you are looking to connect is compatible with the Wattsense service. Simply write the device’s model or brand into the search bar. As of this moment, 520 equipment are available on the compatibility checker.<br /><br />The compatibility checker is part of the Wattsense equipment database, an organized storage of data required for network configuration with information such as equipment brand, models, datasheets, and communication tables.",
+		"loading": "Loading",
+		"no-equipment-found": "No equipment found",
+		"not-found": "No equipment found",
+		"protocols": "Protocols",
+		"search-placeholder": "Search equipment by brand / model",
+		"subscription": {
+			"caption":
+				"Not finding what you are looking for? Let us know and we will add it for you for free.",
+			"email": "Your email",
+			"error-email": "Oops! Please fill-in a valid email address.",
+			"error-other":
+				"Oops! Something went wrong. Please check if your email address is valid.",
+			"error-server":
+				"Oops! Something went wrong with our server. Please send us a message to contact@wattsense.com",
+			"model": "Model",
+			"send": "Send",
+			"sending": "Sending",
+			"success":
+				"Thank you for your request. We will get back to you shortly."
+		},
+		"cta": {
+			"title": "Discover our products"
+		}
+	},
+	"contact": {
+		"form": {
+			"email": {
+				"label": "E-mail",
+				"placeholder": "Your e-mail",
+				"error": "What is your email?",
+				"erroremail": "Ops! This isn't a valid e-mail address!"
+			},
+			"message": {
+				"label": "Your message",
+				"placeholder": "Your message",
+				"error": "What is your message?",
+				"default-message": "Hi, I would like more info about Wattsense."
+			},
+			"company": {
+				"label": "Company",
+				"placeholder": "Your company",
+				"error": "What is your company?"
+			},
+			"name": {
+				"label": "Name",
+				"placeholder": "Your name",
+				"error": "What is your name?"
+			},
+			"submit": "Submit",
+			"success": "Thank you for your message, we will get in touch soon!",
+			"error":
+				"We had a problem sending your message. Please, send to contact@wattsense.com.",
+			"title": "Say hi! We want to hear from you"
+		},
+		"header": {
+			"subtitle": "",
+			"title": "Contact"
+		}
+	},
+	"cookies": {
+		"buttons": {
+			"accept": "I accept",
+			"refuse": "I refuse"
+		},
+		"message":
+			"This website uses cookies to perform visit statistics.<br><br class='is-hidden-widescreen'>By clicking on <strong>I accept</strong>, you agree to the use of these cookies in order to improve your experience on our website."
+	},
+	"cta-join-beta": {
+		"buttons": {
+			"contact": {
+				"label": "Contact us",
+				"url": "/contact"
+			},
+			"join": "Get a demo",
+			"try": "Try our solution"
+		},
+		"subtitle": "Create an account or get in touch.",
+		"title": "Ready to get started?"
+	},
+	"cta-newsletter": {
+		"button": "Subscribe!",
+		"email": "Your Email",
+		"send": "Send",
+		"subtitle": "Sign up to receive the latest Wattsense updates ",
+		"success": "You are subscribed to our list now!",
+		"title": "Join our newsletter"
+	},
+	"facility-manager": {
+		"advantage": {
+			"adv1":
+				"Offer more competitive contracts with greater flexibility.",
+			"adv2": "Increase the profitability of your contracts.",
+			"adv3": "Deploy your service faster and with your own teams.",
+			"adv4": "Easily share the data with other building stakeholders.",
+			"title": "The Wattsense Advantage"
+		},
+		"api-explanation": {
+			"connect": {
+				"text":
+					"Our Box can unify and streamline your data flow. It easily connects to other hardware and acts as a data hub: IoT modules, Lora dongles, gateways, PLCs, meters, etc.",
+				"title": "Connect all you need"
+			},
+			"play": {
+				"text": {
+					"paragraph1":
+						"Your software connects to your customer's building via our Application Programming Interface, referred to as API. It can thus <strong>recover the data</strong> and <strong>send commands</strong.",
+					"paragraph2":
+						" The Wattsense API is RESTfull. This is the technology that has prevailed in the web to connect two software services. The interfacing of your software to our API is a matter of days. Once you've done this, you're ready to scale your solution to your customers' buildings."
+				},
+				"title": "...and Play"
+			},
+			"plug": {
+				"text": {
+					"paragraph1":
+						"It is no longer needed to use an integration company. Your authorized low-voltage technicians can connect the Wattsense Box to building equipment or the BMS network. The Box automatically connects to our cloud platform.",
+					"paragraph2":
+						"The laborious configuration of the network is drastically simplified by Wattsense and is realized remotely in a few clicks from our platform."
+				},
+				"title": "Plug..."
+			},
+			"time": {
+				"text":
+					"No need to manage GSM network providers, VPN services, automation integrators, Wattsense brings all these services together in a single subscription.",
+				"title": "Save time"
+			}
+		},
+		"connect-buildings": {
+			"card1": {
+				"subtitle": "With your own team",
+				"title": "Right now!"
+			},
+			"card2": {
+				"subtitle": "Lower Cost",
+				"title": "10x",
+				"upper-title": "Up to"
+			},
+			"title": "Connect to buildings"
+		},
+		"deploy": {
+			"bim": {
+				"subtitle": "Building Information Modeling",
+				"title": "BIM"
+			},
+			"cafm": {
+				"subtitle": "Computer-Aided Facility Management",
+				"title": "CAFM"
+			},
+			"cmms": {
+				"subtitle": "Computerized Maintenance Management System",
+				"title": "CMMS"
+			},
+			"iwms": {
+				"subtitle": "Integrated Workplace Management System",
+				"title": "IWMS"
+			},
+			"scada": {
+				"subtitle": "Supervisory Control And Data Acquisition",
+				"title": "SCADA"
+			},
+			"smart-app": {
+				"subtitle": "Any software, from simple features to latest tech",
+				"title": "SMART BUILDING APP"
+			},
+			"title": "Deploy at scale your App"
+		},
+		"header": {
+			"subtitle":
+				"Deploying your software to your customer's buildings has never been easier.",
+			"title": "Facility Management"
+		},
+		"unlock-power": {
+			"content":
+				"Energy waste, pollution, operational costs, and tenant's comfort are some of the many factors driving Facility Management companies to optimize their services. Unfortunately,  most connected buildings are not equipped to offer you or your team the equipment data and real-time tools to improve comfort, asset performance, and staff productivity.<br/><br/>Through our building connectivity service, we intend to break through chaotic and time-consuming legacy infrastructure, so you don't have to, and quickly provide you with access to deploy IoT solutions, smart building applications, or multi-sites management software.<br><br/>Removing the barriers to building connectivity helps Facility Management companies deliver higher technical staff efficiency, increase comfort, and reduce the energy footprint of buildings significantly.",
+			"title": "Unlock the power of Facility Management technologies"
+		}
+	},
+	"footer": {
+		"company": "COMPANY",
+		"connect": "CONNECT",
+		"follow-us": "FOLLOW US",
+		"offer": "OFFER"
+	},
+	"index": {
+		"clients": {
+			"subtitle": "Companies that redefine the industry standards",
+			"title": "Clients"
+		},
+		"community-heart": {
+			"button": "Our manifesto",
+			"description":
+				"The majority of the bricks that we design are <span class='strong'>open source</span>. This is our contribution to the simplification of the BMS infrastructure. ",
+			"title": "Community at heart"
+		},
+		"connect": {
+			"description":
+				"Numerous communication protocols - open and closed - and a growing database of over 500 equipment, we help you connect to any device, wired, and IoT. If a device is not already in our database, just let us know, and we will add it for free.",
+			"learn-more": "Check compatibility",
+			"title": "Connect it all"
+		},
+		"header": {
+			"buttons": {
+				"buy-now": "Buy now",
+				"join": "&nbsp;&nbsp;&nbsp;Get a demo&nbsp;&nbsp;&nbsp;",
+				"learn-more": "Learn more"
+			},
+			"slogan":
+				"A simple and open IoT solution that allows you to control and monitor buildings of any size. Reduce energy consumption and improve occupant comfort with Wattsense.",
+			"subtitle": "Connect your app from the cloud to buildings",
+			"title": "Keep control of buildings with a simple BMS"
+		},
+		"how-it-works": {
+			"install": {
+				"description":
+					"In less than a day, connect it to your building devices or your BMS.",
+				"title": "Install it"
+			},
+			"run": {
+				"description":
+					"Connect your app to our API. The building has just been upgraded!",
+				"title": "Run your app"
+			},
+			"setitup": {
+				"description":
+					"Configure the local network from anywhere and in no-time thanks to our intuitive user console.",
+				"title": "Set it up"
+			},
+			"shot": {
+				"description": "Get a Box or a Hub.",
+				"highlight": "Satisfied or refunded.",
+				"title": "Give it a shot"
+			},
+			"subtitle":
+				"It’s super easy and straightforward to <span class='strong'>connect your app</span> <br>to any building using Wattsense",
+			"title": "How it works"
+		},
+		"improving": {
+			"button": "See Wattsense’s products:",
+			"description":
+				"Wattsense is an always-improving infrastructure service that gains new features every month.",
+			"title": "Always improving"
+		},
+		"integrations": {
+			"description":
+				"Wattsense comes ready to connect with a large variety of awesome Smart Building applications. They offer you innovative, performing, and scalable services to better manage buildings.",
+			"learn-more": "See integrations",
+			"title": "Integrations"
+		},
+		"plug-play": {
+			"description":
+				"Wattsense is super simple to install in the field by an electrician. You can configure it in no-time from anywhere.",
+			"learn-more": "Watch a demo of the configuration wizard",
+			"title": "Plug and Play"
+		},
+		"simple": {
+			"button": "More about us",
+			"description":
+				"We obsessively seek out new ways to make the BMS infrastructure simpler. Our job is to turn a chaotic IT legacy into a modern and intuitive abstraction.",
+			"title": "Truly simple"
+		},
+		"unify": {
+			"link": "Discover the Box",
+			"title": "Collect and unify all your new and existing BMS data",
+			"url": "/products/box"
+		},
+		"upgrade": {
+			"apps": "Your apps",
+			"title":
+				"Upgrade your buildings with an intuitive and open BMS infrastructure"
+		}
+	},
+	"landing": {
+		"gateway": {
+			"content": {
+				"advantages": {
+					"advantage1": {
+						"description":
+							"LoraWAN wireless technology removes the expensive and lengthy process of installing wired sensors.Offer to your clients a solution with a fast return on investment.",
+						"title": "Quick ROI"
+					},
+					"advantage2": {
+						"description":
+							"Get the job done in minutes without disrupting the building's occupants. Using our user-friendly Desktop App you can configure, access and share the sensors data.",
+						"title": "Save time"
+					},
+					"advantage3": {
+						"description":
+							"Connect and manage LoRaWAN sensors, decode, and extract useful information without connecting to an external provider or Cloud.",
+						"title": "Process data locally"
+					}
+				},
+				"form": {
+					"download": "Download the leaflet",
+					"email": "Work email",
+					"name": "Name",
+					"phone": "Phone",
+					"privacy":
+						"Your privacy is important to us. We won't share this information.",
+					"title":
+						"Discover how to access the data of any LoRaWAN sensor in minutes"
+				},
+				"lorawan": {
+					"title": "LoRaWAN gateway",
+					"description":
+						"Classic LoRaWAN gateways are intermediaries that allow sensors to transmit data to the Cloud. The Wattsense gateway technology brings the innovation, simplicity, low prices, and support of our Cloud Service to on-site projects.<br/><br/>Facilitate configuration, BMS integration, and local data acquisition with this feature."
+				},
+				"testimonials": {
+					"title": "What clients say about Wattsense:"
+				},
+				"text1":
+					"Access the data of LoRaWAN sensors in minutes and quickly forward data to building management systems on-premises.",
+				"text2":
+					"The Wattsense solution offers more functionalities than a traditional gateway as it converts LoRaWAN data to BACnet.",
+				"title": "LoRaWAN to BACnet gateway by Wattsense",
+				"intro": "More than a traditional LoRaWAN gateway"
+			}
+		}
+	},
+	"legal-notice": {
+		"cookies": {
+			"content1": "",
+			"content2": "",
+			"content3": "",
+			"content4": "",
+			"title": ""
+		},
+		"data": {
+			"content1":
+				"Our solution is B to B; our contacts are, therefore, professionals.",
+			"content2":
+				"We collect data from our Internet users only to produce the actions they ask us to perform:",
+			"content3":
+				"Contact request: we collect the name and email address of the user to be able to contact him; this data is kept until the user asks us to delete it. (see section \"Right to be forgotten\").",
+			"content4":
+				"Subscription to our newsletter: we collect the email address of the Internet user when they subscribe to receive the newsletter; this data is kept as long as the user does not unsubscribe from the newsletter.",
+			"content5":
+				"Activation of an online demonstration: we collect the name, email address and telephone number of the Internet user, as well as the name of the company for which the user works; this data is kept as until the user asks us to delete it (see section \"Right to be forgotten\").",
+			"content6":
+				"Online purchase of our solution: we collect the name, zip code telephone contact details and the individual identification number of the purchasing company, the surname, first name and email address of the person making the purchase, the name, zip code and telephone contact details of the company to which we must deliver, as well as the data of the bank card used for payment. \nCredit card information is automatically transmitted to and stored by Stripe, the provider specializing in Internet payments to whom we delegate financial transactions, but no bank data is kept by Wattsense; the remaining data is kept until the user, or the client company asks us to delete it (see section \"Right to be forgotten\").",
+			"content7":
+				"Creation of a customer account and access to this account: we collect the name of the company and the email address of the administrator of the account; the customer account identifier is the administrator's email address; the system generates a password sent to this administrator by email and stored in encrypted form. When the customer generates a new password via their account, the latter is also stored in encrypted form: Wattsense does not have access to the readable version of customer passwords. This data is kept until the user, or the client company asks us to delete it (see section \"Right to be forgotten\").",
+			"title": "Personal data collection"
+		},
+		"hosting": {
+			"content1":
+				"The site is hosted by Amazon Web Services EMEA (38 avenue John F. Kennedy, L-1855 Luxembourg - RCS Luxembourg: B186284).",
+			"title": "Hosting"
+		},
+		"identification": {
+			"content1":
+				"This website is published by and belongs to the Wattsense company, a simplified joint-stock company with a capital of 87.272 euros, controlled by the Trade and Companies Registry of Villefranche-Tarare under the number 833 253 131. Its intra-community VAT number (or personal identification number) is FR50833253131.",
+			"content2":
+				"Its registered office is located at Le Bourg Sainte Paule - 69620 Sainte Paule. The address of its main establishment is 39 Chemin du Moulin Carron - Espace Ouest - 69570 Dardilly France.",
+			"content3":
+				"Its intra-community VAT number (or personal identification number) is FR50833253131.",
+			"content4":
+				"The director of the publication and responsible for the blog is Mr. Louis Vermorel, President of Wattsense. He can be reached at +33 4 28 29 83 49 or by email at <a href=\"mailto:contact@wattsense.com\">contact@wattsense.com</a>.",
+			"title": "Identification"
+		},
+		"oblivion": {
+			"content1":
+				"In accordance with article 17 of the European General Data Protection Regulation (GDPR), each Internet user has a \"right to erasure\", also called \"right to be forgotten\", which allows them to request deletion of his personal data.",
+			"content2":
+				"This right can be exercised by sending an email to <a href=\"mailto:contact@wattsense.com\">contact@wattsense.com</a> or by sending a letter to the following address: Wattsense - Processing of personal data - 39, Chemin du Moulin Carron - Espace Ouest - 69570 Dardilly - France.",
+			"title": "Right to be forgotten"
+		},
+		"property": {
+			"content1":
+				"The brands, logos, and more generally, all the elements of intellectual property are the property of Wattsense and are registered and protected. Any use or reproduction is prohibited without the prior written agreement of Wattsense.",
+			"content2":
+				"The use of the site is governed by French law and is the responsibility of the French courts.",
+			"title": "Intellectual property"
+		},
+		"title": "Legal Notice"
+	},
+	"made-in-france": "Made in France",
+	"partners": {
+		"header": {
+			"title": "Partner with Wattsense",
+			"subtitle":
+				"Distribute an IoT solution that brings BMS technologies to all buildings.",
+			"button": {
+				"title": "Become a partner"
+			}
+		},
+		"banner": {
+			"title":
+				"Already a Partner? Access <a href='https://drive.google.com/drive/folders/1m1OGjUFyuNRN-QP7XpIEg0re11wYmI_T?usp=sharing' target='_blank'>partner's resources</a>"
+		},
+		"advantages": {
+			"advantage1": {
+				"description":
+					"Wattsense is super simple to install in the field by an electrician. You can configure it in no-time from anywhere.  The Wattsense solution reduces integration costs and inconvenient interventions on busy sites.",
+				"link": {
+					"title": "Box - Managed service",
+					"url": "/products/box"
+				},
+				"link2": {
+					"title": "Hub - On-premises",
+					"url": "/products/hub"
+				},
+				"title": "Plug and Play solution"
+			},
+			"advantage2": {
+				"description":
+					"Wattsense allows small and medium-sized buildings to have a BMS by removing technical complexity for an affordable price.<br/>Quickly connect field devices, configure networks, set schedules, visualize and share data.",
+				"title": "Easy BMS integration and use"
+			},
+			"advantage3": {
+				"description":
+					"The Wattsense solution communicates with key protocols, private or standard, making it compatible with over 500 devices.<br/>Visit our Compatibility Checker to explore our database.",
+				"title": "Multi-Protocol converter",
+				"link": {
+					"title": "Check compatibility",
+					"url": "/compatibility"
+				}
+			},
+			"title": "Why Wattsense?"
+		},
+		"gateway": {
+			"title": "LoRaWAN to Bacnet Gateway",
+			"description":
+				"Using this feature, integrators can access locally the data of any LoRaWAN sensor. At the same time, property managers can provide their tenants with energy efficiency, comfort, security, air quality, and more.",
+			"button": {
+				"link": "More info",
+				"url": "/lorawan-bacnet-gateway"
+			}
+		},
+		"ecosystem": {
+			"title": "Our Partner ecosystem",
+			"integrations": {
+				"title": "Integrations",
+				"description":
+					"Wattsense is already preconfigured to connect with more than 20 popular Smart Building services.  The growing Wattsense community consists of key service providers, apps, software publishers, and IoT solutions integrated with our solution.",
+				"button": {
+					"link": "See integrations",
+					"url": "/resources/integrations"
+				}
+			},
+			"partners": {
+				"title": "Partners and distributors",
+				"description":
+					"With an industry-leading IoT solution that offers users value and easy to demo products, Wattsense sells itself. Your customers can comply with BACS decree requirements, improve equipment performance, reduce operational costs and energy consumption."
+			},
+			"cta": {
+				"title": "Join our ecosystem"
+			}
+		},
+		"resources": {
+			"title": "Resources for better building management"
+		},
+		"cta": {
+			"title": "About us",
+			"url": "/about"
+		}
+	},
+	"pricing": {
+		"advantage": {
+			"control": {
+				"description":
+					"Manage your BMS infrastructure from your desk.<br/>No surprises.",
+				"title": "Stay in control"
+			},
+			"digitize": {
+				"description":
+					"Save weeks of deployment time<br/>on every project.",
+				"title": "Digitize buildings faster"
+			},
+			"flexible": {
+				"description":
+					"Keep your BMS infrastructure<br/>up to date easily.",
+				"title": "Stay flexible"
+			},
+			"header": {
+				"title": "The Wattsense advantage"
+			}
+		},
+		"box": {
+			"cta": {
+				"button": "Order now",
+				"details": "Check the full spec",
+				"price": "per unit"
+			},
+			"header": {
+				"description": "Collect data and send commands.",
+				"title": "Box"
+			},
+			"items": {
+				"4g": "4G data plan included",
+				"bacnet": "BACnet",
+				"connect": "Connect-it-all device.",
+				"ethernet": "2x Ethernet",
+				"gsm": "GSM modem + SIM world coverage",
+				"install": "Extra simple to install yet powerful.",
+				"lontalk": "LonTalk",
+				"lora": "LoRaWAN",
+				"managed": "Managed device",
+				"modbus": "Modbus",
+				"more": "Many more",
+				"ports": "11 wired network ports",
+				"protocols": "10 communication protocols and counting",
+				"rs485": "2x RS485"
+			}
+		},
+		"examples": {
+			"bank": {
+				"img": "pricing/bank.svg",
+				"items": [
+					"5 x IoT comfort sensors",
+					"2 x IoT occupancy sensors",
+					"1 x IoT gas meter sensor"
+				],
+				"title": "Bank branch"
+			},
+			"large": {
+				"img": "pricing/large-residence.svg",
+				"items": ["1 x heating sub-station"],
+				"title": "Large residence"
+			},
+			"mall": {
+				"img": "pricing/mall.svg",
+				"items": [
+					"1 x BMS (100 equipment)",
+					"8 x heat meters",
+					"30 x IoT people counters",
+					"10 x IoT skydome opening sensors",
+					"20 x IoT comfort sensors"
+				],
+				"title": "Mall"
+			},
+			"multi-family-housing": {
+				"img": "pricing/multi-family.svg",
+				"items": [
+					"2 x boilers",
+					"2 x heating controllers",
+					"20 x IoT comfort sensors",
+					"1 x heat meter",
+					"1 x power meter",
+					"1 x water meter",
+					"1 x IoT gas meter sensor"
+				],
+				"title": "Multi-family housing"
+			},
+			"office-building": {
+				"img": "pricing/office-building.svg",
+				"items": [
+					"1 x BMS (20 equipment)",
+					"20 x IoT comfort sensors",
+					"10 x IoT occupancy sensors"
+				],
+				"title": "Office building"
+			},
+			"small-hotel": {
+				"img": "pricing/small-hotel.svg",
+				"items": [
+					"15 x IoT comfort sensors",
+					"1 x heat meter",
+					"1 x electricity meter",
+					"1 x water meter",
+					"1 x IoT gas meter sensor"
+				],
+				"title": "Small hotel"
+			},
+			"supermarket": {
+				"img": "pricing/supermarket.svg",
+				"items": [
+					"1 x refrigeration system BMS (15 equipment)",
+					"5 x rooftops",
+					"3 x IoT people counters"
+				],
+				"title": "Supermarket"
+			},
+			"title": "Examples",
+			"tower": {
+				"img": "pricing/tower.svg",
+				"items": [
+					"1 x BMS (200 equipment)",
+					"100 x IoT comfort sensors",
+					"50 x IoT occupancy sensors"
+				],
+				"title": "Tower"
+			},
+			"warehouse": {
+				"img": "pricing/warehouse.svg",
+				"items": ["1 x electricity meter"],
+				"title": "Warehouse"
+			}
+		},
+		"header": {
+			"subtitle":
+				"The easiest, fastest and most affordable way to deploy your app into buildings.",
+			"title": "Pricing"
+		},
+		"hub": {
+			"cta": {
+				"button": "Get your Hub",
+				"details": "Check the full spec",
+				"price": "per unit"
+			},
+			"header": {
+				"description":
+					"All-in-one device to connect all equipment in all buildings.",
+				"title": "Hub"
+			},
+			"items": {
+				"accelerate": "Accelerate the pace of your deployment.",
+				"install": {
+					"description": "Simple and intuitive product.",
+					"title": "Easy and quick to install."
+				},
+				"reduce": "Reduce your integration costs.",
+				"smart": {
+					"description": "Unifies field communication protocols.",
+					"title": "Smart converter."
+				},
+				"web": {
+					"description":
+						"Insert your SIM card. Your HUB is connected to the cloud.",
+					"title": "Connectable to the web."
+				}
+			}
+		},
+		"low-price": {
+			"button": "Get a quote for your project"
+		},
+		"request-price": {
+			"button": "Request our pricing"
+		},
+		"info-price": {
+			"button": "Price info"
+		},
+		"no-tax": "excl. VAT",
+		"subscription-box": {
+			"bill": {
+				"monthly": "Bill Monthly",
+				"yearly": "Bill Yearly"
+			},
+			"feature-highlights": {
+				"4g": "4G subscription included",
+				"box": "Administrate your fleet of Boxes.",
+				"configure": "Configure the Box in no time.",
+				"plug": "Plug your app to our API.",
+				"read": "Read: collect data ",
+				"title": "Feature highlights",
+				"write": "Write: send commands instantly"
+			},
+			"header": {
+				"description":
+					"Connect your app to a reliable, scalable and secure infrastructure.",
+				"title": "Box subscription"
+			},
+			"offers": {
+				"4G": "4G communication",
+				"access": "API access",
+				"additional": "Additional properties:",
+				"additional_datapoints": "Additional data points",
+				"bms": "All connectivity",
+				"box": "Per active box, per month",
+				"configuration": "Configuration wizard",
+				"datapoints": "Data points included",
+				"discount1": "-15%",
+				"discount2": "-7%",
+				"discount3": "-13%",
+				"discount4": "-13%",
+				"equipment": "Equipment connectivity",
+				"wireline-connectivity": "Wired connectivity",
+				"features": "Top Features",
+				"gateway": "LoRaWAN to BACnet gateway",
+				"iot": "IoT connectivity",
+				"legacy": "",
+				"lorawan": "LoRaWAN connectivity",
+				"management": "Box fleet management console",
+				"max": "Max properties:",
+				"max_datapoints": "Max data points",
+				"meters_only": "Meters only",
+				"offer1": "IoT",
+				"offer2": "Small",
+				"offer3": "Medium",
+				"offer4": "Large",
+				"offer5": "Satellite",
+				"properties": "Properties included",
+				"satellite":
+					"Subscription available when there is at least 1 Box on the same site with a medium or large subscription.",
+				"schedule": "Schedule wizard",
+				"server": "Local server",
+				"server-infos": "BACnet IP, MQTT, Modbus TCP",
+				"unlimited": "UNLIMITED",
+				"yes": "Yes"
+			},
+			"subscription": {
+				"text": "Pay by month or the year, and cancel at any time.",
+				"title": "Choose the subscription that’s right for your Box."
+			}
+		},
+		"subscription-hub": {
+			"feature-highlights": {
+				"4g": "4G subscription included",
+				"box": "Administrate your fleet of Boxes.",
+				"configure": "Configure the Box in no time.",
+				"plug": "Plug your app to our API.",
+				"read": "Read: collect data ",
+				"title": "Feature highlights",
+				"write": "Write: send commands instantly"
+			},
+			"header": {
+				"description":
+					"Connect your app to a reliable, scalable and secure infrastructure.",
+				"title": "Box subscription"
+			},
+			"offers": {
+				"4G": "4G Modem",
+				"clients": "Clients protocols",
+				"configuration": "Configuration wizard",
+				"features": "Top Features",
+				"gateway": "LoRaWAN to BACnet gateway",
+				"hub": "Per unit",
+				"iot": "IoT protocols",
+				"in-protocols": "IN protocols (client)",
+				"out-protocols": "OUT protocols (server)",
+				"iot-lorawan": "LoRaWAN",
+				"iot-wmbus": "WM-Bus",
+				"legacy": "Legacy protocols",
+				"legacy-bacnet": "BACnet",
+				"legacy-diematic": "Diematic",
+				"legacy-knx": "KNX",
+				"legacy-lon": "LON",
+				"legacy-lpb": "LPB",
+				"legacy-mbus": "M-Bus",
+				"legacy-modbus": "Modbus",
+				"legend":
+					"* Wired data points: wired communication networks such as BACnet, Modbus, KNX, M-Bus, etc.",
+				"lorawan": "LoRaWAN connectivity",
+				"modbus": "Modbus",
+				"offer1": "IoT",
+				"offer2": "Small",
+				"offer3": "Medium",
+				"offer4": "Large",
+				"offer5": "XLarge",
+				"others": "Other features",
+				"points": "IN and OUT points",
+				"protocol-bacnet": "BACnet",
+				"protocol-mqtt": "MQTT",
+				"schedule": "Schedule wizard",
+				"sensors": "Wireless sensors",
+				"server": "Server protocols"
+			},
+			"subscription": {
+				"text": "Choose the Hub that’s right for you."
+			}
+		}
+	},
+	"products": {
+		"header-box": {
+			"subtitle":
+				"From an era of PLCs and VPNs to a plug & play building management system.",
+			"title": "The Box"
+		},
+		"header-hub": {
+			"subtitle":
+				"Intuitive IoT gateway and a powerful PLC designed for building automation.",
+			"title": "The Hub"
+		},
+		"solution-box": {
+			"subtitle":
+				"Create a light Building Management System using the Box, a remotely managed IoT device that collects data and controls equipment through the Cloud.",
+			"title": "Simplifying BMS for small to large buildings",
+			"buttons": {
+				"contact": "Contact us",
+				"learn-more": "Learn more"
+			}
+		},
+		"solution-hub": {
+			"subtitle":
+				"The Wattsense Hub stands out from traditional gateways for its quick installation, advanced features, and versatility. Connect it all with a solution that will keep you in control, from one project to the next.",
+			"title": "BMS integration and maintenance simplified",
+			"buttons": {
+				"contact": "Contact us"
+			}
+		},
+		"actions": {
+			"title": "Using the Box to create a BMS",
+			"action1": {
+				"elements": [
+					"IoT sensors",
+					"Meters",
+					"Lights",
+					"HVAC",
+					"<a href='/bms'>BMS...</a>"
+				],
+				"title": "Connect anything..."
+			},
+			"action2-box": {
+				"elements": ["Cloud app", "Local app"],
+				"title": "...To anything"
+			},
+			"action2-hub": {
+				"elements": ["Local app", "Cloud app"],
+				"title": "...To anything"
+			},
+			"action3-box": {
+				"title": "Comply with requirements",
+				"elements": [
+					"<a target='_blank' href='https://blog.wattsense.com/building-management/bacs-energy-eu/'>BACS decree</a>",
+					"EPBD"
+				]
+			},
+			"action3-hub": {
+				"elements": ["In the Hub", "In the Cloud"],
+				"title": "Run your app"
+			},
+			"action4": {
+				"elements": [
+					"<a href='/resources/iot-security'>Cybersecurity</a>",
+					"Data access and remote control",
+					"User management",
+					"Multisite management",
+					"Updates",
+					"Alarms and events"
+				],
+				"title": "Manage your infrastructure"
+			},
+			"cta": {
+				"title": "Read our customer story",
+				"url": "/resources/customer-stories/setemi"
+			}
+		},
+		"box": {
+			"subtitle":
+				"With an interoperable, cloud-based device that simplifies building automation.",
+			"title": "Control and Monitor<br/>Building Equipment",
+			"feature": {
+				"edge": "Edge computing",
+				"configuration": "Configuration wizard",
+				"schedule": "Schedule wizard",
+				"gateway": "LoRaWAN to BACnet gateway",
+				"4g": "4G data plan included"
+			},
+			"protocols": [
+				"LoRaWAN 1.0",
+				"MQTT client",
+				"Modbus TCP/IP",
+				"Modbus RTU",
+				"BACnet IP",
+				"BACnet IP Server",
+				"M-Bus",
+				"wM-Bus <span style='display: inline-block; margin-left: 5px; font-size: 0.8rem; padding: 3px 10px; background: #2bc47b; border-radius: 30px;'>New</span>",
+				"KNX S/LTE",
+				"LON FT10",
+				"LON IP-852",
+				"LPB",
+				"Diematic"
+			]
+		},
+		"hub": {
+			"subtitle":
+				"A universal gateway for all building equipment to easily integrate and manage your BMS.",
+			"title": "Hub",
+			"feature": {
+				"desktop": "Desktop Application",
+				"configuration": "Configuration wizard",
+				"schedule": "Schedule wizard",
+				"gateway": "LoRaWAN to BACnet gateway",
+				"4g": "4G modem included"
+			},
+			"protocols": [
+				"LoRaWAN 1.0",
+				"MQTT client",
+				"Modbus TCP/IP",
+				"Modbus RTU",
+				"BACnet IP",
+				"BACnet IP Server",
+				"M-Bus",
+				"wM-Bus <span style='display: inline-block; margin-left: 5px; font-size: 0.8rem; padding: 3px 10px; background: #2bc47b; border-radius: 30px;'>New</span>",
+				"KNX S/LTE",
+				"LON FT10",
+				"LON IP-852",
+				"LPB",
+				"Diematic"
+			]
+		},
+		"differences": {
+			"button": "The difference between<br/>a Box and a Hub?",
+			"features": "Features",
+			"box": "Box",
+			"hub": "Hub",
+			"autoupdates": "Automatic software updates",
+			"cloud": "Cloud Service",
+			"multisite": "Multi-site management",
+			"communication": "Communication via SSL and MQTT",
+			"desktopapp": "Desktop Application",
+			"gsmdata": "GSM data plan",
+			"localaccess": "Local Access to data",
+			"localgateway": "Local gateway",
+			"localmqtt": "Local MQTT server",
+			"localbacnet": "Local BACnet server",
+			"localmodbus": "Local Modbus server",
+			"gateway": "LoRaWAN to BACnet gateway",
+			"onetime": "One-time purchase",
+			"rest": "REST API",
+			"subscription": "Subscription pricing",
+			"connected": "Web-Connected"
+		},
+		"boxadvantages": {
+			"title":
+				"Comply with the BACS / EPBD requirements with this interoperable device:",
+			"bacs": {
+				"title": "Discover BACS",
+				"url":
+					"https://blog.wattsense.com/building-management/bacs-energy-eu/"
+			},
+			"advantages": {
+				"advantage1": {
+					"description": "Anyone can do it.",
+					"title": "Easy and fast to install"
+				},
+				"advantage2": {
+					"description": "Collect data and control equipment.",
+					"title": "Telemetry and commands"
+				},
+				"advantage3": {
+					"description": "Unify field communication protocols.",
+					"title": "Smart converter"
+				},
+				"advantage4": {
+					"description":
+						"Connect automatically to the cloud with 4G or ethernet.",
+					"title": "Web-connected"
+				},
+				"advantage5": {
+					"title": "Powerful IoT device",
+					"description":
+						"Combines the functions of a gateway, a PLC, a modem and an edge device."
+				}
+			}
+		},
+		"cloud-service": {
+			"advantages": {
+				"advantage1": {
+					"description":
+						"Trouble-free internet connectivity included.",
+					"title": "4G communication"
+				},
+				"advantage2": {
+					"description": "RESTful API and MQTT connector available.",
+					"title": "Connect your apps in no time"
+				},
+				"advantage3": {
+					"title": "Smart converter",
+					"description": "Unify field communication protocols."
+				},
+				"advantage4": {
+					"title": "Powerful IoT device",
+					"description":
+						"Combines the functions of a gateway, a PLC, a modem and an edge device."
+				},
+				"advantage5": {
+					"title": "Customer technical support",
+					"description":
+						"Always available to make your projects a success."
+				}
+			},
+			"description":
+				"A building connectivity service delivered directly to your server.",
+			"title": "Cloud service"
+		},
+		"edge-computing": {
+			"description":
+				"Host your own program into the Box and update it remotely.",
+			"title": "Edge computing",
+			"link": "Learn more",
+			"url": "https://blog.wattsense.com/wattsense/edge-computing/"
+		},
+		"features": {
+			"feature1-box": {
+				"title": "BMS Console",
+				"description":
+					"Manage at scale your fleet of Boxes and stay in control of your BMS infrastructure."
+			},
+			"feature1-hub": {
+				"description":
+					"An intuitive interface to build your BMS network quickly. Your partner of choice to deliver your projects on time and on budget.",
+				"title": "Desktop Configuration Console"
+			},
+			"feature2": {
+				"description":
+					"Connect field devices in a few clicks thanks to an intuitive tool and a growing library of over 500 devices.",
+				"description2":
+					"Set schedules in a simple and unified manner whichever the equipment brand and model.",
+				"title": "Configuration & Schedule wizard"
+			},
+			"feature3": {
+				"description":
+					"Locally access the data of any LoRaWAN sensor. Deploy Smart Building solutions quickly with high flexibility, thanks to a wide choice of sensors. Explore all the features that will make your service stand out.",
+				"title": "LoRaWAN to BACnet gateway",
+				"link": "Learn more",
+				"url": "/lorawan-bacnet-gateway"
+			}
+		},
+		"hubadvantages": {
+			"advantages": {
+				"advantage1": {
+					"description": "Anyone can do it.",
+					"title": "Easy and fast to install"
+				},
+				"advantage2": {
+					"description": "Collect data and control equipment.",
+					"title": "Telemetry and commands"
+				},
+				"advantage3": {
+					"description": "Unify field communication protocols.",
+					"title": "Smart converter"
+				},
+				"advantage4": {
+					"description":
+						"Combines the functions of a gateway, a PLC, a modem and an edge device.",
+					"title": "Powerful IoT device"
+				},
+				"advantage5": {
+					"description": "Available as white-label product.",
+					"title": "Your own brand"
+				}
+			},
+			"title":
+				"Win more bids and tenders by simplifying the BMS infrastructure and reducing your installation time:"
+		},
+		"api-first": {
+			"title": "API first",
+			"description":
+				"At Wattsense, everything we develop is programmable. We believe it is the only approach so that others can make buildings smart at scale.",
+			"link": "API Reference",
+			"url": "https://api.wattsense.com/",
+			"codes": {
+				"menu": {
+					"title": "Integrations examples:",
+					"elements": [
+						"File upload",
+						"Configure Modbus",
+						"Setting Schedule"
+					]
+				}
+			}
+		}
+	},
+	"request-demo": {
+		"button": "GET A DEMO",
+		"company": "Company",
+		"company-error": "Insert your company",
+		"email": "Email",
+		"email-error": "Insert a valid e-mail address",
+		"fullname": "Full name",
+		"fullname-error": "Insert a valid name",
+		"success": "Thank you, we will get in touch soon!",
+		"error":
+			"We had a problem sending your message. Please, send to contact@wattsense.com.",
+		"telephone": "Telephone",
+		"product": "Product",
+		"title":
+			"Upgrade buildings with an intuitive and open BMS infrastructure "
+	},
+	"request-hub": {
+		"button": "Send",
+		"company": "Company",
+		"country": "Country",
+		"email": "Email",
+		"fullname": "Full name",
+		"phone": "Telephone",
+		"subtitle":
+			"Enter your contact information to get notified when the Hub is available for purchase.",
+		"success": "Thank you, we will get in touch soon!",
+		"error":
+			"We had a problem sending your message. Please, send to contact@wattsense.com.",
+		"title": "Get your Hub"
+	},
+	"request-partner": {
+		"button": "Send",
+		"company": "Company",
+		"company-error": "Insert your company",
+		"email": "Email",
+		"email-error": "Insert a valid e-mail address",
+		"fullname": "Full name",
+		"fullname-error": "Insert a valid name",
+		"success": "Thank you, we will get in touch soon!",
+		"error":
+			"We had a problem sending your message. Please, send to contact@wattsense.com.",
+		"telephone": "Telephone",
+		"title": "Become a partner of Wattsense"
+	},
+	"request-sales": {
+		"button": "Send",
+		"comments": "Extra comments",
+		"company": "Company",
+		"company-error": "Insert your company",
+		"country": "Country",
+		"email": "Email",
+		"email-error": "Insert a valid e-mail address",
+		"fullname": "Full name",
+		"fullname-error": "Insert a valid name",
+		"phone": "Telephone",
+		"project":
+			"Your project in a few words (equipment, communication protocols, surface...) *",
+		"project-error": "Insert a valid project description",
+		"subtitle":
+			"Our team is happy to answer your sales questions. We want to know more about your project, fill out the form and we’ll be in touch as soon as possible.",
+		"success": "Thank you, we will get in touch soon!",
+		"error":
+			"We had a problem sending your message. Please, send to contact@wattsense.com.",
+		"title": "Contact our sales team"
+	},
+	"request-prices": {
+		"button": "Send",
+		"comments": "Extra comments",
+		"company": "Company",
+		"company-error": "Insert your company",
+		"country": "Country",
+		"email": "Email",
+		"email-error": "Insert a valid e-mail address",
+		"fullname": "Full name",
+		"fullname-error": "Insert a valid name",
+		"phone": "Telephone",
+		"success": "Thank you, we will get in touch soon!",
+		"error":
+			"We had a problem sending your message. Please, send to contact@wattsense.com.",
+		"title": "Request informations about our prices"
+	},
+	"resources": {
+		"customer-stories": {
+			"header": {
+				"subtitle":
+					"See how Wattsense is helping companies better connect to buildings.",
+				"title": "Customer Stories"
+			},
+			"stories": {
+				"continue-reading": "Continue reading",
+				"customers": {
+					"0": {
+						"categories": ["home", "integrator"],
+						"info": "",
+						"company": "Nexity",
+						"description":
+							"How Wattsense and Intent Improved Nexity Property Management's Occupant Experience.",
+						"image": "nexity/logo_thumb.jpg",
+						"job": "Energy Performance Manager",
+						"link": "nexity",
+						"name": "Joseph El Haddad",
+						"testimonial":
+							"Data from buildings allows the optimization of energy performance using analysis through smart management."
+					},
+					"1": {
+						"categories": ["home", "integrator", "gateway"],
+						"info": "CBRE - Commercial Real Estate firm",
+						"company": "CBRE",
+						"description":
+							"CBRE optimizes the maintenance and energy performance of SHELL service stations.",
+						"image": "cbre/logo_thumb.jpg",
+						"job": "Sustainable Development Department",
+						"link": "cbre",
+						"name": "Théo Savre",
+						"testimonial":
+							"The Wattsense solution allowed us to both streamline subscription costs by centralizing all of the sensors on a single hub.",
+						"testimonialgateway":
+							"The Wattsense solution allowed us to rationalize subscription costs by centralizing LoRAWAN sensors and enhance the use of existing data from boiler rooms by connecting directly to PLCs without installing additional sensors."
+					},
+					"2": {
+						"categories": [
+							"home",
+							"property-owner",
+							"integrator",
+							"gateway"
+						],
+						"info": "Setemi - Facility Management Company",
+						"company": "Setemi",
+						"description":
+							"Setemi creates a BMS network using the Wattsense Box.",
+						"image": "setemi/logo_thumb.png",
+						"job": "CEO",
+						"link": "setemi",
+						"name": "Arnaud Kasparian",
+						"testimonial":
+							"During the installation, the support of Ludovic Ventre, Technical Support Engineer at Wattsense, allowed us to apply our ideas quickly, which demonstrated the power and development of the product.",
+						"testimonialgateway":
+							"During the installation, the Technical Support team's support at Wattsense allowed us to apply our ideas quickly, demonstrating the power and development of the solution."
+					},
+					"3": {
+						"categories": ["proptech"],
+						"info": "",
+						"company": "MESFRUITS",
+						"description":
+							"MESFRUITS optimizes the energy consumption of its cold rooms with the collaboration of Eqinov and Wattsense.",
+						"image": "mesfruits/logo_thumb.jpg",
+						"job": "Technical and R&D Manager",
+						"link": "mesfruits",
+						"name": "Gildas Guibert",
+						"testimonial":
+							"This technology is simple to install and efficient for optimizing flexibility without any cost of acquisition or installation."
+					},
+					"4": {
+						"categories": ["property-owner", "facility-manager"],
+						"info": "",
+						"company": "Idex",
+						"description":
+							"Idex connected seven residential buildings to its SCADA in one day.",
+						"image": "idex/logo_thumb.jpg",
+						"job": "In charge of Studies and Energy Efficiency",
+						"link": "idex",
+						"name": "David Boutillier",
+						"testimonial":
+							"We chose the Wattsense solution because of the simplicity of its installation, and its ability to connect equipment in a boiler room via the internet, keeping costs under control."
+					},
+					"5": {
+						"categories": ["facility-manager"],
+						"info": "",
+						"company": "Bouygues Energies & Services",
+						"description":
+							"In less than a week, Bouygues Energies & Services had remote access to 4,000 properties of an office building.",
+						"image": "bouygues/logo_thumb.jpg",
+						"job":
+							"Energy Engineer part of the Energy Performance Unit",
+						"link": "bouygues",
+						"name": "Thomas Margot",
+						"testimonial":
+							"The responsiveness, professionalism and listening skills of the Wattsense team have fully satisfied us."
+					},
+					"6": {
+						"categories": ["proptech"],
+						"info": "",
+						"company": "calidity",
+						"description":
+							"Calidity deployed its solution into two buildings in two days and saved millions in R&D.",
+						"image": "calidity/logo_thumb.jpg",
+						"job": "CEO",
+						"link": "calidity",
+						"name": "Joosep Sild",
+						"testimonial":
+							"Incorporating the Wattsense solution into our service helps us focus on our core offering to our customers. Adding the impeccable partnership experience to this makes it a no-brainer to continue working with the Wattsense team."
+					},
+					"7": {
+						"categories": ["facility-manager"],
+						"info": "",
+						"company": "Ibis Confluence",
+						"description":
+							"Monitoring of the temperature and humidity in the corridors, comfort, and well-being of customers in the restaurant.",
+						"image": "ibis-confluence-restaurant/logo_thumb.jpg",
+						"link": "ibis-confluence-restaurant",
+						"no-testimonial": "true"
+					},
+					"8": {
+						"categories": ["property-owner", "proptech"],
+						"info": "",
+						"company": "Ibis Confluence",
+						"description":
+							"How to monitor the building to optimize its operation and maintain a high level of customer satisfaction.",
+						"image": "ibis-confluence-energy/logo_thumb_en.jpg",
+						"link": "ibis-confluence-energy",
+						"no-testimonial": "true"
+					},
+					"9": {
+						"categories": [],
+						"info": "",
+						"company": "Ibis Confluence",
+						"description":
+							"Anticipate the health risks of hotel guests and control the hot water grid.",
+						"image":
+							"ibis-confluence-temperature/logo_thumb_en.jpg",
+						"link": "ibis-confluence-temperature",
+						"no-testimonial": "true"
+					}
+				},
+				"fullstory": "Read the full story",
+				"results": "Results"
+			}
+		},
+		"header": {
+			"subtitle":
+				"Check out our documentation to rock the building world!",
+			"title": "Resources"
+		},
+		"integrations": {
+			"content": {
+				"side-caption": "Smart Building ecosystem",
+				"side-text":
+					"<p class=\"mb-25\">Explore the growing Wattsense community of Smart Building solutions and services, a list of key service providers, applications, software publishers, and IoT solutions integrated with the Wattsense service.</p><p>Create value using your building's data, improve the performance of your equipment, reduce operational costs, and energy consumption. Find the perfect tool to help you successfully implement building management strategies.</p>",
+				"button": "Join our ecosystem"
+			},
+			"header": {
+				"subtitle":
+					"The best technology of the Smart Building ecosystem in one spot.",
+				"title": "Integrations"
+			}
+		},
+		"iot-security": {
+			"header": {
+				"subtitle": "Securing Building Connectivity at Wattsense",
+				"title": "IoT Security"
+			}
+		},
+		"main-section": {
+			"description":
+				"Use the Wattsense service to its fullest potential, discover our resources page. Read articles and customer stories to learn all about new developments, use cases, announcements, and industry insights. Use tools to easily integrate our service with your equipment, explore guides for installation and documentation that will help you quickly transform your assets into smart buildings.",
+			"section1": "Technical resources",
+			"section2": "Articles",
+			"section3": "Developers",
+			"section4": "Partners",
+			"title": "Choose your path!"
+		}
+	},
+	"urls": {
+		"about": {
+			"label": "About",
+			"url": "/about"
+		},
+		"api": {
+			"description":
+				"Complete reference documentation for the Wattsense API.",
+			"label": "API Reference",
+			"url": "https://api.wattsense.com"
+		},
+		"benefits": {
+			"facility-manager": {
+				"label": "Facility Managers",
+				"url": "/benefits/facility-managers"
+			},
+			"integrator": {
+				"label": "Integrators",
+				"url": "/benefits/integrators"
+			},
+			"label": "Benefits",
+			"property-owner": {
+				"label": "Property Owners",
+				"url": "/benefits/property-owners"
+			},
+			"proptech": {
+				"label": "PropTechs",
+				"url": "/benefits/proptechs"
+			},
+			"url": "/benefits/facility-managers"
+		},
+		"blog": {
+			"description":
+				"Follow the Wattsense blog to learn about new product features and the latest announcements.",
+			"label": "Blog",
+			"url": "https://blog.wattsense.com"
+		},
+		"bms": {
+			"label": "BMS",
+			"url": "/bms"
+		},
+		"compatibility": {
+			"description":
+				"Quickly verify if the equipment you are looking to connect is compatible with the Wattsense service.",
+			"label": "Compatibility checker",
+			"url": "/compatibility"
+		},
+		"contact": {
+			"label": "Contact",
+			"url": "/contact"
+		},
+		"customer-stories": {
+			"description": "See customer stories",
+			"label": "Customer Stories",
+			"url": "/resources/customer-stories"
+		},
+		"datasheet-box": {
+			"description":
+				"Discover the technical aspect of the Wattsense Box.",
+			"label": "Box Technical Datasheet",
+			"url":
+				"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/datasheet-box-en.pdf"
+		},
+		"datasheet-hub": {
+			"description":
+				"Discover the technical aspect of the Wattsense Hub.",
+			"label": "Hub Technical Datasheet",
+			"url":
+				"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/datasheet-hub-en.pdf"
+		},
+		"discuss": {
+			"description":
+				"A place to discuss Wattsense products and ask questions.",
+			"label": "Support forum",
+			"url": "https://discuss.wattsense.com/"
+		},
+		"getdemo": {
+			"label": "Get a demo",
+			"url": ""
+		},
+		"home": {
+			"label": "Home",
+			"url": "/"
+		},
+		"installation-guide-box": {
+			"description":
+				"This easy-to-read guide provides instructions on how to install the Wattsense Box.",
+			"label": "Box Installation guide",
+			"url":
+				"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/box-installation-guide-en.pdf"
+		},
+		"installation-guide-hub": {
+			"description":
+				"This easy-to-read guide provides instructions on how to install the Wattsense Hub.",
+			"label": "Hub Installation guide",
+			"url":
+				"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/hub-installation-guide-en.pdf"
+		},
+		"integrations": {
+			"description":
+				"Explore the growing Wattsense community of Smart Building solutions and services.",
+			"label": "Integrations",
+			"url": "/resources/integrations"
+		},
+		"iot-security": {
+			"description":
+				"Offering a secure network connection to our users is crucial. Learn more about it.",
+			"label": "IoT Security",
+			"url": "/resources/iot-security"
+		},
+		"legal-notice": {
+			"label": "Legal Notice",
+			"url": "/legal-notice"
+		},
+		"login": {
+			"label": "Log In",
+			"url": "https://console.wattsense.com"
+		},
+		"lorawan-signal": {
+			"description": "The RSSI and SNR indicators.",
+			"label": "LoRaWAN signal quality",
+			"url":
+				"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/lorawan-signal-en.pdf"
+		},
+		"manifesto": {
+			"label": "Manifesto",
+			"url": "/about"
+		},
+		"open-data": {
+			"label": "Open Data",
+			"url": "/resources/open-data"
+		},
+		"become-partner": {
+			"label": "Become a partner"
+		},
+		"partners": {
+			"title": "Partners",
+			"label": "Partner with Wattsense",
+			"description":
+				"Distribute an IoT solution that brings BMS technologies to all buildings.",
+			"url": "/resources/partners"
+		},
+		"pricing": {
+			"box": {
+				"label": "Box",
+				"subtitle": "Managed service",
+				"cta": "Explore the Box pricing",
+				"url": "/pricing/box"
+			},
+			"hub": {
+				"label": "Hub",
+				"subtitle": "On-premises",
+				"cta": "Explore the Hub pricing",
+				"url": "/pricing/hub"
+			},
+			"label": "Pricing",
+			"url": "/pricing"
+		},
+		"products": {
+			"box": {
+				"label": "Box",
+				"subtitle": "Managed service",
+				"url": "/products/box"
+			},
+			"hub": {
+				"label": "Hub",
+				"subtitle": "On-premises",
+				"url": "/products/hub"
+			},
+			"label": "Products",
+			"url": "/products"
+		},
+		"resources": {
+			"label": "Resources",
+			"url": "/resources"
+		},
+		"specs-box": {
+			"label": "See the full spec",
+			"url":
+				"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/datasheet-box-en.pdf"
+		},
+		"specs-hub": {
+			"label": "See the full spec",
+			"url":
+				"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/datasheet-hub-en.pdf"
+		},
+		"status-api": {
+			"description":
+				"Check here for information about the status of the Wattsense service and its API.",
+			"label": "Services Status",
+			"url": "https://status.wattsense.com/"
+		},
+		"support": {
+			"description":
+				"A place to discuss Wattsense products and ask questions.",
+			"label": "Support platform",
+			"url": "https://support.wattsense.com/"
+		},
+		"trynow": {
+			"label": "Try now"
+		},
+		"tryboxnow": {
+			"label": "Try the box"
+		},
+		"tryhubnow": {
+			"label": "Try the Hub",
+			"simplicity": "Choose simplicity"
+		},
+		"user-guide": {
+			"label": "User guide",
+			"url":
+				"https://docs.google.com/document/d/1mIPA1XFuflodA0CgdYMI64fEA1D96eLuwyhc4Kg7sEU/edit?usp=sharing"
+		}
+	}
+}

@@ -1,0 +1,176 @@
+{
+	"company": "MESFRUITS",
+	"logo": "mesfruits/logo.jpg",
+	"title": "MESFRUITS optimizes the energy consumption of its cold rooms with the collaboration of Eqinov and Wattsense.",
+	"subtitle": "",
+	"results": [
+		{
+			"description": "No expenses made on material by MESFRUITS"
+		},
+		{
+			"description": "Simple installation (power supply)"
+		},
+		{
+			"description": "Quick and remote configuration of the Box"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "MESFRUITS, innovative apple producer!",
+				"description": "",
+				"noBorder": true
+			}
+		],
+		"footer": []
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"title": "Client Summary",
+			"content": ""
+		},
+		{
+			"type": "bullets",
+			"content": [
+				"<strong>Activities:</strong> approval, storage, pre-calibration, packaging, and traceability of fruit.",
+				"<strong>Sites:</strong> Two, Cavaillon and Saint Andiol. Provence-Alpes-Côte d'Azur region.",
+				"<strong>Packaging lines:</strong> 13.",
+				"<strong>Cold rooms:</strong> 60.",
+				"<strong>Apples/day:</strong> 1 000 000.",
+				"<strong>Workforce:</strong> More than 100 employees."
+			]
+		},
+		{
+			"type": "image",
+			"src": "mesfruits/buildings.jpg",
+			"alt": "Buildings",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"title": "THE CHALLENGE",
+			"content": "<strong>Reduce the energy bill of the cold rooms.</strong>"
+		},
+		{
+			"type": "quote",
+			"content": "\"The energy bill linked to the electrical consumption of cold rooms is one of the main expenses for <a href='https://www.mesfruits.eu.com/en/' target='_blank'>MESFRUITS</a> with a peak in use during the summer season.<br/><br/>During our talks with <a href='https://www.eqinov.com/' target='_blank'>Eqinov</a>, we discussed this issue and our desire to optimize the consumption of our cold storage. We have always had a keen interest in innovation. The flexibilization of the electrical consumption of our chillers to reduce our electricity bill was, therefore, the preferred choice for MESFRUITS.\"",
+			"author": "Gildas Guibert",
+			"author-position": "Technical and R&D Manager, MESFRUITS."
+		},
+		{
+			"type": "paragraph",
+			"title": "FOCUS ON ELECTRICAL FLEXIBILITY:",
+			"content": "The flexibility of electrical consumption consists of modulating <strong>energy consumption</strong> from time to time to meet the electrical suppliers needs or to balance the electricity system. For example, the national grid operator can call on companies consuming electricity to vary their consumption up or down to respond to the traffic on the electricity network."
+		},
+		{
+			"type": "paragraph",
+			"content": "We talk about <a href=\"https://en.wikipedia.org/wiki/Demand_response\" target=\"_blank\">demand response</a> when we lower our electricity consumption, in case of peak consumption or a production shortage. On the contrary, upward flexibility consists of increasing consumption to absorb the surplus of renewable electricity. Either way, adopting flexibility can save up to 20% of the cost of electricity."
+		},
+		{
+			"title": "Solution",
+			"type": "paragraph",
+			"content": "<strong>Promote the flexibility of electrical consumption in cold rooms.</strong>"
+		},
+		{
+			"type": "quote",
+			"content": "\"The solution proposed by Eqinov is attractive because it is based on the <strong>remote monitoring of our cold storage by their DR'IVE © Box</strong>. This technology is simple to install and efficient for optimizing flexibility without any cost of acquisition or installation.\"",
+			"author": "Gildas Guibert",
+			"author-position": "Technical and R&D Manager, MESFRUITS."
+		},
+		{
+			"type": "image",
+			"src": "mesfruits/drive.jpg",
+			"alt": "Drive",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"content": "The advantages of the <a href=\"https://www.eqinov.com/flexibilite/la-solution-drive/\">DR’IVE©</a> solution:"
+		},
+		{
+			"type": "bullets",
+			"content": [
+				"<strong>Frees up operational management teams from constantly surveilling the functioning of cold storage rooms.</strong>",
+				"<strong>No purchased material by MESFRUITS.</strong>",
+				"<strong>Simple installation (power supply).</strong>",
+				"<strong>Quick and remote configuration of the Box by Eqinov.</strong>"
+			]
+		},
+		{
+			"type": "paragraph",
+			"title": "IMPLEMENTATION AND RESPECT OF PRODUCTION CONSTRAINTS:",
+			"content": ""
+		},
+		{
+			"type": "quote",
+			"content": "\"The execution of this project first required to identify our precise needs regarding the cold and the tunnel temperatures to be maintained at the warehouses. Eqinov committed to respecting our production demands. In addition to the remote monitoring of our cold rooms, the DR'IVE © solution guarantees the collection of the data temperature from the warehouses. Assuring us that the commitments made by Eqinov when activating the flexibility of our cold rooms are respected.\"",
+			"author": "Gildas Guibert",
+			"author-position": "Technical and R&D Manager, MESFRUITS."
+		},
+		{
+			"type": "image",
+			"src": "mesfruits/natacha-hakwik.jpg",
+			"alt": "Natacha Hakwik",
+			"caption": ""
+		},
+		{
+			"type": "quote",
+			"content": "\"We have personally designed an electrical flexibility program for MESFRUITS. Concretely, Eqinov commits that during the demand response process, the MESFRUITS warehouse's temperature will not be over 5 °C  to avoid altering the quality of the fruits.\"",
+			"author": "Natacha Hakwik",
+			"author-position": "Associate Director, Eqinov."
+		},
+		{
+			"type": "paragraph",
+			"title": "FOCUS ON THE DRIVE SOLUTION",
+			"content": "The DR'IVE © solution is the result of close collaboration over several months between Wattsense and Eqinov.<br/><br/>The solution developed by Wattsense aims to transform an existing non-communicating building into a smart building in just a few hours. This solution is an easy-to-install electronic module equipped with embedded software, the Box, plus a powerful Cloud service. When combined, they create a reliable, scalable, and secure infrastructure.<br/><br/>As a result of the exchanges with Eqinov, the DR'IVE © Box was born to solve the challenge of managing the flexibility of electrical consumption of equipment present in the industrial, agricultural and tertiary sectors and also the control of energy or production indicators.<br/><br/>This collaboration has enabled Eqinov to be entirely autonomous for the deployment of the Box, the collection of data, and the management of the equipment connected to the MESFRUITS sites."
+		},
+		{
+			"type": "quote",
+			"content": "\"The technologies developed by Eqinov in favor of flexible energy consumption and smart grids constitute a major asset for the development of <strong>renewable energies</strong>, by nature faced with problems of intermittent production and storage.<br/><br/>The Wattsense team  is happy to be able to contribute to these environmental and economic challenges, it  is also very proud that Eqinov has allowed them to implement their solution on the MESFRUITS sites concretely.\"",
+			"author": "Louis Vermorel",
+			"author-position": "CEO and Founder, Wattsense."
+		},
+		{
+			"type": "paragraph",
+			"title": "DEPLOYMENT OF THE DR'IVE © SOLUTION FOR MESFRUITS",
+			"content": "MESFRUITS installed two Boxes on each of its sites.<br/><br/>Eqinov remotely manages the operation of the cold rooms production units so that they meet both the MESFRUITS temperatures needs and the needs and constraints of the electrical system.<br/><br/>Eqinov makes available in real-time for MESFRUITS the temperature data from its warehouses and its energy consumption."
+		},
+		{
+			"type": "quote",
+			"content": "\"To make the installation as simple as possible for MESFRUITS, the DR'IVE © Box is wired and stored in an electrical cabinet provided by the Eqinov team. Thus, the installation carried out by MESFRUITS consists only of a simple connection of the prewired Box to the electrical network as well as the Ethernet network. The DR'IVE © Box then communicates through the Modbus communication protocol with any PLCs present on the sites, and in particular, those guaranteeing the regulation of the cold rooms.\"",
+			"author": "Natacha Hakwik",
+			"author-position": "Associate Director, Eqinov."
+		},
+		{
+			"type": "image",
+			"src": "mesfruits/box.jpg",
+			"alt": "Drive Box",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"content": "<strong style=\"color:#29ba74\">What is Modbus?</strong><br/><br/>Since the 1970s, Modbus has been a means of communication, allowing the exchange of data between Programmable Logic Controllers (PLCs) and computers. It represents an essential communication protocol in buildings, and the energy sector. Its simple architecture, easy integration, and its high reliability prove to be ideal for providing efficient monitoring of automated equipment. <strong>Industrial automation</strong> and real-time data acquisition and control (SCADA) systems also use the Modbus protocol extensively."
+		},
+		{
+			"type": "paragraph",
+			"title": "DREAMS ©, INTERACTIVE PLATFORM FOR ENERGY FLEXIBILITY MANAGEMENT:",
+			"content": "Wattsense has designed an infrastructure that allows Eqinov's flexibility platform, Dreams ©, to connect to any building and can, therefore, be easily deployed on a large scale."
+		},
+		{
+			"type": "image",
+			"src": "mesfruits/dreams.jpg",
+			"alt": "Dreams",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"title": "RESULTS",
+			"content": "By putting to the disposal of the electricity network, the flexibility of the electrical consumption of its cold rooms MESFRUITS benefits from a financial bonus each year from Eqinov."
+		},
+		{
+			"type": "paragraph",
+			"content": "In practice: After several tests carried out successfully on the sites, the two DR'IVE © Boxes <strong>are operational and flexibilize the electrical consumption of the refrigeration units automatically</strong> to balance the electrical system."
+		}
+	]
+}

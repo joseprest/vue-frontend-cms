@@ -1,0 +1,116 @@
+{
+	"company": "SETEMI",
+	"logo": "setemi/logo.png",
+	"title": "Setemi créé un réseau GTB à partir de la Box Wattsense.",
+	"subtitle": "",
+	"results": [
+		{
+			"value": "1/2 ",
+			"description": "Journée d’installation sur site"
+		},
+		{
+			"value": "190",
+			"description": "Logements"
+		},
+		{
+			"value": "10",
+			"description": "Fois moins cher qu’avec d’autres services de connectivité"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "SETEMI, des solutions innovantes au service de votre performance énergétique.",
+				"description": "Setemi assure la maintenance et l'entretien de plus de 1500 sites confiés par ses clients.",
+				"noBorder": false
+			}
+		],
+		"footer": [
+			{
+				"title": "Expérience",
+				"description": "40 ans"
+			},
+			{
+				"title": "Exploitation",
+				"description": "1.500 sites"
+			},
+			{
+				"title": "Équipe",
+				"description": "150"
+			}
+		]
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"title": "CONTEXTE & DÉFIS",
+			"content": "<a href=\"http://www.setemi.fr\" target=\"blank\">Setemi</a> est chargée de l’exploitation et de la maintenance d’une copropriété de 190 logements. Elle a signé un contrat de maintenance des installations thermiques de type P1, P2, P3* (voir table 1), avec un engagement de suivi des consommations et une température moyenne dans les logements de 21°C le jour et 19°C la nuit.<br/><br/>Setemi recherchait une solution industrialisable, souple, fiable et peu onéreuse, qui lui permette de connecter les équipements à la plateforme web de management énergétique qu’elle utilise<br/><br/>L'objectif principal de Setemi était de connecter le bâtiment afin, d’une part, de réduire et d’optimiser la consommation d'énergie pour respecter ses engagements contractuels, et, d’autre part, de limiter les déplacements de son équipe technique."
+		},
+		{
+			"type": "quote",
+			"content": "\"Lors de l’installation, l’accompagnement de Ludovic Ventre, Ingénieur du Support Technique chez Wattsense, nous a permis d’appliquer très vite nos idées et a démontré la puissance de développement du produit.<br/><br/>Nous envisageons désormais une extension des données de la Box Wattsense afin d’améliorer encore la performance énergétique. Exemple : mise en place de sondes de température dans des appartements témoins.\"",
+			"author": "Arnaud Kasparian",
+			"author-position": "CEO de Setemi."
+		},
+		{
+			"type": "table",
+			"title": "Contrat de maintenance",
+			"content": "<table class=\"setemi\"><thead><tr><th>P1 - Fourniture et gestion de l'énergie</th><th>P2 - Prestations de conduite et de petit entretien</th><th>P3 - Garantie totale</th></tr></thead><tbody><tr><td>Consiste à fournir et à facturer l'énergie livrée. Dans le cas d'un combustible liquide ou solide, le client est dégagé du souci de l'approvisionnement.</td><td>Consiste, d'une part, à assurer la conduite de l'installation en optimisant son fonctionnement (recherche d'économie) et, d'autre part, à assurer l'entretien courant : démarrage, arrêt, réglage, ramonage, entretien de fin de saison, visites réglementaires, etc.</td><td>Comporte le renouvellement et le gros entretien des matériels, pièces et main d’œuvre. Elle est rémunérée par une redevance forfaitaire annuelle et la durée du contrat est de 5 ans.</td></tr></tbody></table>",
+			"legend": "*Table 1"
+		},
+		{
+			"type": "paragraph",
+			"title": "SOLUTION",
+			"content": "L’un des défis techniques majeurs de ce projet provenait de l’absence d'un réseau GTB. Setemi a donc créé un réseau GTB dans la chaufferie de la copropriété à partir de la Box Wattsense, afin de pouvoir récupérer les données et déployer sa solution de surveillance."
+		},
+		{
+			"type": "image",
+			"src": "setemi/solution.jpg",
+			"alt": "Solution",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"content": "La <a href=\"https://wattsense.com/fr/produits\">Box Wattsense</a>, conçue pour être très facile et rapide à installer, simplifie considérablement la connexion des applications aux bâtiments. L’équipe Setemi n’a eu besoin que d’une demi-journée pour effectuer l'installation. Après avoir paramétré les équipements, Setemi a eu accès aux données du bâtiment via notre console utilisateur."
+		},
+		{
+			"type": "paragraph",
+			"content": "Le tableau ci-dessous présente les équipements connectés. Les protocoles de communication mentionnés sont intégrés dans la Wattsense Box, dont la vocation est d’universaliser les protocoles de communication de terrain utilisés en gestion technique de bâtiments."
+		},
+		{
+			"type": "image",
+			"src": "setemi/connected-equipment-fr.jpg",
+			"alt": "Équipements Connectés",
+			"caption": ""
+		},
+		{
+			"type": "table",
+			"title": "Équipements Connectés",
+			"content": "<table><thead><tr><th>Quantité</th><th>Équipement</th><th>Protocole de communication</th></tr></thead><tbody><tr><td>6</td><td>Pompes Grundfos TPE3</td><td>Modbus</td></tr><tr><td>4</td><td>Chaudières De Dietrich C610-700</td><td>Diematic</td></tr><tr><td>3</td><td>Régulateurs de chauffage Siemens RVL 480</td><td>LPB</td></tr><tr><td>1</td><td>Compteur gaz</td><td>LoRaWAN</td></tr></tbody></table>",
+			"legend": "*Table 2"
+		},
+		{
+			"type": "paragraph",
+			"content": "Il est important de mentionner que les chaudières De Dietrich utilisent le protocole fermé Diematic pour communiquer. Afin de permettre la communication et l’échange de données entre les chaudières et la Box Wattsense, un <a target=\"_blank\" href=\"https://blog.wattsense.com/fr/connectez-equipements-dietrich-driver-diematic/\">driver Diematic</a> a été spécialement développé et intégré dans notre solution."
+		},
+		{
+			"type": "paragraph",
+			"content": "Une fois la Box installée et le bâtiment connecté, l'équipe Setemi a facilement pu déployer son application de performance énergétique via notre API."
+		},
+		{
+			"type": "quote",
+			"content": "\"Les équipements et systèmes de gestion technique du bâtiment se sont progressivement transformés en un agglomérat de composants incompatibles et d'architectures impénétrables qui font barrage entre les bâtiments et l'industrie moderne du logiciel.<br/><br/>C'est là que nous intervenons, pour que tous les acteurs préoccupés par la consommation énergétique des bâtiments puissent mettre en place des solutions d’optimisation souples et peu onéreuses.\"",
+			"author": "Louis Vermorel",
+			"author-position": "CEO de Wattsense."
+		},
+		{
+			"type": "paragraph",
+			"title": "RÉSULTATS",
+			"content": "Setemi a réussi à rendre la chaufferie communicante en l’équivalent de moins d’une journée.<br/>Câblages et paramétrages peuvent être effectués directement par les techniciens Setemi, en profitant d’une visite sur site. Plus besoin d’attendre que des sous-traitants se rendent disponibles."
+		},
+		{
+			"type": "paragraph",
+			"content": "En permettant d’accéder à distance au compteur gaz ainsi qu’aux paramètres du régulateur de chauffage, et de modifier à distance les consignes, la solution Wattsense a aidé Setemi à atteindre ses objectifs contractuels de gestion de l'énergie et d'entretien du bâtiment."
+		}
+	]
+}

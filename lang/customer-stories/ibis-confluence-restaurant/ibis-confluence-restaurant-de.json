@@ -1,0 +1,114 @@
+{
+	"company": "Ibis Confluence",
+	"logo": "ibis-confluence-restaurant/logo.png",
+	"title": "Adeunis, Energisme und Wattsense haben eine Lösung implementiert, die die manuelle Klimaanlage Ibis Confluence in ein intelligentes System verwandelt",
+	"subtitle": "",
+	"results": [
+		{
+			"description": "Betriebskosten senken"
+		},
+		{
+			"description": "Kundenkomfort & -zufriedenheit garantieren"
+		},
+		{
+			"description": "Verbessern Sie die Energieeffizienz des Gebäudes"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "Über Ibis Confluence",
+				"description": "Ibis wurde 1974 gegründet und ist die starke Wirtschaftsmarke im Portfolio von Accor, welches sich 2011 entschied, Etap Hotel und All Seasons in Ibis Budget und Ibis Styles zu konsolidieren."
+			}
+		],
+		"footer": [
+			{
+				"title": " Installierte Boxen",
+				"description": "1"
+			},
+			{
+				"title": "Gesammelte Datenpunkte",
+				"description": "42"
+			},
+			{
+				"title": "Angeschlossene Geräte",
+				"description": "11"
+			}
+		]
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"title": "Kontext",
+			"content": "Das Ibis Confluence (ACCOR-Gruppe) besteht aus zwei Einheiten: Ibis Budget und Ibis Style, die sich auf ein 7-stöckiges Gebäude mit 84 bzw. 95 Zimmern verteilen. Beide Hotels bieten ein kostengünstiges Hotelangebot, das speziell für Geschäftsreisende und Urlauber entwickelt wurde."
+		},
+		{
+			"type": "image",
+			"src": "ibis-confluence-restaurant/restaurant-ibis.jpg",
+			"alt": "Ibis Confluence"
+		},
+		{
+			"type": "paragraph",
+			"title": "Herausforderungen",
+			"content": "Das Hauptanliegen des Ibis Confluence Hotels ist die Erfahrung, die den Kunden geboten wird sowie deren Zufriedenheit. Die Arbeitsbedingungen und die Effizienz der Gebäudeausrüstung sind die Garanten der Kundenzufriedenheit."
+		},
+		{
+			"type": "paragraph",
+			"content": "Die Klimaanlage ist ein wesentlicher Bestandteil der Hotelumgebung und des gebotenen Komforts, da sie die Temperatur der Zimmer und öffentlichen Bereiche, einschließlich des Restaurants, reguliert."
+		},
+		{
+			"type": "paragraph",
+			"content": "In diesem Hotel ist der Betrieb der Klimaanlage nicht an ein Gebäudemanagementsystem angeschlossen. Es wird manuell und unabhängig von einem Techniker gesteuert und gewartet. Die ordnungsgemäße Funktion des Systems hängt von der physischen Anwesenheit dieses Fachmanns im Hotel ab."
+		},
+
+		{
+			"type": "paragraph",
+			"content": "Die Klimaanlage bietet seit Jahren den gleichen Standardwirkungsgrad, bis jetzt wurde jedoch keine Optimierung angestrebt, um die Gesamteffizienz des Gebäudes zu steigern. Probleme mit den Geräten werden manuell erkannt und registriert, insbesondere solche, die sich auf den Komfort der Gäste auswirken. Die Daten werden jedoch nicht gesammelt oder digital erfasst."
+		},
+		{
+			"type": "paragraph",
+			"content": "Der Techniker erhält bei Notfällen, Ausfällen oder anderen Problemen keine Benachrichtigung von den installierten Geräten. Der einzige Indikator für Probleme sind Stichproben, eine Kundenbeschwerde oder das Feedback eines Mitarbeiters."
+		},
+		{
+			"type": "paragraph",
+			"content": "Das ibis Confluence ist stolz darauf, ein einladendes, modernes und komfortables Ambiente für ein erschwingliches Budget zu bieten. Nicht kommunizierende Geräte können jedoch zu erhöhte Betriebskosten verursachen sowie eine unzureichende Energieeffizienz und Unannehmlichkeiten für die Kunden zur Folge haben. Die mangelnde Konnektivität stellt das Hotel hinsichtlich der Vermeidung, Erkennung, Lösung und Rückverfolgbarkeit von Problemen vor eine Herausforderung."
+		},
+		{
+			"type": "paragraph",
+			"title": "Lösung",
+			"content": "<a href='https://www.adeunis.com/' target='_blank'>Adeunis</a>, <a href='https://energisme.com/' target='_blank'>Energisme</a> und Wattsense haben eine Lösung installiert, die manuelle Klimaanlagen in ein intelligentes System verwandelt, welches  eine optimale Überwachung der Geräte und insbesondere der Temperatur und Luftfeuchtigkeit des Gebäudes ermöglicht. Wir konzentrieren uns auf den Korridor im dritten Stock und das Restaurant im Erdgeschoss, um die Nützlichkeit der Lösung zu demonstrieren."
+		},
+		{
+			"type": "paragraph",
+			"content": "Die Klimaanlage besteht aus einer reversiblen Wärmepumpe AERMEC NRL 0700, die sich auf dem Dach des Gebäudes befindet. Das AERMEC-Gerät wurde über das Modbus-Kommunikationsprotokoll an die Wattsense-Box angeschlossen. Die Box wird in einen Schaltschrank auf dem Dach eingebaut."
+		},
+		{
+			"type": "paragraph",
+			"content": "Da die Box jetzt mit der Klimaanlage kommunizieren kann, dient sie als Brücke zu den Adeunis-Sensoren, sodass sie auch eine Verbindung zu diesem System herstellen können. Dank der drahtlosen Netzwerktechnologie LoRaWAN wurden zwei Adeunis IoT-Sensoren, welche die Temperatur und Luftfeuchtigkeit im Korridor im dritten Stock und im Restaurant überwachen, mit der Box verbunden. Sie greifen auf die Heizungs-, Lüftungs- und Klimaanlage zu. Die Sensoren erfassen und protokollieren Komfortdaten, die im Wattsense-Cloud-Service konsolidiert werden. Alle diese qualifizierten Daten werden dann über den Cloud-Service an die Energisme-Plattform übertragen."
+		},
+		{
+			"type": "paragraph",
+			"title": "Ergebnisse",
+			"content": "Mit dieser Lösung wird der Techniker in Echtzeit über die Temperatur und Luftfeuchtigkeit der überwachten Bereiche informiert. Er kann diese Daten aus der Ferne überprüfen und steuern, Anweisungen aus der Ferne senden, Wartungsprobleme vermeiden und so die Kosten senken, den Betrieb der Anlage verbessern und den Komfort der Kunden gewährleisten."
+		},
+		{
+			"type": "paragraph",
+			"content": "Fordern Sie unsere <a href='https://wattsense.com/?demo=true' target='_blank'>Demo</a> an und sehen Sie sich die vom Ibis Confluence Hotel gesammelten Daten in Echtzeit an."
+		},
+		{
+			"type": "image-list",
+			"images": [
+				{
+					"src": "ibis-confluence-restaurant/energisme.png",
+					"alt": "Energisme",
+					"link": "https://energisme.com/"
+				},
+				{
+					"src": "ibis-confluence-restaurant/adeunis.png",
+					"alt": "Adeunis",
+					"link": "https://www.adeunis.com/"
+				}
+			]
+		}
+	]
+}

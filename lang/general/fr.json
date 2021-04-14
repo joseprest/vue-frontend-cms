@@ -1,0 +1,2162 @@
+{
+	"about": {
+		"approach": {
+			"approach1": {
+				"text":
+					"Alors que les acteurs traditionnels du secteur des GTB s'appuient sur de nombreux automates, passerelles, VPN et automaticiens pour connecter les actifs, Wattsense utilise des technologies logicielles de pointe pour faire de la complexité de l'intégration sur le terrain un problème du passé.",
+				"title": "Solution enracinée dans le code"
+			},
+			"approach2": {
+				"text":
+					"Nos services basés sur le cloud, notre documentation complète et notre console admin contiennent tout ce dont une entreprise a besoin pour déployer son application à grande échelle.",
+				"title": "Connecteur d'application à la pointe de l’industrie"
+			},
+			"approach3": {
+				"text":
+					"Wattsense propose une solution flexible qui vous permet d'éviter les coûts cachés, de réduire les dépenses d’investissement et de choisir librement les applications destinées à gérer vos bâtiments. Le service Wattsense est conçu pour le secteur de la gestion immobilière en quête d'agilité.",
+				"title": "Nouveau modèle économique"
+			},
+			"text":
+				"Bien qu'Internet ait profondément transformé l'économie mondiale, la grande majorité des actifs immobiliers ne sont toujours pas connectés et restent dans un état peu performant, ce qui entraîne des défaillances pour les occupants, les fournisseurs de services et les propriétaires.",
+			"title": "Une nouvelle approche d'un vieux problème"
+		},
+		"board": "Le Board",
+		"clients": {
+			"text":
+				"Des entreprises de toutes tailles dans plus de 10 pays utilisent Wattsense pour démarrer, opérer et accélérer le déploiement de leurs applications dans des bâtiments.",
+			"title": "Des startups aux géants du service immobilier"
+		},
+		"complexity": {
+			"actor1": "Application client",
+			"protocols": {
+				"protocol1": "Modbus",
+				"protocol10": "Sécurité",
+				"protocol11": "Fichiers de configuration",
+				"protocol12": "KNX",
+				"protocol13": "LPB",
+				"protocol14": "BSB",
+				"protocol15": "APIs fabricants",
+				"protocol16": "Intégration GTB",
+				"protocol17": "RS485",
+				"protocol18": "Admin",
+				"protocol19": "Diematic",
+				"protocol2": "BACnet",
+				"protocol3": "4G",
+				"protocol4": "M-Bus",
+				"protocol5": "LoRaWAN",
+				"protocol6": "VPNs",
+				"protocol7": "LonTalk",
+				"protocol8": "Passerelles",
+				"protocol9": "Automates"
+			},
+			"text":
+				"Nous construisons des connecteurs pour tout ce qui se trouve dans les bâtiments afin que nos utilisateurs ne soient pas obligés de le faire.",
+			"title": "Supprimer la complexité du terrain"
+		},
+		"footer": {
+			"text": "Venez travailler avec nous"
+		},
+		"header": {
+			"subtitle":
+				"La façon la plus <b>facile</b>, la plus <b>rapide</b> et la plus <b>abordable</b> de déployer votre application dans les bâtiments.",
+			"title": "Entreprise"
+		},
+		"mission": {
+			"subtext":
+				"Wattsense est une société technologique qui construit une infrastructure informatique pour la gestion des bâtiments. Des entreprises de toutes tailles - des startups aux entreprises en bourse - utilisent notre matériel et nos logiciels pour déployer des applications dans des bâtiments.",
+			"text":
+				"Notre mission est de rendre les bâtiments plus connectés afin que d'autres puissent les faire mieux fonctionner."
+		},
+		"potential": {
+			"text":
+				"Malgré la croissance rapide des nouvelles technologies pour de meilleurs services d’exploitation immobilière, seule une infime fraction des 40 millions de bâtiments dans le monde bénéficie aujourd'hui de ces avancées.<br /><br />L’IT héritée des fabricants d'équipements et de GTB, les coûts d'intégration et le manque d’automaticiens limitent l'impact de l'industrie PropTech.<br /><br />L'élimination des obstacles à la connectivité des actifs aide les entreprises à optimiser l'efficacité de leur personnel technique, à améliorer le confort des occupants et à réduire considérablement l'empreinte énergétique des bâtiments.",
+			"title": "Le potentiel des technologies de services immobiliers"
+		},
+		"stack": {
+			"level1": {
+				"text":
+					"Optimisation de la maintenance, gestion de l'énergie, contrôle du confort: offrez des services qui changent la donne dans le service immobilier.",
+				"title": "Votre application"
+			},
+			"level2": {
+				"text":
+					"Connectez votre application à une infrastructure fiable, évolutive et sécurisée.",
+				"title": "Service cloud"
+			},
+			"level3": {
+				"text":
+					"Module de connexion universel. Extra simple à installer et malgré tout puissant.",
+				"title": "Box"
+			},
+			"level4": {
+				"text":
+					"Des petits magasins de détail aux aéroports, déployez votre application dans tous les bâtiments qui se présentent à vous.",
+				"title": "Bâtiment"
+			},
+			"text":
+				"Wattsense rassemble <b>électronique</b> et <b>logiciel</b> permettant aux applications clientes<br />de passer à l’échelle d’un bâtiment à l’autre.",
+			"title": "La nouvelle stack de connectivité"
+		},
+		"team": "L’équipe",
+		"who": {
+			"address": "39 chemin du Moulin Carron - 69570 Dardilly",
+			"facts": {
+				"text1": "Lancement de Wattsense",
+				"text2": "Employés",
+				"text3": "de financement",
+				"title1": "2017",
+				"title2": "19",
+				"title3": "5M€"
+			},
+			"founder": "Fondateur",
+			"text":
+				"Nous sommes une start-up technologique qui travaille à la démocratisation des bâtiments connectés.",
+			"title": "Wattsense est située près de Lyon, en France."
+		}
+	},
+	"benefits": {
+		"clients": {
+			"title": {
+				"default": "Références clients",
+				"facility-manager":
+					"Adopté par de grands noms<br/>du secteur immobilier dans plus de 15 pays",
+				"integrator":
+					"Nous comptons des acteurs clés<br/>du secteur immobilier parmi nos clients",
+				"property-owner":
+					"Nous comptons des acteurs clés<br/>du secteur immobilier parmi nos clients",
+				"proptech":
+					"Rejoignez des entreprises innovantes<br/>qui transforment le secteur du bâtiment "
+			}
+		},
+		"customer-stories": {
+			"link": "Consultez la liste complète",
+			"title": "Expériences clients",
+			"url": "/fr/ressources/experiences-client"
+		},
+		"engineering-services": {
+			"advantages": {
+				"advantage1": {
+					"description": "Description1",
+					"link": {
+						"title": "Voir une expérience client",
+						"url": ""
+					},
+					"title": "Avantage1"
+				},
+				"advantage2": {
+					"description": "Description2",
+					"link": {
+						"title": "Voir une expérience client",
+						"url": ""
+					},
+					"title": "Avantage2"
+				},
+				"advantage3": {
+					"description": "Description3",
+					"title": "Avantage3"
+				},
+				"advantage4": {
+					"description": "Description4",
+					"title": "Avantage4"
+				},
+				"title": "Quels avantages pour moi ?"
+			},
+			"header": {
+				"button": {
+					"title": "Demandez une démo"
+				},
+				"subtitle": "Lorem ipsum",
+				"title": "Services d'ingénierie"
+			}
+		},
+		"facility-manager": {
+			"advantages": {
+				"advantage1": {
+					"description":
+						"Fini les allers-retours mensuels pour récolter les données de consommations énergétiques sur les compteurs de vos clients.",
+					"title": "Réduisez les coûts opérationnels"
+				},
+				"advantage2": {
+					"description":
+						"Récoltez les données pertinentes pour mieux contrôler votre GTB et optimiser les performances énergétiques.",
+					"title":
+						"Allez au-delà des attentes des contrats énergétiques"
+				},
+				"advantage3": {
+					"description":
+						"Proposez des services de monitoring en temps réel avec des solutions IoT à la pointe de la technologie.",
+					"title": "Distinguez-vous de la concurrence"
+				},
+				"title":
+					"Augmentez le ROI et améliorez vos contrats de performance énergétique"
+			},
+			"header": {
+				"button": {
+					"title": "Demandez une démo"
+				},
+				"subtitle":
+					"Remportez plus de contrats en déployant rapidement des solutions IoT, en réduisant les coûts opérationnels et en améliorant la performance énergétique des bâtiments.",
+				"title": "Facility Managers"
+			}
+		},
+		"howitworks": {
+			"api": {
+				"description":
+					"Une API sécurisée pour connecter et déployer à l’échelle vos applications.",
+				"link": "Voir les détails",
+				"link2": "Masquer les détails",
+				"more": {
+					"cafm": "FMAO - Facility management assisté par ordinateur",
+					"cmms":
+						"GMAO - Gestion de la maintenance assistée par ordinateur",
+					"ems": "Système de gestion énergétique",
+					"pma": "Application de gestionnaire d’immeubles",
+					"tenant": "Application pour les locataires"
+				},
+				"more-proptech": {
+					"confort": "Contrôle du confort",
+					"energy": "Économies d’énergie",
+					"longer":
+						"Accroissement de la durée de vie des équipements",
+					"maintenance": "Efficacité de la maintenance",
+					"occupancy": "Gestion de présence",
+					"smart": "Smart grid"
+				},
+				"title": "L'interface de programmation d’applications",
+				"url": ""
+			},
+			"box": {
+				"description":
+					"Un service de connexion du bâtiment qui collecte rapidement les données des équipements et de votre GTB.",
+				"title": "Le service<br/>Wattsense"
+			},
+			"console": {
+				"description":
+					"Gérez l’ensemble de vos Box et accédez à vos données, à vos logs, à vos consignes, à l’administration des utilisateurs, etc.",
+				"title": "La console<br/>utilisateur"
+			},
+			"cta": {
+				"box": {
+					"title": "Découvrez nos produits",
+					"url": "/fr/produits/box"
+				},
+				"hub": {
+					"title": "Découvrez le Hub",
+					"url": "/fr/produits/hub"
+				}
+			},
+			"desktop-console": {
+				"description":
+					"Connectez en quelques clics les capteurs IoT, les équipements techniques et les GTBs avec une navigation utilisateur intuitive et simple.",
+				"title": "La console de gestion Desktop"
+			},
+			"gateway": {
+				"description":
+					"Accédez localement aux données de n'importe quel capteur LoRaWAN et transformez-les en objets BACnet.",
+				"link": "En savoir plus",
+				"title": "Une passerelle LoRaWAN vers BACnet",
+				"url": "/fr/passerelle-lorawan-bacnet"
+			},
+			"hub": {
+				"description":
+					"A la fois passerelle IoT intuitive et automate puissant, conçu pour l'automatisation en local des bâtiments.",
+				"title": "Le Hub<br/>Wattsense"
+			},
+			"smartbuilding": {
+				"description":
+					"Déployez en un rien de temps les applications de gestion de bâtiments de vos clients en utilisant BACnet, MQTT et notre API RESTful.",
+				"title": "Connectez les applications de Smart Building"
+			},
+			"title": {
+				"default": "Comment ça marche ?",
+				"facility-manager":
+					"Créez des stratégies de gestion efficaces<br/>grâce à un accès facile aux données de terrain",
+				"integrator":
+					"Automatiser et contrôler<br/>tous les bâtiments, c’est possible",
+				"property-owner":
+					"Optimisez l'énergie, le confort,<br/>l'occupation et l’entretien",
+				"proptech":
+					"Créez et contrôlez des systèmes<br/>de gestion technique de bâtiments"
+			},
+			"wizard": {
+				"description":
+					"Connectez en quelques clics les capteurs IoT, le matériel CVC (HVAC) et les GTB.",
+				"title": "L'assistant de configuration"
+			}
+		},
+		"integrations": {
+			"link": "Consultez la liste complète",
+			"title": "Intégrations Smart Building",
+			"url": "/fr/ressources/integrations"
+		},
+		"integrator": {
+			"advantages": {
+				"advantage1": {
+					"description":
+						"Combinez la puissance de la GTB et l’agilité de l’IoT pour gagner plus de projets.",
+					"title": "Une technologie pour vous démarquer"
+				},
+				"advantage2": {
+					"description":
+						"La mise en place d'une GTB est complexe. Wattsense la rend plus facile, plus rapide et plus ingénieuse.",
+					"title": "Choisissez la simplicité"
+				},
+				"advantage3": {
+					"description":
+						"Wattsense vend exclusivement par l'intermédiaire de partenaires. Nous sommes là pour faire de chacun de vos projets une réussite.",
+					"link": {
+						"title": "Devenez l'un de nos partenaires"
+					},
+					"title": "Votre partenaire préféré"
+				},
+				"title":
+					"Faites la différence sur le marché de l’automatisation des bâtiments"
+			},
+			"header": {
+				"button": {
+					"title": "Demandez une démo"
+				},
+				"subtitle":
+					"Proposez dès maintenant à vos clients une technologie IoT de pointe pour simplifier l’intégration de la GTB.",
+				"title": "Intégrateurs"
+			}
+		},
+		"property-owner": {
+			"advantages": {
+				"advantage1": {
+					"description":
+						"Connectez-vous à des services innovants et évolutifs pour mieux gérer vos immeubles.",
+					"title":
+						"Accédez aux applications Smart Buildings de dernière génération"
+				},
+				"advantage2": {
+					"description":
+						"Connectez n’importe quel type d’appareil, équipement ou GTB pour un prix attractif, quelle que soit la taille de l'immeuble.",
+					"title": "Abordable et ouvert"
+				},
+				"advantage3": {
+					"description":
+						"Partagez les données avec toutes les parties prenantes : gestionnaires d’immeubles, locataires, intégrateurs, etc.",
+					"title": "Gardez le contrôle de votre GTB"
+				},
+				"title":
+					"Transformez facilement vos immeubles en Smart Buildings"
+			},
+			"header": {
+				"button": {
+					"title": "Demandez une démo"
+				},
+				"subtitle":
+					"Collectez et partagez les données de vos immeubles, offrez plus de confort aux occupants tout en créant de la valeur.",
+				"title": "Propriétaires Immobiliers"
+			}
+		},
+		"proptech": {
+			"advantages": {
+				"advantage1": {
+					"description":
+						"Libérez le potentiel de croissance de votre solution en vous affranchissant du chaos des réseaux et des protocoles de terrain présents dans les bâtiments.",
+					"title": "Évolutivité technique"
+				},
+				"advantage2": {
+					"description":
+						"Une solution à prix attractif, quelle que soit la taille de l'immeuble. Installez rapidement une GTB et accédez aux données de l'ensemble des équipements.",
+					"title": "Service ouvert pour un prix abordable"
+				},
+				"advantage3": {
+					"description":
+						"Engagez-vous dans des partenariats à grande échelle avec des propriétaires immobiliers ou des sociétés de facility management en créant des contrats types.",
+					"title": "Prédictibilité commerciale"
+				},
+				"title": "Le futur digital de la gestion d’immeubles"
+			},
+			"header": {
+				"button": {
+					"title": "Demandez une démo"
+				},
+				"subtitle":
+					"Déployez vos applications Smart Building en un rien de temps avec un service de connexion incomparable.",
+				"title": "PropTechs"
+			}
+		},
+		"whydifferent": {
+			"allinone-box": {
+				"description":
+					"Le service Wattsense remplace 4 équipements : module edge, automate programmable multiprotocoles, modem et passerelle IoT.",
+				"link": "Consultez le descriptif technique",
+				"title": "Tout-en-un",
+				"url":
+					"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/datasheet-box-fr.pdf"
+			},
+			"allinone-hub": {
+				"description":
+					"A lui seul, le Hub remplace 4 équipements : module edge, automate programmable multi-protocoles, modem et passerelle IoT.",
+				"link": "Consultez le descriptif technique",
+				"title": "Tout-en-un",
+				"url":
+					"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/datasheet-hub-fr.pdf"
+			},
+			"cta": {
+				"box": {
+					"link": "Consultez les tarifs",
+					"url": "/fr/tarifs/box"
+				},
+				"hub": {
+					"link": "Consultez les tarifs",
+					"url": "/fr/tarifs/hub"
+				}
+			},
+			"fastdeploy": {
+				"description":
+					"Avec le service Wattsense, 30 minutes suffisent pour mettre en place un réseau d’automatisation. Trop beau pour être vrai ? Vous pouvez le constater de vos propres yeux.",
+				"link": "Demandez une démo",
+				"title": "Simple et rapide à déployer"
+			},
+			"flexible-box": {
+				"description":
+					"Pour tous les types de bâtiments et d’usages avec une palette d’options tarifaires pour s’adapter à la diversité de vos projets.",
+				"title": "Solution flexible"
+			},
+			"flexible-hub": {
+				"description":
+					"Pour tous les types de bâtiments et d’usages avec une palette d’options tarifaires pour s’adapter à la diversité de vos projets.",
+				"title": "Solution flexible"
+			},
+			"install": {
+				"description":
+					"N’importe qui peut le faire ! Trop beau pour être vrai ? Vous pouvez le constater de vos propres yeux.",
+				"link": "Demandez une démo",
+				"title": "Simple et rapide à déployer",
+				"url": ""
+			},
+			"ondemand-box": {
+				"description":
+					"Une palette d’options tarifaires pour s’adapter à la diversité des bâtiments et des utilisations.",
+				"link": "Consultez les tarifs",
+				"title": "A la demande",
+				"url": "/fr/tarifs/box"
+			},
+			"ondemand-hub": {
+				"description":
+					"Une palette d’options tarifaires pour s’adapter à la diversité des bâtiments et des utilisations.",
+				"link": "Consultez les tarifs",
+				"title": "A la demande",
+				"url": "/fr/tarifs/hub"
+			},
+			"programmable": {
+				"description":
+					"La solution Wattsense est pensée pour les développeurs. Configurer et contrôler manuellement les bâtiments est possible lorsqu’on a peu de sites à gérer. En revanche, les technologies de programmation restent la seule solution pour garantir la scalabilité.",
+				"link": "Découvrez notre documentation API",
+				"title": "Entièrement programmable",
+				"url": "https://api.wattsense.com/"
+			},
+			"support": {
+				"description":
+					"Nous faisons le maximum pour transformer les projets de nos clients en véritables succès. Essayez-nous !",
+				"link": "Visitez notre Forum d'Assistance",
+				"title": "Assistance technique",
+				"url": "https://discuss.wattsense.com"
+			},
+			"title": {
+				"default": "En quoi Wattsense est différent ?",
+				"facility-manager":
+					"Libérez le potentiel des technologies de<br/>Facility Management grâce à Wattsense",
+				"integrator":
+					"Des fonctionnalités conçues pour relever les défis de l’intégration GTB",
+				"property-owner":
+					"Une surveillance des bâtiments précise et<br/>toujours accessible, pour une meilleure gestion<br/>de votre parc immobilier",
+				"proptech":
+					"Déployez rapidement vos solutions<br/>pour mieux gérer l’énergie et les immeubles"
+			}
+		}
+	},
+	"bms": {
+		"content": {
+			"button-see-less": "Voir moins",
+			"button-see-more": "Voir plus",
+			"title": "Avec Wattsense, vous pouvez aider les bâtiments à",
+			"topics": [
+				{
+					"content":
+						"Les systèmes de chauffage, de ventilation et de climatisation (CVC) engendrent de fortes exigences en matière de qualité de service. <b>Plusieurs fois par an, ils ont besoin de maintenance préventive ou curative.</b> Les techniciens qui fournissent ce service sont hautement qualifiés et coûteux. À titre de référence, en Europe occidentale, un technicien supérieur en réfrigération gagne jusqu'à 5 000 € / mois.<br/><br/>Il y a 500 000 <b>professionnels des services pour le secteur CVC dans le monde</b>. Leur rentabilité et leur productivité sont affectées par le temps passé à conduire leur camionnette d'un point A à un point B. Lorsqu'un client appelle parce que sa chambre froide ne fonctionne pas, la seule option dont dispose le technicien est de s'y rendre le plus rapidement possible. Le besoin immuable de la présence sur site du technicien pour évaluer et résoudre le problème altère le temps de réponse.<br/><br/><b>Les professionnels du CVC</b> rêvent d'applications qui les aideraient à surveiller et à contrôler les systèmes à distance.",
+					"description":
+						"Réduisez vos frais de maintenance et de réparation en aidant les sociétés de Facility Management ou les techniciens à superviser et à contrôler les équipements à distance via votre application.",
+					"title": "Gérer les installations"
+				},
+				{
+					"content":
+						"De nombreux bâtiments, même ceux de construction récente, sont confrontés à des problèmes de régulation thermique douteuse. De nouvelles solutions logicielles flexibles et financièrement abordables vont pouvoir <b>changer la vie quotidienne de millions de personnes</b> et améliorer la satisfaction des employés comme des clients.",
+					"description":
+						"Créez ou mettez en œuvre une solution logicielle qui contrôle les thermostats et qui corrige les défaillances du système de GTB, lesquelles sont causes d’inconfort et de frustration pour les occupants de l'immeuble en matière de régulation des températures.",
+					"title": "Assurer le confort des occupants"
+				},
+				{
+					"content":
+						"L’état actuel du <b>secteur de la GTB</b> peut vous sembler dépassé : ordinateurs de base à 5 000 €, réseaux non sécurisés et technologies logicielles reposant uniquement sur un langage de programmation visuelle obsolète. Ce fossé technologique a un impact significatif sur la consommation énergétique mondiale. Nous avons donc conçu une couche d'abstraction au-dessus de l'infrastructure GTB existante, de façon à ce que chaque bâtiment puisse bénéficier de logiciels d’optimisation conçus par des sociétés numériques à la pointe de la technologie.<br/><br/>Les systèmes de <b>chauffage, de ventilation et de climatisation (CVC)</b> constituent la principale source de consommation d’énergie dans la plupart des infrastructures. La facture énergétique de ces systèmes pèse lourdement sur le résultat net des entreprises. On estime en outre que <b>30% de l'énergie du bâtiment est gaspillée</b>, principalement par leur faute. L’une des causes de ce problème de surconsommation énergétique vient du fait que les solutions logicielles proposées par les équipements CVC et par les systèmes de GTB actuellement disponibles sur le marché sont conçues à partir de formules.<br/><br/><b><a href=\"https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/\" class=\"has-text-grey-darker\" target=\"_blank\">Le système d’intelligence artificielle DeepMind, de Google, explique pourquoi les logiciels basés sur des formules ne répondent pas aux exigences d'un système CVC performant :</a></b><ul><li>Les équipements de CVC, leurs modes de fonctionnement et l'environnement du bâtiment interagissent de manière complexe et non linéaire.</li><li>Des règles et méthodes heuristiques ne peuvent pas être conçues pour couvrir tous les scénarios d'exploitation d'un système CVC dynamique comportant naturellement de nombreuses variables.</li><li>Chaque bâtiment a une architecture et un environnement uniques. Un modèle personnalisé pour un cas donné peut ne pas être applicable à un autre.</li></ul>Les deux premiers points affectent les performances du logiciel, tandis que le troisième affecte ses capacités d’adaptation et d’évolution : la technologie utilisée par les logiciels traditionnels de gestion technique des bâtiments (GTB) nécessite une ingénierie poussée pour chaque nouveau bâtiment, chaque rénovation ou extension. Les éditeurs de logiciels capables de <b>mettre en place des solutions pour bâtiments intelligents</b> sont en mesure de faire beaucoup mieux que les systèmes GTB existants en matière d’efficacité énergétique et de passage à l’échelle.",
+					"description":
+						"Connectez les bâtiments à l’industrie moderne du logiciel et économisez 30% de la consommation énergétique du secteur du bâtiment, soit 400 milliards d'euros de factures, en déployant facilement et rapidement des applications conçues pour les bâtiments intelligents.",
+					"title": "Economiser de l’énergie"
+				},
+				{
+					"content":
+						"Les opérateurs des réseaux électriques doivent équilibrer la demande et l'offre d'électricité. La transition vers des sources d’énergie renouvelables représente pour eux un défi historique mondial. Alors que les sources d’énergie traditionnelles (gaz, charbon, nucléaire, etc.) sont approvisionnées de façon relativement stable, les volumes liés aux énergies renouvelables sont très variables, ce qui entraîne des fluctuations d’offre beaucoup plus importantes.<br/><br/>La maîtrise de la demande d’énergie est une solution qui a fait ses preuves pour réduire le besoin de consommation énergétique lorsque l’offre ne peut pas suivre. Elle permet de <b>réduire la taille des réseaux électriques</b> tout en maintenant la continuité du service pendant les pics de demande. Actuellement, les programmes de maîtrise de la demande d’énergie couvrent environ 3% de la consommation et sont utilisés principalement par les secteurs fortement consommateurs (aciéries, hypermarchés, cimenteries, etc.). Augmenter le recours aux outils de maîtrise de la demande est un sujet stratégique pour tous les pays, car chaque pourcent supplémentaire de la consommation mondiale couvert permet d'<b>économiser environ 100 milliards d'euros de construction de centrales</b>. Les défis techniques et financiers de la transition énergétique poussent ainsi les États à augmenter les incitations financières qu’ils mettent en place pour déployer des solutions de maîtrise de la demande énergétique et accroître le ratio de couverture. Les services publics de l’énergie et les <a href=\"https://www.energyvortex.com/energydictionary/aggregator.html\" target=\"_blank\">agrégateurs</a> transforment ces incitations en offres de plus en plus attrayantes pour les consommateurs d’énergie.<br><br><b>Deux facteurs principaux influent sur les offres de maîtrise de la demande en énergie :</b><ul><li>Un impact minimal sur le fonctionnement du client. Pour être largement déployées, ces solutions ne devraient engendrer aucun impact.</li><li>Un retour sur investissement plus court. Le ratio entre le coût de déploiement et la création mensuelle de valeur est crucial.</li></ul><b>Les systèmes CVC constituent un objectif privilégié pour la mise en oeuvre de solutions évolutives de maîtrise de la demande en énergie :</b><ul><li>Ils ont une grande inertie (masse des bâtiments, boucles d'eau, réservoirs tampons, chambres froides, entre autres) et peuvent être exploités comme un réservoir d'énergie sans impacter les occupants ni le fonctionnement du bâtiment.</li><li>Ils représentent d’importantes quantités d'énergie consommées, susceptibles de se transformer en réelle création de valeur grâce aux dispositifs de maîtrise de la demande.</li><li>Le coût de déploiement des solutions existantes de maîtrise de la demande d’énergie est très élevé. Il est par exemple de 7 000 € pour un immeuble de bureaux de 1 000 m2 déjà équipé d’un système de GTB, et de 21 000 € sans GTB. Comme l'a déclaré l'Agence française de l'énergie en 2017, il s'agit d'un facteur limitant majeur pour le déploiement de ces solutions.</li></ul>",
+					"description":
+						"Déployez une solution logicielle de maîtrise de votre demande d’énergie qui ne perturbe pas le fonctionnement de vos infrastructures tout en apportant une valeur considérable pour le réseau électrique. Nous pensons que le coût de déploiement de ces solutions dans les bâtiments peut être divisé par dix, et nous y travaillons actuellement.",
+					"title": "Maîtriser la demande d’énergie"
+				}
+			]
+		},
+		"header": {
+			"description":
+				"9% de l'énergie mondiale est contrôlée par des systèmes de gestion technique de bâtiments.",
+			"title": "GTB"
+		},
+		"whats-bms": {
+			"paragraph1":
+				"Un <b>système de gestion technique des bâtiments (GTB) est un système informatique installé dans les bâtiments pour gérer et surveiller les équipements</b> comme la climatisation, le chauffage, la ventilation, l'éclairage, les systèmes d'alimentation énergétique, etc.",
+			"paragraph2":
+				"<b>Les technologies utilisées par les équipements et les logiciels de GTB ont été créées dans les années 60.</b> Au fil des ans, l’infrastructure informatique des systèmes de GTB s’est complexifiée de façon organique en intégrant de nouvelles couches de protocoles de communication, de réseaux et de contrôles.",
+			"paragraph3":
+				"En conséquence, de nos jours, les équipements et systèmes de Gestion Technique de Bâtiments se sont transformés en un agglomérat de composants incompatibles et d'architectures impénétrables. Grâce à notre plateforme et à nos services, nous avons l'intention de contourner cette infrastructure chaotique et de <b>fournir à tous les développeurs de logiciels un accès aux bâtiments.</b>",
+			"title": "Qu'est-ce qu'une GTB ?"
+		}
+	},
+	"clients": {
+		"advizeo": {
+			"name": "Advizeo",
+			"url": "https://www.advizeo.io/"
+		},
+		"aveltys": {
+			"name": "Aveltys",
+			"url": "https://www.linkedin.com/company/aveltys/"
+		},
+		"bouygues": {
+			"name": "Bouygues Energies & Services",
+			"url": "https://www.bouygues-es.fr/"
+		},
+		"calidity": {
+			"name": "Calidity",
+			"url": "https://www.calidityapp.com/"
+		},
+		"cbre": {
+			"name": "CBRE",
+			"url": "https://www.cbre.fr"
+		},
+		"citron": {
+			"name": "Citron",
+			"url": "https://citron.io/"
+		},
+		"deepki": {
+			"name": "Deepki",
+			"url": "https://www.deepki.com/"
+		},
+		"delphis": {
+			"name": "Delphis",
+			"url": "http://www.delphisgroup.gr/"
+		},
+		"deltaq": {
+			"name": "DeltaQ",
+			"url": "https://deltaq.io/"
+		},
+		"egain": {
+			"name": "Egain",
+			"url": "https://www.egain.io/"
+		},
+		"energisme": {
+			"name": "Energisme",
+			"url": "https://energisme.com/fr/"
+		},
+		"eqinov": {
+			"name": "Eqinov",
+			"url": "https://www.eqinov.com/"
+		},
+		"facilio": {
+			"name": "Facilio",
+			"url": "https://facilio.com/"
+		},
+		"hxperience": {
+			"name": "HXperience",
+			"url": "https://hxperience.com/"
+		},
+		"idex": {
+			"name": "Idex",
+			"url": "https://www.idex.fr/"
+		},
+		"intent": {
+			"name": "Intent",
+			"url": "https://intent.tech/"
+		},
+		"librafluides": {
+			"name": "Librafluides Concept",
+			"url": "http://librafluidesconcept.com/"
+		},
+		"nexity": {
+			"name": "Nexity",
+			"url": "https://www.nexity.fr/"
+		},
+		"setemi": {
+			"name": "Setemi",
+			"url": "http://www.setemi.fr/"
+		},
+		"sodexo": {
+			"name": "Sodexo",
+			"url": "https://fr.sodexo.com/"
+		},
+		"spie": {
+			"name": "Spie",
+			"url": "http://www.spie.com/"
+		},
+		"wizag": {
+			"name": "Wizag",
+			"url": "https://www.wisag.de/"
+		}
+	},
+	"compatibility": {
+		"compatible": "Compatible",
+		"development": "En développement",
+		"header": {
+			"subtitle":
+				"Vérifiez la compatibilité avec votre équipement. Connectez-le à une infrastructure robuste, sécurisée et à l'échelle.",
+			"title": "Compatibilité"
+		},
+		"introduction":
+			"Vérifiez rapidement si l’équipment que vous souhaitez connecter est compatible avec le service Wattsense. Écrivez simplement le modèle ou la marque de l'appareil dans la barre de recherche. À ce jour, 520 équipements sont disponibles sur le vérificateur de compatibilité.<br /><br />Le vérificateur de compatibilité fait partie de notre base de données d'équipements, un stockage organisé des données nécessaires pour la configuration du réseau avec des informations telles que  les différentes marques d'équipements, les modèles, les fiches techniques et les tables de communication.",
+		"loading": "Chargement",
+		"no-equipment-found": "Aucun équipement trouvé",
+		"not-found": "Aucun équipement trouvé",
+		"protocols": "Protocoles",
+		"search-placeholder": "Recherchez par marque / modèle",
+		"subscription": {
+			"caption":
+				"Vous ne trouvez pas ce que vous cherchez? Faites-le nous savoir et nous l'ajouterons gratuitement.",
+			"email": "Votre email",
+			"error-email":
+				"Oups! Veuillez renseigner une adresse email valide.",
+			"error-other":
+				"Oups! Quelque chose s'est mal passé. Veuillez vérifier si votre adresse email est valide.",
+			"error-server":
+				"Oups! Quelque chose s'est mal passé avec notre serveur. S'il vous plaît envoyez-nous un message à contact@wattsense.com",
+			"model": "Modèle",
+			"send": "Envoyer",
+			"sending": "Envoi en cours",
+			"success":
+				"Merci pour votre requête. Nous reviendrons vers vous sous peu."
+		},
+		"cta": {
+			"title": "Découvrez nos produits"
+		}
+	},
+	"contact": {
+		"form": {
+			"email": {
+				"label": "Email",
+				"placeholder": "Votre email",
+				"error": "Quel est votre email ?",
+				"erroremail": "Ce n'est pas une adresse e-mail valide"
+			},
+			"message": {
+				"label": "Votre message",
+				"placeholder": "Votre message",
+				"error": "Quel est votre message ?",
+				"default-message":
+					"Bonjour, je voudrais plus d'informations sur Wattsense."
+			},
+			"company": {
+				"label": "Société",
+				"placeholder": "Votre société",
+				"error": "Quel est votre société ?"
+			},
+			"name": {
+				"label": "Nom complet",
+				"placeholder": "Votre nom complet",
+				"error": "Quel est votre nom ?"
+			},
+			"submit": "Envoyer",
+			"success":
+				"Merci pour votre message, nous vous contacterons bientôt!",
+			"error":
+				"Nous avons eu un problème pour envoyer votre message. Merci de nous contacter à contact@wattsense.com.",
+			"title": "Hello! Que pouvons-nous faire pour vous ?"
+		},
+		"header": {
+			"subtitle": "",
+			"title": "Contact"
+		}
+	},
+	"cookies": {
+		"buttons": {
+			"accept": "J'accepte",
+			"refuse": "Je refuse"
+		},
+		"message":
+			"Ce site utilise des cookies pour réaliser des statistiques de visite.<br><br class='is-hidden-widescreen'>En cliquant sur « J’accepte », vous acceptez l'utilisation de ces cookies afin d'améliorer votre expérience d'utilisateur de notre site."
+	},
+	"cta-join-beta": {
+		"buttons": {
+			"contact": {
+				"label": "Nous contacter",
+				"url": "/fr/contact"
+			},
+			"join": "Demander une démo",
+			"try": "Essayer notre solution"
+		},
+		"subtitle": "Contactez-nous ou demandez une démonstration !",
+		"title": "Prêt à essayer ?"
+	},
+	"cta-newsletter": {
+		"button": "Je m’abonne !",
+		"email": "Votre Email",
+		"send": "Envoyer",
+		"subtitle": "Inscrivez-vous pour recevoir nos actualités",
+		"success": "Vous êtes abonné à notre liste !",
+		"title": "Recevez notre newsletter"
+	},
+	"facility-manager": {
+		"advantage": {
+			"adv1":
+				"Offrir des contrats plus compétitifs et de durées plus flexibles.",
+			"adv2": "Augmenter la profitabilité de vos contrats.",
+			"adv3":
+				"Déployer votre service plus vite avec vos propres équipes.",
+			"adv4":
+				"Partager facilement les données avec d’autres acteurs du bâtiment.",
+			"title": "L’avantage Wattsense"
+		},
+		"api-explanation": {
+			"connect": {
+				"text":
+					"Notre Box peut unifier et rationaliser votre flux de données. Elle se connecte facilement aux autres matériels et joue le rôle de concentrateur de données : modules IoT, sondes Lora, passerelles, automates, compteurs, etc.",
+				"title": "Connectez tous les dispositifs nécessaires"
+			},
+			"play": {
+				"text": {
+					"paragraph1":
+						"Votre logiciel se connecte au bâtiment de votre client via notre interface de programmation applicative, désignée par le terme API. Il peut ainsi <strong>récupérer les données</strong> et <strong>envoyer des commandes</strong>.",
+					"paragraph2":
+						"L’API Wattsense est de type RESTfull. Il s’agit de la technologie qui s’est imposée dans le web pour connecter deux services logiciels. L’interfaçage de votre logiciel avec notre API est l’affaire de quelques jours. Une fois cette opération effectuée, vous êtes prêt à déployer à l’échelle votre solution vers les bâtiments de vos clients."
+				},
+				"title": "and Play"
+			},
+			"plug": {
+				"text": {
+					"paragraph1":
+						"Il n’est plus nécessaire de faire appel à une société d’intégration. Vos techniciens habilités basse tension peuvent connecter la Box Wattsense aux équipements du bâtiment ou au réseau GTB. La Box se connecte alors automatiquement à notre plateforme cloud.",
+					"paragraph2":
+						"L’opération laborieuse de configuration du réseau est drastiquement simplifiée par Wattsense et se réalise en quelques clics, à distance, depuis notre plateforme."
+				},
+				"title": "Plug..."
+			},
+			"time": {
+				"text":
+					"Plus besoin de gérer les fournisseurs de réseaux GSM, les services VPN, les intégrateurs et automaticiens : Wattsense regroupe tous ces services dans un abonnement unique.",
+				"title": "Gagnez du temps"
+			}
+		},
+		"connect-buildings": {
+			"card1": {
+				"subtitle": "Connexion par vos propres techniciens",
+				"title": "Tout de suite!"
+			},
+			"card2": {
+				"subtitle": "Moins Cher",
+				"title": "10x",
+				"upper-title": "Jusqu’à"
+			},
+			"title": "La connexion aux bâtiments"
+		},
+		"deploy": {
+			"bim": {
+				"subtitle": "Building Information Modeling",
+				"title": "BIM"
+			},
+			"cafm": {
+				"subtitle": "Facility Management Assisté par Ordinateur",
+				"title": "FMAO"
+			},
+			"cmms": {
+				"subtitle": "Gestion de la Maintenance Assistée par Ordinateur",
+				"title": "GMAO"
+			},
+			"iwms": {
+				"subtitle":
+					"Solution de gestion intégrée de l'environnement de travail",
+				"title": "IWMS"
+			},
+			"scada": {
+				"subtitle": "Supervisory Control And Data Acquisition",
+				"title": "SCADA"
+			},
+			"smart-app": {
+				"subtitle":
+					"Des logiciels les plus simples aux dernières technologies",
+				"title": "SMART BUILDING APP"
+			},
+			"title": "Déployez votre logiciel à l’échelle"
+		},
+		"header": {
+			"subtitle":
+				"Déployer vos logiciels vers les bâtiments de vos clients n’a jamais été aussi facile.",
+			"title": "Facility Management"
+		},
+		"unlock-power": {
+			"content":
+				"Le gaspillage énergétique, la pollution, les coûts opérationnels et le confort des locataires sont parmi les nombreux facteurs qui poussent les sociétés de Facility Management à optimiser leurs services. Malheureusement, la plupart des bâtiments connectés ne sont pas équipés pour vous offrir, à vous et votre équipe, les données d'équipement et les outils en temps réel permettant d'améliorer le confort, la performance des actifs et la productivité du personnel.<br/><br/>Grâce à notre service de connectivité des bâtiments, nous supprimons l'infrastructure héréditaire chaotique pour que vous n’ayez pas à le faire, et vous fournissons rapidement un accès pour déployer des solutions IoT, des applications pour les bâtiments intelligents ou des logiciels de gestion multisites.<br/><br/>L'élimination des obstacles à la connectivité des actifs aide les entreprises à optimiser l'efficacité de leur personnel technique, à améliorer le confort des occupants et à réduire considérablement l'empreinte énergétique des bâtiments.",
+			"title":
+				"Libérez le potentiel des technologies de Facility Management"
+		}
+	},
+	"footer": {
+		"company": "ENTREPRISE",
+		"connect": "CONNEXION",
+		"follow-us": "SUIVEZ-NOUS",
+		"offer": "OFFRE"
+	},
+	"index": {
+		"clients": {
+			"subtitle":
+				"Entreprises qui redéfinissent les normes de l'industrie",
+			"title": "Clients"
+		},
+		"community-heart": {
+			"button": "Notre manifesto",
+			"description":
+				"La plupart des briques que nous concevons sont <span class='strong'>open source</span>. C’est notre contribution à la simplification de l’infrastructure GTB.",
+			"title": "Priorité à l’open source"
+		},
+		"connect": {
+			"description":
+				"De nombreux protocoles de communication - ouverts et fermés - et une base de données croissante de plus de 500 équipements, nous vous aidons à vous connecter à n'importe quel appareil, filaire et IoT. Si un appareil n'est pas déjà dans notre base de données, faites-le nous savoir et nous l'ajouterons gratuitement.",
+			"learn-more": "Vérifiez la compatibilité",
+			"title": "Connectez tout"
+		},
+		"header": {
+			"buttons": {
+				"buy-now": "Acheter maintenant",
+				"join": "&nbsp;&nbsp;&nbsp;Demander une démo&nbsp;&nbsp;&nbsp;",
+				"learn-more": "En savoir plus"
+			},
+			"slogan":
+				"Une solution IoT simple et ouverte qui vous permet de contrôler et piloter des bâtiments de toute taille. Réduisez la consommation d'énergie et améliorez le confort des occupants avec Wattsense.",
+			"subtitle":
+				"Connectez votre application depuis le cloud vers les bâtiments",
+			"title": "Gardez le contrôle des bâtiments avec une GTB simple"
+		},
+		"how-it-works": {
+			"install": {
+				"description":
+					"En moins d'une journée, connectez vos équipements du bâtiment ou votre GTB.",
+				"title": "Installez"
+			},
+			"run": {
+				"description":
+					"Connectez votre application à notre API. Le bâtiment vient d'être upgradé!",
+				"title": "Lancez l’application"
+			},
+			"setitup": {
+				"description":
+					"Configurez le réseau local où que vous soyez et en un rien de temps grâce à notre console utilisateur intuitive.",
+				"title": "Paramétrez"
+			},
+			"shot": {
+				"description": "Prenez une Box ou un Hub.",
+				"highlight": "Satisfait ou remboursé.",
+				"title": "Essayez"
+			},
+			"subtitle":
+				"Il est facile et rapide de <span class='strong'>connecter votre application</span> <br>à n'importe quel bâtiment en utilisant Wattsense",
+			"title": "Comment ça marche"
+		},
+		"improving": {
+			"button": "Voir les produits Wattsense :",
+			"description":
+				"Wattsense est un service d’infrastructure qui s’améliore en permanence et se dote de nouvelles fonctionnalités chaque mois.",
+			"title": "En constante amélioration"
+		},
+		"integrations": {
+			"description":
+				"Wattsense est intégré à une grande variété d'applications Smart Building. Elles vous proposent des services innovants, performants et évolutifs pour mieux gérer les bâtiments.",
+			"learn-more": "Découvrez nos intégrations",
+			"title": "Intégrations"
+		},
+		"plug-play": {
+			"description":
+				"Wattsense est super simple à installer sur le terrain par un électricien. Vous pouvez le configurer en un rien de temps de n'importe où.",
+			"learn-more": "Regardez une démo du wizard de configuration",
+			"title": "Plug and Play"
+		},
+		"simple": {
+			"button": "A propos de Wattsense",
+			"description":
+				"Nous cherchons de manière obsessionnelle de nouvelles façons de simplifier l'infrastructure GTB. Notre travail consiste à transformer un héritage informatique chaotique en une abstraction moderne et intuitive.",
+			"title": "Vraiment simple"
+		},
+		"unify": {
+			"link": "Découvrez la Box",
+			"title":
+				"Collectez et unifiez les données GTB de vos bâtiments neufs et existants",
+			"url": "/fr/produits/box"
+		},
+		"upgrade": {
+			"apps": "Your apps",
+			"title":
+				"Equipez vos bâtiments d’une infrastructure GTB intuitive et ouverte"
+		}
+	},
+	"landing": {
+		"gateway": {
+			"content": {
+				"advantages": {
+					"advantage1": {
+						"description":
+							"La technologie sans fil LoRaWAN supprime l’étape, souvent onéreuse et longue, d’installation d’une connexion filaire des capteurs. Proposez à vos clients une solution offrant un retour sur investissement rapide.",
+						"title": "Retour sur investissement rapide"
+					},
+					"advantage2": {
+						"description":
+							"Effectuez le travail en quelques minutes sans perturber les occupants de l’immeuble. En utilisant notre application Desktop intuitive, vous pouvez configurer les capteurs, accéder à leurs données et les partager.",
+						"title": "Economisez du temps"
+					},
+					"advantage3": {
+						"description":
+							"Connectez et gérez les capteurs LoRaWAN, décodez et isolez l’information pertinente sans devoir vous connecter à un fournisseur externe ni au Cloud.",
+						"title": "Traitez les données localement"
+					}
+				},
+				"form": {
+					"download": "Télécharger la brochure",
+					"email": "E-mail professionnel",
+					"name": "Nom",
+					"phone": "Téléphone",
+					"privacy":
+						"Votre vie privée est importante pour nous. Nous nous engageons à ne pas partager cette information.",
+					"title":
+						"Découvrez comment accéder aux données de n’importe quel capteur LoRaWAN en quelques minutes"
+				},
+				"lorawan": {
+					"title": "LoRaWAN gateway",
+					"description":
+						"Les passerelles LoRaWAN traditionnelles sont des intermédiaires qui permettent aux capteurs de transmettre des données vers le Cloud.<br/><br/>La technologie de la passerelle LoRaWAN vers BACnet vous donne l’opportunité de bénéficier en local des innovations conçues pour les services cloud, ainsi que de prix modérés et de notre assistance technique."
+				},
+				"testimonials": {
+					"title": "Expériences Clients"
+				},
+				"text1":
+					"Une manière simple et interopérable de transmettre les données LoRaWAN aux systèmes de gestion technique des bâtiments.",
+				"text2":
+					"La passerelle Wattsense LoRaWAN vers BACnet et sa technologie innovante apportent à vos projets sur-site simplicité, économies et l’assistance technique si besoin. Simplifiez la configuration, l’intégration GTB et l’acquisition de données grâce à cette fonctionnalité.",
+				"title": "Passerelle LoRaWAN vers BACnet par Wattsense"
+			}
+		}
+	},
+	"legal-notice": {
+		"cookies": {
+			"content1": "",
+			"content2": "",
+			"content3": "",
+			"content4": "",
+			"title": ""
+		},
+		"data": {
+			"content1":
+				"Notre solution est B to B ; nos interlocuteurs sont donc des professionnels.",
+			"content2":
+				"Nous collectons les données de nos internautes uniquement pour produire les actions qu’ils nous demandent de réaliser :",
+			"content3":
+				"Demande de contact : nous collectons le nom et l’adresse électronique de l’internaute pour pouvoir le recontacter ; ces données sont conservées tant que l’internaute ne nous demande pas de les supprimer (voir rubrique « Droit à l’oubli »).",
+			"content4":
+				"Abonnement à notre newsletter : nous collectons l’adresse électronique de l’internaute sur laquelle il souhaite recevoir la newsletter ; cette donnée est conservée tant que l’internaute ne se désabonne pas de la newsletter.",
+			"content5":
+				"Activation d’une démonstration en ligne : nous collectons le nom, l’adresse électronique et le numéro de téléphone de l’internaute, ainsi que le nom de l’entreprise pour laquelle l’internaute intervient ; ces données sont conservées tant que l’internaute ne nous demande pas de les supprimer (voir rubrique « Droit à l’oubli »).",
+			"content6":
+				"Achat en ligne de notre solution : nous collectons le nom, les coordonnées postales et téléphoniques et le numéro individuel d’identification de l’entreprise qui achète, le nom, le prénom et l’adresse électronique de la personne qui réalise l’achat, le nom et les coordonnées postales et téléphoniques de l’entreprise où nous devons livrer, ainsi que les données de la carte bancaire servant au paiement ; les informations concernant la carte bancaire sont automatiquement transmises à et stockées par Stripe, le prestataire spécialisé en paiements Internet à qui nous déléguons les transactions financières, mais aucune donnée bancaire n’est conservée par Wattsense ; les autres données sont conservées tant que l’internaute ou l’entreprise cliente ne nous demande pas de les supprimer (voir rubrique « Droit à l’oubli »).",
+			"content7":
+				"La création d’un compte client et l’accès à ce compte : nous collectons le nom de l’entreprise et l’adresse électronique de l’administrateur du compte ; l’identifiant du compte client est l’adresse électronique de l’administrateur ; le système génère un mot de passe envoyé à cet administrateur par courriel et stocké de façon encryptée. Lorsque le client génère un nouveau mot de passe via son compte, ce dernier est également stocké de façon encryptée :  Wattsense n’a pas accès à la version lisible des mots de passe des clients. Ces données sont conservées tant que l’internaute ou l’entreprise cliente ne nous demande pas de les supprimer (voir rubrique « Droit à l’oubli »).",
+			"title": "Collecte de données personnelles"
+		},
+		"hosting": {
+			"content1":
+				"Le site est hébergé auprès de la société Amazon Web Services EMEA (38 avenue John F. Kennedy, L-1855 Luxembourg - R.C.S. Luxembourg : B186284).",
+			"title": "Hébergement"
+		},
+		"identification": {
+			"content1":
+				"Ce site web est édité par et appartient à la société <br>Wattsense</br>, Société par Actions Simplifiée au capital de 87.272 euros, immatriculée au Registre du Commerce et des Sociétés de Villefranche-Tarare sous le numéro 833 253 131.",
+			"content2":
+				"Son siège social est sis Le Bourg Sainte Paule – 69620 Sainte Paule.<br />Les coordonnées de son établissement principal sont les suivantes : 39 chemin du Moulin Carron – Espace Ouest – 69570 Dardilly France.",
+			"content3":
+				"Son numéro de TVA intracommunautaire (ou numéro individuel d’identification) est FR50833253131.",
+			"content4":
+				"Le directeur de la publication et responsable de la rédaction du blog d’information est M. Louis Vermorel, Président de Wattsense. Il peut être joint au standard de la société, au numéro 04 28 29 83 49, ou par courriel à l’adresse électronique <a href=\"mailto:contact@wattsense.com\">contact@wattsense.com</a>.",
+			"title": "Identification"
+		},
+		"oblivion": {
+			"content1":
+				"Conformément à l’article 17 du Règlement Général Européen sur la Protection des données (RGPD), chaque internaute dispose d’un « droit à l’effacement », également appelé « droit à l’oubli », qui lui permet de demander la suppression de ses données personnelles.",
+			"content2":
+				"Ce droit est exerçable en adressant un courriel à l’adresse <a href=\"mailto:contact@wattsense.com\">contact@wattsense.com</a> ou en envoyant un courrier postal à l’adresse suivante : Wattsense – Traitement des données personnelles – 39, chemin du Moulin Carron – Espace Ouest – 69570 Dardilly – France.",
+			"title": "Droit à l'oubli"
+		},
+		"property": {
+			"content1":
+				"Les marques, logos et plus généralement tous les éléments de propriété intellectuelle sont la propriété de la société Wattsense et sont déposés et protégés. Toute utilisation ou reproduction est interdite sans accord écrit préalable de la société Wattsense.",
+			"content2":
+				"L'utilisation du site est régie par la loi française et relève de la compétence des tribunaux français.",
+			"title": "Propriété intellectuelle"
+		},
+		"title": "Mentions Légales"
+	},
+	"made-in-france": "Fabriqué en France",
+	"partners": {
+		"header": {
+			"title": "Travaillez en partenariat avec Wattsense",
+			"subtitle":
+				"Distribuez une solution IoT qui permet d'introduire la GTB à tous les bâtiments.",
+			"button": {
+				"title": "Devenir partenaire"
+			}
+		},
+		"banner": {
+			"title":
+				"Vous êtes déjà partenaire ? Accédez à <a href='https://drive.google.com/drive/folders/1Esf5agS3T8pat5gZMRarWZBvbmlkaX9q?usp=sharing' target='_blank'>vos ressources</a>"
+		},
+		"advantages": {
+			"advantage1": {
+				"description":
+					"Wattsense est très simple à installer sur le terrain par un électricien. Vous pouvez le configurer en un rien de temps, de n'importe où. La solution Wattsense réduit les coûts d’intégration et le nombre d’interventions inopportunes sur les sites occupés.",
+				"link": {
+					"title": "Box - Service managé",
+					"url": "/fr/produits/box"
+				},
+				"link2": {
+					"title": "Hub - Solution locale",
+					"url": "/fr/produits/hub"
+				},
+				"title": "Solution Plug and Play"
+			},
+			"advantage2": {
+				"description":
+					"Wattsense permet aux bâtiments de petite et moyenne taille de bénéficier d’une GTB à un prix abordable en supprimant la complexité technique. Connectez rapidement les équipements de terrain, configurez les réseaux, définissez les programmations horaires, visualisez et partagez les données.",
+				"title": "Facilité d’utilisation et d’intégration GTB"
+			},
+			"advantage3": {
+				"description":
+					"La solution Wattsense communique avec les principaux protocoles du secteur, qu’ils soient ouverts ou privés, ce qui la rend compatible avec plus de 500 matériels. Consultez notre testeur de compatibilité et explorez notre base de données.",
+				"title": "Convertisseur multi-protocoles",
+				"link": {
+					"title": "Vérifiez la compatibilité",
+					"url": "/fr/compatibilite"
+				}
+			},
+			"title": "Pourquoi Wattsense ?"
+		},
+		"gateway": {
+			"title": "Passerelle LoRaWAN vers BACnet",
+			"description":
+				"Grâce à cette fonctionnalité, les intégrateurs peuvent accéder localement aux données de n'importe quel capteur LoRaWAN. De leur côté, les propriétaires immobiliers peuvent ainsi apporter à leurs locataires des économies d’énergie, des améliorations de confort, de sécurité, de qualité de l’air, et bien d’autres.",
+			"button": {
+				"link": "Plus d'information",
+				"url": "/fr/passerelle-lorawan-bacnet"
+			}
+		},
+		"ecosystem": {
+			"title": "L’écosystème Wattsense",
+			"integrations": {
+				"title": "Intégrations",
+				"description":
+					"Wattsense est déjà préconfiguré pour se connecter à plus de 20 applications de Smart Building réputées. En pleine croissance, la communauté Wattsense regroupe les principaux prestataires de services et éditeurs de logiciels, applications et solutions IoT intégrables à notre solution.",
+				"button": {
+					"link": "Découvrez nos intégrations",
+					"url": "/fr/ressources/integrations"
+				}
+			},
+			"partners": {
+				"title": "Partenaires et distributeurs",
+				"description":
+					"Grâce à cette solution IoT de pointe, qui offre aux utilisateurs une vraie valeur ajoutée facile à prouver, Wattsense bénéficie d’une forte traction commerciale naturelle. Vos clients peuvent en outre se conformer aux exigences du décret BACS, améliorer la performance de leurs équipements, réduire leurs coûts d’exploitation et leur consommation d’énergie."
+			},
+			"cta": {
+				"title": "Rejoignez notre écosystème"
+			}
+		},
+		"resources": {
+			"title": "Ressources pour une meilleure gestion des bâtiments"
+		},
+		"cta": {
+			"title": "Plus d'information",
+			"url": "/fr/entreprise"
+		}
+	},
+	"pricing": {
+		"advantage": {
+			"control": {
+				"description":
+					"Gérez votre infrastructure GTB depuis votre bureau.<br/>Pas de surprises.",
+				"title": "Gardez le contrôle"
+			},
+			"digitize": {
+				"description":
+					"Économisez des semaines de temps de déploiement sur chaque projet.",
+				"title": "Numérisez les bâtiments plus rapidement"
+			},
+			"flexible": {
+				"description":
+					"Gardez votre infrastructure GTB<br/>à jour facilement.",
+				"title": "Restez flexible"
+			},
+			"header": {
+				"title": "Les atouts Wattsense"
+			}
+		},
+		"box": {
+			"cta": {
+				"button": "Acheter maintenant",
+				"details": "Consultez le descriptif complet",
+				"price": "par Box"
+			},
+			"header": {
+				"description":
+					"Collectez des données, envoyez des commandes et connectez-vous automatiquement à notre plateforme Cloud grâce à notre Box.",
+				"title": "La Box"
+			},
+			"items": {
+				"4g": "Forfait data 4G inclus",
+				"bacnet": "BACnet",
+				"connect": "Connecteur universel.",
+				"ethernet": "2x Ethernet",
+				"gsm": "Modem GSM + carte SIM à couverture mondiale",
+				"install": "Très simple à installer et pourtant puissante.",
+				"lontalk": "LonTalk",
+				"lora": "Modem LoRa",
+				"managed": "Produit managé",
+				"modbus": "Modbus",
+				"more": "Bien d’autres encore",
+				"ports": "11 ports de réseaux filaires",
+				"protocols": "10 protocoles de communication",
+				"rs485": "2x RS485"
+			}
+		},
+		"examples": {
+			"bank": {
+				"img": "pricing/bank.svg",
+				"items": [
+					"5 x capteurs IoT de confort",
+					"2 x capteurs IoT d’occupation",
+					"1 x capteur IoT compteur de gaz"
+				],
+				"title": "Agence bancaire"
+			},
+			"large": {
+				"img": "pricing/large-residence.svg",
+				"items": ["1 x sous-station de chauffage"],
+				"title": "Grande résidence"
+			},
+			"mall": {
+				"img": "pricing/mall.svg",
+				"items": [
+					"1 x GTB (100 équipements)",
+					"8 x compteurs thermiques",
+					"30 x capteurs IoT de passage",
+					"10 x capteurs IoT ouverture skydome",
+					"20 x capteurs IoT de confort"
+				],
+				"title": "Centre commercial"
+			},
+			"multi-family-housing": {
+				"img": "pricing/multi-family.svg",
+				"items": [
+					"2 x chaudières",
+					"2 x régulateurs de chauffage",
+					"20 x capteurs IoT de confort",
+					"1 x compteur thermique",
+					"1 x compteur électrique",
+					"1 x compteur d’eau",
+					"1 x capteur IoT compteur gaz"
+				],
+				"title": "Copropriété"
+			},
+			"office-building": {
+				"img": "pricing/office-building.svg",
+				"items": [
+					"1 x GTB (20 équipements)",
+					"20 x capteurs IoT de confort",
+					"10 capteurs IoT d'occupation"
+				],
+				"title": "Immeuble de bureaux"
+			},
+			"small-hotel": {
+				"img": "pricing/small-hotel.svg",
+				"items": [
+					"15 x capteurs IoT de confort",
+					"1 x compteur thermique",
+					"1 x compteur électrique",
+					"1 x compteur d’eau",
+					"1 x capteur IoT compteur gaz"
+				],
+				"title": "Petit hôtel"
+			},
+			"supermarket": {
+				"img": "pricing/supermarket.svg",
+				"items": [
+					"1 x  GTC système de réfrigération (15 équipements)",
+					"5 x rooftops",
+					"3 x capteurs IoT de passage"
+				],
+				"title": "Surface commerciale"
+			},
+			"title": "Exemples",
+			"tower": {
+				"img": "pricing/tower.svg",
+				"items": [
+					"1 x GTB (200 équipements)",
+					"100 x capteurs IoT de confort",
+					"50 x capteurs IoT d'occupation"
+				],
+				"title": "Tour de bureaux"
+			},
+			"warehouse": {
+				"img": "pricing/warehouse.svg",
+				"items": ["1 x compteur électrique"],
+				"title": "Entrepôt"
+			}
+		},
+		"header": {
+			"subtitle":
+				"Le moyen le plus simple, le plus rapide et le plus économique pour déployer votre application dans des bâtiments.",
+			"title": "Tarifs"
+		},
+		"hub": {
+			"cta": {
+				"button": "Commandez votre Hub",
+				"details": "Consultez le descriptif complet",
+				"price": "par Hub"
+			},
+			"header": {
+				"description":
+					"Device tout-en-un pour connecter tous les équipements dans tous les bâtiments.",
+				"title": "Le Hub"
+			},
+			"items": {
+				"accelerate": "Accélérez le rythme de votre déploiement.",
+				"install": {
+					"description": "Un produit simple, moderne et intuitif.",
+					"title": "Facile et rapide à installer."
+				},
+				"reduce": "Réduisez vos coûts d’intégration.",
+				"smart": {
+					"description":
+						"Unifiez les protocoles de communication terrain.",
+					"title": "Convertisseur intelligent."
+				},
+				"web": {
+					"description":
+						"Insérez votre carte SIM, votre HUB est connecté au cloud.",
+					"title": "Connectable au web."
+				}
+			}
+		},
+		"low-price": {
+			"button": "Obtenez un devis pour votre projet"
+		},
+		"request-price": {
+			"button": "Demandez nos tarifs"
+		},
+		"info-price": {
+			"button": "Tarif"
+		},
+		"no-tax": "HT",
+		"subscription-box": {
+			"bill": {
+				"monthly": "Paiement mensuel",
+				"yearly": "Paiement annuel"
+			},
+			"feature-highlights": {
+				"4g": "Abonnement 4G inclus",
+				"box": "Administrez votre flotte de Boxes.",
+				"configure": "Configurez la Box en un rien de temps.",
+				"plug": "Branchez votre application à notre API.",
+				"read": "Lire : collecter des données",
+				"title": "Fonctionnalités majeures",
+				"write": "Écrire : envoyer des commandes instantanément"
+			},
+			"header": {
+				"description":
+					"Connectez votre application à une infrastructure fiable, sécurisée et flexible.",
+				"title": "L'abonnement Cloud"
+			},
+			"offers": {
+				"4G": "Abonnement 4G",
+				"access": "Accès à l'API",
+				"additional": "Propriétés additionnelles :",
+				"additional_datapoints": "Points additionnels",
+				"bms": "Toute connectivité",
+				"box": "Par box active, par mois",
+				"configuration": "Wizard de configuration",
+				"datapoints": "Points inclus",
+				"discount1": "-15%",
+				"discount2": "-7%",
+				"discount3": "-13%",
+				"discount4": "-13%",
+				"equipment": "Connectivité équipements",
+				"wireline-connectivity": "Connectivité équipements filaire",
+				"features": "Caractéristiques",
+				"gateway": "Passerelle LoRaWAN vers BACnet",
+				"iot": "Connectivité IoT",
+				"legacy": "Legacy",
+				"lorawan": "Connectivité LoRaWAN",
+				"management": "Console de gestion des boxes",
+				"max": "Propriétés max :",
+				"max_datapoints": "Points max",
+				"meters_only": "Compteurs uniquement",
+				"offer1": "IoT",
+				"offer2": "Small",
+				"offer3": "Medium",
+				"offer4": "Large",
+				"offer5": "Satellite",
+				"properties": "Propriétés incluses",
+				"satellite":
+					"Abonnement disponible lorsqu'il y a au moins 1 Box sur le même site avec un abonnement medium ou large.",
+				"schedule": "Wizard de gestion des calendriers",
+				"server": "Serveur local",
+				"server-infos": "BACnet IP, MQTT, Modbus TCP",
+				"unlimited": "ILLIMITE",
+				"yes": "Oui"
+			},
+			"subscription": {
+				"text":
+					"Payez par mois ou à l’année, et annulez à tout moment.",
+				"title": "Choisissez l’abonnement qui convient à votre Box."
+			}
+		},
+		"subscription-hub": {
+			"feature-highlights": {
+				"4g": "Abonnement 4G inclus",
+				"box": "Administrez votre flotte de Boxes.",
+				"configure": "Configurez la Box en un rien de temps.",
+				"plug": "Branchez votre application à notre API.",
+				"read": "Lire : collecter des données",
+				"title": "Fonctionnalités majeures",
+				"write": "Écrire : envoyer des commandes instantanément"
+			},
+			"header": {
+				"description":
+					"Connectez votre application à une infrastructure fiable, sécurisée et flexible.",
+				"title": "L'abonnement Cloud"
+			},
+			"offers": {
+				"4G": "Modem 4G",
+				"clients": "Protocoles clients",
+				"configuration": "Wizard de configuration",
+				"features": "Caractéristiques",
+				"gateway": "Passerelle LoRaWAN vers BACnet",
+				"hub": "Par unité",
+				"iot": "Protocoles IoT",
+				"in-protocols": "Protocoles IN (client)",
+				"out-protocols": "Protocoles OUT (serveur)",
+				"iot-lorawan": "LoRaWAN",
+				"iot-wmbus": "WM-Bus",
+				"legacy": "Protocoles legacy",
+				"legacy-bacnet": "BACnet",
+				"legacy-diematic": "Diematic",
+				"legacy-knx": "KNX",
+				"legacy-lon": "LON",
+				"legacy-lpb": "LPB",
+				"legacy-mbus": "M-Bus",
+				"legacy-modbus": "Modbus",
+				"legend":
+					"* Points filaires : réseaux de communication filaires tels que BACnet, Modbus, KNX, M-Bus, etc.",
+				"lorawan": "LoRaWAN connectivity",
+				"modbus": "Modbus",
+				"offer1": "IoT",
+				"offer2": "Small",
+				"offer3": "Medium",
+				"offer4": "Large",
+				"offer5": "XLarge",
+				"others": "Autres caractéristiques",
+				"points": "Points IN et OUT",
+				"protocol-bacnet": "BACnet",
+				"protocol-mqtt": "MQTT",
+				"schedule": "Wizard de gestion des calendriers",
+				"sensors": "Capteurs radio",
+				"server": "Protocoles serveur"
+			},
+			"subscription": {
+				"text": "Choisissez le Hub qui vous convient."
+			}
+		}
+	},
+	"products": {
+		"header-box": {
+			"subtitle":
+				"D’une ère d’automates et VPNs vers une GTB plug & play.",
+			"title": "La Box"
+		},
+		"header-hub": {
+			"subtitle":
+				"Le Hub Wattsense est une passerelle IoT intuitive et un automate puissant conçu pour l'automatisation des bâtiments.",
+			"title": "Le Hub"
+		},
+		"solution-box": {
+			"subtitle":
+				"Créez un système de Gestion Technique des Bâtiments (GTB) avec un appareil IoT géré à distance qui collecte des données et contrôle les équipements via le Cloud.",
+			"title": "Simplifier la GTB pour les petits et grands bâtiments",
+			"buttons": {
+				"contact": "Nous contacter",
+				"learn-more": "En savoir plus"
+			}
+		},
+		"solution-hub": {
+			"subtitle":
+				"Le Hub Wattsense se distingue des passerelles et automates traditionnels par sa rapidité d'installation, ses fonctionnalités avancées et sa polyvalence. Avec le Hub vous gardez le contrôle, de projet en projet.",
+			"title": "Intégration et maintenance des GTB simplifiées",
+			"buttons": {
+				"contact": "Nous contacter"
+			}
+		},
+		"actions": {
+			"title": "Utilisez la Box pour créer une GTB",
+			"action1": {
+				"elements": [
+					"Capteurs IoT",
+					"Compteurs",
+					"Eclairage",
+					"CVC",
+					"<a href='/fr/gtb'>GTB...</a>"
+				],
+				"title": "Connectez tout..."
+			},
+			"action2-box": {
+				"elements": ["Application cloud", "Application en local"],
+				"title": "...à n’importe quelle application"
+			},
+			"action2-hub": {
+				"elements": ["Application en local", "Application cloud"],
+				"title": "...à n’importe quelle application"
+			},
+			"action3-box": {
+				"title": "Se conformer aux décrets",
+				"elements": [
+					"<a target='_blank' href='https://blog.wattsense.com/fr/gestion-du-batiment/decret-tertiaire/'>Décret Tertiaire</a>",
+					"<a target='_blank' href='https://blog.wattsense.com/fr/gestion-du-batiment/bacs-rendus-obligatoires-pour-les-batiments-tertiaires/'>Décret BACS</a>"
+				]
+			},
+			"action3-hub": {
+				"elements": ["Dans le Hub", "Depuis le Cloud"],
+				"title": "Lancez votre application"
+			},
+			"action4": {
+				"elements": [
+					"<a href='/fr/ressources/securite-iot'>Cybersécurité</a>",
+					"Accès à la donnée et contrôle à distance",
+					"Gestion des utilisateurs",
+					"Gestion multi-sites",
+					"Mises à jour",
+					"Alarmes et événements"
+				],
+				"title": "Gérez votre infrastructure"
+			},
+			"cta": {
+				"title": "Lire notre expérience client",
+				"url": "/fr/ressources/experiences-client/setemi"
+			}
+		},
+		"box": {
+			"subtitle":
+				"Avec un appareil interopérable qui simplifie l'automatisation des bâtiments via le Cloud.",
+			"title": "Contrôler et surveiller<br/>l'équipement du bâtiment",
+			"feature": {
+				"edge": "Edge computing",
+				"configuration": "Wizard de configuration",
+				"schedule": "Wizard de programmation horaire",
+				"gateway": "Passerelle LoRaWAN vers BACnet",
+				"4g": "Forfait data 4G inclus"
+			},
+			"protocols": [
+				"LoRaWAN 1.0",
+				"MQTT client",
+				"Modbus TCP/IP",
+				"Modbus RTU",
+				"BACnet IP",
+				"BACnet IP Server",
+				"M-Bus",
+				"wM-Bus <span style='display: inline-block; margin-left: 5px; font-size: 0.8rem; padding: 3px 10px; background: #2bc47b; border-radius: 30px;'>New</span>",
+				"KNX S/LTE",
+				"LON FT10",
+				"LON IP-852",
+				"LPB",
+				"Diematic"
+			]
+		},
+		"hub": {
+			"subtitle":
+				"Une passerelle universelle pour tous les équipements du bâtiment pour facilement intégrer et gérer votre GTB.",
+			"title": "Hub",
+			"feature": {
+				"desktop": "Application Desktop",
+				"configuration": "Wizard de configuration",
+				"schedule": "Wizard de programmation horaire",
+				"gateway": "Passerelle LoRaWAN vers BACnet",
+				"4g": "Modem 4G inclus"
+			},
+			"protocols": [
+				"LoRaWAN 1.0",
+				"MQTT client",
+				"Modbus TCP/IP",
+				"Modbus RTU",
+				"BACnet IP",
+				"BACnet IP Server",
+				"M-Bus",
+				"wM-Bus <span style='display: inline-block; margin-left: 5px; font-size: 0.8rem; padding: 3px 10px; background: #2bc47b; border-radius: 30px;'>New</span>",
+				"KNX S/LTE",
+				"LON FT10",
+				"LON IP-852",
+				"LPB",
+				"Diematic"
+			]
+		},
+		"differences": {
+			"button": "La différence entre<br/>une Box ou un Hub ?",
+			"features": "Caractéristiques",
+			"box": "Box",
+			"hub": "Hub",
+			"autoupdates": "Mises à jour logicielles automatiques",
+			"cloud": "Service Cloud",
+			"multisite": "Gestion multi-sites",
+			"communication": "Communication serveur avec SSL et MQTT",
+			"desktopapp": "Application Desktop",
+			"gsmdata": "Forfait data GSM ",
+			"localaccess": "Accès local aux données",
+			"localgateway": "Passerelle locale",
+			"localmqtt": "Serveur MQTT local",
+			"localbacnet": "Serveur BACnet local",
+			"localmodbus": "Serveur Modbus local",
+			"gateway": "Passerelle LoRaWAN vers BACnet",
+			"onetime": "Achat tout-en-un",
+			"rest": "API REST",
+			"subscription": "Tarification par abonnement",
+			"connected": "Connecté au Web"
+		},
+		"boxadvantages": {
+			"title":
+				"Se conformer aux exigences du BACS avec ce dispositif interopérable :",
+			"bacs": {
+				"title": "Qu’est-ce qu'un BACS",
+				"url":
+					"https://blog.wattsense.com/fr/gestion-du-batiment/bacs-rendus-obligatoires-pour-les-batiments-tertiaires/"
+			},
+			"advantages": {
+				"advantage1": {
+					"description": "A la portée de tous.",
+					"title": "Facile et rapide à installer"
+				},
+				"advantage2": {
+					"description":
+						"Récolte la donnée et contrôle les équipements.",
+					"title": "Télémétrie et commandes"
+				},
+				"advantage3": {
+					"description":
+						"Unifie les protocoles de communication de terrain.",
+					"title": "Convertisseur intelligent"
+				},
+				"advantage4": {
+					"description":
+						"Se connecte automatiquement au cloud via la 4G ou ethernet.",
+					"title": "Connecté au web"
+				},
+				"advantage5": {
+					"title": "Objet IoT puissant",
+					"description":
+						"Associe les fonctionnalités d’une passerelle, d’un automate, d’un modem et d’un équipement edge."
+				}
+			}
+		},
+		"cloud-service": {
+			"advantages": {
+				"advantage1": {
+					"description":
+						"Mise en place sans souci de votre réseau internet.",
+					"title": "Communication 4G"
+				},
+				"advantage2": {
+					"description":
+						"API RESTful et connecteur MQTT disponibles.",
+					"title": "Connectez vos applications en un rien de temps"
+				},
+				"advantage3": {
+					"title": "Convertisseur intelligent",
+					"description":
+						"Unifie les protocoles de communication de terrain."
+				},
+				"advantage4": {
+					"title": "Objet IoT puissant",
+					"description":
+						"Associe les fonctionnalités d’une passerelle, d’un automate, d’un modem et d’un équipement edge."
+				},
+				"advantage5": {
+					"title": "Assistance technique",
+					"description":
+						"Toujours disponible pour faire de vos projets un succès."
+				}
+			},
+			"description":
+				"Un service de connexion du bâtiment directement relié à votre serveur.",
+			"title": "Service cloud"
+		},
+		"edge-computing": {
+			"description":
+				"Héberger votre programme dans la Box et mettez le à jour à distance.",
+			"title": "Edge computing",
+			"link": "En savoir plus",
+			"url":
+				"https://blog.wattsense.com/fr/wattsense-fr/edge-computing-fr/"
+		},
+		"features": {
+			"feature1-box": {
+				"title": "Console GTB",
+				"description":
+					"Gérez à l'échelle votre flotte de Boxes et gardez le contrôle de votre infrastructure GTB."
+			},
+			"feature1-hub": {
+				"description":
+					"Une console intuitive pour construire rapidement votre réseau GTB. Votre partenaire de choix pour livrer vos projets dans les délais et le budget prévus.",
+				"title": "Console de gestion Desktop"
+			},
+			"feature2": {
+				"description":
+					"Connectez les équipements de terrain en quelques clics grâce à une interface intuitive et une base de données croissante de plus de 500 équipements.",
+				"description2":
+					"Paramétrez facilement et de façon unifiée vos programmes horaires quels que soient la marque et le modèle d’équipement.",
+				"title": "Wizard de configuration & programmation horaire"
+			},
+			"feature3": {
+				"description":
+					"Accédez localement aux données de n'importe quel capteur LoRaWAN. Déployez rapidement des solutions Smart Building avec une grande flexibilité, grâce à un large choix de capteurs. Explorez toutes les fonctionnalités qui permettront à votre service de se démarquer.",
+				"title": "Passerelle LoRaWAN vers BACnet",
+				"link": "En savoir plus",
+				"url": "/fr/passerelle-lorawan-bacnet"
+			}
+		},
+		"hubadvantages": {
+			"advantages": {
+				"advantage1": {
+					"description": "A la portée de tous.",
+					"title": "Facile et rapide à installer"
+				},
+				"advantage2": {
+					"description":
+						"Récolte la donnée et contrôle les équipements.",
+					"title": "Télémétrie et commandes"
+				},
+				"advantage3": {
+					"description":
+						"Unifie les protocoles de communication de terrain.",
+					"title": "Convertisseur intelligent"
+				},
+				"advantage4": {
+					"description":
+						"Associe les fonctionnalités d’une passerelle, d’un automate, d’un modem et d’un équipement edge.",
+					"title": "Objet IoT puissant"
+				},
+				"advantage5": {
+					"description": "Disponible en marque blanche.",
+					"title": "À votre marque"
+				}
+			},
+			"title":
+				"Remportez plus d’appels d’offre en simplifiant l'infrastructure GTB et en réduisant votre temps d'installation :"
+		},
+		"api-first": {
+			"title": "API first",
+			"description":
+				"Chez Wattsense, tout ce que nous développons est programmable. Nous sommes convaincus que c’est la seule méthode pour permettre à d’autres de rendre les bâtiments intelligents à grande échelle.",
+			"link": "Référence API",
+			"url": "https://api.wattsense.com/",
+			"codes": {
+				"menu": {
+					"title": "Exemples d’intégrations :",
+					"elements": [
+						"File upload",
+						"Configure Modbus",
+						"Setting Schedule"
+					]
+				}
+			}
+		}
+	},
+	"request-demo": {
+		"button": "DEMANDER UNE DÉMO",
+		"company": "Entreprise",
+		"company-error": "Ajoutez votre société",
+		"email": "Email",
+		"email-error": "Ajoutez une adresse e-mail valide",
+		"fullname": "Nom complet",
+		"fullname-error": "Ajoutez un nom valide",
+		"success": "Merci, nous vous contacterons bientôt!",
+		"error":
+			"Nous avons eu un problème pour envoyer votre message. Merci de nous contacter à contact@wattsense.com.",
+		"telephone": "Téléphone",
+		"product": "Produit",
+		"title":
+			"Equipez vos bâtiments d’une infrastructure GTB intuitive et ouverte"
+	},
+	"request-hub": {
+		"button": "Envoyer",
+		"company": "Entreprise",
+		"country": "Pays",
+		"email": "Email",
+		"fullname": "Nom complet",
+		"phone": "Telephone",
+		"subtitle":
+			"Merci de renseigner vos coordonnées afin d'être notififié quand les pages d'achat du Hub seront disponibles.",
+		"success": "Merci, nous vous contacterons bientôt!",
+		"error":
+			"Nous avons eu un problème pour envoyer votre message. Merci de nous contacter à contact@wattsense.com.",
+		"title": "Commandez votre Hub"
+	},
+	"request-partner": {
+		"button": "Envoyer",
+		"company": "Entreprise",
+		"company-error": "Ajoutez votre société",
+		"email": "Email",
+		"email-error": "Ajoutez une adresse e-mail valide",
+		"fullname": "Nom complet",
+		"fullname-error": "Ajoutez un nom valide",
+		"success": "Merci, nous vous contacterons bientôt!",
+		"error":
+			"Nous avons eu un problème pour envoyer votre message. Merci de nous contacter à contact@wattsense.com.",
+		"telephone": "Téléphone",
+		"title": "Devenir un partenaire de Wattsense"
+	},
+	"request-sales": {
+		"button": "Envoyer",
+		"comments": "Commentaires supplémentaires",
+		"company": "Entreprise",
+		"company-error": "Ajoutez votre société",
+		"country": "Pays",
+		"email": "Email",
+		"email-error": "Ajoutez une adresse e-mail valide",
+		"fullname": "Nom complet",
+		"fullname-error": "Ajoutez un nom valide",
+		"phone": "Telephone",
+		"project":
+			"Votre projet en quelques mots (équipements concernés, protocoles de communication, surface...) *",
+		"project-error": "Ajoutez une description valide de votre projet",
+		"subtitle":
+			"Notre équipe se fera un plaisir de répondre à vos questions commerciales. Nous voulons en savoir plus sur votre projet, remplissez le formulaire et nous vous contacterons dans les plus brefs délais.",
+		"success": "Merci, nous vous contacterons bientôt!",
+		"error":
+			"Nous avons eu un problème pour envoyer votre message. Merci de nous contacter à contact@wattsense.com.",
+		"title": "Contactez notre équipe commerciale"
+	},
+	"request-prices": {
+		"button": "Envoyer",
+		"comments": "Commentaires supplémentaires",
+		"company": "Entreprise",
+		"company-error": "Ajoutez votre société",
+		"country": "Pays",
+		"email": "Email",
+		"email-error": "Ajoutez une adresse e-mail valide",
+		"fullname": "Nom complet",
+		"fullname-error": "Ajoutez un nom valide",
+		"phone": "Telephone",
+		"success": "Merci, nous vous contacterons bientôt!",
+		"error":
+			"Nous avons eu un problème pour envoyer votre message. Merci de nous contacter à contact@wattsense.com.",
+		"title": "Obtenez des informations sur nos tarifs"
+	},
+	"resources": {
+		"customer-stories": {
+			"header": {
+				"subtitle":
+					"Découvrez comment Wattsense aide les entreprises à mieux se connecter aux bâtiments.",
+				"title": "Expériences Client"
+			},
+			"stories": {
+				"continue-reading": "Continuer la lecture",
+				"customers": {
+					"0": {
+						"categories": ["home", "integrator"],
+						"info": "",
+						"company": "Nexity",
+						"description":
+							"Comment Wattsense et Intent ont amélioré la relation à l’occupant de Nexity Property Management.",
+						"image": "nexity/logo_thumb.jpg",
+						"job": "Responsable Valorisation Énergétique",
+						"link": "nexity",
+						"name": "Joseph El Haddad",
+						"testimonial":
+							"Ces données permettent une optimisation de la performance énergétique grâce à leur analyse par le biais d’un pilotage intelligent."
+					},
+					"1": {
+						"categories": ["home", "integrator", "gateway"],
+						"info": "CBRE - Leader de l'immobilier d'entreprise",
+						"company": "CBRE",
+						"description":
+							"CBRE optimise la maintenance et la performance énergétique des stations-services SHELL.",
+						"image": "cbre/logo_thumb.jpg",
+						"job": "Direction du Développement Durable",
+						"link": "cbre",
+						"name": "Théo Savre",
+						"testimonial":
+							"La solution Wattsense nous a permis à la fois de rationaliser les coûts d’abonnement en centralisant l’ensemble des capteurs sur un seul concentrateur.",
+						"testimonialgateway":
+							"La solution Wattsense nous a permis à la fois de rationaliser les coûts d’abonnement en centralisant l’ensemble des capteurs sur un seul concentrateur. Cela nous a également permis de valoriser des données déjà existantes des chaufferies en se connectant directement aux automates et donc sans installation de capteurs complémentaires."
+					},
+					"2": {
+						"categories": [
+							"home",
+							"property-owner",
+							"integrator",
+							"gateway"
+						],
+						"info":
+							"Setemi - Société des services en efficacité énergétique",
+						"company": "Setemi",
+						"description":
+							"Setemi créé un réseau GTB à partir de la Box Wattsense.",
+						"image": "setemi/logo_thumb.png",
+						"job": "CEO",
+						"link": "setemi",
+						"name": "Arnaud Kasparian",
+						"testimonial":
+							"Lors de l’installation, l’accompagnement de Ludovic Ventre, Ingénieur du Support Technique chez Wattsense, nous a permis d’appliquer très vite nos idées et a démontré la puissance de développement du produit.",
+						"testimonialgateway":
+							"Lors de l’installation, l’accompagnement de Ludovic Ventre, Ingénieur du Support Technique chez Wattsense, nous a permis d’appliquer très vite nos idées et a démontré la puissance de développement du produit."
+					},
+					"3": {
+						"categories": ["proptech"],
+						"info": "",
+						"company": "MESFRUITS",
+						"description":
+							"MESFRUITS optimise la consommation de ses entrepôts frigorifiques en collaboration avec Eqinov et Wattsense.",
+						"image": "mesfruits/logo_thumb.jpg",
+						"job": "Responsable Technique et R&D",
+						"link": "mesfruits",
+						"name": "Gildas Guibert",
+						"testimonial":
+							"Cette technologie est simple à installer et performante pour valoriser la flexibilité de manière optimale sans aucun coût d’acquisition ou d’installation à supporter."
+					},
+					"4": {
+						"categories": ["property-owner", "facility-manager"],
+						"info": "",
+						"company": "Idex",
+						"description":
+							"Idex connecte 7 bâtiments d’habitation à son SCADA en une journée.",
+						"image": "idex/logo_thumb.jpg",
+						"job": "Chargé d'études et d'efficacité énergétique",
+						"link": "idex",
+						"name": "David Boutillier",
+						"testimonial":
+							"Nous avons choisi la solution de Wattsense pour sa simplicité de mise en œuvre et sa facilité à connecter des matériels en chaufferie via internet, avec un coût maîtrisé."
+					},
+					"5": {
+						"categories": ["facility-manager"],
+						"info": "",
+						"company": "Bouygues Energies & Services",
+						"description":
+							"En moins d’une semaine, Bouygues Energies & Services accède à distance à 4 000 points de données d’un immeuble.",
+						"image": "bouygues/logo_thumb.jpg",
+						"job":
+							"Ingénieur Energéticien Pôle Technique Tertiaire FM",
+						"link": "bouygues",
+						"name": "Thomas Margot",
+						"testimonial":
+							"La réactivité, le professionnalisme et le sens de l’écoute de l’équipe de Wattsense nous ont pleinement satisfaits."
+					},
+					"6": {
+						"categories": ["proptech"],
+						"info": "",
+						"company": "Calidity",
+						"description":
+							"Calidity a déployé en deux jours sa solution dans deux bâtiments et a économisé des millions en R&D.",
+						"image": "calidity/logo_thumb.jpg",
+						"job": "CEO",
+						"link": "calidity",
+						"name": "Joosep Sild",
+						"testimonial":
+							"L'intégration de la solution Wattsense dans notre offre nous permet de nous concentrer sur notre coeur de métier. Si l’on ajoute à cela une expérience irréprochable lors de ce partenariat, continuer à travailler avec l'équipe Wattsense est une évidence."
+					},
+					"7": {
+						"categories": ["facility-manager"],
+						"info": "",
+						"company": "Ibis Confluence",
+						"description":
+							"Suivi de la température et de l’humidité dans les couloirs, confort et bien-être des clients dans la salle de restauration.",
+						"image": "ibis-confluence-restaurant/logo_thumb.jpg",
+						"link": "ibis-confluence-restaurant",
+						"no-testimonial": "true"
+					},
+					"8": {
+						"categories": ["property-owner", "proptech"],
+						"company": "Ibis Confluence",
+						"description":
+							"Comment monitorer le bâtiment pour optimiser son fonctionnement et maintenir un haut niveau de satisfaction client.",
+						"image": "ibis-confluence-energy/logo_thumb_fr.jpg",
+						"link": "ibis-confluence-energy",
+						"no-testimonial": "true"
+					},
+					"9": {
+						"categories": [],
+						"info": "",
+						"company": "Ibis Confluence",
+						"description":
+							"Anticiper les risques sanitaires des clients de l’hôtel Contrôler les réseaux d’ECS et éviter la propagation de la légionelle.",
+						"image":
+							"ibis-confluence-temperature/logo_thumb_fr.jpg",
+						"link": "ibis-confluence-temperature",
+						"no-testimonial": "true"
+					}
+				},
+				"fullstory": "Voir l'histoire complète",
+				"results": "Résultats"
+			}
+		},
+		"header": {
+			"subtitle":
+				"Consultez notre documentation et faites bouger le monde du service au bâtiment!",
+			"title": "Ressources"
+		},
+		"integrations": {
+			"content": {
+				"side-caption": "L'écosystème du bâtiment intelligent",
+				"side-text":
+					"<p class=\"mb-25\">Explorez la croissance des solutions et des services pour les bâtiments intelligents au sein de la communauté Wattsense, une liste de fournisseurs de services, d'applications, d'éditeurs de logiciels et de solutions IoT intégrés au service Wattsense.</p> <p>Grâce aux données de votre bâtiment, améliorez les performances de vos équipements, réduisez les coûts d'exploitation et la consommation d'énergie. Trouvez l'outil parfait pour vous aider à mettre en œuvre avec succès des stratégies de gestion des bâtiments.</p>",
+				"button": "Rejoignez notre écosystème"
+			},
+			"header": {
+				"subtitle":
+					"Un condensé des meilleurs technologies destinées aux bâtiments intelligents.",
+				"title": "Intégrations"
+			}
+		},
+		"iot-security": {
+			"header": {
+				"subtitle":
+					"Sécuriser la connectivité des bâtiments chez Wattsense",
+				"title": "Sécurité IoT"
+			}
+		},
+		"main-section": {
+			"description":
+				"Découvrez tout le potentiel du service Wattsense via notre page ressources. Consultez les articles et les témoignages de nos clients pour tout savoir sur les nouveaux développements, les cas d'utilisation, les annonces et les informations du secteur. Trouvez les outils qui vous permettront d'intégrer facilement notre service à votre équipement. Découvrez nos guides d'installation documentations qui vous aideront à transformer rapidement vos assets en bâtiments intelligents.",
+			"section1": "Ressources techniques",
+			"section2": "Articles",
+			"section3": "Développeurs",
+			"section4": "Partenaires",
+			"title": "Choisissez votre chemin!"
+		}
+	},
+	"urls": {
+		"about": {
+			"label": "Entreprise",
+			"url": "/fr/entreprise"
+		},
+		"api": {
+			"description": "Documentation de référence pour l'API Wattsense.",
+			"label": "API Reference",
+			"url": "https://api.wattsense.com"
+		},
+		"benefits": {
+			"facility-manager": {
+				"label": "Facility Managers",
+				"url": "/fr/benefices/facility-managers"
+			},
+			"integrator": {
+				"label": "Intégrateurs",
+				"url": "/fr/benefices/integrateurs"
+			},
+			"label": "Bénéfices",
+			"property-owner": {
+				"label": "Propriétaires Immobiliers",
+				"url": "/fr/benefices/proprietaires-immobiliers"
+			},
+			"proptech": {
+				"label": "PropTechs",
+				"url": "/fr/benefices/proptechs"
+			},
+			"url": "/fr/benefices/facility-managers"
+		},
+		"blog": {
+			"description":
+				"Suivez le blog Wattsense pour en savoir plus sur les nouvelles fonctionnalités du produit.",
+			"label": "Blog",
+			"url": "https://blog.wattsense.com/fr"
+		},
+		"bms": {
+			"label": "GTB",
+			"url": "/fr/gtb"
+		},
+		"compatibility": {
+			"description":
+				"Vérifiez la compatibilité de notre service avec votre équipement.",
+			"label": "Testeur de compatibilité",
+			"url": "/fr/compatibilite"
+		},
+		"contact": {
+			"label": "Contact",
+			"url": "/fr/contact"
+		},
+		"customer-stories": {
+			"description": "Voir les expériences client",
+			"label": "Expériences Client",
+			"url": "/fr/ressources/experiences-client"
+		},
+		"datasheet-box": {
+			"description":
+				"Vérifiez les caractéristiques techniques de la Box Wattsense.",
+			"label": "Fiche Technique Box",
+			"url":
+				"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/datasheet-box-fr.pdf"
+		},
+		"datasheet-hub": {
+			"description":
+				"Vérifiez les caractéristiques techniques du Hub Wattsense.",
+			"label": "Fiche Technique Hub",
+			"url":
+				"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/datasheet-hub-fr.pdf"
+		},
+		"discuss": {
+			"description":
+				"Un lieu pour discuter des produits Wattsense et poser vos questions.",
+			"label": "Forum d'assistance",
+			"url": "https://discuss.wattsense.com/"
+		},
+		"getdemo": {
+			"label": "Demandez une démo",
+			"url": ""
+		},
+		"home": {
+			"label": "Home",
+			"url": "/fr/"
+		},
+		"installation-guide-box": {
+			"description":
+				"Ce guide fournit des instructions sur l'installation de la Box Wattsense.",
+			"label": "Guide d'installation Box",
+			"url":
+				"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/box-installation-guide-fr.pdf"
+		},
+		"installation-guide-hub": {
+			"description":
+				"Ce guide fournit des instructions sur l'installation de le Hub Wattsense.",
+			"label": "Guide d'installation Hub",
+			"url":
+				"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/hub-installation-guide-fr.pdf"
+		},
+		"integrations": {
+			"description":
+				"Découvrez les applicatifs métiers qui utilisent Wattsense pour une meilleure gestion du bâtiment.",
+			"label": "Intégrations",
+			"url": "/fr/ressources/integrations"
+		},
+		"iot-security": {
+			"description":
+				"Découvrez comment Wattsense sécurise l'accès aux données des équipements du bâtiment. ",
+			"label": "Sécurité IoT",
+			"url": "/fr/ressources/securite-iot"
+		},
+		"legal-notice": {
+			"label": "Mentions Légales",
+			"url": "/fr/mentions-legales"
+		},
+		"login": {
+			"label": "Mon compte",
+			"url": "https://console.wattsense.com"
+		},
+		"lorawan-signal": {
+			"description": "Indicateurs RSSI et SNR.",
+			"label": "Qualité du signal LoRaWAN",
+			"url":
+				"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/lorawan-signal-fr.pdf"
+		},
+		"manifesto": {
+			"label": "Manifesto",
+			"url": "/fr/entreprise"
+		},
+		"open-data": {
+			"label": "Open Data",
+			"url": "/fr/ressources/open-data"
+		},
+		"become-partner": {
+			"label": "Devenir un partenaire"
+		},
+		"partners": {
+			"title": "Partenaires",
+			"label": "Travaillez en partenariat avec Wattsense",
+			"description":
+				"Distribuez une solution IoT qui permet d'introduire la GTB à tous les bâtiments.",
+			"url": "/fr/ressources/partenaires"
+		},
+		"pricing": {
+			"box": {
+				"label": "Box",
+				"subtitle": "Service managé",
+				"cta": "Découvrez les tarifs de la Box",
+				"url": "/fr/tarifs/box"
+			},
+			"hub": {
+				"label": "Hub",
+				"subtitle": "Solution locale",
+				"cta": "Découvrez les tarifs du Hub",
+				"url": "/fr/tarifs/hub"
+			},
+			"label": "Tarifs",
+			"url": "/fr/tarifs"
+		},
+		"products": {
+			"box": {
+				"label": "Box",
+				"subtitle": "Service managé",
+				"url": "/fr/produits/box"
+			},
+			"hub": {
+				"label": "Hub",
+				"subtitle": "Solution locale",
+				"url": "/fr/produits/hub"
+			},
+			"label": "Produits",
+			"url": "/fr/produits"
+		},
+		"resources": {
+			"label": "Ressources",
+			"url": "/fr/ressources"
+		},
+		"specs-box": {
+			"label": "Description détaillée",
+			"url":
+				"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/datasheet-box-fr.pdf"
+		},
+		"specs-hub": {
+			"label": "Description détaillée",
+			"url":
+				"https://ws-email-imgs.s3.eu-west-1.amazonaws.com/website-files/datasheet-hub-fr.pdf"
+		},
+		"status-api": {
+			"description":
+				"Consultez l’état général du service Wattsense et de son API.",
+			"label": "Statut des services",
+			"url": "https://status.wattsense.com/"
+		},
+		"support": {
+			"description":
+				"Un lieu pour discuter des produits Wattsense et poser vos questions.",
+			"label": "Plateforme d'assistance",
+			"url": "https://support.wattsense.com/"
+		},
+		"trynow": {
+			"label": "Essayez maintenant"
+		},
+		"tryboxnow": {
+			"label": "Essayez la Box"
+		},
+		"tryhubnow": {
+			"label": "Essayez le Hub",
+			"simplicity": "Choisissez la simplicité"
+		},
+		"user-guide": {
+			"label": "Guide",
+			"url":
+				"https://docs.google.com/document/d/1mIPA1XFuflodA0CgdYMI64fEA1D96eLuwyhc4Kg7sEU/edit?usp=sharing"
+		}
+	}
+}

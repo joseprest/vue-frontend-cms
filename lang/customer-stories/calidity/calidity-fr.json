@@ -1,0 +1,141 @@
+{
+	"company": "Calidity",
+	"logo": "calidity/logo.png",
+	"title": "Calidity a déployé en deux jours sa solution dans deux bâtiments et a économisé des millions en R&D.",
+	"subtitle": "En utilisant la solution Wattsense, Calidity n’a pas eu à développer son propre outil de connectivité, et a donc pu se concentrer sur son offre principale : un système logiciel utilisant le cloud.",
+	"results": [
+		{
+			"value": "1",
+			"description": "Projet Open Source"
+		},
+		{
+			"value": "2",
+			"description": "Bâtiments connectés"
+		},
+		{
+			"value": "24",
+			"description": "Équipements connectés"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "A propos de Calidity",
+				"description": "Calidity propose un système logiciel cloud qui collecte toutes les données issues des systèmes de gestion de bâtiments (GTB) et les met à disposition sur des appareils mobiles, sous forme de tableaux de bord faciles à interpréter. "
+			}
+		],
+		"footer": [
+			{
+				"title": "Box installées",
+				"description": "2"
+			},
+			{
+				"title": "Propriétés collectées",
+				"description": "50"
+			},
+			{
+				"title": "Équipements",
+				"description": "24"
+			}
+		]
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"title": "Contexte",
+			"content": "<a href=\"https://www.calidityapp.com/\" target=\"_blank\">Calidity</a> est une start-up estonienne spécialisée dans les technologies vertes, l'automatisation et l'Internet des objets (IoT). Elle a été fondée en 2017 par Joosep Sild, Johannes Kadak et Adelheid Kiriland afin d'optimiser la façon de contrôler la température ambiante à l'aide de logiciels."
+		},
+		{
+			"type": "paragraph",
+			"content": "La priorité numéro un pour Calidity est d’offrir aux utilisateurs un logiciel sécurisé et accessible. Mais pour déployer sa solution, il lui fallait créer un dispositif de connexion nécessitant de longues heures de développement, ce qui aurait eu pour effet d’augmenter le prix et de détourner l’équipe de son objectif principal. Le service Wattsense offrait un moyen simple, rapide et abordable de connecter la solution Calidity aux bâtiments. L'expérience ayant été positive pour les deux startups, un projet open source commun a été créé pour ouvrir le marché de la GTB aux développeurs de logiciels."
+
+		},
+		{
+			"type": "quote",
+			"content": "« L'intégration de la solution Wattsense dans notre offre nous permet de nous concentrer sur notre coeur de métier. Si l’on ajoute à cela une expérience irréprochable lors de ce partenariat, continuer à travailler avec l'équipe Wattsense est une évidence.» Joosep Sild - CEO de Calidity. »",
+	        "author": "Joosep Sild",
+			"author-position": "CEO de Calidity"
+		},
+		{
+			"type": "paragraph",
+			"title": "Défis et Objectifs",
+			"content": "Le principal objectif de Calidity est de contribuer à faire pénétrer l'innovation numérique dans le secteur traditionnel de la gestion immobilière. Calidity souhaite développer un logiciel de gestion de bâtiments qui puisse s'appliquer à 95% au moins des immeubles de bureaux et des surfaces commerciales en Europe."
+		},
+		{
+			"type": "paragraph",
+			"content": "Calidity voulait déployer son logiciel dans deux bâtiments appartenant à des clients différents, qui utilisent Modbus comme principal protocole de communication. Le but était d’améliorer l'efficacité énergétique de ces infrastructures, de collecter des historiques de données et de fournir un accès à distance aux utilisateurs."
+		},
+		{
+			"type": "paragraph",
+			"content": "Mais les bâtiments n'ont pas été conçus pour permettre l'intégration de nouveaux services ou solutions. L’infrastructure informatique des GTB est généralement constituée de couches chaotiques de protocoles de communication et de réseaux différents."
+		},
+
+		{
+			"type": "paragraph",
+			"content": "Calidity utilisait des passerelles différentes pour chacune des machines qu'elle voulait connecter. Certes cela fonctionnait, mais il était impossible de fournir une connexion stable ni de répercuter tous les coûts aux clients potentiels."
+		},
+		{
+		"type": "quote",
+		"content": "« La raison principale pour laquelle nous avons contacté Wattsense, c’est qu’en plus de travailler sur notre propre solution, nous devions nous occuper des matériels sur site et du développement de logiciels embarqués. Nous avons réalisé que cela élargissait trop notre gamme de services. Nous voulions nous concentrer sur notre produit et ne voulions pas nous préoccuper de la connectivité. C'est pourquoi la collaboration avec Wattsense a beaucoup de sens pour nous sur le long terme. »",
+			"author": "Joosep Sild",
+			"author-position": "CEO de Calidity"
+		},
+		{
+			"type": "paragraph",
+			"content": "Calidity souhaite également intégrer de nouvelles technologies telles que l'apprentissage automatique et l'intelligence artificielle dans les applications de contrôle de flexibilité de la demande pour les systèmes de chauffage, de ventilation et de climatisation (CVC)."
+		},
+		{
+			"type": "paragraph",
+			"content": "Pour atteindre ses objectifs à court et à long terme, Calidity ne recherchait pas seulement un fournisseur qui l’aiderait à résoudre ses problèmes de connectivité, mais surtout une équipe capable de collaborer avec la sienne. En tant que jeune entreprise, elle a besoin d'un groupe de personnes énergiques et impliquées qui puisse l’aider à innover sur le marché traditionnel de la GTB."
+		},
+		{   "title": "Solution",
+			"type": "paragraph",
+			"content": "Après avoir recherché une solution dynamique pour déployer son logiciel cloud dans les GTB ou autres systèmes de pilotage de la maintenance, Calidity a décidé durant l'été 2018 de participer au lancement privé du service Wattsense en version Beta."
+		},
+		{
+			"type": "paragraph",
+			"content": "Le service Wattsense universalise les protocoles de communication utilisés en GTB vers une API parfaitement intégrée. La solution consiste en une Box facile à installer, qui connecte les équipements du bâtiment, collecte les données, envoie des commandes, et un service Cloud intuitif qui contrôle les matériels présents dans le bâtiment, gère les flottes de Box et permet aux utilisateurs comme Calidity de configurer à distance les réseaux de terrain."
+		},
+		{
+			"type": "paragraph",
+			"content": "En utilisant cet outil qui intègre matériel électronique, logiciels embarqués et services cloud, Calidity a pu atteindre son objectif et connecter sa solution aux réseaux de deux bâtiments différents. L'installation a eu lieu en Estonie et a été réalisée par l'équipe Calidity sans nécessiter d'assistance extérieure. Pendant la phase Beta, deux Box ont été installées avec câblage Modbus TCP / IP et RS485."
+		},
+		{
+			"type": "paragraph",
+			"content": "Ces deux bâtiments sont dédiés à un usage professionnel et commercial. Dans le premier bâtiment, nommé BureauOne, une Box est connectée à un réseau d'automatisation existant, qui surveille huit équipements de ventilation. Dans le second bâtiment, la Box lit et collecte les entrées numériques telles que les capteurs de températures externes et les alarmes d'un système HVAC. Chaque Box a été installée et configurée en une journée pendant les heures ouvrables."
+		},
+		{
+			"type": "paragraph",
+			"content": "« La simplicité de la Box s’accorde parfaitement avec la solution que Calidity cherche à offrir : un produit si facile d’emploi qu’il peut être installé et utilisé par des personnes sans formation technique. » mentionne J. Sild."
+		},
+		{
+			"type": "paragraph",
+			"title": "Résultats",
+			"content": "Les deux Box installées peuvent collecter de nombreuses données. Calidity souhaitait surveiller un nombre spécifique de propriétés pour chaque bâtiment. Le bâtiment BureauOne récupère 46 propriétés, tandis que le bâtiment Tehnopol en réunit 4. Les propriétés sont collectées toutes les cinq minutes. Ces informations permettent au logiciel de Calidity d’étudier, d’analyser et de diagnostiquer les bâtiments. Grâce à cette application, les propriétaires réduisent leurs coûts énergétiques et allongent le cycle de vie de leurs équipements."
+		},
+		{
+			"type": "paragraph",
+			"content": "L’utilisation de la solution Calidity via le service Wattsense démontre toute sa rentabilité dans les bâtiments de petite à moyenne taille. <br>Les clients sont heureux !"
+		},
+		{
+			"type": "image",
+			"src": "calidity/panel.jpg",
+			"alt": "Installed Box for open source project",
+			"caption": "Box installée pour projet open source"
+		},
+		{
+			"type": "paragraph",
+			"content": "Après la fructueuse expérience menée lors du lancement de la version Beta, Calidity et Wattsense ont uni leurs forces début 2019 sur un projet open source pour lequel les deux équipes d'ingénierie logicielle travaillent et codent l'intégration du protocole M-bus pour la version industrialisée de la Box."
+		},
+		{
+			"type": "image",
+			"src": "calidity/building.jpg",
+			"alt": "Calidity testing site for the M-Bus open source project",
+			"caption": "Site de test Calidity pour le projet open source M-Bus"
+		},
+		{
+			"type": "paragraph",
+			"content": "Pour Calidity, les startups doivent impérativement franchir les obstacles pour innover dans le secteur de la gestion de bâtiments. Collaborer à l'intégration de protocoles dans un connecteur universel tel que la Box Wattsense représente une étape essentielle vers la simplification des infrastructures informatiques de GTB."
+		}
+	]
+}

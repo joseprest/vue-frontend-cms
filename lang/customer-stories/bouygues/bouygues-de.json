@@ -1,0 +1,148 @@
+{
+	"company": "Bouygues Energies & Services",
+	"logo": "bouygues/logo.png",
+	"title": "Bouygues Energies & Services hatte in weniger als einer Woche Fernzugriff auf 4.000 Objekte eines Bürogebäudes.",
+	"subtitle": "Dank der Entscheidung für die Wattsense-Lösung konnte die Energy Performance Unit von Bouygues Energies & Services in wenigen Tagen eine Verbindung zur Heiz- und Kühlanlage eines 3.900 m² großen Bürogebäudes herstellen und mit der Datenerfassung beginnen.",
+	"results": [
+		{
+			"value": "½",
+			"description": "Tag Installation vor Ort"
+		},
+		{
+			"value": "15",
+			"description": "verbundene Geräte"
+		},
+		{
+			"value": "4000",
+			"description": " Eigenschaften zur Verfügung"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "Über Bouygues Energies & Services",
+				"description": "Global Player in der Energie-, Digital- und Industriewende. Bouygues Energies & Services liefert maßgeschneiderte Lösungen und Dienstleistungen für Infrastruktur, Gebäude und Prozesse."
+			}
+		],
+		"footer": [
+			{
+				"title": "Angeschlossene Geräte",
+				"description": "15"
+			},
+			{
+				"title": "Parameter",
+				"description": "200"
+			},
+			{
+				"title": "Intervall",
+				"description": "5 Minuten"
+			}
+		]
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"content": "Die Kunden von Bouygues Energies & Services möchten ihren Energieverbrauch optimieren und gleichzeitig den Benutzerkomfort verbessern. Das ist eine komplizierte Aufgabe, die widersprüchliche Elemente zusammenführt. Deshalb muss Bouygues die maximale Datenmenge aus den Gebäuden gewinnen, um diese Informationen zu analysieren und eine brauchbare Lösung zu finden."
+		},
+		{
+			"type": "paragraph",
+			"content": "Leider ist die herkömmliche Integration eines Gebäudemanagementsystems (BMS) langwierig und kostenintensiv, sodass diese nur für die größten und komplexesten Gebäude in Frage kommt, für die diese Kosten gerechtfertigt werden können. Wenn es existiert, ist das BMS spezifisch für das Gebäude, für welches es entworfen wurde, erfordert selbst bei geringfügigen Änderungen massive Eingriffe vor Ort,  und es ist schwierig, eine Verbindung mit modernen Fernsteuerungs-Tools herzustellen."
+		},
+		{
+			"type": "paragraph",
+			"content": "Die Energy Performance Unit war auf der Suche nach neuen Hochleistungslösungen im Bereich Smart Buildings."
+		},
+		{
+			"type": "paragraph",
+			"content": "Nach einigen Monaten der Entwicklung hatte Wattsense eine Beta-Lösung parat, die aus einem elektronischen Gerät - der Box - und einem Cloud-Dienst für die Fernverbindung mit Gebäuden bestand. Der Moment schien ideal, um die vollständige Lösung an realen \"Live\" -Standorten zu testen."
+		},
+		{
+			"type": "quote",
+			"content": "\"Unsere Abteilung (Die Energy Performance Unit) benötigt insbesondere Zugang zu den technischen Daten der von uns betriebenen Gebäude. Mit Wattsense haben wir eine effektive, zuverlässige und kostengünstige Lösung gefunden, die den Fernzugriff auf Verbrauchsdaten sowie die Funktion von gebäudetechnischen Anlagen ermöglicht.<br/><br/>Die Fernsteuerungs-Funktionalität ist auch für unsere Betriebsteams von großem Wert. Jetzt können wir unsere technischen Geräte aus der Ferne neu starten. Wattsense hat es uns ermöglicht, unseren Kunden Evergreen bei seinen Bemühungen um eine Verbesserung der Energieeffizienz seines Gebäudes weiter zu unterstützen.<br/><br/>Darüber hinaus haben uns die Reaktionsbereitschaft, die Professionalität und die Aufmerksamkeit des Wattsense-Teams bei unserem ersten PoC voll zufriedengestellt - und wir selbst organisieren sonst Andere\"",
+			"author": "Thomas Margot",
+			"author-position": "Energieingenieur im Bereich Energieeffizienz von Bouygues Energies & Services."
+		},
+		{
+			"type": "paragraph",
+			"title": "KONTEXT",
+			"content": "Bouygues beschloss, einen Proof of Concept (PoC) des Wattsense-Dienstes an einem Standort zu organisieren, der für seine Energy Performance Unit zugänglich ist, und mit einer Struktur eines bestimmten Standards, um sicherzustellen, dass der Test aussagekräftig ist."
+		},
+		{
+			"type": "paragraph",
+			"content": "Evergreen ist ein dreistöckiges (zwei Etagen)Bürogebäude in Ecully in der Nähe von Lyon. Es besteht aus einer Bürofläche von ca. 3.900 m². Bouygues Energies & Services verwaltet die Anlage seit 2013, hat jedoch keine Verpflichtung in Bezug auf den Energiehaushalt des Gebäudes."
+		},
+		{
+			"type": "paragraph",
+			"content": "Vor Ort ermöglicht eine auf dem Dach installierte reversible Wärmepumpe die Erzeugung von heißer und kalter Luft. Die Büros sind mit Gebläsekonvektoren ausgestattet."
+		},
+		{
+			"type": "paragraph",
+			"content": "Das Gebäude verfügt über ein altes BMS-System, das mit einer ebenfalls veralteten Version des BACnet-Kommunikationsprotokolls arbeitet. Der Zugriff auf das BMS-Netzwerk ist nur vor Ort möglich, und die gesammelten Daten werden nur von dem Unternehmen gesammelt, welches  das Netzwerk installiert hat. Mit der Wattsense-Lösung kann Bouygues Energies & Services die Zufriedenheit der Evergreen-Kunden hinsichtlich des Energieverbrauchs verbessern, indem sie ihnen den Zugriff auf diese Daten gewährt."
+		},
+
+		{
+			"type": "image",
+			"src": "bouygues/building.jpg",
+			"alt": "Evergreen Gebäude",
+			"caption": "Evergreen Gebäude"
+		},
+
+		{
+			"type": "paragraph",
+			"title": "HERAUSFORDERUNGEN",
+			"content": "Das Hauptziel von Bouygues Energies & Services am Standort Evergreen besteht darin, die Daten von Heiz- und Kühlgeräten auf nicht störende Weise und in einem einfach zu verarbeitenden Format aus der Ferne zu erfassen."
+		},
+
+		{
+			"type": "paragraph",
+			"title": "LÖSUNGEN",
+			"content": "Nach einem Besuch vor Ort mit dem Evergreen-Manager und einem Verantwortlichen von Bouygues Energies & Services wurde die Box im Dezember 2018 vom Wattsense-Team installiert. Die Box befindet sich in einem Technik-Schrank im Erdgeschoss und wird über einen Router mit dem BMS-Netzwerk verbunden. Eine Antenne wurde installiert, um das schwache GSM-Signal im Gebäude zu verbessern."
+		},
+		{
+			"type": "paragraph",
+			"content": "Das Wattsense-Team stellte vor Ort eine Verbindung mit der Box her, scannte das BACnet-Netzwerk und listete alle Geräte auf, die mit diesem Protokoll kommunizierten. Es wurden 15 Objekte identifiziert, hauptsächlich Kälte- oder Wärmeerzeugungsanlagen und Stromzähler. Diese erste Phase wurde am Morgen beendet."
+		},
+		{
+			"type": "paragraph",
+			"content": "Zurück im Büro konfigurierte das Team die Box und startete die Auto-Discovery-Software BACnet. Aufgrund der im Gebäude verwendeten alten BACnet-Version blieben einige Daten unzugänglich. Das Team entwickelte schnell eine bestimmte Version der Software, um auf diese Daten zuzugreifen."
+		},
+		{
+			"type": "paragraph",
+			"content": "Zwei Tage später wurden 4.000 verschiedene Eigenschaften erfasst und konnten bis zur Wattsense-Plattform zurückverfolgt werden. Alle fünf Minuten wurde eine Datei mit allen verfügbaren Eigenschaften an Bouygues Energies & Services gesendet, die etwa 200 auswählten. Die verbleibenden sind weiterhin zugänglich und können bei Bedarf aktiviert werden."
+		},
+		{
+			"type": "paragraph",
+			"content": "Ende Dezember 2018 wurde die  integrierte Software der Box per Fernzugriff aktualisiert. Während der Reset-Phase wurden die Daten archiviert und wiederhergestellt, nachdem die Verbindung wieder hergestellt wurde."
+		},
+		{
+			"type": "paragraph",
+			"content": "Wattsense sendet nun monatlich eine bearbeitbare Datei mit den durchschnittlichen Stundendaten der 20 wichtigsten Eigenschaften an Bouygues Energies & Services."
+		},
+
+		{
+			"type": "paragraph",
+			"title": "ERGEBNISSE",
+			"content": "Ein wesentlicher Vorteil für Bouygues vom Wattsense-Service war der einfache Installationsprozess der Box an dem Evergreen-Standort sowie die Geschwindigkeit, mit der sie per Fernzugriff auf alle Benutzerdaten des Gebäudes zugreifen konnten."
+		},
+		{
+			"type": "paragraph",
+			"content": "Darüber hinaus konnte das Bouygues-Team im Januar seinen Kunden einen monatlichen Bericht über die Leistung der Wärmepumpe und die Daten zum Benutzerkomfort zusenden. Dieses Management-Tool ermöglicht dem Eigentümer die Durchführung von Schiedsverfahren und kann möglicherweise zur Implementierung anderer Strategien führen."
+		},
+		{
+			"type": "paragraph",
+			"content": "Die hohe Qualität des Wattsense-Service zieht auch Bouygues Energies & Services an. Alle spezifischen Anforderungen des Teams wurden berücksichtigt und schnell umgesetzt. So  wurden beispielsweise im Rahmen der Datenflussanalyse auf der Wattsense-Benutzerkonsole verschiedene Funktionen entwickelt und hinzugefügt, unter anderem die Möglichkeit, die Eigenschaften umzubenennen, verschiedene Maßstäbe gemäß den Diagrammen, eine Option zum Zoomen auf bestimmte Bereiche der Grafiken sowie die monatliche Extraktion von Daten im CSV-Format."
+		},
+		{
+			"type": "paragraph",
+			"content": "Auch können die Kunden die Lösung per Fernzugriff aktualisieren, ohne dass Daten verloren gehen. Mit der Wattsense-Lösung kann Bouygues Energies & Services unabhängig von der Gebäudearchitektur auf Daten aller gängigen Kommunikationsbusse aus der Ferne zugreifen und dies zu so wettbewerbsfähigen Kosten, dass Sie sogar in Erwägung ziehen können, kleinere Bereiche anzuschließen."
+		},
+		{
+			"type": "paragraph",
+			"content": "Durch die Möglichkeit, präzise und detaillierte Informationen über den Energieverbrauch eines Gebäudes bereitzustellen, können sie gemeinsam mit ihren Kunden eine an ihre Ziele angepasste Optimierungsstrategie entwickeln. Die Möglichkeit, aus der Ferne Befehle an bestimmte Geräte zu senden, eröffnet spannende Perspektiven für Energieeffizienz und Servicequalität im Allgemeinen."
+		},
+		{
+			"type": "paragraph",
+			"content": "Der Evergreen-PoC ist der Grundstein für die Zusammenarbeit zwischen Wattsense und Bouygues Energies & Services."
+		}
+	]
+}

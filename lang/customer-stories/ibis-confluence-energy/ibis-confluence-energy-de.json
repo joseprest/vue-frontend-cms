@@ -1,0 +1,110 @@
+{
+	"company": "Ibis Confluence",
+	"logo": "ibis-confluence-energy/logo.png",
+	"title": "Adeunis, Energisme und Wattsense haben eine schlüsselfertige Lösung entwickelt, um die Entwicklung des Energieverbrauchs zu überwachen und zu verfolgen",
+	"subtitle": "",
+	"results": [
+		{
+			"description": "Betriebskosten senken"
+		},
+		{
+			"description": "Erfüllung der gesetzlichen Vorgaben"
+		},
+		{
+			"description": "Verbesserung der Energieeffizienz des Gebäudes"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "Über Ibis Confluence",
+				"description": "Ibis wurde 1974 gegründet und ist die starke Wirtschaftsmarke im Portfolio von Accor, welches sich 2011 entschied, Etap Hotel und All Seasons in Ibis Budget und Ibis Styles zu konsolidieren."
+			}
+		],
+		"footer": [
+			{
+				"title": "Installierte Boxen",
+				"description": "1"
+			},
+			{
+				"title": "Datenpunkte gesammelt",
+				"description": "42"
+			},
+			{
+				"title": "Angeschlossene Geräte",
+				"description": "11"
+			}
+		]
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"title": "Kontext",
+			"content": "Das Ibis Confluence (ACCOR-Gruppe) besteht aus zwei Einheiten: Ibis Budget und Ibis Style, die sich auf ein 7-stöckiges Gebäude mit 84 bzw. 95 Zimmern verteilen. Beide Hotels bieten ein kostengünstiges Hotelangebot, das speziell für Geschäftsreisende und Urlauber entwickelt wurde."
+		},
+		{
+			"type": "image",
+			"src": "ibis-confluence-energy/ibis.jpg",
+			"alt": "Ibis image",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"title": "Herausforderungen",
+			"content": "Die Anzahl der französischen Hotels, Cafés und Restaurants macht ungefähr 7% aller Geschäftsgebäude in Frankreich aus. Diese Gebäude sind nun direkt von der Senkung ihres Energieverbrauchs durch die Umsetzung des Tertiärdekrets am 1. Oktober 2019 betroffen. Durch dieses Dekret schreibt das Gesetz vor, dass alle Dienstleistungsgebäude (über 1000 m2) ihren Energieverbrauch in den kommenden Jahren erheblich senken müssen."
+		},
+		{
+			"type": "paragraph",
+			"content": "Hinweis: Artikel L. 111-10-3 des französischen Bau- und Wohnungsgesetzbuchs schreibt die Durchführung von Maßnahmen zur Verringerung des Endenergieverbrauchs in bestehenden Gebäuden für den Dienstleistungsgebrauch vor. Damit soll eine Reduzierung des Endenergieverbrauchs für alle Gebäude, die der Verpflichtung unterliegen, um mindestens 40% im Jahr 2030, 50% im Jahr 2040 und 60% im Jahr 2050 im Vergleich zu 2010 erreicht werden."
+		},
+		{
+			"type": "paragraph",
+			"content": "Diese Gebäude sind die größten Energieverbraucher: 241 kWh / m2 / Jahr mit einer durchschnittlichen Energierechnung von 21,6 € / m2 / Jahr1. In einem Hotel gibt es viele Ausgaben: Beleuchtung, Küche, Wäscherei, Heizung, Klimaanlage, Lüftung ... Und vor allem reisen viele Menschen täglich. Hinzu kommen insbesondere die Kunden, welche oft weniger auf ihre Energiekosten achten als zu Hause: Ein Kunde verbraucht im Hotel durchschnittlich doppelt so viele Liter Wasser wie zu Hause."
+		},
+		{
+			"type": "paragraph",
+			"content": "Die Senkung des Energieverbrauchs ist daher ein wichtiges Anliegen für das Ibis Confluence Hotel, sowohl unter regulatorischen als auch unter Umweltaspekten. Die Herausforderung besteht daher darin, Lösungen zu finden, um den Energieverbrauch zu senken und deren zeitliche Entwicklung zu überwachen."
+		},
+		{
+			"title": "Lösung",
+			"type": "paragraph",
+			"content": "<a href='https://www.adeunis.com/' target='_blank'>Adeunis</a>, <a href='https://www.energisme.com/fr/' target='_blank'>Energisme</a> und Wattsense haben gemeinsam eine Komplettlösung entwickelt, um die Entwicklung des Energieverbrauchs im Ibis Confluence Hotel zu überwachen und zu verfolgen."
+		},
+		{
+			"type": "paragraph",
+			"content": "Diese Lösung basiert derzeit auf:"
+		},
+		{
+			"type": "bullets",
+			"content": [
+				"Den adeunis TIC und Pulse ATEX-Sensoren, die den Verbrauch von Strom- und Gaszählern messen.",
+				"Der Wattsense-Konnektivitätslösung. Mithilfe der Wattsense-Box erfassen die Sensoren mithilfe der drahtlosen LoRaWAN-Technologie die Daten, die anschließend in der Wattsense-Cloud konsolidiert und an Energisme weitergeleitet werden.",
+				"Der Energisme-Plattform, welche diese Daten formatiert und die konkrete Visualisierung der gesammelten Daten gewährleistet, um deren vollständige Analyse zu ermöglichen."
+			]
+		},
+		{
+			"type": "paragraph",
+			"title": "Ergebnisse",
+			"content": "Dank dieser Lösung werden Verbrauchsdaten automatisch und in Echtzeit erfasst. Es sind keine weiten Anreisen mehr notwendig, um den Verbrauchsstatus in Erfahrung zu bringen. Die Entwicklung der Daten kann einfach analysiert werden. Darüber hinaus werden Überverbrauch oder Undichtigkeiten dank eines Warnsystems sofort erkannt. Konkrete Maßnahmen zur Behebung dieser möglichen Störungen können daher schnell implementiert werden."
+		},
+		{
+			"type": "paragraph",
+			"content": "Fordern Sie unsere <a href='https://wattsense.com?demo=true' target='_blank'>Demo</a> an und sehen Sie sich in Echtzeit die Daten des Ibis-Hotels an."
+		},
+		{
+			"type": "image-list",
+			"images": [
+				{
+					"src": "ibis-confluence-energy/energisme.png",
+					"alt": "Energisme",
+					"link": "https://energisme.com/"
+				},
+				{
+					"src": "ibis-confluence-energy/adeunis.png",
+					"alt": "Adeunis",
+					"link": "https://www.adeunis.com/"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,119 @@
+{
+	"company": "Ibis Confluence",
+	"logo": "ibis-confluence-restaurant/logo.png",
+	"title": "Adeunis, Energisme et Wattsense ont mis en place une solution qui transforme l’équipement de conditionnement d’air manuel de Ibis Confluence en un système intelligent",
+	"subtitle": "",
+	"results": [
+		{
+			"description": "Réduire les coûts d’exploitation"
+		},
+		{
+			"description": "Garantir le confort et des clients et leur satisfaction"
+		},
+		{
+			"description": "Améliorer la performance énergétique du bâtiment"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "A propos d' Ibis",
+				"description": "Créée en 1974, Ibis constitue la marque économique forte du portfolio d'Accor, qui choisit en 2011 d'y concentrer les Etap Hôtel et All Seasons qui deviennent respectivement Ibis budget et Ibis Styles."
+			}
+		],
+		"footer": [
+			{
+				"title": "Boxes installées",
+				"description": "1"
+			},
+			{
+				"title": "Points de données collectés",
+				"description": "42"
+			},
+			{
+				"title": "Équipements connectés",
+				"description": "11"
+			}
+		]
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"title": "Contexte",
+			"content": "L’Ibis Confluence (groupe <strong>ACCOR</strong>) se compose de deux entités : Ibis Budget et Ibis Style, répartis sur un bâtiment de 7 étages et contenant respectivement 84 et 95 chambres. Les deux hôtels proposent une offre d’hôtellerie économique, élaborée et destinée à une clientèle d’affaires et de loisirs."
+		},
+		{
+			"type": "image",
+			"src": "ibis-confluence-restaurant/restaurant-ibis.jpg",
+			"alt": "Ibis Confluence"
+		},
+		{
+			"type": "paragraph",
+			"title": "Défis et Objectifs",
+			"content": "La préoccupation principale de l'hôtel Ibis Confluence est centrée sur l'expérience vécue par sa clientèle et sa satisfaction. Le bon état et l'efficacité des équipements du bâtiment sont les garants de cette satisfaction des clients."
+		},
+		{
+			"type": "paragraph",
+			"content": "Le système de conditionnement d’air constitue un composant essentiel de l'environnement de l'hôtel et de son confort puisqu’il contrôle la température des chambres et des parties communes, y compris du restaurant."
+		},
+		{
+			"type": "paragraph",
+			"content": "Dans cet hôtel, le fonctionnement du conditionnement d’air n'est pas connecté à un système de gestion technique du bâtiment ; il est géré manuellement et indépendamment, contrôlé et entretenu par un technicien ; le bon fonctionnement du système dépend de la présence physique de ce professionnel dans l'hôtel."
+		},
+
+		{
+			"type": "paragraph",
+			"content": "Le système de conditionnement d’air fournit le même niveau d'efficacité standard depuis des années, mais aucun axe d’optimisation n'a été recherché jusqu’alors pour accroître les performances globales du bâtiment. Les problèmes liés aux équipements sont détectés et remontés manuellement, notamment lorsqu’ils affectent le confort des utilisateurs, mais les données ne sont ni collectées ni enregistrées numériquement."
+		},
+		{
+			"type": "paragraph",
+			"content": "Le technicien ne reçoit aucune notification de la part des dispositifs en place en cas d'urgence, de panne ou de tout autre problème. Le seul indicateur d'un problème est un contrôle aléatoire, la plainte d'un client ou la remontée d’information d'un employé"
+		},
+		{
+			"type": "paragraph",
+			"content": "L'ibis Confluence est fier de proposer un cadre accueillant, moderne et confortable pour un budget abordable. Cependant, les équipements non communicants peuvent entraîner des coûts opérationnels, une efficacité énergétique insuffisante et une gêne ressentie par les clients. Le manque de connectivité représente un défi pour l’hôtel en matière de prévention, de détection, de résolution et de traçabilité des problèmes."
+		},
+		{
+			"type": "paragraph",
+			"title": "Solution",
+			"content": "<a href='https://www.adeunis.com/' target='_blank'>Adeunis</a>, <a href='https://energisme.com/fr/' target='_blank'>Energisme</a> et <a href='https://wattsense.com/fr' target='_blank'>Wattsense</a> ont mis en place une solution qui transforme l’équipement de conditionnement d’air manuel en un système  intelligent permettant un suivi optimal des équipements et notamment de la température et de l'humidité du bâtiment. Nous nous focalisons sur le couloir du troisième étage et le restaurant situé au rez-de-chaussée pour démontrer l’utilité de la solution."
+		},
+		{
+			"type": "paragraph",
+			"content": "Le système de conditionnement d’air est composé d’une pompe à chaleur réversible <strong>AERMEC NRL 0700</strong> située sur le toit du bâtiment. L'équipement AERMEC a été connecté à la Wattsense Box à l'aide du protocole de communication Modbus. La Box est installée dans une armoire électrique sur le toit."
+		},
+		{
+			"type": "paragraph",
+			"content": "Maintenant que la Box peut communiquer avec le système de conditionnement d’air, elle sert de pont aux capteurs Adeunis pour qu’ils puissent également se connecter à ce système. Deux capteurs IoT Adeunis surveillant la température et l’humidité du couloir du troisième étage et du restaurant ont notamment été connectés à la Box via la technologie de réseau sans fil <strong>LoRaWAN</strong> ; ils accèdent ainsi au système de chauffage, de ventilation et de climatisation. Les capteurs collectent et enregistrent des données de confort qui sont consolidées dans le service cloud Wattsense. Toutes ces données qualifiées sont ensuite transmises à la plateforme Energisme via le service cloud."
+		},
+		{
+			"type": "image",
+			"src": "ibis-confluence-restaurant/wattsense-box-installed.jpg",
+			"alt": ""
+		},
+		{
+			"type": "paragraph",
+			"title": "Résultats",
+			"content": "Grâce à cette solution, le technicien est informé en temps réel de la température et de l'humidité des zones surveillées. Il peut vérifier et contrôler ces données à distance, envoyer des consignes à distance, éviter les problèmes de maintenance, et ainsi réduire les coûts, améliorer le fonctionnement de l'installation et garantir le confort des clients."
+		},
+		{
+			"type": "paragraph",
+			"content": "Inscrivez-vous à notre <a href='https://wattsense.com/fr?demo=true' target='_blank'>démo</a> et regardez les résultats en direct."
+		},
+		{
+			"type": "image-list",
+			"images": [
+				{
+					"src": "ibis-confluence-restaurant/energisme.png",
+					"alt": "Energisme",
+					"link": "https://energisme.com/fr/"
+				},
+				{
+					"src": "ibis-confluence-restaurant/adeunis.png",
+					"alt": "Adeunis",
+					"link": "https://www.adeunis.com/"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,156 @@
+{
+	"company": "Idex",
+	"logo": "idex/logo.png",
+	"title": "Idex connected 7 residential buildings to its SCADA in one day.",
+	"subtitle": "By choosing the Wattsense solution, the regional Rhône-Auvergne-Limousin department of Idex Energies was able to connect its remote management system, quickly and at a lower cost, to the equipment in the boiler room that supplies the Cité des Bains real estate complex, located at Béligneux a commune in the Ain department in eastern France.",
+	"results": [
+		{
+			"value": "1",
+			"description": "day of installation on site"
+		},
+		{
+			"value": "7",
+			"description": "connected buildings"
+		},
+		{
+			"value": "5",
+			"description": "times cheaper"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "About Idex",
+				"description": "As a specialist in energy and environmental services, Idex brings innovative and sustainable solutions to the technical problems of building management."
+			}
+		],
+		"footer": [
+			{
+				"title": "Boxes installed",
+				"description": "1"
+			},
+			{
+				"title": "Properties",
+				"description": "72"
+			},
+			{
+				"title": "Interval",
+				"description": "5 Minutes"
+			}
+		]
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"title": "",
+			"content": "The French group Idex, created in 1963, optimizes the energy resources used to ensure the thermal well-being of its customers.  To achieve this mission,  Idex follows three main criteria: it maintains the preset temperatures inside the buildings, keeps energy consumption bills within the agreed package price and respects the return-to-service deadlines in case of breakdowns, or other technical issues with the equipment."
+		},
+		{
+			"type": "paragraph",
+			"title": "",
+			"content": "To manage its heating installation park, study energy consumption data, and detect the risks of failure of its devices, Idex has decided to use a Supervisory Control and Data Acquisition (SCADA) monitoring system. Traditionally, the installation of this tool required the integration of programmable logic controllers and modems on each site, using external service providers. It is a complicated process so lengthy and expensive that it made it hard to duplicate from one location to another."
+		},
+		{
+			"type": "paragraph",
+			"title": "",
+			"content": "You can imagine that when managing tens of thousands of boiler rooms it's a priority to connect them all. Idex Energies, therefore, sought a more flexible, less expensive solution that limits the use of subcontractors making the operation scalable."
+		},
+		{
+			"type": "paragraph",
+			"title": "",
+			"content": "For its part, after several months of development, Wattsense had a solution in its Beta version consisting of an electronic device, the Box, and a cloud service, to connect remotely to buildings. The moment seemed ideal to test the full-scale solution for the first time."
+		},
+		{
+			"type": "quote",
+			"content": "\"IDEX ENERGIES Rhône-Auvergne ambition is to connect the sites, where energy performance is monitored, to the Idex remote management system currently operated by legacy programmable controllers. Idex would like to rely on an industrial process that can deploy to a larger scale. For that second point, we chose the Wattsense solution because of the simplicity of its installation, and its ability to connect equipment in a boiler room via the internet, keeping costs under control.\"",
+			"author": "David Boutillier",
+			"author-position": "in charge of Studies and Energy Efficiency at Idex"
+		},
+		{
+			"type": "paragraph",
+			"title": "Context",
+			"content": "Idex Energies decided to test the Wattsense solution on a boiler room whose equipment works with the Modbus communication protocol, the only one compatible with the Box at the time. Things have changed for the better!"
+		},
+		{
+			"type": "paragraph",
+			"title": "",
+			"content": "The chosen site, the Cité des Bains in Béligneux, east of France, is a set of seven  buildings grouping 64 residential units offering rent-controlled housing."
+		},
+		{
+			"type": "image",
+			"src": "idex/buildings.jpg",
+			"alt": "Residential buildings",
+			"caption": "Residential buildings"
+		},
+		{
+			"type": "paragraph",
+			"content": "A central boiler room serves the infrastructure. It is equipped with two Atlantic gas boilers (plus two Atlantic gateways), three Diehl thermal energy meters, an Integra meter, and an Atlantic sanitary hot water tank. That makes seven devices in total, all using the Modbus protocol to communicate."
+		},
+		{
+			"type": "image",
+			"src": "idex/room.jpg",
+			"alt": "Boiler room",
+			"caption": "Boiler room"
+		},
+		{
+			"type": "paragraph",
+			"title": "Challenges",
+			"content": "Idex Energies was looking for an industrial, flexible, reliable and inexpensive solution, which would allow it to supervise all of its boiler rooms and to adopt a proactive posture without having to wait for its customers to report a technical problem or receive high energy bills."
+		},
+		{
+			"type": "paragraph",
+			"content": "The purpose of the Proof of Concept (POC) at the Cité des Bains site is to validate the Wattsense could be deployed."
+		},
+		{
+			"type": "paragraph",
+			"title": "Solution",
+			"content": "An Idex technician installed the Box in the control cabinet, pulled cables from the boilers and meters and connected them to the Box. The Idex team then communicated to Wattsense the precise references of these types of equipment; the Wattsense team was able to collect the relevant technical documentation provided by the manufacturers to enable communication with their equipment."
+		},
+		{
+			"type": "image",
+			"src": "idex/panel.jpg",
+			"alt": "Control cabinet with the installed Box",
+			"caption": "Control cabinet with the installed Box"
+		},
+		{
+			"type": "paragraph",
+			"content": "With this data, the Wattsense team sent remotely the first configuration to the Box as a way to interact with the two boilers. Instant communication was established with one, and then with the other after correcting a false-contact wiring issue."
+		},
+		{
+			"type": "paragraph",
+			"content": "Idex needed to connect the hot water tank, the technician pulled a cable and attached it to the Box, and set the communication speed."
+		},
+		{
+			"type": "paragraph",
+			"content": "After the Wattsense team obtained the necessary technical information from some manufacturers, the Idex technician returned to the site, and the rest of the installation could be done remotely by simple phone conversations: connections and settings by Idex, configuration, and tests by Wattsense. The technician took the opportunity to install a new temperature probe in one of the boilers and Wattsense immediately changed the setting of the Box on the programming interface to integrate this new equipment."
+		},
+		{
+			"type": "paragraph",
+			"content": "At the end of these stages, which took just six hours! The site was fully connected."
+		},
+		{
+			"type": "paragraph",
+			"content": "Wattsense has archived in its cloud library all the configuration information of the Cité des Bains materials so that they can be reused remotely for any future connection of the same type of equipment in another site."
+		},
+		{
+			"type": "paragraph",
+			"content": "Among all the properties provided by the equipment, Idex selected the 72 that it wanted to follow every five minutes. Wattsense has configured the properties recuperation in the Box using its programming interface. From then on Idex only needs to connect to its private user area in our cloud service to access data in real time, and to export it in CSV format."
+		},
+		{
+			"type": "paragraph",
+			"title": "Results"
+		},
+		{
+			"type": "paragraph",
+			"content": "While it was its first on-site experience dealing with equipment of several brands and a solution in its beta version, Wattsense managed to make the boiler room communicate in less than a day."
+		},
+		{
+			"type": "paragraph",
+			"content": "Wiring and settings can be done by Idex technicians, passing through in an on-site visit. No need to wait for subcontractors to make themselves available. Not to mention the savings thus generated!"
+		},
+		{
+			"type": "paragraph",
+			"content": "The Wattsense solution is therefore entirely in line with the supervision needs of the Idex team which, before finding Wattsense, were planning to devote time and resources to create its own solution. "
+		}
+	]
+}

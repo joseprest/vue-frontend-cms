@@ -1,0 +1,231 @@
+{
+	"company": "CBRE",
+	"logo": "cbre/logo.png",
+	"title":
+		"CBRE optimiert die Wartung und Energieleistung von SHELL-Tankstellen.",
+	"subtitle": "",
+	"results": [
+		{
+			"value": "1",
+			"description": "Installationstage vor Ort"
+		},
+		{
+			"value": "1",
+			"description": "Box"
+		},
+		{
+			"value": "34",
+			"description": "Verbundene Geräte"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title":
+					"CBRE ist der weltweit führende führende führende Sektor im Bereich der Immobilien, der Unternehmen, Eigentümern und Investoren weltweit Dienstleistungen anbietet.",
+				"description":
+					"Lernen Sie, wie CBRE Immobilienmanagement IoT Lösungen benutzt, um Sensoren und RVL Siemens zu verbinden und zu kontrollieren, die im Fernen in einer SHELL-Station sind.",
+				"noBorder": true
+			}
+		],
+		"footer": []
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"content":
+				"Das Immobiliendienstleistungsunternehmen <a href=\"http://www.cbre.com\" target=\"blank\">CBRE</a> war auf der Suche nach IoT-Lösungen zur Verbesserung der Fernsteuerung der von ihm verwalteten SHELL-Tankstellen in Frankreich.<br/><br/>Dafür benötigte CBRE eine einfach einzurichtende und benutzerfreundliche Komplettlösung. Um diesen technischen Anforderungen gerecht zu werden, haben die Teams von Adeunis, Energisme und Wattsense kooperiert, um eine optimale Lösung zu entwickeln."
+		},
+		{
+			"type": "table",
+			"title": "Mitglieder des Projekts",
+			"content": "<table class=\"cbre\"><tr><th>SHELL</th><td>Vermarktet weltweit Mineralölprodukte und -dienstleistungen. SHELL betreibt 85 Tankstellen in Frankreich.</td></tr><tr><th>CBRE GWS</th><td>Führt alle Wartungsarbeiten am 17 Länder umspannenden SHELL-Tankstellennetz durch.</td></tr><tr><th>CBRE</th><td>Die Nr. 1 in der Beratung von Immobilienunternehmen. Unterstützt CBRE GWS bei der Nachhaltigkeitsstrategie von SHELL.</td></tr><tr><th>WATTSENSE</th><td>Vernetzt technische Anlagen mithilfe seiner Box und API mit Anwendungen zur Gebäudeverwaltung.</td></tr><tr><th>ENERGISME</th><td>Stellt eine Software-Plattform für Energieeffizienz und Umweltleistung zur Verfügung.</td></tr><tr><th>ADEUNIS</th><td>Entwickelt angeschlossene Sensoren. Hat darüber hinaus auch die Bereitsstellungsstrategie unterstützt.</td></tr></table>"
+		},
+		{
+			"type": "image",
+			"src": "cbre/iot-actors-en.jpg",
+			"alt": "actors",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"title": "DIE HERAUSFORDERUNG",
+			"content":
+				"SHELL, ein Gigant im Mineralölsektor, verpflichtet sich, mit einem CO2-Aktionsplan die weltweiten Treibhausgasemissionen zu reduzieren.<br/><br/>Im Jahr 2017 beschloss das multinationale Unternehmen ein spezifisches Langzeitziel: die Verringerung des CO2-Fußabdrucks seiner Energieprodukte bis zum Jahr 2050, wobei der erste Meilenstein die Verringerung seiner Treibhausgasemissionen um 20% bis 2035 ist.<br/><br/>CBRE GWS unterstützt SHELL als Betreiber aller Tankstellen in Europa (6000 Standorte in 17 Ländern) bei der Umsetzung dieses Plans.<br/><br/>Eine an den Tankstellen durchgeführte Energieprüfung zeigte einen mangelhaften Zugriff auf die Verbrauchsdaten.  Um die Daten für die Analyse zu erhalten und eine Energieeffizienzstrategie zu entwickeln, musste eine <strong>IoT-Lösung</strong> eingerichtet werden. Das IoT ermöglicht die Einführung neuer Integrationen, um die Verwaltung, Wartung von Tankstellen auch an entlegenen Standorten zu erleichtern und die Energieeffizienz zu verbessern. Zu den Anforderungen an die Lösung gehörte unter anderem auch die Zentralisierung der Informationen über die verschiedenen Tankstellen zum Zwecke einer besseren Optimierung."
+		},
+		{
+			"type": "image",
+			"src": "cbre/shell.jpg",
+			"alt": "Shell",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"title": "LÖSUNGEN",
+			"content": "<strong>Nebeneffekt</strong>"
+		},
+		{
+			"type": "paragraph",
+			"content":
+				"CBRE nahm sich gemeinsam mit Adeunis, Energisme und Wattsense die Zeit, die Tankstellen und ihre Aktivitäten zu analysieren, um die Struktur des Projekts zu definieren und die Anwendungsfälle festzulegen. Obwohl der anfängliche Zweck des Projekts darin bestand, mögliche Anwendungsfälle zur Optimierung der Energieleistung zu ermitteln, erkannten die Teams nach einigen Gesprächen, dass es auch andere Lösungen geben könnte, um die Überwachung der Geräte und die Wartung zu verbessern, den Komfort der Benutzer zu erhöhen oder sogar rechtliche Herausforderungen zu meistern.<br/><br/>Als Proof-of-Concept wurde die von Adeunis, Energisme und Wattsense entwickelte Lösung an einem Pilotstandort eingesetzt: der SHELL-Tankstelle an der Autobahn A7 in der Gegend Roussillon (Frankreich). In diesem ersten Schritt sollen die aufgestellten Hypothesen getestet, die ersten Ergebnisse analysiert und je nach Relevanz der verarbeiteten Informationen entschieden werden, welches Modell für die anderen Tankstellen übernommen werden soll."
+		},
+		{
+			"type": "paragraph",
+			"content": "<strong>Privates LoRaWAN-Netzwerk</strong>"
+		},
+		{
+			"type": "paragraph",
+			"content":
+				"Bei diesem Projekt ging es CBRE um eine bessere Signalqualität am Standort, das Skalierbarkeitspotenzial, die Verwendung einer großen Anzahl von Sensoren mit einem akzeptablen Batterieverbrauch, die Einhaltung des Datenschutzes und die lokale Datenverwaltung.<br/><br/>Um die Abdeckung des LoRaWAN-Netzwerks zu überprüfen und die Teams bei der Installation der Sensoren anzuleiten, führte Adeunis gemeinsam mit CBRE eine Standortbesichtigung und eine Funkkartierung durch. Diese Studie wurde mit Hilfe eines Feldtestgeräts zur Messung der Netzabdeckung an verschiedenen Standorten durchgeführt.<br/><br/> Angesichts des Aufbaus des Standorts – ein Untergeschoss und zweieinhalb Stockwerke – wurde beschlossen, <a href=\"https://www.adeunis.com/en/produit/ftd-network-tester/\">ein privates LoRaWAN-Netzwerk</a> über die Wattsense Box zu verwenden, um die Abdeckung der mehr als 20 Datenpunkte (Temperatur, Feuchtigkeit, Öffnen von Türen) zu optimieren. Mit den aus dem Test gewonnenen Informationen konnte die Lage der Sensoren definiert werden."
+		},
+		{
+			"type": "image",
+			"src": "cbre/lorawan-en.jpg",
+			"alt": "LoRaWAN",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"content":
+				"Mit Hilfe eines <strong>privaten LoRaWAN-Netzwerks</strong> kann CBRE ein internes Management-System ohne die Nutzung des Internets anschließen und seine Flotte von IoT-Sensoren sowie seine Netzwerkinfrastruktur steuern."
+		},
+		{
+			"type": "link",
+			"title":
+				"Erfahren Sie mehr über die Unterschiede zwischen einem privaten LoRaWAN-Netzwerk und einem öffentlichen LoRaWAN-Netzwerk",
+			"url":
+				"https://blog.wattsense.com/communication-protocols/private-vs-public-lorawan-networks/",
+			"target": "_blank"
+		},
+		{
+			"type": "paragraph",
+			"content": "<strong>Regelung des Heizkreises</strong>"
+		},
+		{
+			"type": "paragraph",
+			"content":
+				"CBRE musste die Temperaturdaten der Heizungsregler per Fernzugriff abrufen, um zu überprüfen, ob die Heizungssollwerte eingehalten wurden.<br/><br/>RVL-Regler verwenden zur Datenübertragung das geschlossene Kommunikationsprotokoll <strong>LPB</strong> (Local Process Bus). Geschlossene Protokolle wie LPB können für Standardortbesitzer und Manager vor Ort ein echter Nachteil sein. Die Hersteller bieten nur eingeschränkte Verbesserungsmöglichkeiten sowie eine Auswahl kostspieliger Geräte an.<br/><br/>Mit der Wattsense Box kann CBRE schnell auf RVLs zugreifen, um Temperaturdaten zu kontrollieren und Heizkreise zu optimieren."
+		},
+		{
+			"type": "link",
+			"title":
+				"Erfahren Sie mehr darüber, wie Sie Siemens RVL-Heizungsregler fernsteuern können",
+			"url":
+				"https://blog.wattsense.com/communication-protocols/pilot-remotely-siemens-rvl-heating-controllers-with-wattsense/",
+			"target": "_blank"
+		},
+		{
+			"type": "quote",
+			"content":
+				"\"Die Wattsense-Lösung erlaubte es uns, durch die Zentralisierung aller Sensoren auf einem einzigen Hub die Abonnementskosten  zu verschlanken. Dies ermöglichte es uns auch, bereits vorhandene Daten aus den Heizungsräumen zu nutzen, indem wir eine direkte Verbindung zu den Maschinen herstellen konnten und somit keine zusätzlichen Sensoren installieren mussten.\"",
+			"author": "Théo Savre",
+			"author-position": "Abteilung Nachhaltige Entwicklung, CBRE."
+		},
+		{
+			"type": "paragraph",
+			"title": "BEREITSTELLUNG - INSTALLATION",
+			"content":
+				"Die Bereitstellung und Installation der gesamten Lösung wurde am Pilotstandort durchgeführt. Die Lösung setzt sich aus den folgenden Elementen zusammen:"
+		},
+		{
+			"type": "bullets",
+			"content": [
+				"Der <strong>Wattsense-Konnektivitätsdienst</strong> zentralisiert die Gebäudedaten und gewährleistet die Kommunikation der Heizraumgeräte: zwei Heizungsregler (LPB) und 32 Sensoren (LoRaWAN). Die Installation wurde innerhalb eines Tages abgeschlossen.",
+				"Adeunis <strong>IoT-Sensoren</strong>, die Daten sammeln und übertragen.",
+				"<strong>Die Big Data- und IoT-Plattform</strong> von Energisme bietet ein Dashboard sowie ein Entscheidungshilfe-Tool für die Verwaltung und Optimierung des täglichen Betriebs der SHELL-Standorte."
+			]
+		},
+		{
+			"type": "image",
+			"src": "cbre/box.png",
+			"alt": "Wattsense Box",
+			"caption": ""
+		},
+		{
+			"type": "paragraph",
+			"title": "ERGEBNISSE",
+			"content":
+				"Die implementierte Lösung ist zuverlässig und ermöglicht ein qualitatives Datenfeedback. Sie bietet zudem große Zeiteinsparungen, da die Daten schnell und effizient verfügbar sind. Vor-Ort-Besuche zur Beschaffung der Informationen sind nicht mehr notwendig."
+		},
+		{
+			"type": "bullets",
+			"content": [
+				"Verbesserte Energieeffizienz.",
+				"Geringere Betriebskosten.",
+				"Verbessertes Wohlbefinden der Benutzer.",
+				"Optimierung von Heizkreisen."
+			]
+		},
+		{
+			"type": "paragraph",
+			"title": "ANNEKTIEREN",
+			"content": "Anwendungsfälle:"
+		},
+		{
+			"type": "accordeon",
+			"title":
+				"<strong>1 - Überwachung von Legionellen / Begrenzung von Gesundheitsrisiken</strong>",
+			"content":
+				"<ul><li><strong>Anforderung:</strong> Lesen und kontrollieren Sie die Temperatur des Warmwasserkreislaufs, um das Risiko einer Legionellenproliferation zu vermeiden.<br/>Seit 2010 sind alle öffentlich zugänglichen Gebäude in Frankreich gesetzlich verpflichtet, die Wassertemperatur in ihren Warmwasserkreisläufen zu regeln. Das Wasser muss zwischen dem Verteilungspunkt und dem Ziehpunkt mindestens 55°C gehalten werden. Unterhalb dieser Temperatur können die tödlichen Legionellen wachsen und sich vermehren.</li><li><strong>Lösung:</strong> Installation von TEMP2S IoT-Sensoren</li><li><strong>Leistungen:</strong><ul><li>Einhaltung von Vorschriften</li><li>Begrenzung von Gesundheitsrisiken</li><li>Reduzierte Betriebs- und Wartungskosten</li></ul></li></ul>",
+			"urltitle": "Erfahren Sie mehr über die Überwachung des Legionellenrisikos",
+			"urllink":
+				"https://wattsense.com/resources/customer-stories/ibis-confluence-temperature",
+			"urltarget": "_blank"
+		},
+		{
+			"type": "accordeon",
+			"title":
+				"<strong>2 - Überwachung der Temperatur in Kühlräumen / Begrenzung von Gesundheitsrisiken</strong>",
+			"content":
+				"<ul><li><strong>Anforderung:</strong> Überwachung der Temperatur von Kühlgeräten, offenen Kältemaschinen und Kühlräumen (positiv und negativ).<br/>Lebensmittel, die in Kühlgeräten oder Kühlräumen für Restaurants gelagert werden, müssen in einem festgelegten Temperaturbereich aufbewahrt werden, um eine Lebensmittelvergiftung zu vermeiden.<br/>Es ist notwendig, die Temperatur dieser Gerätetypen kontinuierlich zu überwachen und so schnell wie möglich benachrichtigt zu werden, wenn ein Sollwert nicht eingehalten wird oder andere Fehler auftreten.</li><li><strong>Lösung:</strong> Installation von TEMP-Sensoren</li><li><strong>Leistungen:</strong><ul><li>Begrenzung von Gesundheitsrisiken</li><li>Reduzierung der Betriebs- und Wartungskosten</li><li>Optimierung von Diensten durch zeitsparende Strategien</li></ul></li></ul>",
+			"urltitle":
+				"Erfahren Sie mehr über die Überwachung der Temperatur in einem kalten Raum",
+			"urllink": "https://www.adeunis.com/en/ibis-cold-room/",
+			"urltarget": "_blank"
+		},
+		{
+			"type": "accordeon",
+			"title":
+				"<strong>3 - Überwachung der Temperatur im Abfalllager / Begrenzung der Gesundheitsrisiken</strong>",
+			"content":
+				"<ul><li><strong>Anforderung:</strong> Temperaturüberwachung im Abfalllager.<br/>Diese Zone muss in einem festen Temperaturbereich gehalten werden. Die Raumtemperatur und das Öffnen der Türen (Außenzugang zum Gebäude) werden kontrolliert.</li><li><strong>Lösung:</strong> Installation von TEMP + CONTACT SENSOR-Sensoren</li><li><strong>Leistungen:</strong><ul><li>Begrenzung von Gesundheitsrisiken</li><li>Reduzierte Betriebs- und Wartungskosten</li><li>Zeit sparen und die Organisation von Betriebsdiensten optimieren</li></ul></li></ul>",
+			"urltitle":
+				"Erfahren Sie mehr über die Temperaturüberwachung in einer gemäßigten Zone",
+			"urllink":
+				"https://www.adeunis.com/en/zenner-connect-clinic-cold-chain/",
+			"urltarget": "_blank"
+		},
+		{
+			"type": "accordeon",
+			"title":
+				"<strong>4 - Überwachung der Raumtemperatur in öffentlichen Räumen / Benutzerkomfort</strong>",
+			"content":
+				"<ul><li><strong>Anforderung:</strong> in Echtzeit die Raumtemperatur und Luftfeuchtigkeit der von der Öffentlichkeit genutzten Bereiche (Laden, Halle, Restaurant) kennen. Jeder Verstoß gegen den Schwellenwert wird aufgezeichnet und löst eine Warnung aus, mit der so schnell wie möglich Maßnahmen ergriffen werden können, um die Fehlfunktion zu erkennen und zu beheben.</li><li><strong>Lösung:</strong> Installation von COMFORT-Sensoren</li><li><strong>Leistungen:</strong><ul><li>Garantie für Komfort und Kundenzufriedenheit</li><li>Reduzierte Betriebs- und Wartungskosten</li><li>Verbesserung der Energieeffizienz und der Gebäudegesundheit</li></ul></li></ul>",
+			"urltitle": "Erfahren Sie mehr über die Überwachung der Raumtemperatur ",
+			"urllink":
+				"https://wattsense.com/resources/customer-stories/ibis-confluence-restaurant",
+			"urltarget": "_blank"
+		},
+		{
+			"type": "accordeon",
+			"title":
+				"<strong>5 - Kontrolle der Feuerlöschpegel / Standortsicherheit</strong>",
+			"content":
+				"<ul><li><strong>Anforderung:</strong> Seien Sie gewarnt, wenn der Wasserstand in den Feuertanks zu niedrig ist, um das Risiko einer Nichtverfügbarkeit im Brandfall zu vermeiden.</li><li><strong>Lösung:</strong> Installation des DOUBLE LEVEL SENSOR</li><li><strong>Leistungen:</strong><ul><li>Begrenzung von Sicherheitsrisiken</li><li>Reduzierte Betriebs- und Wartungskosten</li><li>Zeit sparen und die Organisation der operativen Dienste optimieren</li></ul></li></ul>"
+		},
+		{
+			"type": "accordeon",
+			"title":
+				"<strong>6 - Lecksuche am Kohlenwasserstofftank / Standortsicherheit</strong>",
+			"content":
+				"<ul><li><strong>Anforderung:</strong> Seien Sie über einen Alarm informiert, wenn ein Leck in den Kohlenwasserstofftanks festgestellt wird.</li><li><strong>Lösung:</strong> Installation von DRY-CONTACTS-Sensoren</li><li><strong>Leistungen:</strong><ul><li>Begrenzung von Sicherheitsrisiken</li><li>Reduzierte Betriebs- und Wartungskosten</li><li>Zeit sparen und die Organisation von Betriebsdiensten optimieren</li></ul></li></ul>"
+		},
+		{
+			"type": "accordeon",
+			"title":
+				"<strong>7 - Not-Aus-Schalter / Standortsicherheit</strong>",
+			"content":
+				"<ul><li><strong>Anforderung:</strong> Be notified, via an alert when the emergency system is switched on in the fuel intake tracks.</li><li><strong>Lösung:</strong> Installation von DRY-CONTACTS-Sensoren</li><li><strong>Leistungen:</strong><ul><li>Begrenzung von Sicherheitsrisiken</li><li>Reduced operational and maintenance costs</li><li>Zeit sparen und die Organisation von Betriebsdiensten optimieren</li></ul></li></ul>"
+		}
+	]
+}

@@ -1,0 +1,141 @@
+{
+	"company": "Calidity",
+	"logo": "calidity/logo.png",
+	"title": "Calidity stellte seine Lösung in zwei Tagen in zwei Gebäuden bereit und sparte Millionen in R&D.",
+	"subtitle": "Da Calidity mit Wattsense kein eigenes Konnektivitätstool entwickeln musste, konnten sie sich auf ihr Kernangebot konzentrieren: ein Cloud-basiertes Softwaresystem.",
+	"results": [
+		{
+			"value": "1",
+			"description": "Open Source Projekt"
+		},
+		{
+			"value": "2",
+			"description": "Gebäude verbunden"
+		},
+		{
+			"value": "24",
+			"description": "Anlagen verbunden"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "Über Calidity",
+				"description": "Calidity bietet ein Cloud-basiertes Softwaresystem, das alle Daten von Gebäudemanagementsystemen (BMS) in einem übersichtlichen Dashboard auf mobile Geräte überträgt."
+			}
+		],
+		"footer": [
+			{
+				"title": "Installierte Boxen",
+				"description": "2"
+			},
+			{
+				"title": "Gesammelte Parameter",
+				"description": "50"
+			},
+			{
+				"title": "Anlagen",
+				"description": "24"
+			}
+		]
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"title": "Kontext",
+			"content": "<a href=\"https://www.calidityapp.com/\" target=\"_blank\">Calidity</a> ist ein estnisches Startup, das sich auf Cleantech, Automatisierung und das Internet der Dinge (IoT) spezialisiert hat. Es wurde 2017 von Joosep Sild, Johannes Kadak und Adelheid Kiriland gegründet, um die Funktion von Raumklimatisierungsanlagen durch nützliche Software zu optimieren."
+		},
+		{
+			"type": "paragraph",
+			"content": "Benutzern eine sichere, zugängliche Software anzubieten, hat für Calidity höchste Priorität. Die langen Stunden der Entwicklung, die erforderlich waren, allein um ein Anschlussgerät nur für die Bereitstellung ihres Produkts zu erstellen, trieben jedoch die Preise in die Höhe und lenkten den Fokus von ihrem Kernprodukt ab. Der Wattsense-Service stellte eine einfache, schnelle und kostengünstige Möglichkeit dar, die Calidity-Lösung an Gebäude anzuschließen. Aufgrund der positiven Erfahrungen der beiden Startups miteinander wurde ein Open-Source-Projekt ins Leben gerufen, um den BMS-Markt für Software-Entwickler zu öffnen."
+		},
+		{
+			"type": "quote",
+			"content": "\"Durch die Integration der Wattsense-Lösung in unseren Service können wir uns auf unser Kernangebot für unsere Kunden konzentrieren. Die perfekte Partnerschaft macht die weitere Zusammenarbeit  mit dem Wattsense-Team zum Kinderspiel.\"",
+			"author": "Joosep Sild",
+			"author-position": "CEO von Calidity"
+		},
+		{
+			"type": "paragraph",
+			"title": "Herausforderungen und Ziele",
+			"content": "Das Hauptziel von Calidity ist es, digitale Innovationen in den traditionellen Bereich des Immobilienmanagements zu bringen. Calidity hat sich zum Ziel gesetzt, eine Gebäudemanagement-Software zu entwickeln, die für mindestens 95% der Büros und Geschäftsgebäude in Europa eingesetzt wird."
+		},
+		{
+			"type": "paragraph",
+			"content": "Ein spezifisches Ziel für Calidity war die Bereitstellung der Software in zwei verschiedenen Kundengebäuden, die Modbus als primäres Kommunikationsprotokoll verwenden. Der Zweck bestand darin, ihre Software bereitzustellen, um die Energieeffizienz der Infrastrukturen zu verbessern, historische Daten zu sammeln und Benutzern den Fernzugriff zu ermöglichen."
+		},
+		{
+			"type": "paragraph",
+			"content": "Die effiziente Anbindung ihrer Software an Gebäude war jedoch eine Herausforderung. Gebäude sind nicht dafür ausgelegt, die einfache Integration neuer Lösungen und Dienste zu ermöglichen. Die BMS-IT-Infrastruktur besteht im Allgemeinen aus chaotischen Schichten von Kommunikationsprotokollen und verschiedenen Netzwerken."
+		},
+
+		{
+			"type": "paragraph",
+			"content": "Für die Bereitstellung der Lösung musste Calidity zunächst auf Kreativität und wertvolle Stunden Entwicklungszeit setzen. Sie verwendeten unterschiedliche Gateways für jede der Maschinen, die sie anschließen wollten. Dies funktionierte zwar, es konnte jedoch keine stabile Verbindung hergestellt und die Preise für potenzielle Kunden stiegen."
+		},
+		{
+			"type": "quote",
+			"content": "\"Der Hauptgrund, weshalb wir uns mit Wattsense in Verbindung gesetzt haben, ist, dass wir neben der Arbeit an unserer Lösung  auch die Hardware- und Embedded-Softwareentwicklung vor Ort durchgeführt haben. Wir haben festgestellt, dass unser Leistungsumfang dadurch zu groß wurde. Wir wollten uns auf unser Produkt konzentrieren und uns nicht mit Konnektivität befassen. Deshalb ist die Zusammenarbeit mit Wattsense für uns auf lange Sicht sehr sinnvoll.\"",
+			"author": "Joosep Sild",
+			"author-position": "CEO von Calidity"
+		},
+		{
+			"type": "paragraph",
+			"content": "Calidity möchte auch neue Technologien wie maschinelles Lernen und künstliche Intelligenz in bedarfsgerechte Steuerungsanwendungen für Heizungs-, Lüftungs- und Klimaanlagen (HVAC) integrieren."
+		},
+		{
+			"type": "paragraph",
+			"content": "Um ihre kurz- und langfristigen Ziele zu erreichen, suchte Calidity nicht nur nach einem Anbieter, der sie bei ihren Konnektivitätsproblemen unterstützte, sondern vielmehr nach einem Team zur Zusammenarbeit. Als junges Startup brauchten sie ein aktives und engagiertes Team, das ihnen bei der Mission helfen kann, den traditionellen BMS-Markt zu innovieren."
+		},
+		{
+			"title": "Lösung",
+			"type": "paragraph",
+			"content": "Nachdem Calidity nach einer dynamischen Lösung für die Bereitstellung seiner Cloud-Software in BMS, HVAC oder anderen Wartungssteuerungssystemen gesucht hatte, entschied es sich im Sommer 2018, an dem privaten Beta-Start des Wattsense-Service teilzunehmen."
+		},
+		{
+			"type": "paragraph",
+			"content": "Der Wattsense-Service ist auf die Universalisierung von BMS-Feldkommunikationsprotokollen in eine sorgsam eingebettete API spezialisiert. Der Service besteht aus einer einfach zu installierenden Box, welche verschiedene Gebäudebestandteile verbindet, Daten sammelt, Befehle sendet und einem intuitiven Cloud-Service, der die Gebäudeausrüstung steuert und so die Verwaltung von Boxenflotten und Benutzern wie Calidity die Fernkonfiguration von Feldnetzwerken ermöglicht."
+		},
+		{
+			"type": "paragraph",
+			"content": "Durch diese Integration von Hardware, eingebetteter Software und Cloud-Diensten konnte Calidity sein Ziel erreichen und seine Lösung in zwei verschiedene Gebäudenetzwerke einbinden. Die Installation fand in Estland statt und wurde vom Calidity-Team ohne externe Unterstützung durchgeführt. Während der Beta-Phase wurden zwei Boxen über Modbus TCP / IP und RS485-Verkabelung installiert."
+		},
+		{
+			"type": "paragraph",
+			"content": "Beide Gebäude sind für die gewerbliche und kommerzielle Nutzung bestimmt. Im ersten Gebäude mit dem Namen BureauOne wurde eine Box in ein vorhandenes Automatisierungsnetzwerk eingebunden und überwacht dort acht Lüftungsgeräte. Im zweiten Gebäude liest und sammelt die Box digitale Eingänge wie externe Temperatursensoren und Alarme von einem HLK-System. Jede Box wurde während der Arbeitszeit innerhalb eines Tages installiert und konfiguriert."
+		},
+		{
+			"type": "paragraph",
+			"content": "\"Die Einfachheit der Box passt perfekt zu dem, was Calidity mit seiner Lösung bieten möchte. Ein einfach zu bedienendes Produkt, das von Personen ohne technischen Hintergrund installiert und eingesetzt werden kann.\" erwähnt Sild."
+		},
+		{
+			"type": "paragraph",
+			"title": "Ergebnisse",
+			"content": "Die zwei installierten Boxen können zahlreiche Parameter erfassen. Calidity war daran interessiert, für jedes Gebäude eine bestimmte Anzahl zu erfassen. Im BureauOne-Gebäude  werden 46 Parameter gesammelt, während im Tehnopol-Gebäude vier erfasst werden. Diese Parameter werden in Fünf-Minuten-Intervallen abgefragt und erfasst. Mit diesen Informationen kann die Calidity-Software die Gebäude überwachen, analysieren und diagnostizieren. Dank der Anwendung senkten die Immobilienbesitzer die Energiekosten und verlängerten den Lebenszyklus der Geräte."
+		},
+		{
+			"type": "paragraph",
+			"content": "Die Verwendung der Calidity-Lösung über den Wattsense-Dienst erweist sich in kleinen bis mittelgroßen Gebäuden als kostengünstig. Die Kunden sind glücklich!"
+		},
+		{
+			"type": "image",
+			"src": "calidity/panel.jpg",
+			"alt": "Installierte Box für Open Source Projekt",
+			"caption": "Installierte Box für Open Source Projekt"
+		},
+		{
+			"type": "paragraph",
+			"content": "Nach den fruchtbaren Erfahrungen mit dem Beta-Start haben Calidity und Wattsense sich Anfang 2019 für ein Open-Source-Projekt zusammengeschlossen, in dem beide Software-Entwicklungsteams zusammenarbeiten und die Integration des M-Bus-Protokolls für die industrialisierte Version der Box programmieren."
+		},
+		{
+			"type": "image",
+			"src": "calidity/building.jpg",
+			"alt": "Calidity Teststandort für das Open Source Projekt M-Bus",
+			"caption": "Calidity Teststandort für das Open Source Projekt M-Bus"
+		},
+		{
+			"type": "paragraph",
+			"content": "Für Calidity haben Startups die Verpflichtung, die Barriere zu durchbrechen und Innovationen in die Gebäudemanagementbranche zu bringen. Die Zusammenarbeit bei der Integration von Protokollen für einen Universalstecker wie die Wattsense Box ist ein wesentlicher Schritt zur Vereinfachung der BMS-IT-Infrastruktur."
+		}
+	]
+}

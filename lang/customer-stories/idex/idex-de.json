@@ -1,0 +1,161 @@
+{
+	"company": "Idex",
+	"logo": "idex/logo.png",
+	"title": "Idex verband an einem Tag 7 Wohngebäude mit seinem SCADA, ohne einen Automatisierungstechniker zu beschäftigen.",
+	"subtitle": "Durch die Wahl der Wattsense-Lösung konnte die regionale Rhône-Auvergne-Limousin-Abteilung von Idex Energies ihr Fernverwaltungssystem schnell und kostengünstig an die Ausrüstung im Heizraum anschließen, der den Immobilienkomplex Cité des Bains in Béligneux, einer Gemeinde im Département Ain in Ostfrankreich versorgt.",
+	"results": [
+		{
+			"value": "1",
+			"description": "Tag Installation vor Ort"
+		},
+		{
+			"value": "7",
+			"description": "verbundene Gebäude"
+		},
+		{
+			"value": "5",
+			"description": "-mal günstiger als mit einem Integrator"
+		}
+	],
+	"company-info": {
+		"info": [
+			{
+				"title": "Über Idex",
+				"description": "Als Spezialist für Energie- und Umweltdienstleistungen bietet Idex innovative und nachhaltige Lösungen für die technischen Probleme des Gebäudemanagements an."
+			}
+		],
+		"footer": [
+			{
+				"title": "Installierte Boxen",
+				"description": "1"
+			},
+			{
+				"title": "Parameter",
+				"description": "72"
+			},
+			{
+				"title": "Intervall",
+				"description": "5 Minuten"
+			}
+		]
+	},
+	"content": [
+		{
+			"type": "paragraph",
+			"title": "",
+			"content": "Der 1963 gegründete französische Konzern Idex optimiert die Energieressourcen, um das thermische Wohlbefinden seiner Kunden zu gewährleisten. Um dieses Ziel zu erreichen, befolgt Idex drei Hauptkriterien: Es hält die voreingestellten Temperaturen innerhalb der Gebäude aufrecht, hält die Energieverbrauchsrechnungen innerhalb des vereinbarten Paketpreises und respektiert die Fristen für die Wiederinbetriebnahme im Falle von Ausfällen oder anderen technischen Problemen mit der Ausrüstung."
+		},
+		{
+			"type": "paragraph",
+			"title": "",
+			"content": "Um den Heizungsinstallationspark zu verwalten, die Energieverbrauchsdaten zu untersuchen und das Risiko eines Ausfalls der Geräte zu ermitteln, hat Idex beschlossen, ein Überwachungssystem für die Kontrolle und Datenerfassung (SCADA) zu verwenden. Traditionell erforderte die Installation dieses Tools die Integration von speicherprogrammierbaren Steuerungen und Modems an jedem Standort mithilfe externer Dienstanbieter. Es ist ein komplizierter Prozess, der so langwierig und teuer ist, dass es schwierig ist, ihn von einem Ort auf einen anderen zu übertragen."
+		},
+		{
+			"type": "paragraph",
+			"title": "",
+			"content": "Sie können sich vorstellen, dass bei der Verwaltung von Zehntausenden von Heizräumen die Verbindung aller vorrangig ist. Idex Energies suchte daher nach einer flexibleren, kostengünstigeren Lösung, die den Einsatz von Subunternehmern einschränkt und den Betrieb skalierbar macht."
+		},
+		{
+			"type": "paragraph",
+			"title": "",
+			"content": "Nach einigen Monaten der Entwicklung verfügte Wattsense in seiner Beta-Version über eine Lösung, die aus einem elektronischen Gerät, der Box, und einem Cloud-Dienst bestand, um eine Remoteverbindung mit Gebäuden herzustellen. Der Moment schien ideal, um die vollständige Lösung zum ersten Mal zu testen."
+		},
+		{
+			"type": "quote",
+			"content": "\"IDEX ENERGIES Rhône-Auvergne ist bestrebt, die Standorte, an denen die Energieeffizienz überwacht wird, mit dem Idex-Fernverwaltungssystem zu verbinden, welches derzeit von älteren speicherprogrammierbaren Steuerungen betrieben wird. Idex möchte sich auf einen industriellen Prozess verlassen, der in größerem Maßstab eingesetzt werden kann. Für diesen zweiten Punkt haben wir uns für die Wattsense-Lösung entschieden, da sie einfach zu installieren ist und Geräte in einem Heizraum über das Internet miteinander verbinden kann, wodurch die Kosten unter Kontrolle bleiben.\"",
+			"author": "David Boutillier",
+			"author-position": "Verantwortlicher für Studien und Energieeffizienz bei Idex"
+		},
+		{
+			"type": "paragraph",
+			"title": "Kontext",
+			"content": "Idex Energies entschied sich, die Wattsense-Lösung in einem Heizraum zu testen, dessen Ausrüstung mit dem Modbus-Kommunikationsprotokoll arbeitet, dem einzigen, das zu diesem Zeitpunkt mit der Box kompatibel war. Die Dinge haben sich zum Besseren gewendet!"
+		},
+		{
+			"type": "paragraph",
+			"title": "",
+			"content": "Der ausgewählte Standort, die Cité des Bains in Béligneux, Ostfrankreich, besteht aus sieben Gebäuden, in denen 64 Wohneinheiten mit mietpreisgebundenem Wohnraum zusammengefasst sind."
+		},
+		{
+			"type": "image",
+			"src": "idex/buildings.jpg",
+			"alt": "Wohngebäude",
+			"caption": "Wohngebäude"
+		},
+		{
+			"type": "paragraph",
+			"content": "Die Infrastruktur wird über einen zentralen Heizraum versorgt. Dieser ist mit zwei Atlantic-Gaskesseln (plus zwei Atlantic-Gateways), drei Diehl-Wärmezählern, einem Integra-Zähler und einem Atlantic-Warmwasserspeicher ausgestattet. Das sind insgesamt sieben Geräte, die zur Kommunikation alle das Modbus-Protokoll verwenden."
+		},
+		{
+			"type": "image",
+			"src": "idex/room.jpg",
+			"alt": "Heizungsraum",
+			"caption": "Heizungsraum"
+		},
+		{
+			"type": "paragraph",
+			"title": "Herausforderungen",
+			"content": "Idex Energies suchte nach einer industriellen, flexiblen, zuverlässigen und kostengünstigen Lösung, die es ermöglicht, alle Heizräume zu überwachen und eine proaktive Haltung einzunehmen, ohne darauf warten zu müssen, dass seine Kunden ein technisches Problem melden oder hohe Energiekostenabrechnungen erhalten."
+		},
+		{
+			"type": "paragraph",
+			"content": "Mit dem Proof of Concept (POC) am Standort Cité des Bains soll überprüft werden, ob Wattsense eingesetzt werden könnte."
+		},
+		{
+			"type": "paragraph",
+			"title": "Lösung",
+			"content": "Ein Idex-Techniker baute die Box in den Schaltschrank ein, zog Kabel von den Kesseln und Zählern und schloss sie an die Box an. Das Idex-Team teilte Wattsense dann die genauen Referenzen dieser Gerätetypen mit. Das Wattsense-Team konnte die relevanten technischen Unterlagen der Hersteller sammeln, um die Kommunikation mit ihren Geräten zu ermöglichen."
+		},
+		{
+			"type": "image",
+			"src": "idex/panel.jpg",
+			"alt": "Schaltschrank mit der verbauten Box",
+			"caption": "Schaltschrank mit der verbauten Box"
+		},
+		{
+			"type": "paragraph",
+			"content": "Mit diesen Daten sendete das Wattsense-Team die erste Konfiguration per Fernzugriff an die Box, um mit den beiden Kesseln zu interagieren. Mit dem ersten wurde eine sofortige Kommunikation hergestellt und kurz darauf auch mit dem anderen, nachdem ein Verdrahtungsproblem mit falschen Kontakten behoben wurde."
+		},
+		{
+			"type": "paragraph",
+			"content": "Idex musste den Warmwasserspeicher anschließen, der Techniker zog ein Kabel, befestigte es an der Box und stellte die Kommunikationsgeschwindigkeit ein."
+		},
+		{
+			"type": "paragraph",
+			"content": "Nachdem das Wattsense-Team die erforderlichen technischen Informationen von einigen Herstellern erhalten hatte, kehrte der Idex-Techniker zum Standort zurück, und der Rest der Installation konnte per Fernzugriff über einfache Telefongespräche erfolgen: Verbindungen und Einstellungen von Idex, Konfiguration und Tests von Wattsense. Der Techniker nutzte die Gelegenheit, um einen neuen Temperaturfühler in einem der Kessel zu installieren, und Wattsense änderte anschließend sofort die Einstellung der Box über die Programmierschnittstelle, um diese neuen Geräte zu integrieren."
+		},
+		{
+			"type": "paragraph",
+			"content": "Nachdem diese Schritte beendet waren, war der gesamte Standard vollständig angeschlossen."
+		},
+		{
+			"type": "paragraph",
+			"content": "Wattsense hat alle Konfigurationsinformationen der Cité des Bains-Materialien in seiner Cloud-Bibliothek archiviert, sodass sie für einen zukünftigen Anschluss derselben Art von Ausrüstung an einem anderen Standort aus der Ferne wiederverwendet werden können."
+		},
+		{
+			"type": "paragraph",
+			"content": "Unter allen Parametern, die von der Ausrüstung bereitgestellt wurden, wählte Idex  72 aus, die alle fünf Minuten erfasst werden sollten. Wattsense hat die Erfassung der Parameter  in der Box über seine Programmierschnittstelle konfiguriert. Idex muss jetzt nur noch eine Verbindung zu seinem privaten Benutzerbereich in unserem Cloud-Service herstellen, um in Echtzeit auf Daten zuzugreifen und diese im CSV-Format zu exportieren."
+		},
+		{
+			"type": "paragraph",
+			"title": "Ergebnisse",
+			"content": "Aus diesem POC zog Idex Energies drei Lektionen."
+		},
+		{
+			"type": "paragraph",
+			"content": "Der erste Punkt waren die Kosten. Die Installation und die Verbindung mit Wattsense kann ohne die Arbeit eines Systemintegrators im Außendienst erfolgen. Wie jeder gute Fachmann berechnen diese Dienstleister rund 600 Euro pro Tag und benötigen in der Regel mehrere Tage, um einen Heizraum anzuschließen."
+		},
+		{
+			"type": "paragraph",
+			"content": "Während Wattsense das erste Mal vor Ort war und mit Geräten mehrerer Marken und einer Lösung in der Betaphase arbeiten musste, gelang es ihnen, den Heizraum in weniger als einem Tag kommunikationsfähig zu machen."
+		},
+		{
+			"type": "paragraph",
+			"content": "Drittens und letztens, der  Einsatz von internen technischen Teams. Verkabelung und Einstellungen können von Idex-Technikern vor Ort vorgenommen werden. Sie müssen nicht warten, bis die Subunternehmer verfügbar sind. Ganz zu schweigen von den Einsparungen!"
+		},
+		{
+			"type": "paragraph",
+			"content": "Es ist festzuhalten, dass die Wattsense-Lösung daher voll und ganz den Überwachungsanforderungen des Idex-Teams entspricht. Bevor das Team Wattsense fand, planten, eine Menge Zeit und Ressourcen für die Erstellung einer eigenen Lösung aufzuwenden."
+		}
+	]
+}
