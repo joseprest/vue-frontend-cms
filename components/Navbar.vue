@@ -31,20 +31,17 @@
       >
         <!-- is-active shows in mobile -->
         <div class="navbar-end">
-          <a
-            class="navbar-item has-dropdown is-hoverable"
-            @click.native="linkClick"
-          >
+          <a class="navbar-item has-dropdown is-hoverable" @click="linkClick">
             <a
               class="navbar-item"
-              :class="{ 'is-active': this.$route.name.includes('products') }"
+              :class="{ 'is-active': $route.name.includes('products') }"
               >{{ $t('urls.products.label') }}</a
             >
             <div class="navbar-dropdown">
               <router-link
                 :to="$t('urls.products.box.url')"
                 class="navbar-item"
-                @click.native="linkClick"
+                @click="linkClick"
               >
                 {{ $t('urls.products.box.label') }}
                 <div class="subtitle">
@@ -54,7 +51,7 @@
               <router-link
                 :to="$t('urls.products.hub.url')"
                 class="navbar-item"
-                @click.native="linkClick"
+                @click="linkClick"
               >
                 {{ $t('urls.products.hub.label') }}
                 <div class="subtitle">
@@ -63,53 +60,47 @@
               </router-link>
             </div>
           </a>
-          <a
-            class="navbar-item has-dropdown is-hoverable"
-            @click.native="linkClick"
-          >
+          <a class="navbar-item has-dropdown is-hoverable" @click="linkClick">
             <a
               class="navbar-item"
-              :class="{ 'is-active': this.$route.name.includes('benefits') }"
+              :class="{ 'is-active': $route.name.includes('benefits') }"
               >{{ $t('urls.benefits.label') }}</a
             >
             <div class="navbar-dropdown">
               <router-link
                 :to="$t('urls.benefits.property-owner.url')"
                 class="navbar-item"
-                @click.native="linkClick"
+                @click="linkClick"
               >
                 {{ $t('urls.benefits.property-owner.label') }}
               </router-link>
               <router-link
                 :to="$t('urls.benefits.proptech.url')"
                 class="navbar-item"
-                @click.native="linkClick"
+                @click="linkClick"
               >
                 {{ $t('urls.benefits.proptech.label') }}
               </router-link>
               <router-link
                 :to="$t('urls.benefits.integrator.url')"
                 class="navbar-item"
-                @click.native="linkClick"
+                @click="linkClick"
               >
                 {{ $t('urls.benefits.integrator.label') }}
               </router-link>
               <router-link
                 :to="$t('urls.benefits.facility-manager.url')"
                 class="navbar-item"
-                @click.native="linkClick"
+                @click="linkClick"
               >
                 {{ $t('urls.benefits.facility-manager.label') }}
               </router-link>
             </div>
           </a>
-          <a
-            class="navbar-item has-dropdown is-hoverable"
-            @click.native="linkClick"
-          >
+          <a class="navbar-item has-dropdown is-hoverable" @click="linkClick">
             <a
               class="navbar-item"
-              :class="{ 'is-active': this.$route.name.includes('resources') }"
+              :class="{ 'is-active': $route.name.includes('resources') }"
               :href="$t('urls.resources.url')"
               >{{ $t('urls.resources.label') }}</a
             >
@@ -133,7 +124,7 @@
                       :href="$t('urls.installation-guide-box.url')"
                       class="navbar-item"
                       target="_blank"
-                      @click.native="linkClick"
+                      @click="linkClick"
                     >
                       {{ $t('urls.installation-guide-box.label') }}
                     </a>
@@ -141,14 +132,14 @@
                       :href="$t('urls.installation-guide-hub.url')"
                       class="navbar-item"
                       target="_blank"
-                      @click.native="linkClick"
+                      @click="linkClick"
                     >
                       {{ $t('urls.installation-guide-hub.label') }}
                     </a>
                     <router-link
                       :to="$t('urls.compatibility.url')"
                       class="navbar-item"
-                      @click.native="linkClick"
+                      @click="linkClick"
                     >
                       {{ $t('urls.compatibility.label') }}
                     </router-link>
@@ -156,7 +147,7 @@
                       :href="$t('urls.datasheet-box.url')"
                       class="navbar-item"
                       target="_blank"
-                      @click.native="linkClick"
+                      @click="linkClick"
                     >
                       {{ $t('urls.datasheet-box.label') }}
                     </a>
@@ -164,7 +155,7 @@
                       :href="$t('urls.datasheet-hub.url')"
                       class="navbar-item"
                       target="_blank"
-                      @click.native="linkClick"
+                      @click="linkClick"
                     >
                       {{ $t('urls.datasheet-hub.label') }}
                     </a>
@@ -172,14 +163,14 @@
                       :href="$t('urls.lorawan-signal.url')"
                       class="navbar-item"
                       target="_blank"
-                      @click.native="linkClick"
+                      @click="linkClick"
                     >
                       {{ $t('urls.lorawan-signal.label') }}
                     </a>
                     <router-link
                       :to="$t('urls.integrations.url')"
                       class="navbar-item"
-                      @click.native="linkClick"
+                      @click="linkClick"
                     >
                       {{ $t('urls.integrations.label') }}
                     </router-link>
@@ -187,7 +178,7 @@
                       :href="$t('urls.support.url')"
                       class="navbar-item"
                       target="_blank"
-                      @click.native="linkClick"
+                      @click="linkClick"
                     >
                       {{ $t('urls.support.label') }}
                     </a>
@@ -213,7 +204,7 @@
                     <router-link
                       :to="$t('urls.customer-stories.url')"
                       class="navbar-item"
-                      @click.native="linkClick"
+                      @click="linkClick"
                     >
                       {{ $t('urls.customer-stories.label') }}
                     </router-link>
@@ -221,7 +212,7 @@
                       :href="$t('urls.blog.url')"
                       class="navbar-item"
                       target="_blank"
-                      @click.native="linkClick"
+                      @click="linkClick"
                     >
                       {{ $t('urls.blog.label') }}
                     </a>
@@ -247,7 +238,7 @@
                     <router-link
                       :to="$t('urls.iot-security.url')"
                       class="navbar-item"
-                      @click.native="linkClick"
+                      @click="linkClick"
                     >
                       {{ $t('urls.iot-security.label') }}
                     </router-link>
@@ -255,7 +246,7 @@
                       :href="$t('urls.api.url')"
                       class="navbar-item"
                       target="_blank"
-                      @click.native="linkClick"
+                      @click="linkClick"
                     >
                       {{ $t('urls.api.label') }}
                     </a>
@@ -263,7 +254,7 @@
                       :href="$t('urls.status-api.url')"
                       class="navbar-item"
                       target="_blank"
-                      @click.native="linkClick"
+                      @click="linkClick"
                     >
                       {{ $t('urls.status-api.label') }}
                     </a>
@@ -274,26 +265,23 @@
               <router-link
                 :to="$t('urls.partners.url')"
                 class="navbar-item"
-                @click.native="linkClick"
+                @click="linkClick"
               >
                 {{ $t('urls.partners.title') }}
               </router-link>
             </div>
           </a>
-          <a
-            class="navbar-item has-dropdown is-hoverable"
-            @click.native="linkClick"
-          >
+          <a class="navbar-item has-dropdown is-hoverable" @click="linkClick">
             <a
               class="navbar-item"
-              :class="{ 'is-active': this.$route.name.includes('pricing') }"
+              :class="{ 'is-active': $route.name.includes('pricing') }"
               >{{ $t('urls.pricing.label') }}</a
             >
             <div class="navbar-dropdown">
               <router-link
                 :to="$t('urls.pricing.box.url')"
                 class="navbar-item"
-                @click.native="linkClick"
+                @click="linkClick"
               >
                 {{ $t('urls.pricing.box.label') }}
                 <div class="subtitle">
@@ -303,7 +291,7 @@
               <router-link
                 :to="$t('urls.pricing.hub.url')"
                 class="navbar-item"
-                @click.native="linkClick"
+                @click="linkClick"
               >
                 {{ $t('urls.pricing.hub.label') }}
                 <div class="subtitle">
@@ -315,8 +303,8 @@
           <router-link
             :to="$t('urls.about.url')"
             class="navbar-item"
-            :class="{ 'is-active': this.$route.name.includes('about') }"
-            @click.native="linkClick"
+            :class="{ 'is-active': $route.name.includes('about') }"
+            @click="linkClick"
           >
             {{ $t('urls.about.label') }}
           </router-link>
