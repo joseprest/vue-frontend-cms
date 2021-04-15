@@ -24,7 +24,10 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/sass/app.scss'],
+  css: [
+    { src: 'hooper/dist/hooper.css', lang: 'css' },
+    { src: '~/assets/sass/app.scss', lang: 'sass' },
+  ],
   /*
    ** So we can use our .scss file globally in the Nuxt app
    */
