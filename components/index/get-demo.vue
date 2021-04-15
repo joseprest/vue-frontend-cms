@@ -5,10 +5,11 @@
         <div class="column is-12">
           <p class="buttons">
             <a
+              v-if="cmsData !== null"
               class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
             >
               <!-- @click="requestDemo('box')" -->
-              Get demo - add CMS here
+              {{ cmsData.button_text }}
             </a>
           </p>
         </div>
@@ -45,7 +46,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section {
+.section.newbms {
   background: rgba($blue-dark, 0.05);
   padding-top: 1rem;
   padding-bottom: 6rem;

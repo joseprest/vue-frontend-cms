@@ -7,8 +7,11 @@
     <index-connect-all :cms-data="cmsData.connect" />
     <customer-stories :cms-data="cmsData.customer_stories" />
     <index-how-it-works :cms-data="cmsData.how_it_works" />
-    <index-get-demo />
-    <index-clients :cms-data="cmsData.clients" />
+    <index-get-demo :cms-data="cmsData.get_demo" />
+    <index-clients
+      :cms-data="cmsData.clients"
+      :clients="cmsData.clients_logos"
+    />
   </div>
 </template>
 
@@ -25,10 +28,14 @@ export default {
   },
 
   async created() {
-    const content = await axios.get(
-      this.$getUrlFromCms('/home?locale.language=en')
-    )
-    this.cmsData = content.data[0]
+    const content = await axios.all([
+      axios.get(this.$getUrlFromCms('/home?locale.language=en')),
+      axios.get(this.$getUrlFromCms('/clients-logos')),
+    ])
+    this.cmsData = {
+      ...content[0].data[0],
+      clients_logos: content[1].data.logos,
+    }
   },
 }
 </script>

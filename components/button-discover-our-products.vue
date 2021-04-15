@@ -35,9 +35,6 @@ export default {
       default: null,
     },
   },
-  mounted() {
-    console.table(this.cmsData)
-  },
 }
 </script>
 

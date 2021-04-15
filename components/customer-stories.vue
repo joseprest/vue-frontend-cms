@@ -34,7 +34,7 @@
                     :is-small="true"
                     :is-transparent="true"
                   >
-                    {{ story.company }} -- add proper link to ws-link
+                    {{ cmsData.continue_reading }}
                   </ws-link>
                 </p>
               </div>

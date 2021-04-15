@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section class="section how">
     <div class="gradiant">
       <img src="~/assets/imgs/gradiant-bg-blue.svg" alt="bg" />
     </div>
@@ -18,10 +18,8 @@
           :key="`how-it-works-step-${step.id}`"
           class="column is-3-desktop is-12-touch"
         >
-          <div
-            v-scroll-reveal="{ delay: 0, reset: false }"
-            class="align-top is-flex-column"
-          >
+          <div class="align-top is-flex-column">
+            <!-- v-scroll-reveal="{ delay: 0, reset: false }" -->
             <figure class="image">
               <ws-image
                 :src="$getImageUrlFromCms(step.image)"
@@ -63,7 +61,7 @@ export default {
 <style lang="scss" scoped>
 $margin-picture: 1rem;
 
-.section {
+.section.how {
   padding-top: 6rem;
   padding-bottom: 7rem;
   z-index: 2;

@@ -10,34 +10,36 @@
         </ws-title>
         <!-- color="inverted" /> -->
       </ws-paragraph>
-
-      <!-- <clients-logos /> -->
+      <clients-logos :clients="clients" />
     </div>
   </section>
 </template>
 
 <script>
+import ClientsLogos from '~/components/ClientsLogos'
+
 export default {
   name: 'IndexClients',
+  components: {
+    ClientsLogos,
+  },
 
   props: {
     cmsData: {
       type: Object,
       default: null,
     },
+    clients: {
+      type: Array,
+      default: () => [],
+    },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-.section {
+.section.clients {
   padding-top: 6rem;
   padding-bottom: 0;
-}
-.client-logo {
-  margin-top: 0;
-  @include touch {
-    margin-top: 2rem;
-  }
 }
 </style>
