@@ -12,6 +12,8 @@
       :cms-data="cmsData.clients"
       :clients="cmsData.clients_logos"
     />
+    <index-testimonials :cms-data="cmsData.testimonials" />
+    <index-integrations :cms-data="cmsData.Integrations" />
   </div>
 </template>
 
@@ -30,11 +32,13 @@ export default {
   async created() {
     const content = await axios.all([
       axios.get(this.$getUrlFromCms('/home?locale.language=en')),
+      axios.get(this.$getUrlFromCms('/testimonials')),
       axios.get(this.$getUrlFromCms('/clients-logos')),
     ])
     this.cmsData = {
       ...content[0].data[0],
-      clients_logos: content[1].data.logos,
+      testimonials: content[1].data,
+      clients_logos: content[2].data.logos,
     }
   },
 }
