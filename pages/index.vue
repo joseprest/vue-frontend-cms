@@ -14,6 +14,7 @@
     />
     <index-testimonials :cms-data="cmsData.testimonials" />
     <index-integrations :cms-data="cmsData.Integrations" />
+    <app-footer />
   </div>
 </template>
 
