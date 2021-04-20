@@ -1,6 +1,6 @@
 <template>
   <div v-if="Object.keys(cmsData).length > 0">
-    <index-header :cms-data="cmsData.header" />
+    <index-header :cms-data="cmsData.header" :navbar-data="cmsData.navbar" />
     <index-upgrade-bms :cms-data="cmsData.upgrade" />
     <index-collect-unify-bms-data :cms-data="cmsData.unify" />
     <index-plug-and-play :cms-data="cmsData.plug_play" />
@@ -36,11 +36,13 @@ export default {
       axios.get(this.$getUrlFromCms('/home?locale.language=en')),
       axios.get(this.$getUrlFromCms('/testimonials')),
       axios.get(this.$getUrlFromCms('/clients-logos')),
+      axios.get(this.$getUrlFromCms('/navbars?locale.language=en')),
     ])
     this.cmsData = {
       ...content[0].data[0],
       testimonials: content[1].data,
       clients_logos: content[2].data.logos,
+      navbar: content[3].data[0].dropdown,
     }
   },
 }
