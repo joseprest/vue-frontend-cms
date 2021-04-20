@@ -53,6 +53,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxtjs/svg',
+    '@nuxtjs/markdownit',
     // '@nuxtjs/style-resources',
   ],
 
