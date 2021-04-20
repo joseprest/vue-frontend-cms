@@ -96,4 +96,8 @@ export default {
   server: {
     port: 8080,
   },
+
+  env: {
+    CMS_URL: process.env.CMS_URL || 'http://localhost:1337',
+  },
 }

@@ -15,6 +15,7 @@ export default ({ app }, inject) => {
     }
 
     const finalSource = image.url
-    return `http://localhost:1337${finalSource}`
+    return `${process.env.CMS_URL}${finalSource}`
+    // return `http://localhost:1337${finalSource}`
   })
 }
