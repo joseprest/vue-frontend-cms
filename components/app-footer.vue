@@ -1,157 +1,73 @@
 <template>
   <footer class="footer">
-    <section class="section">
-      <div id="footer-bg">
-        <span></span>
-      </div>
-    </section>
-
     <div class="container">
-      <div class="columns is-mobile is-multiline">
-        <div class="column is-6-mobile is-flex-column">
-          <h4 class="has-text-weight-semibold mb-25">WATTSENSE</h4>
-          <!-- Logo -->
-          <figure class="image is-128x128">
-            <img
-              src="@/assets/imgs/logo-draw.svg"
-              alt="Wattsense"
-              height="50%"
-            />
-          </figure>
-
-          <!-- Contacts -->
-          <router-link
-            class="mt-10 small has-text-weight-semibold"
-            :to="$t('urls.contact.url')"
-            @click.native="linkClick"
+      <div
+        v-if="cmsData && cmsData.column1"
+        class="columns is-mobile is-multiline"
+      >
+        <div
+          v-for="colIndex in [1, 2, 3, 4, 5]"
+          :key="`col${colIndex}`"
+          :class="
+            colIndex === 1
+              ? 'column is-6-mobile is-flex-column'
+              : colIndex === 5
+              ? 'column is-12-touch'
+              : 'column is-6-mobile'
+          "
+        >
+          <template
+            v-if="
+              cmsData[`column${colIndex}`] &&
+              cmsData[`column${colIndex}`].length
+            "
           >
-            contact@wattsense.com
-          </router-link>
-          <a
-            class="small has-text-weight-semibold"
-            style="opacity: 0.8"
-            href="tel:+33428298349"
-            target="_blank"
-            @click="linkClick"
-          >
-            +33 4 28 29 83 49
-          </a>
-
-          <!-- Language -->
-          <div class="mt-20 field">
-            <div class="control has-icons-left">
-              <div class="select is-small language-selector">
-                <select v-model="locale" @change="changedLanguage">
-                  <option value="en">English</option>
-                  <option value="fr">Français</option>
-                  <option value="de">Deutsche</option>
-                </select>
-              </div>
-              <div class="icon is-small is-left">
-                <figure class="image is-16x16">
+            <template v-for="comp in cmsData[`column${colIndex}`]">
+              <h4
+                v-if="comp.__component === 'footer.title'"
+                :key="`comp${comp.id}`"
+                class="has-text-weight-semibold is-uppercase mb-25"
+              >
+                {{ comp.title }}
+              </h4>
+              <footer-list
+                v-if="comp.__component === 'footer.links'"
+                :key="`comp${comp.id}`"
+                :cms-data="comp.links"
+              />
+              <div
+                v-else-if="comp.__component === 'footer.company'"
+                :key="`comp${comp.id}`"
+              >
+                <figure class="image is-128x128">
                   <img
-                    v-if="home"
-                    src="@/assets/imgs/worlwide-gray.svg"
-                    alt="Select language"
-                  />
-                  <img
-                    v-else
-                    src="@/assets/imgs/worlwide.svg"
-                    alt="Select language"
+                    :src="$getUrlFromCms(comp.image.url)"
+                    alt="Wattsense"
+                    height="50%"
                   />
                 </figure>
+                <!-- Contacts -->
+                <nuxt-link
+                  class="mt-10 small has-text-weight-semibold"
+                  :to="comp.Link.link"
+                >
+                  {{ comp.Link.text }}
+                </nuxt-link>
+                <a
+                  class="small has-text-weight-semibold"
+                  style="opacity: 0.8"
+                  :href="`tel:${comp.phone}`"
+                  target="_blank"
+                  @click="linkClick"
+                >
+                  {{ comp.phone }}
+                </a>
+                <!-- TODO: language selector -->
               </div>
-            </div>
-          </div>
+            </template>
+          </template>
         </div>
-
-        <div class="column is-6-mobile">
-          <h4 class="has-text-weight-semibold">{{ $t('footer.offer') }}</h4>
-          <ul class="links">
-            <li>
-              <router-link
-                :to="$t('urls.products.box.url')"
-                @click.native="linkClick"
-              >
-                {{ $t('urls.products.box.label') }} -
-                {{ $t('urls.products.box.subtitle') }}
-              </router-link>
-            </li>
-            <li>
-              <router-link
-                :to="$t('urls.products.hub.url')"
-                @click.native="linkClick"
-              >
-                {{ $t('urls.products.hub.label') }} -
-                {{ $t('urls.products.hub.subtitle') }}
-              </router-link>
-            </li>
-            <li>
-              <router-link
-                :to="$t('urls.pricing.url')"
-                @click.native="linkClick"
-              >
-                {{ $t('urls.pricing.label') }}
-              </router-link>
-            </li>
-            <li>
-              <router-link :to="$t('urls.bms.url')" @click.native="linkClick">
-                {{ $t('urls.bms.label') }}
-              </router-link>
-            </li>
-            <li>
-              <router-link
-                :to="$t('urls.resources.url')"
-                @click.native="linkClick"
-              >
-                {{ $t('urls.resources.label') }}
-              </router-link>
-            </li>
-            <li>
-              <router-link
-                :to="$t('urls.compatibility.url')"
-                @click.native="linkClick"
-              >
-                {{ $t('urls.compatibility.label') }}
-              </router-link>
-            </li>
-          </ul>
-        </div>
-
-        <div class="column is-6-mobile">
-          <h4 class="has-text-weight-semibold">{{ $t('footer.company') }}</h4>
-          <ul class="links">
-            <li>
-              <router-link :to="$t('urls.about.url')" @click.native="linkClick">
-                {{ $t('urls.about.label') }}
-              </router-link>
-            </li>
-            <li>
-              <router-link
-                :to="$t('urls.contact.url')"
-                @click.native="linkClick"
-              >
-                {{ $t('urls.contact.label') }}
-              </router-link>
-            </li>
-            <li>
-              <a
-                :href="$t('urls.blog.url')"
-                noref="noref"
-                rel="noopener"
-                @click.native="linkClick"
-              >
-                {{ $t('urls.blog.label') }}
-              </a>
-            </li>
-            <li @click="showModalPartner">
-              <a @click.native="linkClick">
-                {{ $t('urls.become-partner.label') }}
-              </a>
-            </li>
-          </ul>
-        </div>
-
+        <!--
         <div class="column is-6-mobile">
           <h4 class="has-text-weight-semibold">{{ $t('footer.connect') }}</h4>
           <ul class="mt-30">
@@ -173,8 +89,7 @@
           </ul>
         </div>
 
-        <div class="column is-12-touch">
-          <h4 class="has-text-weight-semibold">{{ $t('footer.follow-us') }}</h4>
+        <div class="column">
           <ul
             class="list-follow-us"
             style="line-height: 2rem; margin-top: 1rem"
@@ -249,6 +164,7 @@
             </li>
           </ul>
         </div>
+        -->
       </div>
 
       <hr style="margin-bottom: 1rem" />
@@ -278,13 +194,16 @@
 </template>
 
 <script>
-import IcoArrow from '@/assets/imgs/icons/link-arrow-white.svg?inline'
+import axios from 'axios'
+import FooterList from './footer/footer-list'
+// import IcoArrow from '@/assets/imgs/icons/link-arrow-white.svg?inline'
 
 export default {
   name: 'AppFooter',
 
   components: {
-    IcoArrow,
+    // IcoArrow,
+    FooterList,
   },
 
   props: {
@@ -296,6 +215,7 @@ export default {
 
   data() {
     return {
+      cmsData: {},
       showDemo: false,
       showSales: false,
       showPartner: false,
@@ -311,7 +231,8 @@ export default {
     },
   },
 
-  created() {
+  async created() {
+    // eslint-disable-next-line no-console
     if (this.$route.query.demo) {
       this.showDemo = true
     }
@@ -324,6 +245,10 @@ export default {
     if (this.$route.query.partner) {
       this.showPartner = true
     }
+    const content = await axios.get(
+      this.$getUrlFromCms('/footers?locale.language=en')
+    )
+    this.cmsData = content.data[0]
   },
 
   methods: {
@@ -335,41 +260,11 @@ export default {
         label: htmlElem.target.textContent,
       })
     },
-
-    socialMediaClick(socialMedia) {
-      this.linkClick({
-        target: {
-          innerText: socialMedia,
-        },
-      })
-    },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-.footer {
-  section {
-    margin: -40px !important;
-    @include touch {
-      margin-left: 0 !important;
-      margin-right: 0 !important;
-    }
-  }
-}
-.footer:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 50%;
-  top: 0;
-  left: 0;
-  // transform: skewY(-2deg);
-  background: $green;
-  z-index: 9;
-}
-
 .language {
   select {
     border-color: unset;
