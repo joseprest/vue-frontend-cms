@@ -26,18 +26,20 @@
               <h4
                 v-if="comp.__component === 'footer.title'"
                 :key="`comp${comp.id}`"
-                class="has-text-weight-semibold is-uppercase mb-25"
+                class="has-text-weight-semibold is-uppercase"
               >
                 {{ comp.title }}
               </h4>
               <footer-list
                 v-if="comp.__component === 'footer.links'"
-                :key="`comp${comp.id}`"
+                :key="`footer-list${comp.id}`"
                 :cms-data="comp.links"
+                class="mt-25"
               />
               <div
                 v-else-if="comp.__component === 'footer.company'"
-                :key="`comp${comp.id}`"
+                :key="`footer-company${comp.id}`"
+                class="mt-25"
               >
                 <figure class="image is-128x128">
                   <img
@@ -64,107 +66,24 @@
                 </a>
                 <!-- TODO: language selector -->
               </div>
+              <footer-social
+                v-else-if="comp.__component === 'footer.social'"
+                :key="`footer-social${comp.id}`"
+                :cms-data="comp.socialnetwork"
+              />
+              <footer-newsletter
+                v-else-if="comp.__component === 'footer.newsletter'"
+                :key="`footer-newsletter${comp.id}`"
+                :cms-data="comp.newsletter"
+              />
+              <footer-login
+                v-else-if="comp.__component === 'footer.login'"
+                :key="`footer-login${comp.id}`"
+                :cms-data="comp"
+              />
             </template>
           </template>
         </div>
-        <!--
-        <div class="column is-6-mobile">
-          <h4 class="has-text-weight-semibold">{{ $t('footer.connect') }}</h4>
-          <ul class="mt-30">
-            <li>
-              <a
-                class="login"
-                :href="$t('urls.login.url')"
-                target="_blank"
-                noref="noref"
-                rel="noopener"
-                @click="linkClick"
-              >
-                <span>{{ $t('urls.login.label') }}</span>
-                <span class="icon">
-                  <ico-arrow />
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="column">
-          <ul
-            class="list-follow-us"
-            style="line-height: 2rem; margin-top: 1rem"
-          >
-            <li>
-              <a
-                href="https://www.linkedin.com/company/wattsense"
-                alt="https://www.linkedin.com/company/wattsense"
-                target="_blank"
-                title="LinkedIn"
-                rel="noopener"
-                @click="socialMediaClick('linkedin')"
-              >
-                <figure class="image is-48x48">
-                  <img
-                    src="@/assets/imgs/linkedin.svg"
-                    alt="https://www.linkedin.com/company/wattsense"
-                  />
-                </figure>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/wattsense"
-                alt="https://twitter.com/wattsense"
-                target="_blank"
-                title="Twitter"
-                rel="noopener"
-                @click="socialMediaClick('twitter')"
-              >
-                <figure class="image is-48x48">
-                  <img
-                    src="@/assets/imgs/twitter.svg"
-                    alt="https://twitter.com/wattsense"
-                  />
-                </figure>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCf37c9D1hUA0rJzTgefWyAw/videos"
-                alt="https://www.youtube.com/channel/UCf37c9D1hUA0rJzTgefWyAw/videos"
-                target="_blank"
-                title="Youtube"
-                rel="noopener"
-                @click="socialMediaClick('youtube')"
-              >
-                <figure class="image is-48x48">
-                  <img
-                    src="@/assets/imgs/youtube.svg"
-                    alt="https://www.youtube.com/channel/UCf37c9D1hUA0rJzTgefWyAw/videos"
-                  />
-                </figure>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://discuss.wattsense.com/"
-                alt="https://discuss.wattsense.com/"
-                target="_blank"
-                title="Discuss"
-                rel="noopener"
-                @click="socialMediaClick('discuss')"
-              >
-                <figure class="image is-48x48">
-                  <img
-                    src="@/assets/imgs/discuss.svg"
-                    alt="https://discuss.wattsense.com/"
-                  />
-                </figure>
-              </a>
-            </li>
-          </ul>
-        </div>
-        -->
       </div>
 
       <hr style="margin-bottom: 1rem" />
@@ -179,12 +98,14 @@
         <div class="level-right">
           <div class="level-item">
             <p class="bottom">
-              <router-link
-                class="has-text-weight-light is-7"
-                :to="$t('urls.legal-notice.url')"
+              <nuxt-link
+                v-for="link in cmsData.bottom_links"
+                :key="`bottom-link${link.id}`"
+                class="has-text-weight-light is-7 ml-10"
+                :to="link.link"
               >
-                {{ $t('urls.legal-notice.label') }}
-              </router-link>
+                {{ link.text }}
+              </nuxt-link>
             </p>
           </div>
         </div>
@@ -195,17 +116,9 @@
 
 <script>
 import axios from 'axios'
-import FooterList from './footer/footer-list'
-// import IcoArrow from '@/assets/imgs/icons/link-arrow-white.svg?inline'
 
 export default {
   name: 'AppFooter',
-
-  components: {
-    // IcoArrow,
-    FooterList,
-  },
-
   props: {
     home: {
       type: Boolean,
@@ -276,63 +189,12 @@ export default {
   }
 }
 
-ul.links,
-ul.list-auth {
+ul.links {
   margin-top: 2em;
   li {
     font-size: 0.9em;
     line-height: 1.2em;
     margin-bottom: 1.5em;
-  }
-}
-ul.list-auth {
-  margin-right: 5px;
-  margin-top: 25px;
-  li:first-child {
-    margin-bottom: 25px;
-  }
-  @include mobile {
-    margin-top: 0px;
-  }
-}
-a.login {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 5px;
-  background: rgba($white, 0.2);
-  padding: 5px 15px;
-  transition: all linear 0.02s;
-  margin-right: 1rem;
-  font-size: 0.9em;
-  line-height: 1.2em;
-  &:hover {
-    .icon {
-      svg {
-        fill: $dark;
-        stroke: $dark;
-      }
-    }
-  }
-  span {
-    display: inline-flex;
-    align-items: center;
-    font-weight: 500;
-  }
-  .icon {
-    margin-left: 10px;
-    width: 12px;
-    svg {
-      width: 12px;
-      height: auto;
-      fill: $white;
-      stroke: $white;
-      stroke-width: 0.5px;
-    }
-  }
-}
-@include mobile {
-  p > ul.list-auth {
-    margin-top: -1rem;
   }
 }
 .small {
@@ -343,11 +205,5 @@ a.login {
 }
 p.bottom {
   font-size: 0.9em;
-}
-ul.list-follow-us {
-  margin-top: 0.5em;
-  figure {
-    margin-right: 5px;
-  }
 }
 </style>
