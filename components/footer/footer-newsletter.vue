@@ -38,12 +38,14 @@
 <script>
 export default {
   name: 'FooterNewsletter',
+
   props: {
     cmsData: {
-      type: Array,
-      default: () => [],
+      type: Object,
+      default: () => {},
     },
   },
+
   data() {
     return {
       email: null,
@@ -53,6 +55,13 @@ export default {
       errorMsg: 'Ops! Inform a valid e-mail address!',
     }
   },
+
+  computed: {
+    newsletter() {
+      return this.cmsData?.newsletter
+    },
+  },
+
   methods: {
     send() {
       this.error = null

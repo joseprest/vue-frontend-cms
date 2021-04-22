@@ -7,13 +7,17 @@ export default ({ app }, inject) => {
   inject('getUrlFromCms', (...parameters) => {
     const [source, ...properties] = parameters
     if (!properties || properties.length === 0) {
-      return `${process.env.CMS_URL}${source}`
+      return source?.substr(0, 4) === 'http'
+        ? source
+        : `${process.env.CMS_URL}${source}`
     }
 
     const finalSource = properties.reduce(
       (object, property) => object?.[property] ?? undefined,
       source
     )
-    return `${process.env.CMS_URL}${finalSource}`
+    return finalSource?.substr(0, 4) === 'http'
+      ? finalSource
+      : `${process.env.CMS_URL}${finalSource}`
   })
 }

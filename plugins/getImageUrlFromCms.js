@@ -15,7 +15,7 @@ export default ({ app }, inject) => {
     }
 
     const finalSource = image.url
-    return finalSource.substr(0, 5) === 'https'
+    return finalSource?.substr(0, 5) === 'https'
       ? finalSource
       : `${process.env.CMS_URL}${finalSource}`
     // return `http://localhost:1337${finalSource}`

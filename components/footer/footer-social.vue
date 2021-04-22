@@ -1,6 +1,6 @@
 <template>
   <ul class="list-follow-us" style="line-height: 2rem; margin-top: 1rem">
-    <li v-for="network in cmsData" :key="`social${network.id}`">
+    <li v-for="network in socialLinks" :key="`social${network.id}`">
       <a
         :href="network.link"
         target="_blank"
@@ -20,8 +20,14 @@ export default {
   name: 'FooterSocial',
   props: {
     cmsData: {
-      type: Array,
-      default: () => [],
+      type: Object,
+      default: () => {},
+    },
+  },
+
+  computed: {
+    socialLinks() {
+      return this.cmsData?.socialnetwork
     },
   },
 }

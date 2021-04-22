@@ -23,63 +23,11 @@
             "
           >
             <template v-for="comp in cmsData[`column${colIndex}`]">
-              <h4
-                v-if="comp.__component === 'footer.title'"
-                :key="`comp${comp.id}`"
-                class="has-text-weight-semibold is-uppercase"
-              >
-                {{ comp.title }}
-              </h4>
-              <footer-list
-                v-if="comp.__component === 'footer.links'"
-                :key="`footer-list${comp.id}`"
-                :cms-data="comp.links"
-                class="mt-25"
-              />
-              <div
-                v-else-if="comp.__component === 'footer.company'"
-                :key="`footer-company${comp.id}`"
-                class="mt-25"
-              >
-                <figure class="image is-128x128">
-                  <img
-                    :src="$getUrlFromCms(comp.image.url)"
-                    alt="Wattsense"
-                    height="50%"
-                  />
-                </figure>
-                <!-- Contacts -->
-                <nuxt-link
-                  class="mt-10 small has-text-weight-semibold"
-                  :to="comp.Link.link"
-                >
-                  {{ comp.Link.text }}
-                </nuxt-link>
-                <a
-                  class="small has-text-weight-semibold"
-                  style="opacity: 0.8"
-                  :href="`tel:${comp.phone}`"
-                  target="_blank"
-                  @click="linkClick"
-                >
-                  {{ comp.phone }}
-                </a>
-                <!-- TODO: language selector -->
-              </div>
-              <footer-social
-                v-else-if="comp.__component === 'footer.social'"
-                :key="`footer-social${comp.id}`"
-                :cms-data="comp.socialnetwork"
-              />
-              <footer-newsletter
-                v-else-if="comp.__component === 'footer.newsletter'"
-                :key="`footer-newsletter${comp.id}`"
-                :cms-data="comp.newsletter"
-              />
-              <footer-login
-                v-else-if="comp.__component === 'footer.login'"
-                :key="`footer-login${comp.id}`"
+              <component
+                :is="getComponentFromCmsComponent(comp.__component)"
+                :key="`${colIndex}-footer-${comp.__component}-${comp.id}`"
                 :cms-data="comp"
+                class="mt-25"
               />
             </template>
           </template>
@@ -102,7 +50,7 @@
                 v-for="link in cmsData.bottom_links"
                 :key="`bottom-link${link.id}`"
                 class="has-text-weight-light is-7 ml-10"
-                :to="link.link"
+                :to="$getUrlFromCms(link.link)"
               >
                 {{ link.text }}
               </nuxt-link>
@@ -165,13 +113,14 @@ export default {
   },
 
   methods: {
-    linkClick(htmlElem) {
-      this.$gtm.trackEvent({
-        event: 'uaevent',
-        category: 'navigation',
-        action: 'footer',
-        label: htmlElem.target.textContent,
-      })
+    getComponentFromCmsComponent(cmsComponent) {
+      switch (cmsComponent) {
+        case 'footer.links':
+          return 'footer-list'
+
+        default:
+          return cmsComponent.replace('.', '-')
+      }
     },
   },
 }

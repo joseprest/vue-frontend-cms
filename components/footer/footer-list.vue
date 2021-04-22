@@ -1,6 +1,6 @@
 <template>
-  <ul class="links">
-    <li v-for="rec in cmsData" :key="rec.id">
+  <ul class="links mt-25">
+    <li v-for="rec in links" :key="rec.id">
       <nuxt-link :to="rec.link">
         {{ rec.text }}
         <!-- TODO: target -->
@@ -14,8 +14,14 @@ export default {
   name: 'FooterList',
   props: {
     cmsData: {
-      type: Array,
-      default: () => [],
+      type: Object,
+      default: () => {},
+    },
+  },
+
+  computed: {
+    links() {
+      return this.cmsData?.links
     },
   },
 }
