@@ -1,13 +1,13 @@
 <template>
   <div class="newsletter">
-    <p>{{ $t('cta-newsletter.title') }}</p>
+    <p>{{ cmsData.title }}</p>
     <div class="field">
       <div id="input" class="control">
         <input
           v-model="email"
           class="input no-border"
           type="email"
-          :placeholder="$t('cta-newsletter.email')"
+          :placeholder="cmsData.placeholder"
         />
       </div>
       <div id="button" class="control">
@@ -17,7 +17,7 @@
           :disabled="sending"
           @click="send"
         >
-          {{ $t('cta-newsletter.button') }}
+          {{ cmsData.button_text }}
         </button>
       </div>
     </div>
@@ -29,7 +29,7 @@
     </transition>
     <transition name="fade">
       <div v-show="!error && success" class="notification is-success">
-        {{ $t('cta-newsletter.success') }}
+        {{ cmsData.success_message }}
       </div>
     </transition>
   </div>
