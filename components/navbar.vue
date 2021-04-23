@@ -7,9 +7,12 @@
   >
     <div class="container" style="padding-top: 20px; padding-bottom: 10px">
       <div class="navbar-brand header-logo">
-        <router-link class="navbar-item" to="$t('urls.home.url')">
+        <nuxt-link
+          class="navbar-item"
+          :to="locale === 'en' ? '/' : `/${locale}`"
+        >
           <img :src="getLogoImg" alt="Wattsense" />
-        </router-link>
+        </nuxt-link>
 
         <a
           role="button"
@@ -31,14 +34,13 @@
       >
         <div class="navbar-end">
           <nuxt-link
-            v-for="item in cmsData"
+            v-for="item in menu"
             :key="item.id"
             class="navbar-item"
             :class="{
               'has-dropdown is-hoverable': item.subs && item.subs.length > 0,
             }"
             :to="item.main_link ? item.main_link : ''"
-            @click="linkClick"
           >
             <a class="navbar-item" :class="{ 'is-active': false }">
               {{ item.title }}
@@ -47,66 +49,63 @@
               v-if="item.subs && item.subs.length > 0"
               class="navbar-dropdown"
             >
-              <nuxt-link
-                v-for="sub in item.subs.filter((a) => a.link)"
-                :key="sub.id"
-                :to="sub.link ? sub.link : ''"
-                class="navbar-item"
-                @click="linkClick"
-              >
-                {{ sub.title }}
-                <div class="subtitle">
-                  {{ sub.subtitle }}
-                </div>
-              </nuxt-link>
-              <div
-                v-for="sub in item.subs.filter((a) => !a.link)"
-                :key="sub.id"
-                class="nested navbar-item dropdown"
-              >
-                <div class="dropdown-trigger">
-                  <button
-                    class="button"
-                    aria-haspopup="true"
-                    aria-controls="dropdown-menu"
-                  >
-                    <span>{{ $t('resources.main-section.section1') }}</span>
-                    <span class="icon is-small">
-                      <i class="fas fa-angle-down" aria-hidden="true"></i>
-                    </span>
-                  </button>
-                </div>
-                <div id="dropdown-menu" class="dropdown-menu" role="menu">
-                  <div class="dropdown-content">
-                    <nuxt-link
-                      v-for="link in sub.links"
-                      :key="link.id"
-                      :to="link.link ? link.link : ''"
-                      class="navbar-item"
-                      @click="linkClick"
+              <template v-for="sub in item.subs">
+                <nuxt-link
+                  v-if="sub.link.length"
+                  :key="sub.id"
+                  :to="sub.link ? sub.link : ''"
+                  class="navbar-item"
+                >
+                  {{ sub.title }}
+                  <div class="subtitle">
+                    {{ sub.subtitle }}
+                  </div>
+                </nuxt-link>
+                <div v-else :key="sub.id" class="nested navbar-item dropdown">
+                  <div class="dropdown-trigger">
+                    <button
+                      class="button"
+                      aria-haspopup="true"
+                      aria-controls="dropdown-menu"
                     >
-                      {{ link.title }}
-                    </nuxt-link>
+                      <span>{{ sub.title }}</span>
+                      <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div id="dropdown-menu" class="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                      <nuxt-link
+                        v-for="link in sub.links"
+                        :key="link.id"
+                        :to="link.link ? link.link : ''"
+                        class="navbar-item"
+                      >
+                        {{ link.title }}
+                      </nuxt-link>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </template>
             </div>
           </nuxt-link>
           <div class="field">
             <div class="control has-icons-left">
               <div class="select is-small">
                 <select
+                  v-if="locales && locales.length"
                   v-model="locale"
                   class="language-selector is-borderless is-transparent"
                   :class="{ 'is-black': home }"
                   @change="changedLanguage"
                 >
                   <option
-                    v-for="loc in $i18n.locales"
-                    :key="loc.code"
-                    :value="loc.code"
+                    v-for="loc in locales"
+                    :key="loc.language"
+                    :value="loc.language"
                   >
-                    {{ loc.name }}
+                    {{ loc.language }}
                   </option>
                 </select>
               </div>
@@ -136,6 +135,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import normalLogo from '@/assets/imgs/wattsense-header-logo.svg'
 import greenLogo from '@/assets/imgs/logo.svg'
 
@@ -145,16 +145,14 @@ export default {
       type: Boolean,
       default: false,
     },
-    cmsData: {
-      type: Array,
-      default: () => [],
-    },
   },
 
   data() {
     return {
       showMenu: false,
-      locale: this.$i18n.locale,
+      navbar: () => [],
+      locales: () => [],
+      locale: 'en',
     }
   },
 
@@ -162,16 +160,20 @@ export default {
     getLogoImg() {
       return this.home ? greenLogo : normalLogo
     },
+    menu() {
+      // TODO: apply current locale
+      return this.navbar && this.navbar.length ? this.navbar[0].dropdown : []
+    },
   },
 
-  created() {
-    // EventBus.$on('changedLanguage', (newLanguage) => {
-    //   this.locale = newLanguage
-    // })
-  },
-
-  mounted() {
-    this.locale = localStorage.getItem('locale') || this.$i18n.locale
+  async mounted() {
+    const content = await axios.all([
+      axios.get(this.$getUrlFromCms('/locales')),
+      axios.get(this.$getUrlFromCms('/navbars')),
+    ])
+    this.locales = [...content[0].data]
+    this.navbar = [...content[1].data]
+    this.locale = localStorage.getItem('locale') || this.locales[0].language
   },
 
   methods: {
@@ -179,30 +181,8 @@ export default {
       this.showMenu = !this.showMenu
     },
 
-    linkClick(htmlElem) {
-      this.$gtm.trackEvent({
-        event: 'uaevent',
-        category: 'navigation',
-        action: 'main menu',
-        label: htmlElem.target.textContent,
-      })
-    },
-
-    goToConsoleClick() {
-      this.linkClick({
-        target: {
-          innerText: this.$t('urls.login.label'),
-        },
-      })
-    },
-
     changedLanguage() {
-      // EventBus.$emit('changedLanguage', this.locale)
-      this.linkClick({
-        target: {
-          innerText: 'changed language to ' + this.locale,
-        },
-      })
+      //
     },
   },
 }
