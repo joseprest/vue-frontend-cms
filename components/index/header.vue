@@ -1,6 +1,6 @@
 <template>
   <header class="section main-header">
-    <Navbar :home="true" :cms-data="navbarData" />
+    <Navbar :home="true" />
     <div v-if="cmsData" class="container header">
       <div class="columns is-vcentered is-multiline">
         <div id="columnapi" class="column is-12">
@@ -82,10 +82,6 @@ export default {
     cmsData: {
       type: Object,
       default: null,
-    },
-    navbarData: {
-      type: Array,
-      default: () => [],
     },
   },
 
