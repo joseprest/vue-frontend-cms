@@ -27,13 +27,11 @@ export default {
   async created() {
     const content = await axios.all([
       axios.get(this.$getUrlFromCms('/homepage')),
-      axios.get(this.$getUrlFromCms('/testimonials')),
       axios.get(this.$getUrlFromCms('/clients-logos')),
     ])
     this.cmsData = {
       ...content[0].data,
-      testimonials: content[1].data,
-      clients_logos: content[2].data.logos,
+      clients_logos: content[1].data.logos,
     }
   },
 }
