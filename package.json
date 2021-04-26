@@ -19,6 +19,7 @@
     "hooper": "^0.3.4",
     "nuxt": "^2.14.12",
     "nuxt-lazy-load": "^1.2.5",
+    "vue-meta": "^2.4.0",
     "vue-scroll-reveal": "^1.0.11"
   },
   "devDependencies": {
