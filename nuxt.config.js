@@ -36,6 +36,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/getUrlFromCms.js',
+    '~/plugins/getComponentFromCms.js',
     '~/plugins/getImageUrlFromCms.js',
     {
       src: '~/plugins/vue-scroll-reveal.js',
