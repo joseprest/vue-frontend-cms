@@ -167,13 +167,8 @@ export default {
   },
 
   async mounted() {
-    const content = await axios.all([
-      axios.get(this.$getUrlFromCms('/locales')),
-      axios.get(this.$getUrlFromCms('/navbars')),
-    ])
-    this.locales = [...content[0].data]
-    this.navbar = [...content[1].data]
-    this.locale = localStorage.getItem('locale') || this.locales[0].language
+    const content = await axios.get(this.$getUrlFromCms('/navbar'))
+    this.navbar = [...content.data.dropdown]
   },
 
   methods: {
