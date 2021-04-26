@@ -34,7 +34,7 @@
       >
         <div class="navbar-end">
           <nuxt-link
-            v-for="item in menu"
+            v-for="item in navbar"
             :key="item.id"
             class="navbar-item"
             :class="{
@@ -91,7 +91,7 @@
             </div>
           </nuxt-link>
           <div class="field">
-            <div class="control has-icons-left">
+            <div class="control has-icons-left ml-3">
               <div class="select is-small">
                 <select
                   v-if="locales && locales.length"
@@ -151,7 +151,11 @@ export default {
     return {
       showMenu: false,
       navbar: () => [],
-      locales: () => [],
+      locales: () => [
+        { language: 'en', locale: 'en' },
+        { language: 'fr', locale: 'fr' },
+        { language: 'de', locale: 'de' },
+      ],
       locale: 'en',
     }
   },
@@ -159,10 +163,6 @@ export default {
   computed: {
     getLogoImg() {
       return this.home ? greenLogo : normalLogo
-    },
-    menu() {
-      // TODO: apply current locale
-      return this.navbar && this.navbar.length ? this.navbar[0].dropdown : []
     },
   },
 
