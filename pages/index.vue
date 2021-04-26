@@ -21,10 +21,12 @@ export default {
   data() {
     return {
       cmsData: {},
+      isLoading: false,
     }
   },
 
   async created() {
+    this.isLoading = true
     const content = await axios.all([
       axios.get(this.$getUrlFromCms('/homepage')),
       axios.get(this.$getUrlFromCms('/clients-logos')),
@@ -32,6 +34,22 @@ export default {
     this.cmsData = {
       ...content[0].data,
       clients_logos: content[1].data.logos,
+    }
+    this.isLoading = false
+  },
+
+  head() {
+    return {
+      title: this.isLoading ? 'Wattsense' : this.cmsData.meta.title,
+      meta: this.isLoading
+        ? []
+        : [
+            {
+              vmid: 'description',
+              name: 'description',
+              content: this.cmsData.meta.description,
+            },
+          ],
     }
   },
 }
