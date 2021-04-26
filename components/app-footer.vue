@@ -24,7 +24,7 @@
           >
             <template v-for="comp in cmsData[`column${colIndex}`]">
               <component
-                :is="getComponentFromCmsComponent(comp.__component)"
+                :is="$getComponentFromCms(comp.__component)"
                 :key="`${colIndex}-footer-${comp.__component}-${comp.id}`"
                 :cms-data="comp"
                 class="mt-25"
@@ -106,22 +106,8 @@ export default {
     if (this.$route.query.partner) {
       this.showPartner = true
     }
-    const content = await axios.get(
-      this.$getUrlFromCms('/footers?locale.language=en')
-    )
-    this.cmsData = content.data[0]
-  },
-
-  methods: {
-    getComponentFromCmsComponent(cmsComponent) {
-      switch (cmsComponent) {
-        case 'footer.links':
-          return 'footer-list'
-
-        default:
-          return cmsComponent.replace('.', '-')
-      }
-    },
+    const content = await axios.get(this.$getUrlFromCms('/footer'))
+    this.cmsData = content.data
   },
 }
 </script>
