@@ -13,34 +13,25 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
   name: 'Index',
 
-  data() {
-    return {
-      cmsData: {},
-      isLoading: false,
-    }
-  },
-
-  async created() {
-    this.isLoading = true
-    const content = await axios.all([
-      axios.get(this.$getUrlFromCms('/homepage')),
-      axios.get(this.$getUrlFromCms('/clients-logos')),
+  async asyncData({ $axios, $getUrlFromCms }) {
+    const content = await Promise.all([
+      $axios.get($getUrlFromCms('/homepage')),
+      $axios.get($getUrlFromCms('/clients-logos')),
     ])
-    this.cmsData = {
-      ...content[0].data,
-      clients_logos: content[1].data.logos,
+    return {
+      cmsData: {
+        ...content[0].data,
+        clients_logos: content[1].data.logos,
+      },
     }
-    this.isLoading = false
   },
 
   head() {
     return {
-      title: this.isLoading ? 'Wattsense' : this.cmsData.meta.title,
+      title: this.cmsData.meta.title,
       meta: this.isLoading
         ? []
         : [
