@@ -62,10 +62,31 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     [
+      'nuxt-i18n',
+      {
+        detectBrowserLanguage: {
+          useCookie: true,
+          cookieKey: 'i18n_redirected',
+          onlyOnRoot: true, // recommended
+        },
+      },
+    ],
+    [
       'nuxt-lazy-load',
       { directiveOnly: true, defaultImage: '/imgs/empty.gif' },
     ],
   ],
+  i18n: {
+    locales: [
+      { code: 'en', iso: 'en' },
+      { code: 'fr', iso: 'fr-FR' },
+      { code: 'de', iso: 'de' },
+    ],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+    },
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
