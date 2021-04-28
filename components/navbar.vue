@@ -1,5 +1,6 @@
 <template>
   <nav
+    v-if="navbar && navbar.length"
     class="navbar is-transparent"
     role="navigation"
     aria-label="main navigation"
@@ -40,7 +41,7 @@
             :class="{
               'has-dropdown is-hoverable': item.subs && item.subs.length > 0,
             }"
-            :to="item.main_link ? item.main_link : ''"
+            :to="localePath(item.main_link)"
           >
             <a class="navbar-item" :class="{ 'is-active': false }">
               {{ item.title }}
@@ -94,18 +95,17 @@
             <div class="control has-icons-left ml-3">
               <div class="select is-small">
                 <select
-                  v-if="locales && locales.length"
                   v-model="locale"
                   class="language-selector is-borderless is-transparent"
                   :class="{ 'is-black': home }"
                   @change="changedLanguage"
                 >
                   <option
-                    v-for="loc in locales"
-                    :key="loc.language"
-                    :value="loc.language"
+                    v-for="loc in $i18n.locales"
+                    :key="loc.code"
+                    :value="loc.code"
                   >
-                    {{ loc.language }}
+                    {{ loc.code | capitalize }}
                   </option>
                 </select>
               </div>
@@ -140,6 +140,12 @@ import normalLogo from '@/assets/imgs/wattsense-header-logo.svg'
 import greenLogo from '@/assets/imgs/logo.svg'
 
 export default {
+  filters: {
+    capitalize(s) {
+      return s ? s.charAt(0).toUpperCase() + s.slice(1) : ''
+    },
+  },
+
   props: {
     home: {
       type: Boolean,
@@ -151,11 +157,6 @@ export default {
     return {
       showMenu: false,
       navbar: () => [],
-      locales: () => [
-        { language: 'en', locale: 'en' },
-        { language: 'fr', locale: 'fr' },
-        { language: 'de', locale: 'de' },
-      ],
       locale: 'en',
     }
   },
@@ -167,6 +168,7 @@ export default {
   },
 
   async mounted() {
+    this.locale = this.$i18n.locale
     const content = await axios.get(this.$getUrlFromCms('/navbar'))
     this.navbar = [...content.data.dropdown]
   },
@@ -177,7 +179,7 @@ export default {
     },
 
     changedLanguage() {
-      //
+      this.$i18n.setLocale(this.locale)
     },
   },
 }

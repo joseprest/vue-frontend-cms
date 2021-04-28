@@ -16,9 +16,11 @@
 export default {
   name: 'Index',
 
-  async asyncData({ $axios, $getUrlFromCms }) {
+  async asyncData({ i18n, $axios, $getUrlFromCms }) {
     const content = await Promise.all([
-      $axios.get($getUrlFromCms('/homepage')),
+      $axios.get(
+        $getUrlFromCms('/homepage?_locale=' + i18n.localeProperties.iso)
+      ),
       $axios.get($getUrlFromCms('/clients-logos')),
     ])
     return {
