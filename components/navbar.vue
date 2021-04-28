@@ -51,9 +51,9 @@
             >
               <template v-for="sub in item.subs">
                 <nuxt-link
-                  v-if="sub.link.length"
+                  v-if="sub.link && sub.link.length"
                   :key="sub.id"
-                  :to="sub.link ? sub.link : ''"
+                  :to="sub.link ? $getUrlFromCms(sub.link) : ''"
                   class="navbar-item"
                 >
                   {{ sub.title }}
@@ -79,7 +79,7 @@
                       <nuxt-link
                         v-for="link in sub.links"
                         :key="link.id"
-                        :to="link.link ? link.link : ''"
+                        :to="link.link ? $getUrlFromCms(link.link) : ''"
                         class="navbar-item"
                       >
                         {{ link.title }}

@@ -13,7 +13,7 @@
       target="_blank"
       noref="noref"
       rel="noopener"
-      @click.native="action"
+      @click="action"
     >
       <slot>
         {{ title }}
