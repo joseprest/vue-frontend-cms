@@ -135,7 +135,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 import normalLogo from '@/assets/imgs/wattsense-header-logo.svg'
 import greenLogo from '@/assets/imgs/logo.svg'
 
@@ -167,19 +166,28 @@ export default {
     },
   },
 
-  async mounted() {
+  created() {
     this.locale = this.$i18n.locale
-    const content = await axios.get(this.$getUrlFromCms('/navbar'))
-    this.navbar = [...content.data.dropdown]
+    this.loadCmsData()
   },
 
   methods: {
+    async loadCmsData() {
+      const content = await this.$axios.get(
+        this.$getUrlFromCms(
+          '/navbar?_locale=' + this.$i18n.localeProperties.iso
+        )
+      )
+      this.navbar = [...content.data.dropdown]
+    },
+
     toggleMenu() {
       this.showMenu = !this.showMenu
     },
 
     changedLanguage() {
       this.$i18n.setLocale(this.locale)
+      this.loadCmsData()
     },
   },
 }

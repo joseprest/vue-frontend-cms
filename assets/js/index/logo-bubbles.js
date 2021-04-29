@@ -1,7 +1,7 @@
 import { seed, simplex2 } from './perlin-generator.js'
 seed(Math.floor(Math.random() * 64000))
 
-const LOGO_IMAGE = require(`~/assets/imgs/home/connect/logos-spritesheet.jpg`)
+const LOGO_IMAGE = require('~/assets/imgs/home/connect/logos-spritesheet.jpg')
 const EMPTY_IMAGE = require('~/assets/imgs/home/connect/empty.png')
 
 export const LogoBubbles = (bubblesSpec) => {
