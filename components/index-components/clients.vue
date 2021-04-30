@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import ClientsLogos from '~/components/ClientsLogos'
+import ClientsLogos from '~/components/clients-logos'
 
 export default {
   name: 'IndexClients',

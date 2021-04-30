@@ -20,6 +20,7 @@
 
 <script>
 export default {
+  name: 'ClientsLogos',
   props: {
     clients: {
       type: Array,
