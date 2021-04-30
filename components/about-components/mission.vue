@@ -6,10 +6,7 @@
           <h3 class="has-text-centered has-text-weight-semibold is-size-3">
             {{ cmsData.title }}
           </h3>
-          <div
-            class="has-text-centered"
-            v-html="$md.render(cmsData.text)"
-          ></div>
+          <div v-html="$md.render(cmsData.text)"></div>
         </div>
       </div>
     </div>

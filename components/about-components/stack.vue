@@ -10,9 +10,13 @@
       <div class="separator"></div>
       <div class="columns">
         <div class="levels column is-three-fifths">
-          <div class="level1">
-            <h3 class="title"></h3>
-            <div class="text"></div>
+          <div
+            v-for="(item, index) in cmsData.text_titled"
+            :key="`stack-item-${item.id}`"
+            :class="`level${index + 1}`"
+          >
+            <h3 class="title">{{ item.title }}</h3>
+            <div class="text" v-html="$md.render(item.text)" />
           </div>
         </div>
         <div class="column">
@@ -71,6 +75,7 @@
         </div>
       </div>
     </div>
+    <div class="line" />
   </div>
 </template>
 
@@ -89,6 +94,9 @@ export default {
 .stack {
   color: $white;
   padding-bottom: 20px;
+  strong {
+    color: $white;
+  }
   .title {
     display: flex;
     flex-direction: row;
