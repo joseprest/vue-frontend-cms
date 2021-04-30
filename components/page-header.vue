@@ -5,7 +5,9 @@
         <div :class="{ 'column is-8 is-12-touch': $slots.right }">
           <h1 class="page-title__title has-text-weight-semibold">
             {{ cmsData.title }}
-            <span v-if="beta" class="beta">Beta</span>
+            <span v-if="cmsData.badge && cmsData.badge.length" class="beta">
+              {{ cmsData.badge }}
+            </span>
           </h1>
           <p
             class="page-title__description"
