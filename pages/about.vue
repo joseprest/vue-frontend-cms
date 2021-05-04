@@ -1,7 +1,7 @@
 <template>
   <page-container
     v-if="Object.keys(cmsData).length > 0"
-    :header-data="cmsData.header"
+    :cms-data="cmsData.page_title"
   >
     <section
       v-for="comp in cmsData.body"
@@ -15,7 +15,6 @@
       <div class="container">
         <component
           :is="$getComponentFromCms(comp.__component)"
-          :clients="cmsData.clients_logos"
           :cms-data="comp"
         />
       </div>
@@ -35,24 +34,16 @@ export default {
     },
   },
   async asyncData({ $axios, $getUrlFromCms }) {
-    const content = await Promise.all([
-      $axios.get($getUrlFromCms('/pages?name=About')),
-      $axios.get($getUrlFromCms('/clients-logos')),
-    ])
+    const content = await $axios.get($getUrlFromCms('/page-about'))
     return {
-      cmsData: {
-        ...content[0].data[0],
-        clients_logos: content[1].data.logos,
-      },
+      cmsData: { ...content.data },
     }
   },
 
   head() {
     return {
       title: this.cmsData.meta.title,
-      meta: this.isLoading
-        ? []
-        : [
+      meta: [
             {
               vmid: 'description',
               name: 'description',

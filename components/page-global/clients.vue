@@ -8,7 +8,7 @@
       </div>
       <div class="has-text-centered">{{ cmsData.caption }}</div>
       <div class="list-logos">
-        <clients-logos :clients="clients" />
+        <clients-logos :clients="cmsData.logos" />
       </div>
     </div>
   </div>
@@ -24,10 +24,6 @@ export default {
     cmsData: {
       type: Object,
       default: null,
-    },
-    clients: {
-      type: Array,
-      default: () => [],
     },
   },
 }
