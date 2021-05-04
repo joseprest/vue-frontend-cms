@@ -44,12 +44,12 @@ export default {
     return {
       title: this.cmsData.meta.title,
       meta: [
-            {
-              vmid: 'description',
-              name: 'description',
-              content: this.cmsData.meta.description,
-            },
-          ],
+        {
+          vmid: 'description',
+          name: 'description',
+          content: this.cmsData.meta.description,
+        },
+      ],
     }
   },
 }

@@ -6,6 +6,7 @@
       :data-src="src"
       :src-placeholder="placeholder"
       :alt="alt"
+      :class="imgClass"
     />
     <!-- {{ $attrs }}   -->
   </div>
@@ -23,6 +24,10 @@ export default {
       type: String,
       default: '',
     },
+    imgClass: {
+      type: String,
+      default: '',
+    },
     placeholder: {
       type: String,
       default: require('~/assets/imgs/empty.gif'),
@@ -30,3 +35,8 @@ export default {
   },
 }
 </script>
+<style lang="scss" scoped>
+.is-bordered {
+  border: 1px solid $grey-lighter;
+}
+</style>
