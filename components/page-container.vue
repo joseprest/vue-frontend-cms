@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div v-if="cmsData">
     <header class="section">
       <navbar :home="false" />
     </header>
-    <page-header :cms-data="headerData" />
+    <page-header :cms-data="cmsData" />
     <slot />
     <app-footer />
   </div>
@@ -12,7 +12,7 @@
 export default {
   name: 'PageContainer',
   props: {
-    headerData: {
+    cmsData: {
       type: Object,
       default: null,
     },
