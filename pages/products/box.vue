@@ -1,0 +1,134 @@
+<template>
+  <page-container :cms-data="cmsData.page_title">
+    <section
+      v-for="comp in cmsData.body"
+      :key="`body-${comp.__component}-${comp.id}`"
+      class="section"
+      :class="comp.__component.replace('products-box.', '')"
+    >
+      <div v-if="comp.__component === 'control'" class="gradiant">
+        <img src="@/assets/imgs/gradiant-bg-blue.svg" alt="bg" />
+      </div>
+      <div class="container">
+        <component
+          :is="$getComponentFromCms(comp.__component)"
+          :cms-data="comp"
+        />
+      </div>
+    </section>
+  </page-container>
+</template>
+
+<script>
+export default {
+  name: 'Productsbox',
+  nuxtI18n: {
+    paths: {
+      en: '/products/box',
+      fr: '/produits/box',
+      de: '/produkte/box',
+    },
+  },
+  async asyncData({ $axios, $getUrlFromCms }) {
+    const { data } = await $axios.get($getUrlFromCms('/page-products-box'))
+    return {
+      cmsData: { ...data },
+    }
+  },
+
+  head() {
+    return {
+      title: this.cmsData.meta.title,
+      meta: [
+        {
+          vmid: 'description',
+          name: 'description',
+          content: this.cmsData.meta.description,
+        },
+      ],
+    }
+  },
+}
+</script>
+<style lang="scss" scoped>
+.differences {
+  background: rgba($blue-dark, 0.03);
+}
+.avantages {
+  background: rgba($blue-dark, 0.03);
+}
+.actions {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(to top, white, #f8fcff);
+}
+.edge {
+  background: linear-gradient(to top, white, rgba(#27364d, 0.02));
+}
+@supports (background: -webkit-canvas(squares)) {
+  .edge {
+    background: transparent;
+    margin-top: 0;
+  }
+}
+.control {
+  background: $blue-dark;
+  padding-top: 6rem;
+  padding-bottom: 0;
+  z-index: 1;
+  @include mobile {
+    padding-bottom: 2rem;
+  }
+  &:before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 200px;
+    bottom: -81px;
+    left: 0;
+    z-index: -1;
+    background: $blue-dark;
+    transform: skewY(-5deg);
+  }
+  &:after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 200px;
+    bottom: -282px;
+    left: 0;
+    z-index: 0;
+    background: #f9f9fa;
+    transform: skewY(-5deg);
+  }
+  .gradiant {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    img {
+      position: absolute;
+      bottom: -90px;
+      right: 0;
+    }
+  }
+}
+.advantages {
+  padding-top: 12rem;
+  padding-bottom: 4rem;
+  @include desktop-only {
+    padding-top: 10rem;
+  }
+  @include touch {
+    padding-top: 10rem;
+  }
+  @include mobile {
+    padding-top: 8rem;
+  }
+}
+</style>
