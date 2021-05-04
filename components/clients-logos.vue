@@ -8,7 +8,7 @@
       >
         <ws-image
           :id="client.id"
-          :src="$getImageUrlFromCms(client.image)"
+          :src="$getImageUrlFromCms(client.logo)"
           :alt="client.name"
           :delay="0"
           :reset="false"
