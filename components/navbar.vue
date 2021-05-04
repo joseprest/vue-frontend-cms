@@ -34,14 +34,15 @@
         :class="{ 'is-active': showMenu }"
       >
         <div class="navbar-end">
-          <nuxt-link
+          <component
+            :is="item.main_link ? 'nuxt-link' : 'span'"
             v-for="item in navbar"
             :key="item.id"
             class="navbar-item"
             :class="{
               'has-dropdown is-hoverable': item.subs && item.subs.length > 0,
             }"
-            :to="localePath(item.main_link)"
+            :to="item.main_link ? localePath(item.main_link) : ''"
           >
             <a class="navbar-item" :class="{ 'is-active': false }">
               {{ item.title }}
@@ -52,9 +53,9 @@
             >
               <template v-for="sub in item.subs">
                 <nuxt-link
-                  v-if="sub.link && sub.link.length"
+                  v-if="sub.link"
                   :key="sub.id"
-                  :to="sub.link ? $getUrlFromCms(sub.link) : ''"
+                  :to="localePath(sub.link)"
                   class="navbar-item"
                 >
                   {{ sub.title }}
@@ -90,7 +91,7 @@
                 </div>
               </template>
             </div>
-          </nuxt-link>
+          </component>
           <div class="field">
             <div class="control has-icons-left ml-3">
               <div class="select is-small">
