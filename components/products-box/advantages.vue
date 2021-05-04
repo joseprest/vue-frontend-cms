@@ -3,7 +3,7 @@
     <div class="container">
       <ws-title :title="cmsData.title" align="left" class="advantages" />
       <ws-link
-        :link="cmsData.button.Text"
+        :title="cmsData.button.Text"
         :url="cmsData.button.Link"
         target="_blank"
         class="bacs"
@@ -28,24 +28,14 @@
 
       <!-- CTA -->
       <div class="cta mt-10">
-        <div v-if="this.product == 'box'" class="buttons mt-35 mb-35">
-          <ws-button class="mr-10" @click="requestDemo('box')">
-            {{ $t('urls.getdemo.label') }}
-          </ws-button>
-          <a
-            class="button is-success is-inverted has-text-weight-semibold has-shadow btn-big is-uppercase"
-            :href="$t('urls.pricing.box.url')"
-            v-html="$t('urls.pricing.box.cta')"
-          />
-        </div>
-        <div v-else class="buttons mt-35 mb-35">
-          <ws-button class="mr-10" @click="requestDemo('hub')">
-            {{ $t('urls.getdemo.label') }}
-          </ws-button>
-          <a
-            class="button is-success is-inverted has-text-weight-semibold has-shadow btn-big is-uppercase"
-            :href="$t('urls.pricing.hub.url')"
-            v-html="$t('urls.pricing.hub.cta')"
+        <div class="buttons mt-35 mb-35">
+          <ws-button
+            v-for="btn in cmsData.buttons"
+            :key="`btn${btn.id}`"
+            :href="btn.Link"
+            :title="btn.Text"
+            class="mr-10 has-text-weight-semibold has-shadow btn-big is-uppercase"
+            :is-inverted="btn.inverted"
           />
         </div>
       </div>
@@ -57,6 +47,7 @@
 import Advantage from '../components/advantage'
 
 export default {
+  name: 'ProductsBoxAdvantages',
   components: {
     Advantage,
   },
