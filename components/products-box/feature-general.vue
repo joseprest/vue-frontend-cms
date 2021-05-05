@@ -1,40 +1,38 @@
 <template>
   <div v-if="cmsData.image_position === 'left'" class="columns is-multiline">
     <div class="column is-6 is-12-touch" style="position: relative">
-      <div class="content-slider">
-        <div
-          v-if="cmsData.images.length > 1"
-          v-scroll-reveal="{ delay: 0, reset: false }"
-          class="slider"
-        >
-          <button class="prev" @click.prevent="slidePrev">
-            <img src="~/assets/imgs/arrow.svg" alt="prev" />
-          </button>
-          <button class="next" @click.prevent="slideNext">
-            <img src="~/assets/imgs/arrow.svg" alt="next" />
-          </button>
-          <hooper ref="carousel" :settings="hooperSettings">
-            <slide v-for="img in cmsData.images" :key="`slide${img.id}`">
-              <div class="content-slide">
-                <img
-                  :src="$getImageUrlFromCms(img)"
-                  :alt="img.alternativeText"
-                />
-              </div>
-            </slide>
-          </hooper>
+      <template v-if="cmsData.images.length > 1">
+        <div class="content-slider">
+          <div v-scroll-reveal="{ delay: 0, reset: false }" class="slider">
+            <button class="prev" @click.prevent="slidePrev">
+              <img src="~/assets/imgs/arrow.svg" alt="prev" />
+            </button>
+            <button class="next" @click.prevent="slideNext">
+              <img src="~/assets/imgs/arrow.svg" alt="next" />
+            </button>
+            <hooper ref="carousel" :settings="hooperSettings">
+              <slide v-for="img in cmsData.images" :key="`slide${img.id}`">
+                <div class="content-slide">
+                  <img
+                    :src="$getImageUrlFromCms(img)"
+                    :alt="img.alternativeText"
+                  />
+                </div>
+              </slide>
+            </hooper>
+          </div>
         </div>
-        <div v-else v-scroll-reveal="{ delay: 0, reset: false }" class="image">
+        <div v-scroll-reveal="{ delay: 0, reset: false }" class="image">
           <ws-image
-            :src="$getImageUrlFromCms(cmsData.images[0])"
-            :alt="cmsData.images[0].alternativeText"
+            :src="require('@/assets/imgs/products/features/desktop.png')"
+            :alt="cmsData.title"
           />
         </div>
-      </div>
-      <div v-scroll-reveal="{ delay: 0, reset: false }" class="image">
+      </template>
+      <div v-else v-scroll-reveal="{ delay: 0, reset: false }" class="image">
         <ws-image
-          :src="require('@/assets/imgs/products/features/desktop.png')"
-          :alt="$t('products.features.feature1.title')"
+          :src="$getImageUrlFromCms(cmsData.images[0])"
+          :alt="cmsData.images[0].alternativeText"
         />
       </div>
     </div>
@@ -43,13 +41,13 @@
         :title="cmsData.title"
         :description="cmsData.text"
         align="left"
+        :class="{ 'mb-10': cmsData.button }"
       />
       <ws-link
         v-if="cmsData.button"
-        :link="cmsData.button.Text"
+        :title="cmsData.button.Text"
         :url="cmsData.button.Link"
-        target="_blank"
-        class="mt-25"
+        :target="cmsData.button.target"
       />
     </div>
   </div>
