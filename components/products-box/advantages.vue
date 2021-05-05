@@ -3,8 +3,8 @@
     <div class="container">
       <ws-title :title="cmsData.title" align="left" class="advantages" />
       <ws-link
-        :title="cmsData.button.Text"
-        :url="cmsData.button.Link"
+        :title="cmsData.button.title"
+        :url="cmsData.button.url"
         target="_blank"
         class="bacs"
       />
@@ -32,8 +32,8 @@
           <ws-button
             v-for="btn in cmsData.buttons"
             :key="`btn${btn.id}`"
-            :href="btn.Link"
-            :title="btn.Text"
+            :href="btn.url"
+            :title="btn.title"
             class="mr-10 has-text-weight-semibold has-shadow btn-big is-uppercase"
             :is-inverted="btn.inverted"
           />

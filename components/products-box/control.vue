@@ -12,10 +12,10 @@
       <div class="buttons">
         <ws-button
           :url="
-            cmsData.button.file ? cmsData.button.file.url : cmsData.button.Link
+            cmsData.button.file ? cmsData.button.file.url : cmsData.button.url
           "
         >
-          {{ cmsData.button.Text }}
+          {{ cmsData.button.title }}
         </ws-button>
       </div>
     </div>

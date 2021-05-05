@@ -1,5 +1,5 @@
 <template>
-  <ws-link :title="cmsData.Text" :url="cmsData.Link" />
+  <ws-link :title="cmsData.title" :url="cmsData.url" />
 </template>
 
 <script>

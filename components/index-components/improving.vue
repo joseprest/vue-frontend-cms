@@ -8,9 +8,9 @@
             <div class="main-text mb-15" v-html="$md.render(cmsData.text1)" />
             <ws-link
               v-for="button in cmsData.buttons1"
-              :key="button.Link"
-              :title="button.Text"
-              :url="button.Link"
+              :key="`impr${button.id}`"
+              :title="button.title"
+              :url="button.url"
               class="mt-10"
             />
           </ws-paragraph>
@@ -22,9 +22,9 @@
             <div class="main-text mb-15" v-html="$md.render(cmsData.text2)" />
             <ws-link
               v-for="button in cmsData.buttons2"
-              :key="button.Link"
-              :title="button.Text"
-              :url="button.Link"
+              :key="`impr2-${button.id}`"
+              :title="button.title"
+              :url="button.url"
               class="mt-10"
             />
           </ws-paragraph>

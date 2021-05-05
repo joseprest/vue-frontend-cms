@@ -45,8 +45,8 @@
       />
       <ws-link
         v-if="cmsData.button"
-        :title="cmsData.button.Text"
-        :url="cmsData.button.Link"
+        :title="cmsData.button.title"
+        :url="cmsData.button.url"
         :target="cmsData.button.target"
       />
     </div>
@@ -60,9 +60,9 @@
       />
       <ws-link
         v-if="cmsData.button"
-        :link="cmsData.button.Text"
-        :url="cmsData.button.Link"
-        target="_blank"
+        :link="cmsData.button.title"
+        :url="cmsData.button.url"
+        :target="cmsData.button.target"
         class="mt-25"
       />
     </div>

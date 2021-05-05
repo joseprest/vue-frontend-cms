@@ -34,8 +34,8 @@
               align="left"
             />
             <ws-link
-              :title="cmsData.button.Text"
-              :url="cmsData.button.Link"
+              :title="cmsData.button.title"
+              :url="cmsData.button.url"
               class="mt-25"
             />
           </ws-paragraph>

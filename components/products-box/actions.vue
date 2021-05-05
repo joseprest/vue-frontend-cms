@@ -38,9 +38,9 @@
         <nuxt-link
           class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
           :class="{ 'is-inverted': cmsData.button.inverted }"
-          :to="cmsData.button.Link"
+          :to="cmsData.button.url"
         >
-          {{ cmsData.button.Text }}
+          {{ cmsData.button.title }}
         </nuxt-link>
       </div>
     </div>
