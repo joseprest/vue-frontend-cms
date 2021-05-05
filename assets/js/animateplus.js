@@ -53,7 +53,7 @@ const blurs = {
         (attributes, axis) => {
           const offset = blur[axis] * 2
           attributes[axis] = `-${offset}%`
-          attributes[axis == 'x' ? 'width' : 'height'] = `${100 + offset * 2}%`
+          attributes[axis === 'x' ? 'width' : 'height'] = `${100 + offset * 2}%`
           return attributes
         },
         {
