@@ -25,11 +25,15 @@
         <div id="columnactions" class="column is-12">
           <p class="buttons">
             <!-- <ws-button class="mr-10" @click="requestDemo('box')"> -->
-            <ws-button class="mr-10">
-              {{ cmsData.buttons.get_demo }}
-            </ws-button>
-            <ws-button :is-inverted="true" :url="cmsData.buttons.contact_url">
-              {{ cmsData.buttons.contact_us }}
+            <ws-button
+              v-for="btn in cmsData.buttons"
+              :key="`head-btn-${btn.id}`"
+              :url="btn.file ? btn.file.url : btn.url"
+              :target="btn.target"
+              class="mr-10"
+              :is-inverted="btn.inverted"
+            >
+              {{ btn.title }}
             </ws-button>
           </p>
         </div>
@@ -77,6 +81,9 @@ import Navbar from './../navbar'
 
 export default {
   name: 'IndexHeader',
+  components: {
+    Navbar,
+  },
 
   props: {
     cmsData: {
@@ -146,9 +153,6 @@ export default {
       const UA = inBrowser && window.navigator.userAgent.toLowerCase()
       return UA && /msie|trident/.test(UA)
     },
-  },
-  components: {
-    Navbar,
   },
 }
 </script>
