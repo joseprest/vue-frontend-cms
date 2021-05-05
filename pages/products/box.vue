@@ -4,7 +4,10 @@
       v-for="comp in cmsData.body"
       :key="`body-${comp.__component}-${comp.id}`"
       class="section"
-      :class="comp.__component.replace('products-box.', '')"
+      :class="
+        comp.__component.replace('products-box.', '') +
+        (comp.background === 'accent' ? ' bg-accent' : '')
+      "
     >
       <div v-if="comp.__component === 'control'" class="gradiant">
         <img src="@/assets/imgs/gradiant-bg-blue.svg" alt="bg" />
@@ -62,7 +65,7 @@ export default {
   padding-bottom: 5rem;
   background: linear-gradient(to top, white, #f8fcff);
 }
-.edge {
+.bg-accent {
   background: linear-gradient(to top, white, rgba(#27364d, 0.02));
 }
 @supports (background: -webkit-canvas(squares)) {
@@ -129,6 +132,14 @@ export default {
   }
   @include mobile {
     padding-top: 8rem;
+  }
+}
+.bg-accent {
+  margin-top: 1em;
+  padding-top: 6em;
+  padding-bottom: 0;
+  @include mobile {
+    padding-top: 4rem;
   }
 }
 </style>
