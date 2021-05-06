@@ -60,8 +60,10 @@
       />
       <ws-link
         v-if="cmsData.button"
-        :link="cmsData.button.title"
-        :url="cmsData.button.url"
+        :title="cmsData.button.title"
+        :url="
+          cmsData.button.file ? cmsData.button.file.url : cmsData.button.url
+        "
         :target="cmsData.button.target"
         class="mt-25"
       />
