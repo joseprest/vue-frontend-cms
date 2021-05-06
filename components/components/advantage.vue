@@ -1,7 +1,7 @@
 <template>
   <div class="advantage">
     <div class="icon">
-      <ws-image :src="icon" :alt="title" />
+      <img :src="icon" :alt="title" />
     </div>
     <div class="title has-text-weight-semibold" v-html="title"></div>
     <div class="description" v-html="description"></div>

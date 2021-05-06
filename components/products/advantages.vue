@@ -3,6 +3,7 @@
     <div class="container">
       <ws-title :title="cmsData.title" align="left" class="advantages" />
       <ws-link
+        v-if="cmsData.button"
         :title="cmsData.button.title"
         :url="cmsData.button.url"
         target="_blank"

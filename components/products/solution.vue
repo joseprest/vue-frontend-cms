@@ -18,11 +18,11 @@
         <ws-button
           v-for="btn in cmsData.buttons"
           :key="`btn${btn.id}`"
-          :url="btn.Link"
+          :url="btn.url"
           :is-inverted="btn.inverted"
           class="mr-10"
         >
-          {{ btn.Text }}
+          {{ btn.title }}
         </ws-button>
       </div>
     </div>

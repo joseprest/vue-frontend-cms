@@ -46,7 +46,21 @@
               :key="`protocol${protocol.id}`"
               check-type="check"
             >
-              <span>{{ protocol.text }}</span>
+              <span>
+                {{ protocol.text }}
+                <span
+                  v-if="protocol.badge"
+                  style="
+                    display: inline-block;
+                    margin-left: 5px;
+                    font-size: 0.8rem;
+                    padding: 3px 10px;
+                    background: #2bc47b;
+                    border-radius: 30px;
+                  "
+                  >{{ protocol.badge }}</span
+                >
+              </span>
             </ws-list-item>
           </ul>
         </div>
