@@ -20,6 +20,7 @@
     "nuxt": "^2.14.12",
     "nuxt-i18n": "^6.26.0",
     "nuxt-lazy-load": "^1.2.5",
+    "vue-code-highlight": "^0.7.6",
     "vue-meta": "^2.4.0",
     "vue-scroll-reveal": "^1.0.11"
   },
