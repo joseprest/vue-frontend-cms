@@ -5,7 +5,7 @@
       :key="`body-${comp.__component}-${comp.id}`"
       class="section"
       :class="
-        comp.__component.replace('products-box.', '') +
+        comp.__component.replace('products.', '') +
         (comp.background === 'accent' ? ' bg-accent' : '')
       "
     >
