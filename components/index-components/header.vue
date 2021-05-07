@@ -66,8 +66,11 @@
               muted
               :poster="$getUrlFromCms(cmsData.animation_image.url)"
             >
-              <source :src="$getUrlFromCms(cmsData.animation.url)" />
-              <!-- <source src="@/assets/videos/wattsense-intro.mp4"> -->
+              <source
+                v-for="animation in cmsData.animation"
+                :key="`animation${animation.id}`"
+                :src="$getUrlFromCms(animation.url)"
+              />
             </video>
           </div>
         </div>
