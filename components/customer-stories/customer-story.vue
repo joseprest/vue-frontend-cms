@@ -5,7 +5,7 @@
         <figure class="image">
           <ws-image
             :src="$getImageUrlFromCms(cmsData.card.image)"
-            :alt="customer"
+            alt="customer"
           />
         </figure>
       </router-link>

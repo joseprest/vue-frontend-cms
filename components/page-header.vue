@@ -10,6 +10,7 @@
             </span>
           </h1>
           <p
+            v-if="cmsData.description"
             class="page-title__description"
             v-html="$md.render(cmsData.description)"
           ></p>
