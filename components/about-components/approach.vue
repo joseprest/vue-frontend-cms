@@ -37,6 +37,7 @@
 
 <script>
 export default {
+  name: 'Approach',
   props: {
     cmsData: {
       type: Object,

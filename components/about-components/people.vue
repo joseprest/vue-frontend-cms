@@ -16,8 +16,9 @@
 </template>
 
 <script>
-import User from './user'
+import User from './user.vue'
 export default {
+  name: 'People',
   components: {
     User,
   },

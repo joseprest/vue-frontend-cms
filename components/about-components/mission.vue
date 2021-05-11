@@ -15,6 +15,7 @@
 
 <script>
 export default {
+  name: 'Mission',
   props: {
     cmsData: {
       type: Object,

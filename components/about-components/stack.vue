@@ -81,6 +81,7 @@
 
 <script>
 export default {
+  name: 'Stack',
   props: {
     cmsData: {
       type: Object,

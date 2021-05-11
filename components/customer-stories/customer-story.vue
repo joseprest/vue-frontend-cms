@@ -30,6 +30,7 @@
 
 <script>
 export default {
+  name: 'CustomerStory',
   props: {
     cmsData: {
       type: Object,

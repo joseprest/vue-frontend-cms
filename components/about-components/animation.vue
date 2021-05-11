@@ -14,6 +14,8 @@
 <script>
 import animate from '@/assets/js/animateplus.js'
 export default {
+  name: 'Animation',
+
   props: {
     protocols: {
       type: Array,

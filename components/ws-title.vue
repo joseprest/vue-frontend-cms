@@ -33,6 +33,7 @@
 
 <script>
 export default {
+  name: 'WsTitle',
   props: {
     title: {
       type: String,

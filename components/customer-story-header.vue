@@ -60,6 +60,7 @@
 
 <script>
 export default {
+  name: 'CustomerStoryHeader',
   props: {
     cmsData: {
       type: Object,

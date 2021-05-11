@@ -43,6 +43,8 @@
 
 <script>
 export default {
+  name: 'WsButton',
+
   props: {
     title: {
       type: String,

@@ -49,6 +49,8 @@
 import IcoArrow from '~/assets/imgs/icons/link-arrow.svg?inline'
 
 export default {
+  name: 'WsLink',
+
   components: {
     IcoArrow,
   },

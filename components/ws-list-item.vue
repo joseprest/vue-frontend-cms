@@ -6,12 +6,13 @@
 
 <script>
 export default {
+  name: 'WsListItem',
   props: {
     text: {
       type: String,
       default: '',
     },
-    'check-type': {
+    checkType: {
       type: String,
       default: '',
     },

@@ -140,6 +140,8 @@ import normalLogo from '@/assets/imgs/wattsense-header-logo.svg'
 import greenLogo from '@/assets/imgs/logo.svg'
 
 export default {
+  name: 'Navbar',
+
   filters: {
     capitalize(s) {
       return s ? s.charAt(0).toUpperCase() + s.slice(1) : ''

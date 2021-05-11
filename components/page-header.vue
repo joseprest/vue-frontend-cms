@@ -28,6 +28,8 @@
 
 <script>
 export default {
+  name: 'PageHeader',
+
   props: {
     cmsData: {
       type: Object,

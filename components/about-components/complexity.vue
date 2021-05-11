@@ -78,6 +78,7 @@
 
 <script>
 export default {
+  name: 'Complexity',
   props: {
     cmsData: {
       type: Object,

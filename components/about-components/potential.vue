@@ -21,6 +21,7 @@
 
 <script>
 export default {
+  name: 'Potential',
   props: {
     cmsData: {
       type: Object,

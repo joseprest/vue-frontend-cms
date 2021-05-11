@@ -47,6 +47,7 @@
 import Founder from './founder.vue'
 
 export default {
+  name: 'Who',
   components: {
     Founder,
   },
