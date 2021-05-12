@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import CustomerStory from '@/components/customer-stories/customer-story'
+import CustomerStory from '@/components/customer-stories-components/customer-story'
 
 export default {
   name: 'CustomerStories',
