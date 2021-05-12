@@ -98,6 +98,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    parallel: true,
+    cache: true,
+    hardSource: true,
+
     babel: {
       plugins: ['@babel/plugin-proposal-optional-chaining'],
     },
