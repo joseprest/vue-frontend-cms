@@ -45,7 +45,7 @@
                 {{ res.value }}
               </span>
               <span class="description">
-                <span v-if="!value" class="arrow">
+                <span v-if="!res.value" class="arrow">
                   <img src="@/assets/imgs/arrow.svg" alt="-" />
                 </span>
                 {{ res.description }}
