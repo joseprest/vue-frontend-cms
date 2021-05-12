@@ -37,6 +37,7 @@ export default {
   plugins: [
     '~/plugins/getUrlFromCms.js',
     '~/plugins/getComponentFromCms.js',
+    '~/plugins/richTextImageUrls.js',
     '~/plugins/getImageUrlFromCms.js',
     {
       src: '~/plugins/vue-scroll-reveal.js',
