@@ -100,3 +100,17 @@ ul {
     padding: 60px 0;
   }
 }
+
+.rich-text {
+  p {
+    margin-bottom: 2rem;
+    line-height: 1.75em;
+  }
+
+  ul {
+    font-weight: $weight-light;
+    margin-bottom: 2rem;
+    list-style-type: disc;
+    margin-left: 1em;
+  }
+}

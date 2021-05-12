@@ -5,8 +5,8 @@
     </h3>
     <div
       v-if="cmsData.text"
-      class="story-paragraph__text"
-      v-html="$md.render(cmsData.text)"
+      class="rich-text"
+      v-html="$richTextImageUrls($md.render(cmsData.text))"
     />
   </div>
 </template>
@@ -38,11 +38,5 @@ export default {
     color: $body-color;
     text-transform: uppercase;
   }
-}
-</style>
-
-<style lang="scss">
-.story-paragraph__text p {
-  margin-bottom: 2rem;
 }
 </style>
