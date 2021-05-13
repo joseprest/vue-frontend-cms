@@ -33,8 +33,10 @@ export default {
       de: '/uber',
     },
   },
-  async asyncData({ $axios, $getUrlFromCms }) {
-    const content = await $axios.get($getUrlFromCms('/page-about'))
+  async asyncData({ i18n, $axios, $getUrlFromCms }) {
+    const content = await $axios.get(
+      $getUrlFromCms('/page-about?_locale=' + i18n.localeProperties.iso)
+    )
     return {
       cmsData: { ...content.data },
     }
