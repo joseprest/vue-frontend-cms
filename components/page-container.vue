@@ -3,12 +3,7 @@
     <header class="section">
       <navbar :home="false" />
     </header>
-    <customer-story-header v-if="customer" v-bind="$props">
-      <template #right>
-        <h1>asdfasdf asdf</h1>
-      </template>
-    </customer-story-header>
-    <page-header v-else v-bind="$props" />
+    <page-header v-bind="$props" />
     <slot />
     <app-footer />
   </div>
@@ -20,14 +15,6 @@ export default {
     cmsData: {
       type: Object,
       default: null,
-    },
-    customer: {
-      type: String,
-      default: '',
-    },
-    customerResults: {
-      type: Array,
-      default: () => [],
     },
   },
 }
