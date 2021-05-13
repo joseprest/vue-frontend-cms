@@ -1,15 +1,12 @@
 <template>
-  <div>
-    <img
-      v-lazy-load
-      v-bind="$attrs"
-      :data-src="src"
-      :src-placeholder="placeholder"
-      :alt="alt"
-      :class="imgClass"
-    />
-    <!-- {{ $attrs }}   -->
-  </div>
+  <img
+    v-lazy-load
+    v-bind="$attrs"
+    :data-src="src"
+    :src-placeholder="placeholder"
+    :alt="alt"
+    :class="imgClass"
+  />
 </template>
 
 <script>
