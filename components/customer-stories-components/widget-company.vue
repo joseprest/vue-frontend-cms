@@ -9,12 +9,21 @@
       <div class="info is-flex" :class="{ 'no-border': !cmsData.stats }">
         <div
           v-if="cmsData.text"
-          class="info__description"
+          class="rich-text info__description"
           v-html="$md.render(cmsData.text)"
         />
       </div>
-      <div class="columns is-12 props">
-        <slot name="footer" />
+      <div v-if="cmsData.stats" class="columns is-12 props">
+        <div
+          v-for="item in cmsData.stats"
+          :key="`stats${item.id}`"
+          class="column is-4"
+        >
+          <div class="info is-flex no-border">
+            <p class="info__title">{{ item.title }}</p>
+            <p class="info__description">{{ item.text }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -85,18 +94,18 @@ export default {
     border-bottom: 0 !important;
   }
 
+  &__title {
+    font-weight: $weight-semibold;
+    font-size: $size-7;
+    margin-bottom: 5px;
+  }
+
   &__description {
     font-size: calc(#{$size-7} - 0.1rem);
     color: $grey;
 
     p + p {
       margin-top: 0.35rem;
-    }
-
-    strong {
-      font-weight: $weight-semibold;
-      font-size: $size-7;
-      margin-bottom: 5px;
     }
   }
 }

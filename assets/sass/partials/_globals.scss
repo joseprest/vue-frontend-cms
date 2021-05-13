@@ -113,4 +113,20 @@ ul {
     list-style-type: disc;
     margin-left: 1em;
   }
+
+  // customer-stories: widget-company
+  &.info__description {
+    p {
+      margin: 0;
+    }
+
+    strong {
+      color: $black;
+      display: block;
+      font-weight: $weight-semibold;
+      font-size: $size-7;
+      margin-bottom: 5px;
+    }
+  }
 }
+
