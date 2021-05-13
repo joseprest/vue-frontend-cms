@@ -6,16 +6,15 @@
         aria-label="breadcrumbs"
       >
         <ul>
-          <li>
-            <router-link to="home.url">Home</router-link>
+          <li
+            v-for="item in cmsData.globals.breadcrumbs"
+            :key="`bc-${item.id}`"
+          >
+            <router-link :to="item.link">{{ item.text }}</router-link>
           </li>
-          <li>
-            <router-link to="resources">resources</router-link>
+          <li class="is-active">
+            <a href="#">{{ cmsData.customer }}</a>
           </li>
-          <li>
-            <router-link to="customer-stories">customer-stories</router-link>
-          </li>
-          <li class="is-active">Name</li>
         </ul>
       </nav>
 
@@ -25,18 +24,17 @@
           style="flex-direction: column; justify-content: center"
         >
           <h1 class="title">
-            {{ cmsData.title }}
+            {{ cmsData.page_title.title }}
           </h1>
-          <p v-if="cmsData.description" class="description">
-            {{ cmsData.description }}
+          <p v-if="cmsData.page_title.description" class="description">
+            {{ cmsData.page_title.description }}
           </p>
         </div>
         <div class="column is-4 is-12-touch">
-          <div v-if="customerResults" class="results">
-            <div class="title">Results</div>
-
+          <div v-if="cmsData.results" class="results">
+            <div class="title">{{ cmsData.globals.results_title }}</div>
             <div
-              v-for="res in customerResults"
+              v-for="res in cmsData.results"
               :key="`result${res.id}`"
               class="story-result"
               :class="{ 'mb-15': !res.value }"

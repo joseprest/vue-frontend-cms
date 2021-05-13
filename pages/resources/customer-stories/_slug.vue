@@ -1,9 +1,9 @@
 <template>
-  <page-container
-    :cms-data="cmsData.page_title"
-    :customer-results="cmsData.results"
-    :customer="cmsData.customer"
-  >
+  <div>
+    <header class="=pt-0">
+      <navbar :home="false" />
+    </header>
+    <customer-story-header :cms-data="cmsData" />
     <section class="section main">
       <div class="container">
         <div class="columns is-multiline">
@@ -18,31 +18,51 @@
               :cms-data="comp"
             />
           </div>
-
           <div class="column is-4 is-12-touch" style="position: relative">
-            <h4>xxx</h4>
+            <widget-company :cms-data="cmsData.side_card" />
+            <widget-get-demo
+              :cms-data="{
+                widget: cmsData.globals.get_demo_widget,
+                button: cmsData.globals.get_demo_button,
+              }"
+            />
           </div>
         </div>
       </div>
     </section>
-  </page-container>
+    <app-footer />
+  </div>
 </template>
 
 <script>
+import WidgetCompany from '@/components/customer-stories-components/widget-company.vue'
+import WidgetGetDemo from '@/components/customer-stories-components/widget-get-demo.vue'
+
 export default {
   name: 'CustomerStory',
+  components: {
+    WidgetCompany,
+    WidgetGetDemo,
+  },
 
   async asyncData({ i18n, $axios, params, $getUrlFromCms }) {
-    const { data } = await $axios.get(
-      $getUrlFromCms(
-        '/customer-stories?slug=' +
-          params.slug +
-          '&_locale=' +
-          i18n.localeProperties.iso
-      )
-    )
+    const res = await Promise.all([
+      $axios.get(
+        $getUrlFromCms(
+          '/customer-stories?slug=' +
+            params.slug +
+            '&_locale=' +
+            i18n.localeProperties.iso
+        )
+      ),
+      $axios.get(
+        $getUrlFromCms(
+          '/page-customer-stories?_locale=' + i18n.localeProperties.iso
+        )
+      ),
+    ])
     return {
-      cmsData: { ...data[0] },
+      cmsData: { ...res[0].data[0], globals: res[1].data?.globals },
     }
   },
 
