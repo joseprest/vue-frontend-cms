@@ -5,7 +5,7 @@
     :class="`box-${color}`"
   >
     <figure v-if="cmsData.icon" class="image">
-      <img :src="$getImageUrlFromCms(cmsData.icon)" :alt="title" />
+      <img :src="$getImageUrlFromCms(cmsData.icon)" :alt="cmsData.title" />
     </figure>
     <div class="content">
       <p class="title">

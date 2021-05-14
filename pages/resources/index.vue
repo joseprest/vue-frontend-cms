@@ -17,7 +17,7 @@
           <p class="title">{{ section.title }}</p>
           <div class="columns is-multiline mb-25 integration">
             <div
-              v-for="btn in section.buttons"
+              v-for="btn in section.button"
               :key="`res${section.id}-${btn.id}`"
               class="column is-4-widescreen is-6-desktop is-6-tablet is-12-mobile"
             >
