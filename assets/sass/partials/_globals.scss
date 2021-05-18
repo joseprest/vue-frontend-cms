@@ -102,6 +102,19 @@ ul {
 }
 
 .rich-text {
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.125;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.125;
+    margin-bottom: 1.2rem;
+  }
+
   p {
     margin-bottom: 2rem;
     line-height: 1.75em;
@@ -112,6 +125,12 @@ ul {
     margin-bottom: 2rem;
     list-style-type: disc;
     margin-left: 1em;
+  }
+
+  &.rich-text-intro {
+    p {
+      line-height: 1.5;
+    }
   }
 
   // customer-stories: widget-company
@@ -130,3 +149,22 @@ ul {
   }
 }
 
+// SECTIONS
+
+.section.text-titled-image {
+  padding-top: 0;
+
+  .rich-text  {
+    h3 {
+      margin-botom: 1.5rem;
+    }
+
+    ul,
+    ol,
+    p {
+      font-weight: 400;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
