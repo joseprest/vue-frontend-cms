@@ -53,9 +53,9 @@ export default {
   name: 'Integrations',
   nuxtI18n: {
     paths: {
-      en: '/integrations',
-      fr: '/integrations',
-      de: '/integrationen',
+      en: '/resources/integrations',
+      fr: '/ressources/integrations',
+      de: '/ressourcen/integrationen',
     },
   },
   async asyncData({ i18n, $axios, $getUrlFromCms }) {
