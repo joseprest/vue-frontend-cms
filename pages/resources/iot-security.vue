@@ -1,0 +1,56 @@
+<template>
+  <page-container
+    v-if="Object.keys(cmsData).length > 0"
+    :cms-data="cmsData.page_title"
+  >
+    <section
+      v-for="comp in cmsData.body"
+      :key="`body-${comp.__component}-${comp.id}`"
+      class="section"
+      :class="comp.__component.replace('page-global.', '')"
+    >
+      <div class="container">
+        <component
+          :is="$getComponentFromCms(comp.__component)"
+          :cms-data="comp"
+        />
+      </div>
+    </section>
+  </page-container>
+</template>
+
+<script>
+export default {
+  name: 'Integrations',
+  nuxtI18n: {
+    paths: {
+      en: '/resources/iot-security',
+      fr: '/ressources/securite-iot',
+      de: '/ressourcen/iot-security',
+    },
+  },
+  async asyncData({ i18n, $axios, $getUrlFromCms }) {
+    const content = await $axios.get(
+      $getUrlFromCms('/page-iot-security?_locale=' + i18n.localeProperties.iso)
+    )
+    return {
+      cmsData: { ...content.data },
+    }
+  },
+
+  head() {
+    return {
+      title: this.cmsData.meta.title,
+      meta: [
+        {
+          vmid: 'description',
+          name: 'description',
+          content: this.cmsData.meta.description,
+        },
+      ],
+    }
+  },
+}
+</script>
+
+<style lang="scss" scoped></style>
