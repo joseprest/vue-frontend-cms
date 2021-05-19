@@ -52,10 +52,19 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/gtm',
     '@nuxtjs/svg',
     '@nuxtjs/markdownit',
     // '@nuxtjs/style-resources',
   ],
+
+  gtm: {
+    id: 'GTM-PVCJNK9',
+    enabled: process.env.NODE_ENV === 'production',
+    debug: process.env.NODE_ENV === 'development',
+    pageTracking: true,
+    loadScript: true,
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
