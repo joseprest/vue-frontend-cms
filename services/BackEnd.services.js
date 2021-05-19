@@ -1,9 +1,9 @@
 import axios from 'axios'
 
-const SERVER = process.env.VUE_APP_SERVER
-const CURRENCY_API = process.env.VUE_APP_CURRENCY_API
-const CURRENCY_KEY = process.env.VUE_APP_CURRENCY_API_KEY
-const CONSOLE_API = process.env.VUE_APP_CONSOLE_API
+const SERVER = process.env.SERVER
+const CURRENCY_API = process.env.CURRENCY_API
+const CURRENCY_KEY = process.env.CURRENCY_API_KEY
+const CONSOLE_API = process.env.CONSOLE_API
 
 export default {
   /**
@@ -24,8 +24,7 @@ export default {
   subscribeToCommunicationProtocols(email) {
     return new Promise((resolve, reject) => {
       if (!this.isEmailValid(email)) {
-        // eslint-disable-next-line prefer-promise-reject-errors
-        reject('Invalid e-mail address')
+        reject(new Error('Invalid e-mail address'))
         throw new Error('Invalid e-mail address')
       }
 
@@ -50,8 +49,7 @@ export default {
   subscribeToNewsletter(email) {
     return new Promise((resolve, reject) => {
       if (!this.isEmailValid(email)) {
-        // eslint-disable-next-line prefer-promise-reject-errors
-        reject('Invalid e-mail address')
+        reject(new Error('Invalid e-mail address'))
         throw new Error('Invalid e-mail address')
       }
 
@@ -91,8 +89,7 @@ export default {
   ) {
     return new Promise((resolve, reject) => {
       if (!this.isEmailValid(email)) {
-        // eslint-disable-next-line prefer-promise-reject-errors
-        reject('Invalid e-mail address')
+        reject(new Error('Invalid e-mail address'))
         throw new Error('Invalid e-mail address')
       }
 
@@ -140,8 +137,7 @@ export default {
   }) {
     return new Promise((resolve, reject) => {
       if (!this.isEmailValid(email)) {
-        // eslint-disable-next-line prefer-promise-reject-errors
-        reject('Invalid e-mail address')
+        reject(new Error('Invalid e-mail address'))
         throw new Error('Invalid e-mail address')
       }
 
@@ -176,8 +172,7 @@ export default {
   sendRequestHub(name, email, phone, company) {
     return new Promise((resolve, reject) => {
       if (!this.isEmailValid(email)) {
-        // eslint-disable-next-line prefer-promise-reject-errors
-        reject('Invalid e-mail address')
+        reject(new Error('Invalid e-mail address'))
         throw new Error('Invalid e-mail address')
       }
 
@@ -236,7 +231,7 @@ export default {
   requestDemo({ product, name, email, phone = '', company = '', lang = 'en' }) {
     return new Promise((resolve, reject) => {
       if (!this.isEmailValid(email)) {
-        reject('Invalid e-mail address')
+        reject(new Error('Invalid e-mail address'))
         throw new Error('Invalid e-mail address')
       }
 
@@ -346,14 +341,12 @@ export default {
   requestEquipment(email, info) {
     return new Promise((resolve, reject) => {
       if (!this.isEmailValid(email)) {
-        // eslint-disable-next-line prefer-promise-reject-errors
-        reject('Invalid e-mail address')
+        reject(new Error('Invalid e-mail address'))
         throw new Error('Invalid e-mail address')
       }
 
       if (!info) {
-        // eslint-disable-next-line prefer-promise-reject-errors
-        reject('Device model is not specified')
+        reject(new Error('Device model is not specified'))
         throw new Error('Device model is not specified')
       }
 
