@@ -14,8 +14,14 @@
             class="page-title__description"
             v-html="$md.render(cmsData.description)"
           ></p>
-          <div v-if="$slots.button" class="mt-25">
-            <slot id="slot-button" name="button" />
+          <div v-if="cmsData.buttons" class="mt-25">
+            <button
+              v-for="btn in cmsData.buttons"
+              :key="`head-btn-${btn.id}`"
+              class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
+            >
+              {{ btn.title }}
+            </button>
           </div>
         </div>
         <div v-if="$slots.right" class="column is-4 is-hidden-touch">
