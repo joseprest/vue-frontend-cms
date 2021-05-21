@@ -81,7 +81,7 @@
                       <nuxt-link
                         v-for="link in sub.links"
                         :key="link.id"
-                        :to="link.link ? $getUrlFromCms(link.link) : ''"
+                        :to="link.link ? localePath(link.link) : ''"
                         class="navbar-item"
                       >
                         {{ link.title }}
