@@ -6,7 +6,7 @@
       :class="[color, `size-${size}`, { 'no-green-bar': !showGreenBar }]"
     >
       <slot>
-        {{ title }}
+        <span v-html="title"></span>
       </slot>
     </h2>
     <span v-if="beta" class="beta" :class="locale">Beta</span>
