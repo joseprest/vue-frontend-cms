@@ -6,7 +6,7 @@
       class="section"
       :class="
         comp.__component.replace('products.', '') +
-        (comp.background === 'accent' ? ' bg-accent' : '')
+        (comp.background === 'light-gray' ? ' bg-accent' : '')
       "
     >
       <div v-if="comp.__component === 'control'" class="gradiant">
