@@ -4,7 +4,7 @@
       <a
         class="login"
         :href="cmsData.link.link"
-        target="cmsData.Link.target"
+        :target="cmsData.Link.open_new_tab ? '_blank' : ''"
         noref="noref"
         rel="noopener"
       >
