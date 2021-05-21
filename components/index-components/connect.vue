@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import ButtonSimple from '@/components/button-simple'
+import ButtonSimple from '@/components/button-simple.vue'
 import { LogoBubbles } from '~/assets/js/index/logo-bubbles.js'
 
 export default {

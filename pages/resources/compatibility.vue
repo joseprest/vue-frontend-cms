@@ -48,10 +48,10 @@
 </template>
 
 <script>
-import BackEndServices from '@/services/BackEnd.services'
+import BackEndServices from '@/services/BackEnd.services.js'
 import SearchForm from '@/components/compatibility/search-form.vue'
 import DeviceList from '@/components/compatibility/device-list.vue'
-import Pagination from '@/components/compatibility/pagination'
+import Pagination from '@/components/compatibility/pagination.vue'
 import RequestEquipment from '@/components/compatibility/request-equipment.vue'
 import ProtocolsList from '@/components/compatibility/protocols-list.vue'
 

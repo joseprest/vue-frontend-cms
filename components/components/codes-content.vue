@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import FileUpload from './codes/file-upload'
-import ConfigureModbus from './codes/configure-modbus'
-import SettingSchedule from './codes/setting-schedule'
+import FileUpload from './codes/file-upload.vue'
+import ConfigureModbus from './codes/configure-modbus.vue'
+import SettingSchedule from './codes/setting-schedule.vue'
 
 export default {
   components: {

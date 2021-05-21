@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import BackEndServices from '@/services/BackEnd.services'
+import BackEndServices from '@/services/BackEnd.services.js'
 
 export default {
   name: 'RequestEquipment',

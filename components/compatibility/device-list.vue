@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Device from './Device'
+import Device from './device.vue'
 
 export default {
   name: 'DeviceList',

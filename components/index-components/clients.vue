@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import ClientsLogos from '~/components/clients-logos'
+import ClientsLogos from '~/components/clients-logos.vue'
 
 export default {
   name: 'IndexClients',

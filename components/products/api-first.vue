@@ -33,8 +33,8 @@
 </template>
 
 <script>
-import CodesMenu from '../components/codes-menu'
-import CodesContent from '../components/codes-content'
+import CodesMenu from '../components/codes-menu.vue'
+import CodesContent from '../components/codes-content.vue'
 
 export default {
   components: {
