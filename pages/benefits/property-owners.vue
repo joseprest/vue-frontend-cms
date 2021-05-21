@@ -34,13 +34,19 @@ export default {
     },
   },
   async asyncData({ i18n, $axios, $getUrlFromCms }) {
-    const content = await $axios.get(
-      $getUrlFromCms(
-        '/page-benefits-property-owners?_locale=' + i18n.localeProperties.iso
-      )
-    )
+    const content = await Promise.all([
+      $axios.get(
+        $getUrlFromCms(
+          '/page-benefits-property-owners?_locale=' + i18n.localeProperties.iso
+        )
+      ),
+      $axios.get($getUrlFromCms('/clients-logos')),
+    ])
     return {
-      cmsData: { ...content.data },
+      cmsData: {
+        ...content[0].data,
+        clients_logos: content[1].data.logos,
+      },
     }
   },
 
@@ -128,6 +134,13 @@ export default {
   z-index: 2;
 }
 
+.customer-stories {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background: linear-gradient(to top, white, #f8fcff);
+}
+
 .section.how-it-works {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -166,5 +179,14 @@ export default {
   @include widescreen {
     margin-left: 60px;
   }
+}
+section.features {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background: rgba($blue-dark, 0.03);
+}
+.integrations {
+  padding-top: 0;
+  padding-bottom: 6rem;
 }
 </style>
