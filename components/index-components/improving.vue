@@ -1,37 +1,35 @@
 <template>
-  <section class="section bottom">
-    <div class="container">
-      <div class="columns">
-        <div id="improving" class="column is-half">
-          <ws-paragraph class="has-text-left">
-            <ws-title :title="cmsData.title1" align="left" size="small" />
-            <div class="main-text mb-15" v-html="$md.render(cmsData.text1)" />
-            <ws-link
-              v-for="button in cmsData.buttons1"
-              :key="`impr${button.id}`"
-              :title="button.title"
-              :url="button.url"
-              class="mt-10"
-            />
-          </ws-paragraph>
-        </div>
+  <div>
+    <div class="columns">
+      <div id="improving" class="column is-half">
+        <ws-paragraph class="has-text-left">
+          <ws-title :title="cmsData.title1" align="left" size="small" />
+          <div class="main-text mb-15" v-html="$md.render(cmsData.text1)" />
+          <ws-link
+            v-for="button in cmsData.buttons1"
+            :key="`impr${button.id}`"
+            :title="button.title"
+            :url="button.url"
+            class="mt-10"
+          />
+        </ws-paragraph>
+      </div>
 
-        <div id="simple" class="column is-half">
-          <ws-paragraph class="has-text-left">
-            <ws-title :title="cmsData.title2" align="left" size="small" />
-            <div class="main-text mb-15" v-html="$md.render(cmsData.text2)" />
-            <ws-link
-              v-for="button in cmsData.buttons2"
-              :key="`impr2-${button.id}`"
-              :title="button.title"
-              :url="button.url"
-              class="mt-10"
-            />
-          </ws-paragraph>
-        </div>
+      <div id="simple" class="column is-half">
+        <ws-paragraph class="has-text-left">
+          <ws-title :title="cmsData.title2" align="left" size="small" />
+          <div class="main-text mb-15" v-html="$md.render(cmsData.text2)" />
+          <ws-link
+            v-for="button in cmsData.buttons2"
+            :key="`impr2-${button.id}`"
+            :title="button.title"
+            :url="button.url"
+            class="mt-10"
+          />
+        </ws-paragraph>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -77,10 +75,6 @@ export default {
   line-height: 1.75em;
   font-size: $size-6;
   margin-top: -2rem;
-}
-
-.section {
-  margin-top: 4em;
 }
 
 $padding-size: 70px;

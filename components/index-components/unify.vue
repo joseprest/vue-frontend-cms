@@ -1,24 +1,22 @@
 <template>
-  <section class="section collect-unify">
-    <div class="container">
-      <div class="columns is-multiline is-vcentered">
-        <div class="column is-6 is-12-touch">
-          <ws-title align="left">
-            {{ cmsData.title }}
-          </ws-title>
-          <ws-link :url="cmsData.url" class="mt-20">
-            {{ cmsData.button }}
-          </ws-link>
-        </div>
-        <div class="column is-6 is-12-touch animation">
-          <ws-image
-            :src="$getImageUrlFromCms(cmsData.image)"
-            :alt="cmsData.title"
-          />
-        </div>
+  <div>
+    <div class="columns is-multiline is-vcentered">
+      <div class="column is-6 is-12-touch">
+        <ws-title align="left">
+          {{ cmsData.title }}
+        </ws-title>
+        <ws-link :url="cmsData.url" class="mt-20">
+          {{ cmsData.button }}
+        </ws-link>
+      </div>
+      <div class="column is-6 is-12-touch animation">
+        <ws-image
+          :src="$getImageUrlFromCms(cmsData.image)"
+          :alt="cmsData.title"
+        />
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -35,15 +33,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section.collect-unify {
-  background: linear-gradient(180deg, #f5fafe -25%, rgba(#f5fafe, 0.5) 120%);
-  padding-top: 13rem;
-  padding-bottom: 5rem;
-  @include touch {
-    padding-top: 6rem;
-    padding-bottom: 4rem;
-  }
-}
 .animation {
   display: flex;
   align-items: center;

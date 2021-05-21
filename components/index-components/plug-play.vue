@@ -1,50 +1,48 @@
 <template>
-  <section class="section pnp">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-half is-full-mobile">
-          <div class="plugplay">
-            <div id="background">
-              <!-- TODO: do something with ws-image to replicate the "position:absolute" behaviour of original image -->
-              <ws-image
-                :src="require('~/assets/imgs/home/plugplay/background.svg')"
-                class="background"
-                :alt="cmsData.title"
-              />
-            </div>
-            <div id="plug">
-              <ws-image
-                :v-scroll-reveal="{
-                  distance: '-30px',
-                  origin: 'left',
-                  easing: 'ease-out',
-                }"
-                :src="$getImageUrlFromCms(cmsData.image)"
-                class="plug"
-                alt="elements"
-              />
-            </div>
+  <div>
+    <div class="columns">
+      <div class="column is-half is-full-mobile">
+        <div class="plugplay">
+          <div id="background">
+            <!-- TODO: do something with ws-image to replicate the "position:absolute" behaviour of original image -->
+            <ws-image
+              :src="require('~/assets/imgs/home/plugplay/background.svg')"
+              class="background"
+              :alt="cmsData.title"
+            />
+          </div>
+          <div id="plug">
+            <ws-image
+              :v-scroll-reveal="{
+                distance: '-30px',
+                origin: 'left',
+                easing: 'ease-out',
+              }"
+              :src="$getImageUrlFromCms(cmsData.image)"
+              class="plug"
+              alt="elements"
+            />
           </div>
         </div>
-        <div class="column is-half is-full-mobile">
-          <ws-paragraph class="has-text-left">
-            <ws-title align="left">
-              {{ cmsData.title }}
-              <template #description>
-                {{ cmsData.description }}
-              </template>
-            </ws-title>
-          </ws-paragraph>
-          <p class="buttons">
-            <!-- <ws-button class="mt-25" @click="requestDemo('box')"> -->
-            <ws-button class="mt-25">
-              {{ cmsData.button }}
-            </ws-button>
-          </p>
-        </div>
+      </div>
+      <div class="column is-half is-full-mobile">
+        <ws-paragraph class="has-text-left">
+          <ws-title align="left">
+            {{ cmsData.title }}
+            <template #description>
+              {{ cmsData.description }}
+            </template>
+          </ws-title>
+        </ws-paragraph>
+        <p class="buttons">
+          <!-- <ws-button class="mt-25" @click="requestDemo('box')"> -->
+          <ws-button class="mt-25">
+            {{ cmsData.button }}
+          </ws-button>
+        </p>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -73,17 +71,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section.pnp {
-  padding-top: 6rem;
-  padding-bottom: 10rem;
-  @include desktop-only {
-    padding-bottom: 6rem;
-  }
-  @include touch {
-    padding-top: 6rem;
-    padding-bottom: 0rem;
-  }
-}
 .ws-title {
   margin-bottom: 0;
 }

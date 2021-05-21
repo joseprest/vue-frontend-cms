@@ -1,27 +1,25 @@
 <template>
-  <section class="section upgrade-bms">
-    <div class="container">
-      <ws-title :title="cmsData.title" align="left" />
-      <div class="animation">
-        <ws-image
-          :src="$getImageUrlFromCms(cmsData.image)"
-          :v-scroll-reveal="{
-            distance: '-30px',
-            origin: 'left',
-            easing: 'ease-out',
-            delay: 200,
-            reset: false,
-          }"
-          class="building"
-          :alt="cmsData.title"
-        />
-      </div>
-      <!-- CTA -->
-      <button-discover-our-products
-        :cms-data="cmsData.ButtonDiscoverOurProducts"
+  <div>
+    <ws-title :title="cmsData.title" align="left" />
+    <div class="animation">
+      <ws-image
+        :src="$getImageUrlFromCms(cmsData.image)"
+        :v-scroll-reveal="{
+          distance: '-30px',
+          origin: 'left',
+          easing: 'ease-out',
+          delay: 200,
+          reset: false,
+        }"
+        class="building"
+        :alt="cmsData.title"
       />
     </div>
-  </section>
+    <!-- CTA -->
+    <button-discover-our-products
+      :cms-data="cmsData.ButtonDiscoverOurProducts"
+    />
+  </div>
 </template>
 
 <script>
@@ -38,30 +36,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section.upgrade-bms {
-  padding-top: 4rem;
-  padding-bottom: 0rem;
-  position: relative;
-  @include touch {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-  &::after {
-    content: ' ';
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 200px;
-    bottom: -70px;
-    left: 0;
-    z-index: 1;
-    background: $white;
-    transform: skewY(-5deg);
-    @include touch {
-      display: none;
-    }
-  }
-}
 .ws-title {
   margin-right: 14em;
   @include mobile {

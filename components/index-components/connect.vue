@@ -1,29 +1,27 @@
 <template>
-  <section class="section connect">
-    <div class="container">
-      <ws-title align="0">
-        {{ cmsData.title }}
-        <template #description>
-          {{ cmsData.description }}
-        </template>
-      </ws-title>
-      <button-simple :cms-data="cmsData.Button" class="mt-25" />
+  <div>
+    <ws-title align="0">
+      {{ cmsData.title }}
+      <template #description>
+        {{ cmsData.description }}
+      </template>
+    </ws-title>
+    <button-simple :cms-data="cmsData.Button" class="mt-25" />
 
-      <div class="animation is-hidden-touch">
-        <ws-image
-          :src="require('~/assets/imgs/home/connect/box.svg')"
-          alt="Wattsense Box"
-          class="wsbox"
-        />
-        <div class="elements" />
-        <ws-image
-          :src="require('~/assets/imgs/home/connect/end.svg')"
-          alt="Wattsense Box"
-          class="end"
-        />
-      </div>
+    <div class="animation is-hidden-touch">
+      <ws-image
+        :src="require('~/assets/imgs/home/connect/box.svg')"
+        alt="Wattsense Box"
+        class="wsbox"
+      />
+      <div class="elements" />
+      <ws-image
+        :src="require('~/assets/imgs/home/connect/end.svg')"
+        alt="Wattsense Box"
+        class="end"
+      />
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -311,16 +309,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section.connect {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  @include desktop {
-    padding-top: 0;
-  }
-  @include mobile {
-    padding-top: 1.5rem;
-  }
-}
 .ws-title {
   margin-bottom: 0;
 }

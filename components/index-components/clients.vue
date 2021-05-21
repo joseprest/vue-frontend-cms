@@ -1,18 +1,16 @@
 <template>
-  <section class="section clients">
-    <div class="container">
-      <ws-paragraph class="has-text-centered">
-        <ws-title align="center">
-          {{ cmsData.title }}
-          <template #description>
-            {{ cmsData.subtitle }}
-          </template>
-        </ws-title>
-        <!-- color="inverted" /> -->
-      </ws-paragraph>
-      <clients-logos :clients="clients" />
-    </div>
-  </section>
+  <div>
+    <ws-paragraph class="has-text-centered">
+      <ws-title align="center">
+        {{ cmsData.title }}
+        <template #description>
+          {{ cmsData.subtitle }}
+        </template>
+      </ws-title>
+      <!-- color="inverted" /> -->
+    </ws-paragraph>
+    <clients-logos :clients="clients" />
+  </div>
 </template>
 
 <script>
@@ -37,9 +35,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.section.clients {
-  padding-top: 6rem;
-  padding-bottom: 0;
-}
-</style>
+<style lang="scss" scoped></style>

@@ -1,13 +1,24 @@
 <template>
   <div v-if="Object.keys(cmsData).length > 0">
-    <template v-for="comp in cmsData.body">
+    <section
+      v-for="comp in cmsData.body"
+      :key="`body-${comp.__component}-${comp.id}`"
+      class="section"
+      :class="comp.__component.replace('index-components.', '')"
+    >
+      <div
+        v-if="comp.__component === 'index-components.how-it-works'"
+        class="gradiant"
+      >
+        <img src="@/assets/imgs/gradiant-bg-blue.svg" alt="bg" />
+      </div>
       <component
         :is="$getComponentFromCms(comp.__component)"
         :key="`body-${comp.__component}-${comp.id}`"
         :clients="cmsData.clients_logos"
         :cms-data="comp"
       />
-    </template>
+    </section>
     <app-footer />
   </div>
 </template>
@@ -47,3 +58,168 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.section.clients {
+  padding-top: 6rem;
+  padding-bottom: 0;
+}
+
+section.connect {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  @include desktop {
+    padding-top: 0;
+  }
+  @include mobile {
+    padding-top: 1.5rem;
+  }
+}
+
+.customer-stories {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background: linear-gradient(to top, white, #f8fcff);
+}
+
+.section.get-demo {
+  background: rgba($blue-dark, 0.05);
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+  @include touch {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.section.how-it-works {
+  padding-top: 6rem;
+  padding-bottom: 7rem;
+  z-index: 2;
+  background: linear-gradient(
+    to bottom,
+    $blue-dark 75%,
+    rgba($blue-dark, 0.05) 77%
+  );
+  position: relative;
+  @include touch {
+    background: $blue-dark;
+  }
+  &::before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 200px;
+    bottom: 110px;
+    left: 0;
+    z-index: -1;
+    background: $blue-dark;
+    transform: skewY(-5deg);
+    @include touch {
+      display: none;
+    }
+  }
+  &::after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 200px;
+    bottom: -90px;
+    left: 0;
+    z-index: 0;
+    background: #f5f5f7;
+    transform: skewY(-5deg);
+    @include touch {
+      display: none;
+    }
+  }
+  .gradiant {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.section.improving {
+  margin-top: 4em;
+}
+
+section.integrations {
+  padding-bottom: 8rem;
+  @include tablet-only {
+    padding-bottom: 12rem;
+  }
+  @include mobile {
+    padding-top: 4rem;
+  }
+}
+
+section.plug-play {
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+  @include desktop-only {
+    padding-bottom: 6rem;
+  }
+  @include touch {
+    padding-top: 6rem;
+    padding-bottom: 0rem;
+  }
+}
+
+.testimonials.home {
+  padding: 2rem 8.5rem 4rem;
+  @include touch {
+    padding: 2rem 2rem 4rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+section.unify {
+  background: linear-gradient(180deg, #f5fafe -25%, rgba(#f5fafe, 0.5) 120%);
+  padding-top: 13rem;
+  padding-bottom: 5rem;
+  @include touch {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+}
+
+section.upgrade {
+  padding-top: 4rem;
+  padding-bottom: 0rem;
+  position: relative;
+  @include touch {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  &::after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 200px;
+    bottom: -70px;
+    left: 0;
+    z-index: 1;
+    background: $white;
+    transform: skewY(-5deg);
+    @include touch {
+      display: none;
+    }
+  }
+}
+</style>
