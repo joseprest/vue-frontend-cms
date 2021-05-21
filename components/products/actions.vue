@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import ActionCard from '../components/action-card'
+import ActionCard from '../components/action-card.vue'
 
 export default {
   components: {

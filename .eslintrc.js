@@ -18,5 +18,6 @@ module.exports = {
   // add your custom rules here
   rules: {
     quotes: [2, 'single', { avoidEscape: true }],
+    'import/extensions': [2, 'always'],
   },
 }

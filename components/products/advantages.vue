@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import Advantage from '../components/advantage'
+import Advantage from '../components/advantage.vue'
 
 export default {
   name: 'ProductsBoxAdvantages',

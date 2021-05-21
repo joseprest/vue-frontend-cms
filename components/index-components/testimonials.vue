@@ -30,7 +30,7 @@
 
 <script>
 import { Hooper, Pagination as HooperPagination, Slide } from 'hooper'
-import Story from './story'
+import Story from './story.vue'
 
 export default {
   components: {

@@ -125,4 +125,6 @@ export default {
     CMS_URL: process.env.CMS_URL || 'http://localhost:1337',
     CONSOLE_API: process.env.CONSOLE_API || 'https://console.wattsense.com/api',
   },
+
+  // ssr: false,
 }

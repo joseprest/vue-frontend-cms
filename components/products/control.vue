@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import MadeInFrance from '../components/made-in-france'
+import MadeInFrance from '../components/made-in-france.vue'
 
 export default {
   components: {

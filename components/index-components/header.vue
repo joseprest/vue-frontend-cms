@@ -80,7 +80,7 @@
 </template>
 
 <script>
-import Navbar from './../navbar'
+import Navbar from './../navbar.vue'
 
 export default {
   name: 'IndexHeader',
