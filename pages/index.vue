@@ -1,24 +1,34 @@
 <template>
   <div v-if="Object.keys(cmsData).length > 0">
-    <section
-      v-for="comp in cmsData.body"
-      :key="`body-${comp.__component}-${comp.id}`"
-      class="section"
-      :class="comp.__component.replace('index-components.', '')"
-    >
-      <div
-        v-if="comp.__component === 'index-components.how-it-works'"
-        class="gradiant"
-      >
-        <img src="@/assets/imgs/gradiant-bg-blue.svg" alt="bg" />
-      </div>
+    <template v-for="comp in cmsData.body">
       <component
         :is="$getComponentFromCms(comp.__component)"
+        v-if="comp.__component === 'index-components.header'"
         :key="`body-${comp.__component}-${comp.id}`"
-        :clients="cmsData.clients_logos"
         :cms-data="comp"
       />
-    </section>
+      <section
+        v-else
+        :key="`body-${comp.__component}-${comp.id}`"
+        class="section"
+        :class="comp.__component.replace('index-components.', '')"
+      >
+        <div
+          v-if="comp.__component === 'index-components.how-it-works'"
+          class="gradiant"
+        >
+          <img src="@/assets/imgs/gradiant-bg-blue.svg" alt="bg" />
+        </div>
+        <div class="container">
+          <component
+            :is="$getComponentFromCms(comp.__component)"
+            :key="`body-${comp.__component}-${comp.id}`"
+            :clients="cmsData.clients_logos"
+            :cms-data="comp"
+          />
+        </div>
+      </section>
+    </template>
     <app-footer />
   </div>
 </template>
