@@ -52,10 +52,28 @@
               class="navbar-dropdown"
             >
               <template v-for="sub in item.subs">
+                <a
+                  v-if="sub.file"
+                  :key="`sub${sub.id}`"
+                  :href="$getUrlFromCms(sub.file.url)"
+                  class="navbar-item"
+                >
+                  {{ sub.title }}
+                </a>
+                <a
+                  v-else-if="
+                    sub.link && RegExp('^https?://|^//').test(sub.link)
+                  "
+                  :key="`sub${sub.id}`"
+                  :href="sub.link"
+                  class="navbar-item"
+                >
+                  {{ sub.title }}
+                </a>
                 <nuxt-link
-                  v-if="sub.link"
-                  :key="sub.id"
-                  :to="localePath(sub.link)"
+                  v-else-if="sub.link"
+                  :key="`sub${sub.id}`"
+                  :to="sub.link ? localePath(sub.link) : ''"
                   class="navbar-item"
                 >
                   {{ sub.title }}
@@ -78,14 +96,35 @@
                   </div>
                   <div id="dropdown-menu" class="dropdown-menu" role="menu">
                     <div class="dropdown-content">
-                      <nuxt-link
-                        v-for="link in sub.links"
-                        :key="link.id"
-                        :to="link.link ? localePath(link.link) : ''"
-                        class="navbar-item"
-                      >
-                        {{ link.title }}
-                      </nuxt-link>
+                      <template v-for="link in sub.links">
+                        <a
+                          v-if="link.file"
+                          :key="`link${link.id}`"
+                          :href="$getUrlFromCms(link.file.url)"
+                          class="navbar-item"
+                        >
+                          {{ link.title }}
+                        </a>
+                        <a
+                          v-else-if="
+                            link.link &&
+                            RegExp('^https?://|^//').test(link.link)
+                          "
+                          :key="`link${link.id}`"
+                          :href="link.link"
+                          class="navbar-item"
+                        >
+                          {{ link.title }}
+                        </a>
+                        <nuxt-link
+                          v-else
+                          :key="`link${link.id}`"
+                          :to="link.link ? localePath(link.link) : ''"
+                          class="navbar-item"
+                        >
+                          {{ link.title }}
+                        </nuxt-link>
+                      </template>
                     </div>
                   </div>
                 </div>
