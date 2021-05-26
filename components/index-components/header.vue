@@ -29,7 +29,7 @@
               v-for="btn in cmsData.buttons"
               :key="`head-btn-${btn.id}`"
               :url="btn.file ? btn.file.url : btn.url"
-              :target="btn.target"
+              :target="btn.open_new_tab ? '_blank' : ''"
               class="mr-10"
               :is-inverted="btn.inverted"
             >

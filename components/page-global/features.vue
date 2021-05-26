@@ -8,7 +8,7 @@
     >
       <ws-image
         :src="$getImageUrlFromCms(cmsData.image)"
-        alt="cmsData.image.alternativeText"
+        :alt="cmsData.image.alternativeText"
       />
     </div>
     <list-items :items="cmsData.features" />

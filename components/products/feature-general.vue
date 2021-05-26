@@ -47,7 +47,7 @@
         v-if="cmsData.button"
         :title="cmsData.button.title"
         :url="cmsData.button.url"
-        :target="cmsData.button.target"
+        :target="cmsData.button.open_new_tab ? '_blank' : ''"
       />
     </div>
   </div>
@@ -64,7 +64,7 @@
         :url="
           cmsData.button.file ? cmsData.button.file.url : cmsData.button.url
         "
-        :target="cmsData.button.target"
+        :target="cmsData.button.target ? '_blank' : ''"
         class="mt-25"
       />
     </div>
