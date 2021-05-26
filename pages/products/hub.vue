@@ -32,8 +32,10 @@ export default {
       de: '/produkte/hub',
     },
   },
-  async asyncData({ $axios, $getUrlFromCms }) {
-    const { data } = await $axios.get($getUrlFromCms('/page-products-hub'))
+  async asyncData({ i18n, $axios, $getUrlFromCms }) {
+    const { data } = await $axios.get(
+      $getUrlFromCms('/page-products-hub?_locale=' + i18n.localeProperties.iso)
+    )
     return {
       cmsData: { ...data },
     }
