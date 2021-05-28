@@ -71,6 +71,40 @@
               </template>
             </li>
           </template>
+
+          <!-- Price info buttons -->
+          <!-- TODO: button handler -- popup form -->
+          <li class="infoprices" />
+          <li class="infoprice">
+            <ws-button
+              v-if="colIndex > 0 && cmsData.price_info_buttons[colIndex - 1]"
+              is-small
+              is-inverted
+            >
+              {{ cmsData.price_info_buttons[colIndex - 1].title }}
+            </ws-button>
+          </li>
+
+          <!-- Examples -->
+          <li class="examples">
+            <p
+              v-if="cmsData.examples_title && colIndex === 0"
+              class="is-size-6 has-text-weight-semibold features-caption"
+            >
+              {{ cmsData.examples_title }}
+            </p>
+          </li>
+          <li v-if="colIndex > 0" class="example">
+            <span v-if="cmsData.examples_title" class="feature touch">
+              {{ cmsData.examples_title }}
+            </span>
+            <Example
+              v-for="example in cmsData.examples[colIndex - 1].examples"
+              :key="`examples-${example.id}`"
+              :cms-data="example"
+            />
+          </li>
+          <li v-else class="example"></li>
         </ul>
       </div>
     </div>
@@ -78,6 +112,7 @@
 </template>
 
 <script>
+import Example from '@/components/components/pricing-example.vue'
 import CheckIcon from '@/assets/imgs/check.svg?inline'
 import LineIcon from '@/assets/imgs/line.svg?inline'
 import InfoIcon from '@/assets/imgs/infos.svg?inline'
@@ -85,6 +120,7 @@ import InfoIcon from '@/assets/imgs/infos.svg?inline'
 export default {
   name: 'PricingTable',
   components: {
+    Example,
     CheckIcon,
     LineIcon,
     InfoIcon,
@@ -232,7 +268,7 @@ li.others {
 }
 
 .empty-line {
-  height: 2.4em;
+  height: 1.85em;
   background-color: $gray-lighter;
   margin-right: -1px;
   display: flex;
@@ -322,15 +358,6 @@ li.example {
   .feature.touch {
     font-size: 0.7em;
     margin-bottom: 0.75rem;
-  }
-}
-li.item-example {
-  border-bottom: 1px solid rgba($gray-lighter, 0.5);
-  padding-bottom: 0.5rem;
-  font-size: 0.8rem;
-  &:last-child {
-    border-bottom: 0;
-    padding-bottom: 0;
   }
 }
 
