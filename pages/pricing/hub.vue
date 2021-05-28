@@ -63,4 +63,11 @@ section.subscription {
     padding-top: 40px;
   }
 }
+section.table {
+  padding-bottom: 4rem;
+
+  @include desktop {
+    padding-bottom: 0;
+  }
+}
 </style>
