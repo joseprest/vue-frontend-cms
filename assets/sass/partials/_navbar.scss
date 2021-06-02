@@ -36,6 +36,7 @@ a.navbar-burger {
 }
 
 .navbar {
+  z-index: $z-index-popup - 4;
 	&.is-transparent,
 	.is-transparent {
 		background-color: transparent !important;

@@ -168,3 +168,20 @@ ul {
     }
   }
 }
+
+// MODALS / POPUPS
+#modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-index-popup;
+  width: 0;
+  height: 0;
+  opacity: 0.85;
+  background-color: #1b1b1b;
+
+  &.is-active {
+    width: 100vw;
+    height: 100vh;
+  }
+}

@@ -1,5 +1,6 @@
 @import "~bulma/sass/utilities/initial-variables";
 @import "~bulma/sass/utilities/functions";
+@import "~bulma/sass/utilities/mixins";
 @import "colors";
 
 $family-sans-serif: "Poppins", Arial, Helvetica, sans-serif;
@@ -13,6 +14,8 @@ $fullhd: 1161px;
 
 // space constatns used in margin/padding utility classes
 $spacing: 0 15 25 35 50;
+
+$z-index-popup: 11;
 
 $turquoise: #29d193;
 $green: #2bc47b;
@@ -66,4 +69,4 @@ $button-padding-horizontal: 1.5em;
 // $button-padding-vertical: calc(1.5em - 1px);
 $button-padding-vertical: 1.25em;
 
-$footer-padding: 6rem 1.5rem 2rem
+$footer-padding: 6rem 1.5rem 2rem;
