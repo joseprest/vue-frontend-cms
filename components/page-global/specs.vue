@@ -66,10 +66,7 @@
       class="columns is-vcentered has-text-centered mb-15"
     >
       <div class="column has-text-centered-mobile">
-        <!-- TODO: popup @click="requestSales" -->
-        <ws-button :url="cmsData.cta_button.url">
-          {{ cmsData.cta_button.title }}
-        </ws-button>
+        <ws-button :cms-data="cmsData.cta_button" />
       </div>
     </div>
   </div>

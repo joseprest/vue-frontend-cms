@@ -33,10 +33,8 @@
           <ws-button
             v-for="btn in cmsData.buttons"
             :key="`btn${btn.id}`"
-            :href="btn.url"
-            :title="btn.title"
+            :cms-data="btn"
             class="mr-10 has-text-weight-semibold has-shadow btn-big is-uppercase"
-            :is-inverted="btn.inverted"
           />
         </div>
       </div>

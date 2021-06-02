@@ -35,10 +35,7 @@
           </ws-title>
         </ws-paragraph>
         <p class="buttons">
-          <!-- <ws-button class="mt-25" @click="requestDemo('box')"> -->
-          <ws-button class="mt-25">
-            {{ cmsData.button }}
-          </ws-button>
+          <ws-button :cms-data="cmsData.button" class="mt-25" />
         </p>
       </div>
     </div>

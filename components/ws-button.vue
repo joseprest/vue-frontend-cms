@@ -1,40 +1,42 @@
 <template>
   <div>
-    <button
-      class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
-      :class="{ 'is-inverted': isInverted, 'is-small': isSmall }"
-      @click="$emit('click')"
-      v-if="!url"
-    >
-      <slot>
-        {{ title }}
-      </slot>
-    </button>
+    <template v-if="cmsData.popup">
+      <button
+        class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
+        :class="{ 'is-inverted': cmsData.inverted, 'is-small': isSmall }"
+        @click="showPopup = true"
+      >
+        <slot>
+          {{ cmsData.title }}
+        </slot>
+      </button>
+      <popup-container :show="showPopup" @close="showPopup = false" />
+    </template>
     <template v-else>
       <a
-        v-if="RegExp('^https?://|^//').test(url)"
-        :href="url"
-        :title="title"
+        v-if="RegExp('^https?://|^//').test(cmsData.url)"
+        :href="cmsData.file ? cmsData.file.url : cmsData.url"
+        :title="cmsData.title"
         class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
-        :class="{ 'is-inverted': isInverted }"
-        target="_blank"
+        :class="{ 'is-inverted': cmsData.inverted }"
+        :target="cmsData.open_new_tab ? '_blank' : ''"
         noref="noref"
         rel="noopener"
       >
         <slot>
-          {{ title }}
+          {{ cmsData.title }}
         </slot>
       </a>
       <nuxt-link
         v-else
-        :to="url"
-        :title="title"
-        :target="target"
+        :to="localePath(cmsData.url)"
+        :title="cmsData.title"
+        :target="cmsData.open_new_tab ? '_blank' : ''"
         class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
-        :class="{ 'is-inverted': isInverted }"
+        :class="{ 'is-inverted': cmsData.inverted }"
       >
         <slot>
-          {{ title }}
+          {{ cmsData.title }}
         </slot>
       </nuxt-link>
     </template>
@@ -42,31 +44,28 @@
 </template>
 
 <script>
+import PopupContainer from '@/components/popup/popup-container.vue'
+
 export default {
   name: 'WsButton',
 
+  components: {
+    PopupContainer,
+  },
   props: {
-    title: {
-      type: String,
-      default: '',
-    },
-    url: {
-      type: String,
-      default: '',
-    },
-    target: {
-      type: String,
-      default: '',
-    },
-    isInverted: {
-      type: Boolean,
-      default: false,
+    cmsData: {
+      type: Object,
+      default: () => ({}),
     },
     isSmall: {
       type: Boolean,
       default: false,
     },
   },
+
+  data: () => ({
+    showPopup: false,
+  }),
 }
 </script>
 

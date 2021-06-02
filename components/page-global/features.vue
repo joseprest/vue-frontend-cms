@@ -17,8 +17,7 @@
       <ws-button
         v-for="btn in cmsData.buttons"
         :key="`cta${btn.id}`"
-        :title="btn.title"
-        :url="btn.url"
+        :cms-data="btn"
         class="mt-35 mx-5"
       />
     </div>

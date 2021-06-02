@@ -77,12 +77,11 @@
           <li class="infoprices" />
           <li class="infoprice">
             <ws-button
-              v-if="colIndex > 0 && cmsData.price_info_buttons[colIndex - 1]"
+              v-if="colIndex > 0"
+              :cms-data="cmsData.price_info"
               is-small
               is-inverted
-            >
-              {{ cmsData.price_info_buttons[colIndex - 1].title }}
-            </ws-button>
+            />
           </li>
 
           <!-- Examples -->

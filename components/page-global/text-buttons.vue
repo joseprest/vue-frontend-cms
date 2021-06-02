@@ -7,16 +7,12 @@
       v-html="$richTextImageUrls($md.render(cmsData.text))"
     />
     <p class="buttons is-flex align-center mt-25">
-      <!-- TODO: button should force demo model to pop up -->
       <ws-button
         v-for="btn in cmsData.buttons"
         :key="`text-btn-${btn.id}`"
-        :url="btn.file ? btn.file.url : btn.url"
-        :is-inverted="btn.inverted"
+        :cms-data="btn"
         class="mt-20 mx-5"
-      >
-        {{ btn.title }}
-      </ws-button>
+      />
     </p>
   </div>
 </template>

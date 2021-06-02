@@ -10,13 +10,7 @@
       </div>
       <made-in-france :text="cmsData.made" />
       <div class="buttons">
-        <ws-button
-          :url="
-            cmsData.button.file ? cmsData.button.file.url : cmsData.button.url
-          "
-        >
-          {{ cmsData.button.title }}
-        </ws-button>
+        <ws-button :cms-data="cmsData.button" />
       </div>
     </div>
     <div class="box-content column is-7 is-12-touch">

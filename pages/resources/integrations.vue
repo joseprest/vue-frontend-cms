@@ -10,9 +10,7 @@
             <ws-title :title="cmsData.title" align="left" class="mb-35" />
             <div v-html="$md.render(cmsData.text)" />
             <p class="buttons is-flex align-center mt-25">
-              <ws-button class="mt-20" @click="showModalPartner">
-                {{ cmsData.button.title }}
-              </ws-button>
+              <ws-button class="mt-20" :cms-data="cmsData.button" />
             </p>
           </div>
           <div class="column is-6-tablet is-8-widescreen">
@@ -78,11 +76,6 @@ export default {
         },
       ],
     }
-  },
-  methods: {
-    showModalPartner() {
-      // TODO:
-    },
   },
 }
 </script>

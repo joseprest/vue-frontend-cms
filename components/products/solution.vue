@@ -18,12 +18,9 @@
         <ws-button
           v-for="btn in cmsData.buttons"
           :key="`btn${btn.id}`"
-          :url="btn.url"
-          :is-inverted="btn.inverted"
+          :cms-data="btn"
           class="mr-10"
-        >
-          {{ btn.title }}
-        </ws-button>
+        />
       </div>
     </div>
     <div class="column is-6 is-hidden-touch">
