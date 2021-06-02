@@ -30,7 +30,7 @@ export default {
    ** So we can use our .scss file globally in the Nuxt app
    */
   styleResources: {
-    scss: ['~assets/sass/app.scss'],
+    scss: ['~assets/sass/partials/_variables.scss'],
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
