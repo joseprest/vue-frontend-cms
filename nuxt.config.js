@@ -43,6 +43,7 @@ export default {
       src: '~/plugins/vue-scroll-reveal.js',
       ssr: false,
     },
+    { src: '~plugins/onAppReady', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
