@@ -56,10 +56,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.modal-background {
-  z-index: $z-index-popup;
-}
-
 .modal-content {
   z-index: $z-index-popup + 1;
 }

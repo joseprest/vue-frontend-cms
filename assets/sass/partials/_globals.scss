@@ -185,3 +185,9 @@ ul {
     height: 100vh;
   }
 }
+
+.modal .title,
+header .header .modal .title {
+  color: $black-ter;
+  font-weight: 700;
+}

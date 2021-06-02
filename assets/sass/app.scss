@@ -21,7 +21,6 @@
 @import 'partials/fonts';
 
 .container {
-  z-index: 10;
   font-size: 1.125rem;
   @include mobile {
     font-size: 1.3rem;
