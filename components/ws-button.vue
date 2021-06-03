@@ -10,7 +10,11 @@
           {{ cmsData.title }}
         </slot>
       </button>
-      <popup-container :show="showPopup" @close="showPopup = false" />
+      <popup-container
+        :show="showPopup"
+        :popup="cmsData.popup"
+        @close="showPopup = false"
+      />
     </template>
     <template v-else>
       <a

@@ -128,15 +128,7 @@ export default {
   },
 
   methods: {
-    close() {
-      this.errors = []
-      this.success = false
-      this.saving = false
-      this.fieldErrors = {}
-      this.$emit('close')
-    },
-
-    submit() {
+    async submit() {
       this.$gtm.trackEvent({
         event: 'uaevent',
         category: 'lead generation',
@@ -152,7 +144,7 @@ export default {
       this.saving = true
 
       try {
-        // await $sendToBack('request-demo', this.form)
+        await this.$sendToBack('request-demo', this.form)
 
         this.success = true
       } catch (err) {
@@ -176,15 +168,14 @@ export default {
       this.fieldErrors = {}
 
       if (!this.form.name || this.form.name.trim() === '') {
-        this.fieldErrors.name = this.$t('request-demo.fullname-error')
+        this.fieldErrors.name = this.cmsData.error_name
       }
-      // TODO: replacebackendservices.isEmailValid by something
-      // if (!BackEndServices.isEmailValid(this.form.email)) {
-      //   this.fieldErrors.email = this.$t('request-demo.email-error')
-      // }
+      if (!this.$isEmailValid(this.form.email)) {
+        this.fieldErrors.email = this.cmsData.error_email
+      }
 
       if (!this.form.company || this.form.company.trim() === '') {
-        this.fieldErrors.company = this.$t('request-demo.company-error')
+        this.fieldErrors.company = this.cmsData.error_company
       }
     },
   },
