@@ -39,6 +39,7 @@ export default {
     '~/plugins/getComponentFromCms.js',
     '~/plugins/richTextImageUrls.js',
     '~/plugins/getImageUrlFromCms.js',
+    '~/plugins/isEmailValid.js',
     '~/plugins/sendToBack.js',
     {
       src: '~/plugins/vue-scroll-reveal.js',
