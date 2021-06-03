@@ -1,8 +1,24 @@
 <template>
   <div class="modal" :class="{ 'is-active': show }">
-    <!--    <div class="modal-background"></div>-->
-    <div class="modal-content">
-      <request-demo-form v-if="cmsData" :cms-data="cmsData" />
+    <div v-if="cmsData" class="modal-content">
+      <request-demo-form
+        v-if="popup.substring(0, 8) === 'get_demo'"
+        :cms-data="cmsData"
+        :product="popup.substring(9)"
+      />
+      <request-prices-form
+        v-else-if="popup.substring(0, 15) === 'request_pricing'"
+        :cms-data="cmsData"
+        :product="popup.substring(16)"
+      />
+      <request-sales-form
+        v-else-if="popup === 'request_sales'"
+        :cms-data="cmsData"
+      />
+      <request-partner-form
+        v-else-if="popup === 'partner'"
+        :cms-data="cmsData"
+      />
     </div>
     <button
       class="modal-close is-large"
@@ -14,10 +30,16 @@
 
 <script>
 import RequestDemoForm from './request-demo.vue'
+import RequestPricesForm from './request-prices.vue'
+import RequestSalesForm from './request-sales.vue'
+import RequestPartnerForm from './request-partner.vue'
 
 export default {
   components: {
     RequestDemoForm,
+    RequestPricesForm,
+    RequestSalesForm,
+    RequestPartnerForm,
   },
 
   props: {
