@@ -47,7 +47,7 @@ export default {
     return {
       cmsData: {
         ...content[0].data,
-        clients_logos: content[1].data.logos,
+        clients_logos: content[1].data,
       },
     }
   },
