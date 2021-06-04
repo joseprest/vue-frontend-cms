@@ -399,30 +399,32 @@ const tick = (now) => {
   if (all.size) requestAnimationFrame(tick)
 }
 
-document.addEventListener('visibilitychange', () => {
-  const now = performance.now()
-
-  if (document.hidden) {
-    const { all } = rAF
-    paused.time = now
-    paused.all = new Set(all)
-    all.clear()
-    return
-  }
-
-  const { all, time } = paused
-  if (!all) return
-  const elapsed = now - time
-  requestAnimationFrame(() =>
-    all.forEach((object) => {
-      object.startTime += elapsed
-      rAF.add(object)
-    })
-  )
-})
-
 // exports
 // =======
+
+export const setupPause = () => {
+  document.addEventListener('visibilitychange', () => {
+    const now = performance.now()
+
+    if (document.hidden) {
+      const { all } = rAF
+      paused.time = now
+      paused.all = new Set(all)
+      all.clear()
+      return
+    }
+
+    const { all, time } = paused
+    if (!all) return
+    const elapsed = now - time
+    requestAnimationFrame(() =>
+      all.forEach((object) => {
+        object.startTime += elapsed
+        rAF.add(object)
+      })
+    )
+  })
+}
 
 export default (options) =>
   new Promise((resolve) => addAnimations(options, resolve))

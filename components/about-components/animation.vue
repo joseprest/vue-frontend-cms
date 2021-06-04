@@ -2,9 +2,9 @@
   <span v-if="showAnim">
     <div
       v-for="(protocol, key) in protocols"
-      :id="key"
+      :id="`protocol${key}`"
       :key="`index_${key}`"
-      :class="`protocol ${key} ${$i18n.locale}`"
+      :class="`protocol protocol${key} ${$i18n.locale}`"
     >
       {{ protocol }}
     </div>
@@ -12,7 +12,8 @@
 </template>
 
 <script>
-import animate from '@/assets/js/animateplus.js'
+import animate, { setupPause } from '@/assets/js/animateplus.js'
+
 export default {
   name: 'Animation',
 
@@ -41,6 +42,7 @@ export default {
 
   mounted() {
     this.loadAnimation()
+    setupPause()
   },
 
   methods: {

@@ -55,7 +55,7 @@
             alt="protocols"
           />
           <div class="protocol-container">
-            <!--            <animation :protocols="cmsData.protocols.split(',')" />-->
+            <Animation :protocols="cmsData.protocols.split(`\n`)" />
             <div class="mask-left">
               <img
                 src="@/assets/imgs/about/complexity-mask-left.svg"
@@ -77,8 +77,13 @@
 </template>
 
 <script>
+import Animation from './animation.vue'
+
 export default {
   name: 'Complexity',
+  components: {
+    Animation,
+  },
   props: {
     cmsData: {
       type: Object,
