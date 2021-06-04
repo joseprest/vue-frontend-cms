@@ -97,9 +97,14 @@ section.connect {
   background: rgba($blue-dark, 0.05);
   padding-top: 1rem;
   padding-bottom: 6rem;
+
   @include touch {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .container {
+    z-index: 10;
   }
 }
 
@@ -212,6 +217,11 @@ section.upgrade {
   padding-top: 4rem;
   padding-bottom: 0rem;
   position: relative;
+
+  .container {
+    z-index: 10;
+  }
+
   @include touch {
     padding-top: 4rem;
     padding-bottom: 4rem;
