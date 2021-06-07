@@ -1,5 +1,5 @@
 <template>
-  <li class="item-list" :class="'item-list__' + checkType">
+  <li class="item-list" :class="'item-list__' + checkType" :style="checkStyle">
     <slot />
   </li>
 </template>
@@ -16,6 +16,10 @@ export default {
       type: String,
       default: '',
     },
+    checkStyle: {
+      type: String,
+      default: '',
+    },
   },
 }
 </script>
@@ -23,7 +27,7 @@ export default {
 <style lang="scss">
 .item-list {
   margin-bottom: 10px;
-  padding-left: 30px !important;
+  padding-left: 30px;
   .is-large & {
     font-size: 18px;
     background-size: 24px;
