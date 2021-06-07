@@ -18,7 +18,11 @@
 @import 'partials/steps';
 @import 'logo_bubbles';
 @import 'partials/bulma';
-@import 'partials/fonts';
+// @import 'partials/fonts';
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
 
 .container {
   font-size: 1.125rem;
