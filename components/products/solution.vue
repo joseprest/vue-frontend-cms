@@ -8,7 +8,6 @@
       />
       <div class="is-hidden-desktop">
         <ws-image
-          v-scroll-reveal="{ delay: 0, reset: false }"
           class="illustration"
           :src="$getImageUrlFromCms(cmsData.image)"
           :alt="cmsData.title"
@@ -25,7 +24,6 @@
     </div>
     <div class="column is-6 is-hidden-touch">
       <ws-image
-        v-scroll-reveal="{ delay: 0, reset: false }"
         class="illustration"
         :src="$getImageUrlFromCms(cmsData.image)"
         :alt="cmsData.title"
