@@ -18,8 +18,25 @@
     </template>
     <template v-else>
       <a
-        v-if="RegExp('^https?://|^//').test(cmsData.url)"
-        :href="cmsData.file ? cmsData.file.url : cmsData.url"
+        v-if="cmsData.file"
+        :href="$getUrlFromCms(cmsData.file.url)"
+        :title="cmsData.title"
+        class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
+        :class="{ 'is-inverted': cmsData.inverted }"
+        :target="cmsData.open_new_tab ? '_blank' : ''"
+        noref="noref"
+        rel="noopener"
+      >
+        <slot>
+          {{ cmsData.title }}
+        </slot>
+      </a>
+      <a
+        v-else-if="
+          RegExp('^https?://|^//').test(cmsData.url) ||
+          cmsData.url.indexOf('mailto') !== -1
+        "
+        :href="cmsData.url"
         :title="cmsData.title"
         class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
         :class="{ 'is-inverted': cmsData.inverted }"
