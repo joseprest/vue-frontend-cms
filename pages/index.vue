@@ -170,6 +170,25 @@ section.connect {
   margin-top: 4em;
 }
 
+.section:last-of-type {
+  background-color: #f5fafe;
+  &:before {
+    content: '';
+    right: 0;
+    left: 0;
+    border-top-width: 0;
+    border-right-width: 50vw;
+    border-bottom-width: 100px;
+    border-left-width: 50vw;
+    border-style: solid;
+    display: block;
+    width: 0;
+    position: absolute;
+    top: -100px;
+    border-color: #f5fafe transparent;
+  }
+}
+
 section.integrations {
   padding-bottom: 8rem;
   @include tablet-only {
