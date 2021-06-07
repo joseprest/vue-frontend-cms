@@ -1,8 +1,11 @@
 <template>
-  <div class="card customer-widget" :class="company">
+  <div class="card customer-widget">
     <div class="card-image">
       <figure class="image">
-        <ws-image :src="$getImageUrlFromCms(cmsData.image)" :alt="company" />
+        <ws-image
+          :src="$getImageUrlFromCms(cmsData.image)"
+          :alt="cmsData.image.alternativeText"
+        />
       </figure>
     </div>
     <div class="card-content">
