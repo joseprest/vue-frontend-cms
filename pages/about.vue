@@ -7,7 +7,11 @@
       v-for="comp in cmsData.body"
       :key="`body-${comp.__component}-${comp.id}`"
       class="section"
-      :class="comp.__component.replace('about-components.', '')"
+      :class="
+        comp.__component
+          .replace('about-components.', '')
+          .replace('page-global.', '')
+      "
     >
       <div v-if="comp.__component === 'stack'" class="gradiant">
         <img src="@/assets/imgs/gradiant-bg-blue.svg" alt="bg" />
@@ -124,6 +128,10 @@ export default {
 
 .section.clients {
   z-index: 2;
+}
+
+.section.button-section {
+  padding-top: 0;
 }
 
 .section.who {
