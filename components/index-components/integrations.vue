@@ -4,7 +4,7 @@
       <div class="column is-half is-full-mobile">
         <div class="animation">
           <!-- v-scroll-reveal="{ delay: 200, reset: false }" -->
-          <hooper v-if="showSlider" ref="carousel" :settings="hooperSettings">
+          <hooper ref="carousel" :settings="hooperSettings">
             <slide v-for="logo of logos" :key="logo.id">
               <div class="content-slide">
                 <div class="card home">
@@ -56,12 +56,11 @@ export default {
   },
   data() {
     return {
-      carouselData: 0,
       hooperSettings: {
         itemsToShow: 1,
         itemsToSlide: 1,
         infiniteScroll: true,
-        playSpeed: 40000,
+        playSpeed: 4000,
         centerMode: true,
         keysControl: true,
         autoPlay: true,
@@ -79,7 +78,6 @@ export default {
           },
         },
       },
-      showSlider: true,
     }
   },
 
