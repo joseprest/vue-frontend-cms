@@ -56,6 +56,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.cloud {
+  margin-top: 2em;
+  padding-bottom: 0;
+}
+
 .differences {
   background: rgba($blue-dark, 0.03);
 }
@@ -68,7 +73,7 @@ export default {
   background: linear-gradient(to top, white, #f8fcff);
 }
 .bg-accent {
-  background: linear-gradient(to top, white, rgba(#27364d, 0.02));
+  background: $bg-accent;
 }
 @supports (background: -webkit-canvas(squares)) {
   .edge {
