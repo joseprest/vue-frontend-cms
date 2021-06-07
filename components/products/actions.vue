@@ -1,6 +1,5 @@
 <template>
-  <div class="section actions">
-    <div class="container">
+  <div>
       <ws-title :title="cmsData.title" />
       <div class="columns is-multiline">
         <div
@@ -44,7 +43,6 @@
         </nuxt-link>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
