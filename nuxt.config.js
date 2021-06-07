@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'website-nuxtjs',
+    title: 'Wattsense',
     htmlAttrs: {
       lang: 'en',
     },
@@ -63,7 +63,7 @@ export default {
 
   gtm: {
     id: 'GTM-PVCJNK9',
-    enabled: process.env.NODE_ENV === 'production',
+    enabled: false,
     debug: process.env.NODE_ENV === 'development',
     pageTracking: true,
     loadScript: true,
