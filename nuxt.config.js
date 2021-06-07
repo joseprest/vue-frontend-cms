@@ -88,7 +88,9 @@ export default {
       'nuxt-lazy-load',
       { directiveOnly: true, defaultImage: '/imgs/empty.gif' },
     ],
+    ['@nuxtjs/redirect-module', {}],
   ],
+  redirect: [{ from: '^/pricing$', to: '/pricing/box', statusCode: 301 }],
   i18n: {
     locales: [
       { code: 'en', iso: 'en' },
