@@ -30,7 +30,7 @@
           <td class="has-background-white has-text-centered">
             <span class="is-flex align-center">
               <span class="is-hidden-tablet">
-                {{ $t('products.differences.box') }}
+                {{ cmsData.captions[1].text }}
               </span>
               <check-icon v-if="d.box && isBox" class="image is-24x24" />
               <check-disable-icon v-else-if="d.box" class="image is-24x24" />
@@ -40,7 +40,7 @@
           <td class="has-background-white has-text-centered">
             <span class="is-flex align-center">
               <span class="is-hidden-tablet">
-                {{ $t('products.differences.hub') }}
+                {{ cmsData.captions[2].text }}
               </span>
               <check-icon v-if="d.hub && !isBox" class="image is-24x24" />
               <check-disable-icon v-else-if="d.hub" class="image is-24x24" />
