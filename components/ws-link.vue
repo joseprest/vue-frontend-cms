@@ -25,8 +25,26 @@
         />
       </template>
       <template v-else>
+        <a
+          v-if="cmsData && cmsData.file"
+          :href="$getUrlFromCms(cmsData.file.url)"
+          :class="{
+            inverted: cmsData.inverted,
+            small: isSmall,
+            transparent: isTransparent,
+            halftransparent: isHalftransparent,
+          }"
+          :target="cmsData.open_new_tab ? '_blank' : ''"
+          noref="noref"
+          rel="noopener"
+        >
+          {{ cmsData.title }}
+          <span class="icon">
+            <ico-arrow />
+          </span>
+        </a>
         <nuxt-link
-          v-if="RegExp('^https?://|^//').test(url)"
+          v-else-if="RegExp('^https?://|^//').test(url)"
           :to="cmsData.url"
           :title="cmsData.title"
           :class="{
