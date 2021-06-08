@@ -36,7 +36,6 @@ export default {
     const { data } = await $axios.get(
       $getUrlFromCms('/page-pricing-box?_locale=' + i18n.localeProperties.iso)
     )
-    console.log(data)
     return {
       cmsData: { ...data },
     }
@@ -69,6 +68,43 @@ export default {
 
   @include desktop {
     padding-bottom: 0;
+  }
+}
+
+.section.ws-advantage {
+  margin-top: 11rem;
+  padding-top: 0;
+  background-color: #f5fafe;
+  background-image: linear-gradient(#f5fafe, #f5fafe);
+
+  @include mobile {
+    margin-top: 2rem;
+  }
+
+  &:before {
+    content: '';
+    right: 0;
+    left: 0;
+    top: -100px;
+    border-top-width: 0;
+    border-right-width: 50vw;
+    border-bottom-width: 100px;
+    border-left-width: 50vw;
+    border-style: solid;
+    display: block;
+    width: 0;
+    position: absolute;
+    border-color: #f5fafe transparent;
+
+    @include mobile {
+      border-bottom-width: 50px;
+      top: -50px;
+    }
+
+    @include tablet-only {
+      border-bottom-width: 122px;
+      top: -122px;
+    }
   }
 }
 </style>
