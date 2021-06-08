@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="advantages">
     <div class="desktop">
       <ws-image
         :src="$getImageUrlFromCms(cmsData.image)"

@@ -61,7 +61,7 @@ export default {
   padding-bottom: 0;
 }
 
-.differences {
+.difference {
   background: rgba($blue-dark, 0.03);
 }
 .avantages {

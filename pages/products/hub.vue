@@ -56,7 +56,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.differences {
+.difference {
   background: rgba($blue-dark, 0.03);
 }
 .avantages {

@@ -10,11 +10,17 @@
             <div>
               {{ item.text }}
             </div>
+            <ws-link
+              v-if="item.button"
+              :key="`cta_btn_list_item_${item.button.id}`"
+              :cms-data="item.button"
+              class="mt-25"
+            />
             <!-- TOOO add another ws-link component with v-if, for popup/gotolink -->
-            <ws-link v-if="item.button" :link="item.button.url" class="mt-25">
-              <!--              @click.native="requestDemo('box')"-->
-              {{ item.button.title }}
-            </ws-link>
+            <!-- <ws-link v-if="item.button" :link="item.button.url" class="mt-25"> -->
+            <!--              @click.native="requestDemo('box')"-->
+            <!-- {{ item.button.title }} -->
+            <!-- </ws-link> -->
           </ws-list-item>
         </ul>
       </div>
@@ -24,29 +30,17 @@
 
 <script>
 export default {
-  components: {},
+  name: 'PageGlobalListItems',
   props: {
     items: {
       type: Array,
       default: () => [],
     },
   },
-
-  methods: {
-    requestDemo(product) {
-      // TODO demo popup
-      this.$gtm.trackEvent({
-        event: 'uaevent',
-        category: 'navigation',
-        action: 'get a demo',
-        label: 'benefits Integrators',
-      })
-    },
-  },
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .list-item {
   li {
     font-weight: 600;

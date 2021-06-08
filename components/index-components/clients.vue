@@ -7,9 +7,9 @@
           {{ cmsData.subtitle }}
         </template>
       </ws-title>
-      <!-- color="inverted" /> -->
     </ws-paragraph>
-    <clients-logos :clients="clients" />
+
+    <clients-logos v-if="clients" :clients="clients" />
   </div>
 </template>
 
@@ -18,6 +18,7 @@ import ClientsLogos from '~/components/clients-logos.vue'
 
 export default {
   name: 'IndexClients',
+
   components: {
     ClientsLogos,
   },
@@ -27,10 +28,19 @@ export default {
       type: Object,
       default: null,
     },
-    clients: {
-      type: Array,
-      default: () => [],
-    },
+  },
+
+  data() {
+    return {
+      clients: [],
+    }
+  },
+
+  async fetch() {
+    const { data } = await this.$axios.get(
+      this.$getUrlFromCms('/clients-logos')
+    )
+    this.clients = data
   },
 }
 </script>

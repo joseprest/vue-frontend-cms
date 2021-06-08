@@ -1,11 +1,13 @@
 <template>
-  <div>
-    <button
-      class="button is-success is-inverted has-text-weight-semibold has-shadow btn-big is-uppercase"
-      @click="showTable = !showTable"
-    >
-      <span v-html="cmsData.button_text" />
-    </button>
+  <div class="pb-30">
+    <div class="container is-flex-column">
+      <button
+        class="button is-success is-inverted has-text-weight-bold has-shadow btn-big is-uppercase is-align-self-center"
+        @click="showTable = !showTable"
+      >
+        <span v-html="cmsData.button_text" />
+      </button>
+    </div>
 
     <table v-show="showTable" class="table is-fullwidth mt-50">
       <thead class="is-hidden-mobile">
@@ -28,7 +30,7 @@
           <td class="has-background-white has-text-centered">
             <span class="is-flex align-center">
               <span class="is-hidden-tablet">
-                {{ $t('products.differences.box') }}
+                {{ cmsData.captions[1].text }}
               </span>
               <check-icon v-if="d.box && isBox" class="image is-24x24" />
               <check-disable-icon v-else-if="d.box" class="image is-24x24" />
@@ -38,7 +40,7 @@
           <td class="has-background-white has-text-centered">
             <span class="is-flex align-center">
               <span class="is-hidden-tablet">
-                {{ $t('products.differences.hub') }}
+                {{ cmsData.captions[2].text }}
               </span>
               <check-icon v-if="d.hub && !isBox" class="image is-24x24" />
               <check-disable-icon v-else-if="d.hub" class="image is-24x24" />

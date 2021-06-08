@@ -84,9 +84,11 @@ export default {
     },
   },
 
-  data: () => ({
-    showPopup: false,
-  }),
+  data() {
+    return {
+      showPopup: false,
+    }
+  },
 }
 </script>
 
