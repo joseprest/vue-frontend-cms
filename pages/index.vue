@@ -23,7 +23,6 @@
           <component
             :is="$getComponentFromCms(comp.__component)"
             :key="`body-${comp.__component}-${comp.id}`"
-            :clients="cmsData.clients_logos"
             :cms-data="comp"
           />
         </div>
@@ -42,12 +41,10 @@ export default {
       $axios.get(
         $getUrlFromCms('/homepage?_locale=' + i18n.localeProperties.iso)
       ),
-      $axios.get($getUrlFromCms('/clients-logos')),
     ])
     return {
       cmsData: {
         ...content[0].data,
-        clients_logos: content[1].data,
       },
     }
   },
