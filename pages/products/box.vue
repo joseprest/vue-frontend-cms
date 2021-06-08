@@ -2,6 +2,11 @@
   <page-container :cms-data="cmsData.page_title">
     <section
       v-for="comp in cmsData.body"
+      :id="
+        'section-' +
+        comp.__component.replace('products.', '') +
+        (comp.background === 'light-gray' ? ' bg-accent' : '')
+      "
       :key="`body-${comp.__component}-${comp.id}`"
       class="section"
       :class="
