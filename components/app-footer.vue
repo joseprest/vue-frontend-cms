@@ -93,7 +93,6 @@ export default {
   },
 
   async created() {
-    // eslint-disable-next-line no-console
     if (this.$route.query.demo) {
       this.showDemo = true
     }
@@ -106,7 +105,9 @@ export default {
     if (this.$route.query.partner) {
       this.showPartner = true
     }
-    const content = await axios.get(this.$getUrlFromCms('/footer'))
+    const content = await axios.get(
+      this.$getUrlFromCms('/footer?_locale=' + this.$i18n.localeProperties.iso)
+    )
     this.cmsData = content.data
   },
 }
