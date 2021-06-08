@@ -95,6 +95,10 @@ li.item-example {
     width: 10px;
     height: auto;
     transform: rotate(-90deg);
+
+    path {
+      fill: $primary;
+    }
   }
 }
 .icon.down {
