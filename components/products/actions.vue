@@ -3,7 +3,7 @@
     <ws-title :title="cmsData.title" />
     <div class="columns is-multiline">
       <div
-        v-for="(action, index) in cmsData.content"
+        v-for="action in cmsData.content"
         :key="`action${action.id}`"
         class="column is-3-widescreen is-6-desktop is-6-tablet is-12-mobile"
       >
