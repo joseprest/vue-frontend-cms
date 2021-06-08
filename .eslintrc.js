@@ -19,5 +19,6 @@ module.exports = {
   rules: {
     quotes: [2, 'single', { avoidEscape: true }],
     'import/extensions': [2, 'always'],
+    'vue/no-v-html': [0],
   },
 }
