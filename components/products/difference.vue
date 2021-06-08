@@ -1,11 +1,13 @@
 <template>
-  <div>
-    <button
-      class="button is-success is-inverted has-text-weight-semibold has-shadow btn-big is-uppercase"
-      @click="showTable = !showTable"
-    >
-      <span v-html="cmsData.button_text" />
-    </button>
+  <div class="pb-30">
+    <div class="container is-flex-column">
+      <button
+        class="button is-success is-inverted has-text-weight-bold has-shadow btn-big is-uppercase is-align-self-center"
+        @click="showTable = !showTable"
+      >
+        <span v-html="cmsData.button_text" />
+      </button>
+    </div>
 
     <table v-show="showTable" class="table is-fullwidth mt-50">
       <thead class="is-hidden-mobile">
