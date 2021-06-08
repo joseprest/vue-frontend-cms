@@ -1,11 +1,7 @@
 <template>
   <div>
     <ws-title v-if="cmsData.title" :title="cmsData.title" />
-    <div
-      v-if="cmsData.image"
-      v-scroll-reveal="{ delay: 0, reset: false }"
-      class="product"
-    >
+    <div v-if="cmsData.image" class="product">
       <ws-image
         :src="$getImageUrlFromCms(cmsData.image)"
         :alt="cmsData.image.alternativeText"

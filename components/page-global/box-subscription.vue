@@ -12,10 +12,7 @@
         :key="`subscr-feature${item.id}`"
         class="column is-4"
       >
-        <div
-          v-scroll-reveal="{ delay: 0, reset: false }"
-          class="action-pricing"
-        >
+        <div class="action-pricing">
           <div class="icon">
             <img
               :src="$getImageUrlFromCms(item.image)"

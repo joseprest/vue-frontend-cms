@@ -7,7 +7,7 @@
         :key="`action${action.id}`"
         class="column is-3-widescreen is-6-desktop is-6-tablet is-12-mobile"
       >
-        <action-card v-scroll-reveal="{ delay: index * 400, reset: false }">
+        <action-card>
           <template slot="icon">
             <div class="icon">
               <img :src="$getImageUrlFromCms(action.icon)" alt="" />

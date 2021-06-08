@@ -42,16 +42,6 @@
             <figure class="image new-box-pic">
               <ws-image
                 :src="$getUrlFromCms(cmsData.image.url)"
-                :placeholder="
-                  $getUrlFromCms(
-                    cmsData,
-                    'header',
-                    'image',
-                    'formats',
-                    'thumbnail',
-                    'url'
-                  )
-                "
                 :alt="cmsData.image.alternativeText || 'Wattsense Box'"
               />
             </figure>

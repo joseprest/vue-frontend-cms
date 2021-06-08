@@ -5,22 +5,13 @@
     <div class="pictos">
       <div class="columns">
         <template v-for="(icon, index) in cmsData.icons">
-          <div
-            :key="`icon${icon.id}`"
-            v-scroll-reveal="{ delay: 0, reset: false }"
-            class="column"
-          >
+          <div :key="`icon${icon.id}`" class="column">
             <ws-image
               :src="$getImageUrlFromCms(icon)"
               :alt="icon.alternativeText"
             />
           </div>
-          <div
-            v-if="index < 2"
-            :key="`icon-line${icon.id}`"
-            v-scroll-reveal="{ delay: 0, reset: false }"
-            class="column"
-          >
+          <div v-if="index < 2" :key="`icon-line${icon.id}`" class="column">
             <ws-image
               :src="require('@/assets/imgs/benefits/line.svg')"
               alt="line"
@@ -37,10 +28,7 @@
         :key="`step${step.id}`"
         class="column is-3-desktop is-12-touch"
       >
-        <div
-          v-scroll-reveal="{ delay: 1200, reset: false }"
-          class="align-top is-flex-column"
-        >
+        <div class="align-top is-flex-column">
           <h3 class="title">{{ step.title }}</h3>
           <p class="description-item">{{ step.text }}</p>
           <template v-if="step.details">

@@ -3,7 +3,6 @@
     <div class="columns is-vcentered">
       <div class="column is-half is-full-mobile">
         <div class="animation">
-          <!-- v-scroll-reveal="{ delay: 200, reset: false }" -->
           <hooper ref="carousel" :settings="hooperSettings">
             <slide v-for="logo of logos" :key="logo.id">
               <div class="content-slide">

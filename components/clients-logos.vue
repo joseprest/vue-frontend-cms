@@ -10,8 +10,6 @@
           :id="client.id"
           :src="$getImageUrlFromCms(client.logo)"
           :alt="client.name"
-          :delay="0"
-          :reset="false"
         />
       </div>
     </div>

@@ -3,7 +3,7 @@
     <div class="column is-6 is-12-touch" style="position: relative">
       <template v-if="cmsData.images.length > 1">
         <div class="content-slider">
-          <div v-scroll-reveal="{ delay: 0, reset: false }" class="slider">
+          <div class="slider">
             <button class="prev" @click.prevent="slidePrev">
               <img src="~/assets/imgs/arrow.svg" alt="prev" />
             </button>
@@ -22,14 +22,14 @@
             </hooper>
           </div>
         </div>
-        <div v-scroll-reveal="{ delay: 0, reset: false }" class="image">
+        <div class="image">
           <ws-image
             :src="require('@/assets/imgs/products/features/desktop.png')"
             :alt="cmsData.title"
           />
         </div>
       </template>
-      <div v-else v-scroll-reveal="{ delay: 0, reset: false }" class="image">
+      <div v-else class="image">
         <ws-image
           :src="$getImageUrlFromCms(cmsData.images[0])"
           :alt="cmsData.images[0].alternativeText"
@@ -69,11 +69,7 @@
       />
     </div>
     <div class="column is-6 is-12-touch">
-      <div
-        v-if="cmsData.images.length === 1"
-        v-scroll-reveal="{ delay: 0, reset: false }"
-        class="image"
-      >
+      <div v-if="cmsData.images.length === 1" class="image">
         <ws-image
           :src="$getImageUrlFromCms(cmsData.images[0])"
           :alt="cmsData.images[0].alternativeText"

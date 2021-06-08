@@ -1,12 +1,5 @@
 <template>
-  <img
-    v-lazy-load
-    v-bind="$attrs"
-    :data-src="src"
-    :src-placeholder="placeholder"
-    :alt="alt"
-    :class="imgClass"
-  />
+  <img v-bind="$attrs" :src="src" :alt="alt" :class="imgClass" />
 </template>
 
 <script>

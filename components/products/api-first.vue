@@ -3,7 +3,7 @@
     <div class="container">
       <div class="columns is-multiline content">
         <div class="column is-6 is-12-touch">
-          <div v-scroll-reveal="{ delay: 0, reset: false }" class="code">
+          <div class="code">
             <codes-menu
               :cms-data="cmsData"
               :active="content"

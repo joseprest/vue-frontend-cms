@@ -21,50 +21,38 @@
         </div>
         <div class="column">
           <div class="animation">
-            <div v-scroll-reveal="{ delay: 0, reset: false }" class="bg">
-              <div
-                v-scroll-reveal="{ delay: 100, reset: false }"
-                class="picto picto-level1"
-              >
+            <div class="bg">
+              <div class="picto picto-level1">
                 <ws-image
                   :src="require('@/assets/imgs/about/stack-level1.svg')"
                   alt="app"
                 />
               </div>
-              <div
-                v-scroll-reveal="{ delay: 200, reset: false }"
-                class="picto picto-level2"
-              >
+              <div class="picto picto-level2">
                 <ws-image
                   :src="require('@/assets/imgs/about/stack-level2.svg')"
                   alt="cloud"
                 />
               </div>
-              <div
-                v-scroll-reveal="{ delay: 300, reset: false }"
-                class="picto picto-level3"
-              >
+              <div class="picto picto-level3">
                 <ws-image
                   :src="require('@/assets/imgs/about/stack-level3.svg')"
                   alt="box"
                 />
               </div>
-              <div
-                v-scroll-reveal="{ delay: 400, reset: false }"
-                class="picto picto-level4"
-              >
+              <div class="picto picto-level4">
                 <ws-image
                   :src="require('@/assets/imgs/about/stack-level4.svg')"
                   alt="building"
                 />
               </div>
-              <div v-scroll-reveal="{ delay: 600, reset: false }" class="down">
+              <div class="down">
                 <ws-image
                   :src="require('@/assets/imgs/about/stack-down.svg')"
                   alt="down"
                 />
               </div>
-              <div v-scroll-reveal="{ delay: 800, reset: false }" class="up">
+              <div class="up">
                 <ws-image
                   :src="require('@/assets/imgs/about/stack-up.svg')"
                   alt="up"

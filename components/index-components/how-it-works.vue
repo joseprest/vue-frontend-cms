@@ -15,7 +15,6 @@
         class="column is-3-desktop is-12-touch"
       >
         <div class="align-top is-flex-column">
-          <!-- v-scroll-reveal="{ delay: 0, reset: false }" -->
           <figure class="image">
             <ws-image
               :src="$getImageUrlFromCms(step.image)"

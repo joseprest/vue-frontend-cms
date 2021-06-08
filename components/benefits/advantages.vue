@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-scroll-reveal="{ delay: 0, reset: false }" class="desktop">
+    <div class="desktop">
       <ws-image
         :src="$getImageUrlFromCms(cmsData.image)"
         :alt="cmsData.image.alternativeText"

@@ -4,13 +4,6 @@
     <div class="animation">
       <ws-image
         :src="$getImageUrlFromCms(cmsData.image)"
-        :v-scroll-reveal="{
-          distance: '-30px',
-          origin: 'left',
-          easing: 'ease-out',
-          delay: 200,
-          reset: false,
-        }"
         class="building"
         :alt="cmsData.title"
       />

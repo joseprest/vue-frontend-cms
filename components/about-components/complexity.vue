@@ -7,25 +7,16 @@
       <div class="text" v-html="$md.render(cmsData.text)"></div>
       <div class="connectors">
         <div class="actors">
-          <div
-            v-scroll-reveal="{ delay: 0, reset: false }"
-            class="actor text has-text-weight-semibold is-size-5"
-          >
+          <div class="actor text has-text-weight-semibold is-size-5">
             {{ cmsData.actor1 }}
           </div>
-          <div
-            v-scroll-reveal="{ delay: 0, reset: false }"
-            class="actor customer"
-          >
+          <div class="actor customer">
             <img
               src="@/assets/imgs/about/complexity-customer.svg"
               alt="customer"
             />
           </div>
-          <div
-            v-scroll-reveal="{ delay: 400, reset: false }"
-            class="actor arrows"
-          >
+          <div class="actor arrows">
             <img
               id="arrow-right"
               src="@/assets/imgs/about/complexity-arrow-right.svg"
@@ -37,10 +28,7 @@
               alt="right"
             />
           </div>
-          <div
-            v-scroll-reveal="{ delay: 200, reset: false }"
-            class="actor wattsense"
-          >
+          <div class="actor wattsense">
             <img
               src="@/assets/imgs/about/complexity-wattsense.svg"
               alt="wattsense"

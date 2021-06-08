@@ -20,7 +20,7 @@
       </ul>
     </div>
     <div class="column is-6 is-12-touch">
-      <div v-scroll-reveal="{ delay: 0, reset: false }" class="illustration">
+      <div class="illustration">
         <ws-image
           :src="$getImageUrlFromCms(cmsData.image)"
           :alt="cmsData.image.alternativeText"
