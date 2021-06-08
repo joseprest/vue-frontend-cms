@@ -8,10 +8,7 @@
   >
     <div class="container" style="padding-top: 20px; padding-bottom: 10px">
       <div class="navbar-brand header-logo">
-        <nuxt-link
-          class="navbar-item"
-          :to="locale === 'en' ? '/' : `/${locale}`"
-        >
+        <nuxt-link class="navbar-item" :to="localePath('/')">
           <img :src="getLogoImg" alt="Wattsense" />
         </nuxt-link>
 
@@ -37,7 +34,7 @@
           <component
             :is="item.main_link ? 'nuxt-link' : 'span'"
             v-for="item in navbar"
-            :key="item.id"
+            :key="`navitem${item.id}`"
             class="navbar-item"
             :class="{
               'has-dropdown is-hoverable': item.subs && item.subs.length > 0,
