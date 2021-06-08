@@ -11,12 +11,10 @@
     <div class="card-content">
       <h4 class="title">{{ cmsData.widget.text }}</h4>
       <div class="button-cta">
-        <button
-          class="button is-success has-text-weight-semibold"
-          @click="requestDemo('box')"
-        >
-          {{ cmsData.button.title }}
-        </button>
+        <ws-button
+          :key="`cs-getdemo-btn-${cmsData.button.id}`"
+          :cms-data="cmsData.button"
+        />
       </div>
     </div>
   </div>
@@ -29,11 +27,6 @@ export default {
     cmsData: {
       type: Object,
       default: null,
-    },
-  },
-  methods: {
-    requestDemo(product) {
-      // TODO
     },
   },
 }
