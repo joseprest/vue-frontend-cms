@@ -15,13 +15,11 @@
             v-html="$md.render(cmsData.description)"
           ></p>
           <div v-if="cmsData.buttons" class="mt-25">
-            <button
+            <ws-button
               v-for="btn in cmsData.buttons"
               :key="`head-btn-${btn.id}`"
-              class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
-            >
-              {{ btn.title }}
-            </button>
+              :cms-data="btn"
+            />
           </div>
         </div>
         <div v-if="$slots.right" class="column is-4 is-hidden-touch">
