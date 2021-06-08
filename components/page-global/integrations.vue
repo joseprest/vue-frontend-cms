@@ -27,12 +27,7 @@
         </div>
       </div>
     </div>
-    <ws-link
-      :title="cmsData.link.text"
-      :url="$getUrlFromCms(cmsData.link.link)"
-      class="mt-25"
-      :target="cmsData.link.open_new_tab ? '_blank' : ''"
-    >
+    <ws-link :title="cmsData.link.text" :url="cmsData.link.link" class="mt-25">
     </ws-link>
   </div>
 </template>
