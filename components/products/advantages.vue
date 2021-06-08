@@ -56,25 +56,6 @@ export default {
       default: null,
     },
   },
-
-  data() {
-    return {
-      showDemo: false,
-    }
-  },
-
-  methods: {
-    requestDemo(product) {
-      // this.$gtm.trackEvent({
-      //   event: 'uaevent',
-      //   category: 'navigation',
-      //   action: 'get a demo',
-      //   label: 'body',
-      // })
-      //
-      // EventBus.$emit('openRequestDemo', product)
-    },
-  },
 }
 </script>
 

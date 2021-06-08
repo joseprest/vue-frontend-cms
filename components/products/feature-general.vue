@@ -43,12 +43,7 @@
         align="left"
         :class="{ 'mb-10': cmsData.button }"
       />
-      <ws-link
-        v-if="cmsData.button"
-        :title="cmsData.button.title"
-        :url="cmsData.button.url"
-        :target="cmsData.button.open_new_tab ? '_blank' : ''"
-      />
+      <ws-link v-if="cmsData.button" :cms-data="cmsData.button" />
     </div>
   </div>
   <div v-else class="columns is-multiline">
