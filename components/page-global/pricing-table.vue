@@ -55,7 +55,7 @@
             >
               <template v-if="row.value.length > 0">
                 <span class="feature touch">
-                  {{ colTitle }}
+                  {{ row.title }}
                 </span>
                 <check-icon
                   v-if="row.value[colIndex - 1].yes_no === true"
