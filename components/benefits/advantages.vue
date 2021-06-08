@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="advantages">
     <div v-scroll-reveal="{ delay: 0, reset: false }" class="desktop">
       <ws-image
         :src="$getImageUrlFromCms(cmsData.image)"

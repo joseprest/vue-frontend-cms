@@ -7,7 +7,12 @@
       v-for="comp in cmsData.body"
       :key="`body-${comp.__component}-${comp.id}`"
       class="section"
-      :class="comp.__component.replace('benefits.', '')"
+      :class="{
+        [comp.__component
+          .replace('benefits.', '')
+          .replace('page-global.', '')]: true,
+        'bg-accent': comp.background && comp.background === 'light-gray',
+      }"
     >
       <div v-if="comp.__component === 'benefits.howitworks'" class="gradiant">
         <img src="@/assets/imgs/gradiant-bg-blue.svg" alt="bg" />
