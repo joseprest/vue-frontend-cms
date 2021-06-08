@@ -2,7 +2,7 @@
   <div class="user is-flex-column align-center-touch has-text-centered-touch">
     <figure class="image is-128x128">
       <ws-image
-        img-class="is-rounded is-bordered"
+        class="is-rounded is-bordered"
         :src="$getImageUrlFromCms(user.photo)"
         :alt="user.name"
       />
