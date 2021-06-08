@@ -41,10 +41,6 @@ export default {
     '~/plugins/getImageUrlFromCms.js',
     '~/plugins/isEmailValid.js',
     '~/plugins/sendToBack.js',
-    {
-      src: '~/plugins/vue-scroll-reveal.js',
-      ssr: false,
-    },
     { src: '~plugins/onAppReady', ssr: false },
   ],
 
