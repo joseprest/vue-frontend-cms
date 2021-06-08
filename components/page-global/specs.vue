@@ -50,8 +50,7 @@
               <li>
                 <ws-link
                   v-if="cmsData.full_spec_button"
-                  :title="cmsData.full_spec_button.title"
-                  :url="cmsData.full_spec_button.url"
+                  :cms-data="cmsData.full_spec_button"
                   class="mt-25"
                 />
               </li>
