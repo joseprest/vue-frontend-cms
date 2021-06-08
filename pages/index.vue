@@ -170,7 +170,7 @@ section.connect {
   margin-top: 4em;
 }
 
-.section:last-of-type {
+section.section:last-of-type {
   background-color: #f5fafe;
   &:before {
     content: '';
