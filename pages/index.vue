@@ -164,6 +164,9 @@ section.connect {
       right: 0;
     }
   }
+  .container {
+    z-index: 4;
+  }
 }
 
 .section.improving {
