@@ -127,8 +127,7 @@ a.navbar-burger {
 	}
 	.dropdown-trigger {
 		span {
-			font-size: 14px;
-			font-weight: $weight-semibold;
+			font-weight: $weight-bold;
 			letter-spacing: 0.1px;
 		}
 		button::after {
