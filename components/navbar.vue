@@ -32,14 +32,20 @@
       >
         <div class="navbar-end">
           <component
-            :is="item.main_link ? 'nuxt-link' : 'span'"
+            :is="
+              item.main_link
+                ? RegExp('^https?://|^//').test(item.main_link)
+                  ? 'a'
+                  : 'nuxt-link'
+                : 'span'
+            "
             v-for="item in navbar"
             :key="`navitem${item.id}`"
             class="navbar-item"
             :class="{
               'has-dropdown is-hoverable': item.subs && item.subs.length > 0,
             }"
-            :to="item.main_link ? localePath(item.main_link) : ''"
+            v-bind="setProps(item.main_link)"
           >
             <a class="navbar-item" :class="{ 'is-active': false }">
               {{ item.title }}
@@ -211,6 +217,19 @@ export default {
   },
 
   methods: {
+    setProps(element) {
+      // eslint-disable-next-line prefer-regex-literals
+      if (element && RegExp('^https?://|^//').test(element)) {
+        return {
+          target: '_blank',
+          href: element,
+        }
+      }
+      return {
+        to: element ? this.localePath(element) : '',
+      }
+    },
+
     async loadCmsData() {
       const content = await this.$axios.get(
         this.$getUrlFromCms(
