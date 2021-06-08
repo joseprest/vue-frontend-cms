@@ -33,8 +33,10 @@
       </a>
       <a
         v-else-if="
-          RegExp('^https?://|^//').test(cmsData.url) ||
-          (cmsData.url && cmsData.url.indexOf('mailto') !== -1)
+          cmsData.url &&
+          (cmsData.url[0] === '#' ||
+            RegExp('^https?://|^//').test(cmsData.url) ||
+            cmsData.url.indexOf('mailto') !== -1)
         "
         :href="cmsData.url"
         :title="cmsData.title"

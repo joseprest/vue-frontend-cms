@@ -33,6 +33,18 @@ export default {
     scss: ['~assets/sass/partials/_variables.scss'],
   },
 
+  router: {
+    scrollBehavior(to) {
+      if (to.hash) {
+        return window.scrollTo({
+          top: document.querySelector(to.hash).offsetTop + window.innerHeight,
+          behavior: 'smooth',
+        })
+      }
+      return window.scrollTo({ top: 0, behavior: 'smooth' })
+    },
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/getUrlFromCms.js',
