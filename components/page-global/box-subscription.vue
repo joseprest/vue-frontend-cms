@@ -31,6 +31,7 @@
 
 <script>
 export default {
+  name: 'BoxSubscription',
   props: {
     cmsData: {
       type: Object,
