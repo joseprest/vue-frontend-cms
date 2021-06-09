@@ -67,7 +67,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/gtm',
     '@nuxtjs/svg',
-    '@nuxtjs/markdownit',
+    // '@nuxtjs/markdownit',
     // '@nuxtjs/style-resources',
   ],
 
@@ -99,7 +99,19 @@ export default {
       { directiveOnly: true, defaultImage: '/imgs/empty.gif' },
     ],
     ['@nuxtjs/redirect-module', {}],
+    '@nuxtjs/markdownit',
   ],
+
+  // [optional] markdownit options
+  // See https://github.com/markdown-it/markdown-it
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    runtime: true, // Support `$md()`
+    html: true,
+    // use: ['markdown-it-div', 'markdown-it-attrs'],
+  },
   redirect: [{ from: '^/pricing$', to: '/pricing/box', statusCode: 301 }],
   i18n: {
     locales: [
