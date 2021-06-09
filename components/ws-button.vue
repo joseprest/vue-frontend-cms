@@ -34,7 +34,7 @@
       <a
         v-else-if="
           cmsData.url &&
-          (cmsData.url[0] === '#' ||
+          (cmsData.url[0] !== '#' ||
             RegExp('^https?://|^//').test(cmsData.url) ||
             cmsData.url.indexOf('mailto') !== -1)
         "
@@ -52,7 +52,7 @@
       </a>
       <nuxt-link
         v-else
-        :to="localePath(cmsData.url)"
+        :to="cmsData.url[0] === '#' ? cmsData.url : localePath(cmsData.url)"
         :title="cmsData.title"
         :target="cmsData.open_new_tab ? '_blank' : ''"
         class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"

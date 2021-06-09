@@ -36,10 +36,12 @@ export default {
   router: {
     scrollBehavior(to) {
       if (to.hash) {
-        return window.scrollTo({
-          top: document.querySelector(to.hash).offsetTop + window.innerHeight,
-          behavior: 'smooth',
-        })
+        const element = document.querySelector(to.hash)
+        if (element)
+          return window.scrollTo({
+            top: document.querySelector(to.hash).offsetTop + window.scrollY,
+            behavior: 'smooth',
+          })
       }
       return window.scrollTo({ top: 0, behavior: 'smooth' })
     },

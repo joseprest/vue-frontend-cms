@@ -101,7 +101,7 @@ section.connect {
   }
 
   .container {
-    z-index: 10;
+    z-index: 12;
   }
 }
 
