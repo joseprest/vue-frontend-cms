@@ -29,7 +29,7 @@
         class="column is-3-desktop is-12-touch"
       >
         <div class="align-top is-flex-column">
-          <h3 class="title">{{ step.title }}</h3>
+          <h3 class="title has-text-weight-medium">{{ step.title }}</h3>
           <p class="description-item">{{ step.text }}</p>
           <template v-if="step.details">
             <ul v-if="details" class="more">
@@ -48,7 +48,13 @@
       </div>
     </div>
 
-    <button-discover-our-products :cms-data="cmsData.button_discover" />
+    <div v-if="cmsData.button" class="cta">
+      <div class="mt-35">
+        <ws-button :cms-data="cmsData.button">
+          <span>{{ cmsData.button.title }}</span>
+        </ws-button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -98,6 +104,25 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+.button {
+  @include touch {
+    display: flex;
+  }
+}
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  a,
+  span {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
   }
 }
 </style>
