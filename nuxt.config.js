@@ -39,7 +39,7 @@ export default {
         const element = document.querySelector(to.hash)
         if (element)
           return window.scrollTo({
-            top: document.querySelector(to.hash).offsetTop + window.scrollY,
+            top: element.offsetTop,
             behavior: 'smooth',
           })
       }
