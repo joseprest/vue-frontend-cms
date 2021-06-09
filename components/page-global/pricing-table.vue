@@ -40,7 +40,7 @@
               v-if="colIndex === 0"
               :key="`row-title-${row.id}`"
               class="others"
-              :style="row.title_bold ? 'margin-top:0.4rem' : ''"
+              :class="row.title_bold ? 'others__bold' : ''"
             >
               <span
                 class="feature"
@@ -53,11 +53,6 @@
               v-else
               :key="`row-${row.id}-col-${colIndex}`"
               :class="row.value.length > 0 ? 'others' : 'empty-line'"
-              :style="
-                row.value.length > 0
-                  ? ''
-                  : 'padding-top:2.45rem; display:block;'
-              "
             >
               <template v-if="row.value.length > 0">
                 <span class="feature touch">
@@ -267,6 +262,7 @@ li.others {
   align-items: center;
   justify-content: center;
   font-size: 0.7em;
+
   @include touch {
     flex-direction: column;
     height: auto;
@@ -274,14 +270,25 @@ li.others {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid rgba($gray-lighter, 0.5);
   }
+
+  .pricing-hub &__bold {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.35rem;
+    padding-left: 0.5rem;
+    height: 2.45rem;
+    background-color: rgba(153, 178, 197, 0.1);
+  }
 }
 
 .empty-line {
   height: 1.85em;
   background-color: rgba(153, 178, 197, 0.1);
   margin-right: -1px;
-  display: flex;
+  padding-top: 2.45rem;
+  display: block;
   @include touch {
+    display: flex;
     flex-direction: column;
     height: auto;
     min-height: 4.5em;
@@ -306,6 +313,7 @@ li.max_datapoints {
     margin-bottom: 0.5em;
   }
 }
+
 li.others {
   margin-bottom: 0.7em;
   span.feature {
