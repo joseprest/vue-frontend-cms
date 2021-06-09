@@ -7,7 +7,7 @@
         :key="`advantage-${item.id}`"
         class="icon-box has-text-centered"
       >
-        <i class="icon-box__icon" :class="icon">
+        <i class="icon-box__icon">
           <ws-image
             :src="$getImageUrlFromCms(item.image)"
             :alt="item.image.alternativeText"
