@@ -31,25 +31,28 @@
         :class="{ 'is-active': showMenu }"
       >
         <div class="navbar-end">
-          <component
-            :is="
-              item.main_link
-                ? RegExp('^https?://|^//').test(item.main_link)
-                  ? 'a'
-                  : 'nuxt-link'
-                : 'span'
-            "
+          <span
             v-for="item in navbar"
             :key="`navitem${item.id}`"
             class="navbar-item"
             :class="{
               'has-dropdown is-hoverable': item.subs && item.subs.length > 0,
             }"
-            v-bind="setProps(item.main_link)"
           >
-            <a class="navbar-item" :class="{ 'is-active': false }">
+            <component
+              :is="
+                item.main_link
+                  ? RegExp('^https?://|^//').test(item.main_link)
+                    ? 'a'
+                    : 'nuxt-link'
+                  : 'span'
+              "
+              v-bind="setProps(item.main_link)"
+              class="navbar-item"
+              :class="{ 'is-active': false }"
+            >
               {{ item.title }}
-            </a>
+            </component>
             <div
               v-if="item.subs && item.subs.length > 0"
               class="navbar-dropdown"
@@ -103,8 +106,9 @@
                         <a
                           v-if="link.file"
                           :key="`link${link.id}`"
-                          :href="$getUrlFromCms(link.file.url)"
+                          :href="link.file.url"
                           class="navbar-item"
+                          target="_blank"
                         >
                           {{ link.title }}
                         </a>
@@ -115,6 +119,7 @@
                           "
                           :key="`link${link.id}`"
                           :href="link.link"
+                          target="_blank"
                           class="navbar-item"
                         >
                           {{ link.title }}
@@ -133,7 +138,7 @@
                 </div>
               </template>
             </div>
-          </component>
+          </span>
           <div class="field">
             <div class="control has-icons-left ml-3">
               <div class="select is-small">
@@ -254,6 +259,10 @@ export default {
 <style lang="scss" scoped>
 .navbar {
   background: none !important;
+
+  .navbar-item {
+    cursor: pointer;
+  }
 
   &.home {
     .navbar-burger,

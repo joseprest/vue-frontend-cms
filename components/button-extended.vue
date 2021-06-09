@@ -15,7 +15,7 @@
         ? $getUrlFromCms(cmsData.file.url)
         : RegExp('^https?://|^//').test(cmsData.url)
         ? cmsData.url
-        : ''
+        : localePath(cmsData.url)
     "
     class="box is-flex"
     :class="`box-${color}`"
