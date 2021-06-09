@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  name: 'Index',
+  name: 'BenefitsFacilityManagers',
   nuxtI18n: {
     paths: {
       en: '/benefits/facility-managers',
@@ -46,12 +46,10 @@ export default {
             i18n.localeProperties.iso
         )
       ),
-      $axios.get($getUrlFromCms('/clients-logos')),
     ])
     return {
       cmsData: {
         ...content[0].data,
-        clients_logos: content[1].data.logos,
       },
     }
   },

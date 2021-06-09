@@ -43,6 +43,7 @@
 import { Hooper, Slide } from 'hooper'
 
 export default {
+  name: 'IndexIntegrations',
   components: {
     Hooper,
     Slide,
