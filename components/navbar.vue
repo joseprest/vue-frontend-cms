@@ -49,7 +49,10 @@
               "
               v-bind="setProps(item.main_link)"
               class="navbar-item"
-              :class="{ 'is-active': false }"
+              :class="{
+                'is-active':
+                  item.title && $route.path.includes(item.title.toLowerCase()),
+              }"
             >
               {{ item.title }}
             </component>
