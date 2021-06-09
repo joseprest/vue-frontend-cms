@@ -1,6 +1,22 @@
 <template>
-  <nuxt-link
-    :to="cmsData.file ? cmsData.file.url : cmsData.url"
+  <component
+    :is="
+      cmsData.file || RegExp('^https?://|^//').test(cmsData.url)
+        ? 'a'
+        : 'nuxt-link'
+    "
+    :to="
+      !cmsData.file && !RegExp('^https?://|^//').test(cmsData.url)
+        ? localePath(cmsData.url)
+        : ''
+    "
+    :href="
+      cmsData.file
+        ? $getUrlFromCms(cmsData.file.url)
+        : RegExp('^https?://|^//').test(cmsData.url)
+        ? cmsData.url
+        : ''
+    "
     class="box is-flex"
     :class="`box-${color}`"
   >
@@ -15,7 +31,7 @@
         {{ cmsData.text }}
       </p>
     </div>
-  </nuxt-link>
+  </component>
 </template>
 
 <script>
