@@ -1,7 +1,8 @@
 <template>
   <page-container :cms-data="cmsData.page_title">
     <section
-      v-for="comp in cmsData.body"
+      v-for="(comp, index) in cmsData.body"
+      :id="`section-${index}`"
       :key="`body-${comp.__component}-${comp.id}`"
       class="section"
       :class="
@@ -9,7 +10,7 @@
         (comp.background === 'light-gray' ? ' bg-accent' : '')
       "
     >
-      <div v-if="comp.__component === 'control'" class="gradiant">
+      <div v-if="comp.__component === 'products.control'" class="gradiant">
         <img src="@/assets/imgs/gradiant-bg-blue.svg" alt="bg" />
       </div>
       <div class="container">

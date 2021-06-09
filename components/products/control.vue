@@ -23,14 +23,15 @@
       <div class="columns is-multiline">
         <div class="column is-5-widescreen is-12-desktop features">
           <div>
-            <a
+            <component
+              :is="feature.link ? 'nuxt-link' : 'span'"
               v-for="feature in cmsData.features"
               :key="`feature${feature.id}`"
               class="link"
-              @click="scrollToElement('')"
+              :to="feature.link"
             >
               {{ feature.text }}
-            </a>
+            </component>
           </div>
         </div>
         <div class="column is-7-widescreen is-12-desktop protocols">
@@ -207,7 +208,7 @@ export default {
   div {
     margin-top: 0;
     margin-bottom: 0;
-    a {
+    .link {
       color: $green;
       font-size: 0.9em;
       font-weight: 600;

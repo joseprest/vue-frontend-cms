@@ -9,9 +9,6 @@
         (comp.background === 'light-gray' ? ' bg-accent' : '')
       "
     >
-      <div v-if="comp.__component === 'control'" class="gradiant">
-        <img src="@/assets/imgs/gradiant-bg-blue.svg" alt="bg" />
-      </div>
       <div class="container">
         <component
           :is="$getComponentFromCms(comp.__component)"
