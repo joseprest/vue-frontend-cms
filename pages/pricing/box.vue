@@ -3,7 +3,7 @@
     <section
       v-for="comp in cmsData.body"
       :key="`body-${comp.__component}-${comp.id}`"
-      class="section"
+      class="pricing-box section"
       :class="
         comp.__component.replace('page-global.', '') +
         (comp.background === 'light-gray' ? ' bg-accent' : '')

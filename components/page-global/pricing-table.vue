@@ -40,6 +40,7 @@
               v-if="colIndex === 0"
               :key="`row-title-${row.id}`"
               class="others"
+              :style="row.title_bold ? 'margin-top:0.4rem' : ''"
             >
               <span
                 class="feature"
@@ -52,6 +53,11 @@
               v-else
               :key="`row-${row.id}-col-${colIndex}`"
               :class="row.value.length > 0 ? 'others' : 'empty-line'"
+              :style="
+                row.value.length > 0
+                  ? ''
+                  : 'padding-top:2.45rem; display:block;'
+              "
             >
               <template v-if="row.value.length > 0">
                 <span class="feature touch">
@@ -219,6 +225,10 @@ li.features {
   border-bottom: 1px solid $green;
   margin-bottom: 1em;
 
+  .pricing-hub & {
+    margin-bottom: 0;
+  }
+
   @include touch {
     height: auto;
     margin-bottom: 0.5em;
@@ -268,7 +278,7 @@ li.others {
 
 .empty-line {
   height: 1.85em;
-  background-color: $gray-lighter;
+  background-color: rgba(153, 178, 197, 0.1);
   margin-right: -1px;
   display: flex;
   @include touch {
