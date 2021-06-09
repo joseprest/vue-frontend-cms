@@ -55,6 +55,10 @@
         </ws-button>
       </div>
     </div>
+    <button-discover-our-products
+      v-else-if="cmsData.button_discover"
+      :cms-data="cmsData.button_discover"
+    />
   </div>
 </template>
 
