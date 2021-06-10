@@ -46,7 +46,12 @@
                 class="feature"
                 :class="row.title_bold ? 'has-text-weight-semibold' : ''"
               >
-                {{ row.title }}
+                <span>
+                  {{ row.title }}
+                </span>
+                <span v-if="row.title_hint" class="title-hint">
+                  {{ row.title_hint }}
+                </span>
               </span>
             </li>
             <li
@@ -56,7 +61,12 @@
             >
               <template v-if="row.value.length > 0">
                 <span class="feature touch">
-                  {{ row.title }}
+                  <span>
+                    {{ row.title }}
+                  </span>
+                  <span v-if="row.title_hint" class="title-hint">
+                    {{ row.title_hint }}
+                  </span>
                 </span>
                 <check-icon
                   v-if="row.value[colIndex - 1].yes_no === true"
@@ -135,6 +145,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.title-hint {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 0.6rem;
+  padding: 3px 10px;
+  background: #2bc47b;
+  border-radius: 30px;
+  color: white;
+}
 .story-table {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -239,7 +258,7 @@ li.features {
   display: flex;
   align-items: left;
   justify-content: flex-start;
-  flex-direction: column;
+  // flex-direction: column;
   @include touch {
     width: auto;
   }
