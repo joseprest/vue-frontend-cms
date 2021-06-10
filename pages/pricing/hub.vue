@@ -5,7 +5,7 @@
       :key="`body-${comp.__component}-${comp.id}`"
       class="pricing-hub section"
       :class="
-        comp.__component.replace('page-global.', '') +
+        comp.__component.replace(/page-(global|pricing)\./gi, '') +
         (comp.background === 'light-gray' ? ' bg-accent' : '')
       "
     >
@@ -53,6 +53,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+section.table-pricing {
+  padding-top: 0;
+}
 section.subscription {
   padding-top: 0;
   padding-bottom: 1em;

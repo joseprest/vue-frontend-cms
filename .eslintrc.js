@@ -9,7 +9,6 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
-    'prettier',
     'prettier/vue',
     'plugin:prettier/recommended',
     'plugin:nuxt/recommended',
@@ -20,5 +19,6 @@ module.exports = {
     quotes: [2, 'single', { avoidEscape: true }],
     'import/extensions': [2, 'always'],
     'vue/no-v-html': [0],
+    'max-len': [1, 80, { ignoreComments: true, ignoreUrls: true }],
   },
 }

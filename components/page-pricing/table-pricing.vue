@@ -49,8 +49,13 @@
                 <span>
                   {{ row.title }}
                 </span>
-                <span v-if="row.title_hint" class="title-hint">
-                  {{ row.title_hint }}
+                <span v-if="row.badge" class="badge">
+                  {{ row.badge }}
+                </span>
+                <span v-if="row.tooltip" class="ml-10">
+                  <ws-tooltip :tooltip="row.tooltip">
+                    <info-icon class="image is-16x16" />
+                  </ws-tooltip>
                 </span>
               </span>
             </li>
@@ -64,8 +69,13 @@
                   <span>
                     {{ row.title }}
                   </span>
-                  <span v-if="row.title_hint" class="title-hint">
-                    {{ row.title_hint }}
+                  <span v-if="row.badge" class="badge">
+                    {{ row.badge }}
+                  </span>
+                  <span v-if="row.tooltip" class="ml-10">
+                    <ws-tooltip :tooltip="row.tooltip">
+                      <info-icon class="image is-16x16" />
+                    </ws-tooltip>
                   </span>
                 </span>
                 <check-icon
@@ -108,7 +118,7 @@
             <span v-if="cmsData.examples_title" class="feature touch">
               {{ cmsData.examples_title }}
             </span>
-            <Example
+            <page-pricing-example-pricing
               v-for="example in cmsData.examples[colIndex - 1].examples"
               :key="`examples-${example.id}`"
               :cms-data="example"
@@ -122,15 +132,13 @@
 </template>
 
 <script>
-import Example from '@/components/components/pricing-example.vue'
 import CheckIcon from '@/assets/imgs/check.svg?inline'
 import LineIcon from '@/assets/imgs/line.svg?inline'
 import InfoIcon from '@/assets/imgs/infos.svg?inline'
 
 export default {
-  name: 'PricingTable',
+  name: 'PagePricingTablePricing',
   components: {
-    Example,
     CheckIcon,
     LineIcon,
     InfoIcon,
@@ -145,7 +153,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.title-hint {
+.badge {
   display: inline-block;
   margin-left: 5px;
   font-size: 0.6rem;
