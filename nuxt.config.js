@@ -154,5 +154,5 @@ export default {
     CONSOLE_API: process.env.CONSOLE_API || 'https://console.wattsense.com/api',
   },
 
-  ssr: process.env.SSR === 'true',
+  ssr: true, // process.env.SSR === 'true',
 }
