@@ -55,6 +55,7 @@ export default {
     '~/plugins/getImageUrlFromCms.js',
     '~/plugins/isEmailValid.js',
     '~/plugins/sendToBack.js',
+    { src: '~/plugins/vue-lazyload', ssr: false },
     { src: '~plugins/onAppReady', ssr: false },
   ],
 
@@ -95,10 +96,10 @@ export default {
         },
       },
     ],
-    [
-      'nuxt-lazy-load',
-      { directiveOnly: true, defaultImage: '/imgs/empty.gif' },
-    ],
+    // [
+    //   'nuxt-lazy-load',
+    //   { directiveOnly: true, defaultImage: '/imgs/empty.gif' },
+    // ],
     ['@nuxtjs/redirect-module', {}],
     '@nuxtjs/markdownit',
   ],
