@@ -44,8 +44,8 @@
           </span>
         </a>
         <nuxt-link
-          v-else-if="RegExp('^https?://|^//').test(url)"
-          :to="cmsData.url"
+          v-else-if="!RegExp('^https?://|^//').test(url)"
+          :to="localePath(cmsData.url)"
           :title="cmsData.title"
           :class="{
             inverted: cmsData.inverted,
@@ -97,16 +97,14 @@
         rel="noopener"
         @click="action"
       >
-        <slot>
-          {{ title }}
-        </slot>
+        <slot>{{ title }} </slot>
         <span class="icon">
           <ico-arrow />
         </span>
       </a>
       <nuxt-link
         v-else
-        :to="url"
+        :to="localePath(url)"
         :title="title"
         :target="target"
         :class="{
