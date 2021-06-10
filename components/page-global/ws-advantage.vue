@@ -1,7 +1,7 @@
 <template>
   <div>
     <ws-title v-if="cmsData.title" :title="cmsData.title" />
-    <div class="icon-boxes is-flex">
+    <div class="icon-boxes is-flex mb-35">
       <div
         v-for="item in cmsData.advantages"
         :key="`advantage-${item.id}`"
@@ -26,6 +26,7 @@
 
 <script>
 export default {
+  name: 'WsAdvantage',
   props: {
     cmsData: {
       type: Object,

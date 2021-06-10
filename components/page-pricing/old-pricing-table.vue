@@ -108,7 +108,7 @@
             <span v-if="cmsData.examples_title" class="feature touch">
               {{ cmsData.examples_title }}
             </span>
-            <Example
+            <page-pricing-pricing-example
               v-for="example in cmsData.examples[colIndex - 1].examples"
               :key="`examples-${example.id}`"
               :cms-data="example"
@@ -122,15 +122,13 @@
 </template>
 
 <script>
-import Example from '@/components/components/pricing-example.vue'
 import CheckIcon from '@/assets/imgs/check.svg?inline'
 import LineIcon from '@/assets/imgs/line.svg?inline'
 import InfoIcon from '@/assets/imgs/infos.svg?inline'
 
 export default {
-  name: 'PricingTable',
+  name: 'OldPagePricingPricingTable',
   components: {
-    Example,
     CheckIcon,
     LineIcon,
     InfoIcon,

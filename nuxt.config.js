@@ -59,7 +59,8 @@ export default {
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  // components: true,
+  components: [{ path: "~/components", global: true }],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -81,6 +82,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@blokwise/dynamic',
     '@nuxtjs/style-resources',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',

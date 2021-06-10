@@ -5,15 +5,21 @@
       :key="`body-${comp.__component}-${comp.id}`"
       class="pricing-hub section"
       :class="
-        comp.__component.replace('page-global.', '') +
+        comp.__component.replace(/page-(global|pricing)\./gi, '') +
         (comp.background === 'light-gray' ? ' bg-accent' : '')
       "
     >
       <div class="container">
+        {{ $getComponentFromCms(comp.__component) }}
         <component
           :is="$getComponentFromCms(comp.__component)"
+          v-if="
+            $getComponentFromCms(comp.__component) !==
+            'page-pricing-pricing-table'
+          "
           :cms-data="comp"
         />
+        <page-pricing-pricing-table :cms-data="comp" />
       </div>
     </section>
   </page-container>
