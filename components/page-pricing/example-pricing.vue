@@ -107,4 +107,7 @@ li.item-example {
     transform: rotate(90deg);
   }
 }
+.blaus {
+  color: red;
+}
 </style>

@@ -1,5 +1,5 @@
 {
   "i18n-ally.localesPaths": ["lang"],
   "vetur.format.defaultFormatter.js": "prettier-eslint",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": false
 }
