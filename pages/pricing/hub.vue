@@ -10,16 +10,10 @@
       "
     >
       <div class="container">
-        {{ $getComponentFromCms(comp.__component) }}
         <component
           :is="$getComponentFromCms(comp.__component)"
-          v-if="
-            $getComponentFromCms(comp.__component) !==
-            'page-pricing-pricing-table'
-          "
           :cms-data="comp"
         />
-        <page-pricing-pricing-table :cms-data="comp" />
       </div>
     </section>
   </page-container>
@@ -59,6 +53,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+section.table-pricing {
+  padding-top: 0;
+}
 section.subscription {
   padding-top: 0;
   padding-bottom: 1em;

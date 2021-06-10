@@ -53,6 +53,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+section.table-pricing {
+  padding-top: 0;
+}
 .section.box-subscription {
   padding-top: 0;
   padding-bottom: 1em;

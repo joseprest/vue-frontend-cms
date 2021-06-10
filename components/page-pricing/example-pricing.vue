@@ -30,6 +30,7 @@
 import IcoArrow from '@/assets/imgs/pricing/arrow.svg?inline'
 
 export default {
+  name: 'ExamplePricing',
   components: {
     IcoArrow,
   },
