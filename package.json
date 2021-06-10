@@ -11,7 +11,6 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
-    "@blokwise/dynamic": "^1.4.1",
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/gtm": "^2.4.0",
     "@nuxtjs/markdownit": "^2.0.0",

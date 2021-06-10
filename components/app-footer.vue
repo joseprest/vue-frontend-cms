@@ -50,7 +50,7 @@
                 v-for="link in cmsData.bottom_links"
                 :key="`bottom-link${link.id}`"
                 class="has-text-weight-light is-7 ml-10"
-                :to="$getUrlFromCms(link.link)"
+                :to="link.link"
               >
                 {{ link.text }}
               </nuxt-link>

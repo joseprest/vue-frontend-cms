@@ -911,14 +911,6 @@
     "@babel/helper-validator-identifier" "^7.12.11"
     to-fast-properties "^2.0.0"
 
-"@blokwise/dynamic@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@blokwise/dynamic/-/dynamic-1.4.1.tgz#8ef6651e18bd2d97ec5f536bccd374674d925548"
-  integrity sha512-TV9zy7ajRGCGADaWlThz24kB0AmtvYAdUhkgcqTw5bO2cZERmvBIyB3BXl5H+l49UTWa0SEUO8vdbfySGpJGXw==
-  dependencies:
-    consola "^2.15.0"
-    vue-lazy-hydration "1.0.0-beta.14"
-
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
@@ -8771,11 +8763,6 @@ vue-i18n@^8.24.3:
   version "8.24.4"
   resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.24.4.tgz#b158614c1df7db183d9cadddbb73e1d540269492"
   integrity sha512-RZE94WUAGxEiBAANxQ0pptbRwDkNKNSXl3fnJslpFOxVMF6UkUtMDSuYGuW2blDrVgweIXVpethOVkYoNNT9xw==
-
-vue-lazy-hydration@1.0.0-beta.14:
-  version "1.0.0-beta.14"
-  resolved "https://registry.yarnpkg.com/vue-lazy-hydration/-/vue-lazy-hydration-1.0.0-beta.14.tgz#50b08003c2317afd15bf33871c4bbd0b952ca808"
-  integrity sha512-Xm6e1SL9WBlmMWIDThteOUGyiBNGyPTG4S5KZLMlbJZEvTzRpqAAiFhg4BQyohwufyvpj+WTdr63fhNxK43RQA==
 
 vue-loader@^15.9.6:
   version "15.9.6"
