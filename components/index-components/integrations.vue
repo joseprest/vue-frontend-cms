@@ -11,7 +11,10 @@
                     <span :id="`integrator-logo${logo.id}`" class="card-image">
                       <ws-image
                         class="card-image"
-                        :src="$getImageUrlFromCms(logo)"
+                        :src="$getImageUrlFromCms(logo.image)"
+                        :placeholder="
+                          $getImageUrlFromCms(logo.image, 'thumbnail')
+                        "
                       />
                     </span>
                   </a>
@@ -29,8 +32,8 @@
             align="left"
           />
           <ws-link
-            :title="cmsData.button.title"
-            :url="cmsData.button.url"
+            :title="cmsData.see_integrations.title"
+            :url="cmsData.see_integrations.url"
             class="mt-25"
           />
         </ws-paragraph>
@@ -83,10 +86,9 @@ export default {
 
   computed: {
     logos() {
-      return [...this.cmsData.logos].splice(
-        Math.floor(Math.random() * this.cmsData.logos.length),
-        5
-      )
+      return [...this.cmsData.integrators]
+        .sort(() => Math.random() - 0.5)
+        .splice(0, 5)
     },
   },
 }

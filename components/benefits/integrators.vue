@@ -5,21 +5,22 @@
       :title="cmsData.title"
       class="has-text-left mb-10"
     />
-    <div class="columns is-multiline">
+    <div
+      v-if="!$fetchState.pending && !$fetchState.error && integrators.length"
+      class="columns is-multiline"
+    >
       <div
-        v-for="item of cmsData.integrators"
+        v-for="item of listIntegrators"
         :key="`int-${item.id}`"
         class="column is-4"
       >
         <div class="card">
-          <!--          <span v-if="isNew && type != 'home'" class="tag is-primary card-new">-->
-          <!--            NEW-->
-          <!--          </span>-->
           <a :href="item.link" :target="item.open_new_tab ? '_blank' : ''">
             <span class="card-image">
               <ws-image
                 class="card-image"
                 :src="$getImageUrlFromCms(item.image)"
+                :placeholder="$getImageUrlFromCms(item.image, 'thumbnail')"
                 :alt="item.title"
               />
             </span>
@@ -46,6 +47,34 @@ export default {
       default: null,
     },
   },
+
+  data() {
+    return {
+      integrators: [],
+    }
+  },
+
+  async fetch() {
+    const content = await this.$axios.get(this.$getUrlFromCms('/integrators'))
+    const data = content.data
+    this.integrators = data
+  },
+
+  computed: {
+    listIntegrators() {
+      const integrators = [...this.integrators]
+      return integrators.sort(() => Math.random() - 0.5).splice(0, 3) // max 3 integrators per page
+    },
+  },
+
+  activated() {
+    // Call fetch again if last fetch more than 120 sec ago - 2min
+    if (this.$fetchState.timestamp <= Date.now() - 1200000) {
+      this.$fetch()
+    }
+  },
+  // call fetch only on client-side
+  fetchOnServer: false,
 }
 </script>
 

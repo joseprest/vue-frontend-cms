@@ -45,12 +45,10 @@ export default {
           '/page-benefits-proptechs?_locale=' + i18n.localeProperties.iso
         )
       ),
-      $axios.get($getUrlFromCms('/clients-logos')),
     ])
     return {
       cmsData: {
         ...content[0].data,
-        clients_logos: content[1].data.logos,
       },
     }
   },

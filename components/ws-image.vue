@@ -1,10 +1,5 @@
 <template>
-  <v-lazy-image
-    :v-scroll-reveal="{ delay, reset, distance, origin, easing }"
-    :src="src"
-    :src-placeholder="require('@/assets/imgs/empty.gif')"
-    :alt="alt"
-  />
+  <v-lazy-image :src="src" :src-placeholder="srcPlaceholder" :alt="alt" />
 </template>
 
 <script>
@@ -18,25 +13,15 @@ export default {
       type: String,
       default: '',
     },
-    delay: {
-      type: Number,
-      default: 0,
-    },
-    reset: {
-      type: Boolean,
-      default: false,
-    },
-    distance: {
+    placeholder: {
       type: String,
       default: null,
     },
-    origin: {
-      type: String,
-      default: null,
-    },
-    easing: {
-      type: String,
-      default: null,
+  },
+
+  computed: {
+    srcPlaceholder() {
+      return this.placeholder || require('@/assets/imgs/empty.gif')
     },
   },
 }
@@ -44,5 +29,12 @@ export default {
 <style lang="scss" scoped>
 .is-bordered {
   border: 1px solid $grey-lighter;
+}
+.v-lazy-image {
+  filter: blur(10px);
+  transition: filter 0.5s;
+}
+.v-lazy-image-loaded {
+  filter: blur(0);
 }
 </style>

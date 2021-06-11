@@ -42,6 +42,15 @@ export default {
     )
     this.clients = data
   },
+
+  activated() {
+    // Call fetch again if last fetch more than 120 sec ago // 2 min
+    if (this.$fetchState.timestamp <= Date.now() - 1200000) {
+      this.$fetch()
+    }
+  },
+  // call fetch only on client-side
+  fetchOnServer: false,
 }
 </script>
 
