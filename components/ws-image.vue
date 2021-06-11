@@ -1,10 +1,14 @@
 <template>
-  <img v-bind="$attrs" :src="src" :alt="alt" :class="imgClass" />
+  <v-lazy-image
+    :v-scroll-reveal="{ delay, reset, distance, origin, easing }"
+    :src="src"
+    :src-placeholder="require('@/assets/imgs/empty.gif')"
+    :alt="alt"
+  />
 </template>
 
 <script>
 export default {
-  name: 'WsImage',
   props: {
     src: {
       type: String,
@@ -14,13 +18,25 @@ export default {
       type: String,
       default: '',
     },
-    imgClass: {
-      type: String,
-      default: '',
+    delay: {
+      type: Number,
+      default: 0,
     },
-    placeholder: {
+    reset: {
+      type: Boolean,
+      default: false,
+    },
+    distance: {
       type: String,
-      default: require('~/assets/imgs/empty.gif'),
+      default: null,
+    },
+    origin: {
+      type: String,
+      default: null,
+    },
+    easing: {
+      type: String,
+      default: null,
     },
   },
 }

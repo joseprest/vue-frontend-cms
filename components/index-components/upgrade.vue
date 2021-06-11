@@ -4,6 +4,8 @@
     <div class="animation">
       <ws-image
         :src="$getImageUrlFromCms(cmsData.image)"
+        :delay="200"
+        :reset="false"
         class="building"
         :alt="cmsData.title"
       />
