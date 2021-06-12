@@ -43,7 +43,7 @@
             alt="protocols"
           />
           <div class="protocol-container">
-            <Animation :protocols="cmsData.protocols.split(`\n`)" />
+            <Animation :protocols="cmsData.protocols_list" />
             <div class="mask-left">
               <img
                 src="@/assets/imgs/about/complexity-mask-left.svg"

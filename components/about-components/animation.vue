@@ -1,12 +1,12 @@
 <template>
   <span v-if="showAnim">
     <div
-      v-for="(protocol, key) in protocols"
-      :id="`protocol${key}`"
-      :key="`index_${key}`"
-      :class="`protocol protocol${key} ${$i18n.locale}`"
+      v-for="protocol in protocols"
+      :id="`protocol${protocol.id}`"
+      :key="`index_${protocol.id}`"
+      :class="`protocol protocol${protocol.id} ${$i18n.locale}`"
     >
-      {{ protocol }}
+      {{ protocol.text }}
     </div>
   </span>
 </template>
@@ -55,288 +55,21 @@ export default {
     },
 
     loadAnimation() {
-      // protocols animations
-      animate({
-        elements: document.querySelector('#protocol1'),
-        easing: 'linear',
-        duration: 7500,
-        // delay: 5000,
-        opacity: [0, 1],
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-650%)'],
+      this.protocols.forEach((protocol) => {
+        animate({
+          elements: document.querySelector(`#protocol${protocol.id}`),
+          easing: 'linear',
+          duration: protocol.duration,
+          delay: protocol.delay,
+          opacity: protocol.fade ? [0, 1] : 1,
+          loop: true,
+          direction: 'normal',
+          transform: [
+            `translate(${protocol.transform_start}%)`,
+            `translate(${protocol.transform_end}%)`,
+          ],
+        })
       })
-      animate({
-        elements: document.querySelector('#protocol2'),
-        easing: 'linear',
-        duration: 7000,
-        delay: 2000,
-        opacity: [0, 1],
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-650%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol3'),
-        easing: 'linear',
-        duration: 4500,
-        opacity: [0, 1],
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-950%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol4'),
-        easing: 'linear',
-        duration: 5000,
-        delay: 1000,
-        opacity: [0, 1],
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-750%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol5'),
-        easing: 'linear',
-        duration: 8500,
-        opacity: [0, 1],
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-650%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol6'),
-        easing: 'linear',
-        duration: 6500,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-850%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol7'),
-        easing: 'linear',
-        duration: 7000,
-        delay: 3000,
-        opacity: [0, 1],
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-850%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol8'),
-        easing: 'linear',
-        duration: 8000,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-650%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol9.fr'),
-        easing: 'linear',
-        duration: 7000,
-        delay: 5000,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-650%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol9.en'),
-        easing: 'linear',
-        duration: 7000,
-        delay: 5000,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-850%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol9.de'),
-        easing: 'linear',
-        duration: 7000,
-        delay: 5000,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-850%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol10'),
-        easing: 'linear',
-        duration: 8500,
-        opacity: [0, 1],
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-750%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol10.de'),
-        easing: 'linear',
-        duration: 8500,
-        opacity: [0, 1],
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-700%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol11.fr'),
-        easing: 'linear',
-        duration: 5500,
-        delay: 6000,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(10%)', 'translate(-340%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol11.en'),
-        easing: 'linear',
-        duration: 6000,
-        delay: 5000,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(0%)', 'translate(-450%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol11.de'),
-        easing: 'linear',
-        duration: 6000,
-        delay: 5000,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(0%)', 'translate(-390%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol12'),
-        easing: 'linear',
-        duration: 6000,
-        opacity: [0, 1],
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-1150%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol13'),
-        easing: 'linear',
-        duration: 6000,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-950%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol14'),
-        easing: 'linear',
-        duration: 5000,
-        delay: 3000,
-        opacity: [0, 1],
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-1050%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol15.fr'),
-        easing: 'linear',
-        duration: 5000,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-410%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol15.en'),
-        easing: 'linear',
-        duration: 5000,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(50%)', 'translate(-350%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol15.de'),
-        easing: 'linear',
-        duration: 5000,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(0%)', 'translate(-450%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol16.fr'),
-        easing: 'linear',
-        duration: 5000,
-        delay: 6000,
-        opacity: [0, 1],
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-470%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol16.en'),
-        easing: 'linear',
-        duration: 5000,
-        delay: 6000,
-        opacity: [0, 1],
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-500%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol16.de'),
-        easing: 'linear',
-        duration: 5000,
-        delay: 6000,
-        opacity: [0, 1],
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-500%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol17.fr'),
-        easing: 'linear',
-        duration: 8000,
-        delay: 8000,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(50%)', 'translate(-850%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol17.en'),
-        easing: 'linear',
-        duration: 8000,
-        delay: 8000,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(50%)', 'translate(-850%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol17.de'),
-        easing: 'linear',
-        duration: 8000,
-        delay: 8000,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(50%)', 'translate(-850%)'],
-      })
-      animate({
-        elements: document.querySelector('#protocol18'),
-        easing: 'linear',
-        duration: 7000,
-        loop: true,
-        direction: 'normal',
-        transform: ['translate(100%)', 'translate(-750%)'],
-      })
-
-      // arrows animations
-      animate({
-        elements: document.querySelector('#arrow-right'),
-        easing: 'linear',
-        duration: 1000,
-        loop: true,
-        direction: 'alternate',
-        transform: ['translate(0%)', 'translate(20%)'],
-      })
-      animate({
-        elements: document.querySelector('#arrow-left'),
-        easing: 'linear',
-        duration: 1000,
-        loop: true,
-        direction: 'alternate',
-        transform: ['translate(0%)', 'translate(-20%)'],
-      })
-
       this.triggerAnim = true
     },
   },
