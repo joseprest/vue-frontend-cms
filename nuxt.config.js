@@ -10,15 +10,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap',
-      },
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -31,6 +23,20 @@ export default {
    */
   styleResources: {
     scss: ['~assets/sass/partials/_variables.scss'],
+  },
+
+  // Google Fonts
+  googleFonts: {
+    families: {
+      Poppins: {
+        wght: [300, 400, 500, 600, 700],
+        ital: [300, 400, 500, 600, 700],
+      },
+    },
+    display: 'swap',
+    prefetch: true,
+    preload: true,
+    subsets: ['latin-ext', ''],
   },
 
   router: {
@@ -67,9 +73,9 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/google-fonts',
     '@nuxtjs/gtm',
     '@nuxtjs/svg',
-    // '@nuxtjs/markdownit',
     // '@nuxtjs/style-resources',
   ],
 
