@@ -83,6 +83,12 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    [
+      '@nuxtjs/robots',
+      {
+        /* module options */
+      },
+    ],
     '@nuxtjs/style-resources',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
@@ -103,6 +109,14 @@ export default {
     ['@nuxtjs/redirect-module', {}],
     '@nuxtjs/markdownit',
   ],
+
+  // For module nuxt/robots
+  robots: () => {
+    return {
+      UserAgent: '*',
+      Disallow: '/',
+    }
+  },
 
   // [optional] markdownit options
   // See https://github.com/markdown-it/markdown-it
