@@ -1,13 +1,13 @@
 <template>
   <span v-if="showAnim">
-    <div
+    <span
       v-for="protocol in protocols"
       :id="`protocol${protocol.id}`"
       :key="`index_${protocol.id}`"
       :class="`protocol protocol${protocol.id} ${$i18n.locale}`"
     >
       {{ protocol.text }}
-    </div>
+    </span>
   </span>
 </template>
 
