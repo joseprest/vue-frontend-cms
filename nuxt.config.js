@@ -114,7 +114,17 @@ export default {
     // ],
     ['@nuxtjs/redirect-module', {}],
     '@nuxtjs/markdownit',
+    // always declare the sitemap module at end of the array
+    '@nuxtjs/sitemap',
   ],
+
+  sitemap: () => {
+    return {
+      hostname: 'https://wattsense.com',
+      gzip: true,
+      exclude: ['/compatibility?page*'],
+    }
+  },
 
   // For module nuxt/robots
   robots: () => {
