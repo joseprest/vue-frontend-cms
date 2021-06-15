@@ -42,7 +42,9 @@
             <p class="bottom">Wattsense © {{ date }}</p>
           </div>
         </div>
-
+        <div v-if="formToShow">
+          <ws-button :cms-data="{ popup: formToShow, forceForm: true }" />
+        </div>
         <div class="level-right">
           <div class="level-item">
             <p class="bottom">
@@ -90,21 +92,16 @@ export default {
       const _date = new Date()
       return _date.getFullYear()
     },
+    formToShow() {
+      if (this.$route.query.demo) return 'get_demo'
+      else if (this.$route.query.sales) return 'request_sales'
+      else if (this.$route.query.prices) return 'request_pricing'
+      else if (this.$route.query.partner) return 'partner'
+      return null
+    },
   },
 
   async created() {
-    if (this.$route.query.demo) {
-      this.showDemo = true
-    }
-    if (this.$route.query.sales) {
-      this.showSales = true
-    }
-    if (this.$route.query.prices) {
-      this.showPrices = true
-    }
-    if (this.$route.query.partner) {
-      this.showPartner = true
-    }
     const content = await axios.get(
       this.$getUrlFromCms('/footer?_locale=' + this.$i18n.localeProperties.iso)
     )

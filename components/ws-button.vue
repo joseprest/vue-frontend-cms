@@ -3,7 +3,11 @@
     <template v-if="cmsData.popup">
       <button
         class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
-        :class="{ 'is-inverted': cmsData.inverted, 'is-small': isSmall }"
+        :class="{
+          'is-inverted': cmsData.inverted,
+          'is-small': isSmall,
+          'is-hidden': cmsData.forceForm,
+        }"
         @click="showPopup = true"
       >
         <slot>
@@ -90,6 +94,10 @@ export default {
     return {
       showPopup: false,
     }
+  },
+
+  mounted() {
+    this.showPopup = this.cmsData?.forceForm
   },
 }
 </script>
