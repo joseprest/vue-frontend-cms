@@ -56,13 +56,7 @@ export default {
   head() {
     return {
       title: this.cmsData.meta.title,
-      meta: [
-        {
-          vmid: 'description',
-          name: 'description',
-          content: this.cmsData.meta.description,
-        },
-      ],
+      meta: this.$getMeta(this, this.cmsData.meta),
     }
   },
 }

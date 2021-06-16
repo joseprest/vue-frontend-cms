@@ -52,15 +52,7 @@ export default {
   head() {
     return {
       title: this.cmsData.meta.title,
-      meta: this.isLoading
-        ? []
-        : [
-            {
-              vmid: 'description',
-              name: 'description',
-              content: this.cmsData.meta.description,
-            },
-          ],
+      meta: this.$getMeta(this, this.cmsData.meta),
     }
   },
 }
