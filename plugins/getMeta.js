@@ -3,7 +3,8 @@ export default ({ app }, inject) => {
    * Get meta tags from the params received from Strapi CMS.
    * @param {object} parameters data received from Strapi: Page meta component
    */
-  inject('getMeta', (_this, params) => {
+  inject('getMeta', (params) => {
+    const { i18n } = app.context
     const meta = [
       {
         hid: 'description',
@@ -28,11 +29,11 @@ export default ({ app }, inject) => {
       },
       {
         property: 'og:locale',
-        content: _this.$i18n.localeProperties.iso,
+        content: i18n.localeProperties.iso,
       },
     ]
-    _this.$i18n.locales.forEach((locale) => {
-      if (locale.iso !== _this.$i18n.localeProperties.iso)
+    i18n.locales.forEach((locale) => {
+      if (locale.iso !== i18n.localeProperties.iso)
         meta.push({
           property: 'og:locale:alternate',
           content: locale.iso,

@@ -45,7 +45,13 @@ export default {
   head() {
     return {
       title: this.cmsData.meta.title,
-      meta: this.$getMeta(this, this.cmsData.meta),
+      meta: this.$getMeta(this.cmsData.meta),
+      script: [
+        {
+          type: 'application/ld+json',
+          json: this.$getStructuredData(),
+        },
+      ],
     }
   },
 }
