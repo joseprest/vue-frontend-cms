@@ -162,6 +162,7 @@ export default {
     vueI18n: {
       fallbackLocale: 'en',
     },
+    seo: true,
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
