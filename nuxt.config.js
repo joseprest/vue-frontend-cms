@@ -91,12 +91,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    [
-      '@nuxtjs/robots',
-      {
-        /* module options */
-      },
-    ],
+    '@nuxtjs/robots',
     '@nuxtjs/style-resources',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
@@ -132,7 +127,15 @@ export default {
   robots: () => {
     return {
       UserAgent: '*',
-      Disallow: '/',
+      Disallow: [
+        '/404',
+        '/*.rss',
+        '/tag/',
+        '/u/',
+        '/v1/',
+        '/compatibility?page=*',
+        '/*?utm*',
+      ],
     }
   },
 
