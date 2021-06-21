@@ -13,7 +13,12 @@
 <script>
 export default {
   layout: 'error',
-  props: ['error'],
+  props: {
+    error: {
+      type: Object,
+      default: () => ({}),
+    },
+  },
 
   data: () => ({
     cmsData: null,
@@ -25,7 +30,6 @@ export default {
         '/page-404?_locale=' + this.$i18n.localeProperties.iso
       )
     )
-    console.log(data)
     this.cmsData = { ...data }
   },
 }
