@@ -120,6 +120,10 @@ export default {
       hostname: 'https://wattsense.com',
       gzip: true,
       exclude: ['/compatibility?page*'],
+      i18n: {
+        locales: ['en', 'fr', 'de'],
+        routesNameSeparator: '___',
+      },
     }
   },
 
