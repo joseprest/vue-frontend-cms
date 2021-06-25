@@ -157,7 +157,7 @@ export default {
   i18n: {
     locales: [
       { code: 'en', iso: 'en' },
-      { code: 'fr', iso: 'fr-FR' },
+      { code: 'fr', iso: 'fr' },
       { code: 'de', iso: 'de' },
     ],
     defaultLocale: 'en',
