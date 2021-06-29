@@ -15,7 +15,7 @@ RUN yarn install \
 
 ENV HOST 0.0.0.0
 ENV PORT 8080
-ENV CMS_URL "https://strapi.wattsense.com"
+ENV CMS_URL "https://strapi.s.wattsense.com"
 ENV CONSOLE_API "https://console.wattsense.com/api"
 
 RUN yarn build
