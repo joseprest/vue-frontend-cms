@@ -10,7 +10,9 @@
             v-for="item in cmsData.globals.breadcrumbs"
             :key="`bc-${item.id}`"
           >
-            <router-link :to="item.link">{{ item.text }}</router-link>
+            <router-link :to="localePath(item.link)">
+              {{ item.text }}
+            </router-link>
           </li>
           <li class="is-active">
             <a href="#">{{ cmsData.customer }}</a>
