@@ -52,10 +52,16 @@ export default {
             i18n.localeProperties.iso
         )
       ),
+      $axios.get(
+        $getUrlFromCms('/navbar?_locale=' + i18n.localeProperties.iso)
+      ),
     ])
     return {
       cmsData: {
         ...content[0].data,
+      },
+      navbarData: {
+        ...content[1].data,
       },
     }
   },

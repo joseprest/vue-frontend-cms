@@ -6,6 +6,7 @@
         v-if="comp.__component === 'index-components.header'"
         :key="`body-${comp.__component}-${comp.id}`"
         :cms-data="comp"
+        :navbar-data="navbarData.dropdown"
       />
       <section
         v-else
@@ -41,10 +42,16 @@ export default {
       $axios.get(
         $getUrlFromCms('/homepage?_locale=' + i18n.localeProperties.iso)
       ),
+      $axios.get(
+        $getUrlFromCms('/navbar?_locale=' + i18n.localeProperties.iso)
+      ),
     ])
     return {
       cmsData: {
         ...content[0].data,
+      },
+      navbarData: {
+        ...content[1].data,
       },
     }
   },

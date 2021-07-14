@@ -1,5 +1,8 @@
 <template>
-  <page-container :cms-data="cmsData.page_title">
+  <page-container
+    :cms-data="cmsData.page_title"
+    :navbar-data="navbarData.dropdown"
+  >
     <section
       v-for="comp in cmsData.body"
       :key="`body-${comp.__component}-${comp.id}`"
@@ -30,11 +33,21 @@ export default {
     },
   },
   async asyncData({ i18n, $axios, $getUrlFromCms }) {
-    const { data } = await $axios.get(
-      $getUrlFromCms('/page-pricing-box?_locale=' + i18n.localeProperties.iso)
-    )
+    const content = await Promise.all([
+      $axios.get(
+        $getUrlFromCms('/page-pricing-box?_locale=' + i18n.localeProperties.iso)
+      ),
+      $axios.get(
+        $getUrlFromCms('/navbar?_locale=' + i18n.localeProperties.iso)
+      ),
+    ])
     return {
-      cmsData: { ...data },
+      cmsData: {
+        ...content[0].data,
+      },
+      navbarData: {
+        ...content[1].data,
+      },
     }
   },
 

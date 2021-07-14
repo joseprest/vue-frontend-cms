@@ -2,6 +2,7 @@
   <page-container
     v-if="Object.keys(cmsData).length > 0"
     :cms-data="cmsData.page_title"
+    :navbar-data="navbarData.dropdown"
   >
     <section class="section contact">
       <div class="container">
@@ -69,11 +70,21 @@ export default {
   },
 
   async asyncData({ i18n, $axios, $getUrlFromCms }) {
-    const content = await $axios.get(
-      $getUrlFromCms('/page-contact?_locale=' + i18n.localeProperties.iso)
-    )
+    const content = await Promise.all([
+      $axios.get(
+        $getUrlFromCms('/page-contact?_locale=' + i18n.localeProperties.iso)
+      ),
+      $axios.get(
+        $getUrlFromCms('/navbar?_locale=' + i18n.localeProperties.iso)
+      ),
+    ])
     return {
-      cmsData: { ...content.data },
+      cmsData: {
+        ...content[0].data,
+      },
+      navbarData: {
+        ...content[1].data,
+      },
     }
   },
 

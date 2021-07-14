@@ -1,7 +1,7 @@
 <template>
   <div v-if="cmsData">
     <header class="section">
-      <navbar :home="false" />
+      <navbar :cms-data="navbarData" :home="false" />
     </header>
     <page-header v-bind="$props" />
     <slot />
@@ -15,6 +15,10 @@ export default {
     cmsData: {
       type: Object,
       default: null,
+    },
+    navbarData: {
+      type: Array,
+      default: () => [],
     },
   },
 }

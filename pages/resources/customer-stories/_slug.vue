@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="=pt-0">
-      <navbar :home="false" />
+      <navbar :cms-data="navbarData" :home="false" />
     </header>
     <customer-story-header :cms-data="cmsData" />
     <section class="section main">
@@ -46,7 +46,7 @@ export default {
   },
 
   async asyncData({ i18n, $axios, params, $getUrlFromCms }) {
-    const res = await Promise.all([
+    const content = await Promise.all([
       $axios.get(
         $getUrlFromCms(
           '/customer-stories?slug=' +
@@ -60,9 +60,15 @@ export default {
           '/page-customer-stories?_locale=' + i18n.localeProperties.iso
         )
       ),
+      $axios.get(
+        $getUrlFromCms('/navbar?_locale=' + i18n.localeProperties.iso)
+      ),
     ])
     return {
-      cmsData: { ...res[0].data[0], globals: res[1].data?.globals },
+      cmsData: { ...content[0].data[0], globals: content[1].data?.globals },
+      navbarData: {
+        ...content[2].data,
+      },
     }
   },
 

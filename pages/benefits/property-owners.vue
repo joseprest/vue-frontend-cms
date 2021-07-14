@@ -2,6 +2,7 @@
   <page-container
     v-if="Object.keys(cmsData).length > 0"
     :cms-data="cmsData.page_title"
+    :navbar-data="navbarData.dropdown"
   >
     <section
       v-for="comp in cmsData.body"
@@ -45,10 +46,16 @@ export default {
           '/page-benefits-property-owners?_locale=' + i18n.localeProperties.iso
         )
       ),
+      $axios.get(
+        $getUrlFromCms('/navbar?_locale=' + i18n.localeProperties.iso)
+      ),
     ])
     return {
       cmsData: {
         ...content[0].data,
+      },
+      navbarData: {
+        ...content[1].data,
       },
     }
   },

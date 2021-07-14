@@ -1,5 +1,8 @@
 <template>
-  <page-container :cms-data="cmsData.page_title">
+  <page-container
+    :cms-data="cmsData.page_title"
+    :navbar-data="navbarData.dropdown"
+  >
     <section class="section main">
       <div class="container">
         <div class="columns is-centered is-multiline">
@@ -37,13 +40,23 @@ export default {
   },
 
   async asyncData({ i18n, $axios, $getUrlFromCms }) {
-    const { data } = await $axios.get(
-      $getUrlFromCms(
-        '/page-customer-stories?_locale=' + i18n.localeProperties.iso
-      )
-    )
+    const content = await Promise.all([
+      $axios.get(
+        $getUrlFromCms(
+          '/page-customer-stories?_locale=' + i18n.localeProperties.iso
+        )
+      ),
+      $axios.get(
+        $getUrlFromCms('/navbar?_locale=' + i18n.localeProperties.iso)
+      ),
+    ])
     return {
-      cmsData: { ...data },
+      cmsData: {
+        ...content[0].data,
+      },
+      navbarData: {
+        ...content[1].data,
+      },
     }
   },
 
