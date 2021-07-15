@@ -1,4 +1,5 @@
 export default {
+  target: process.env.TARGET || 'server',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Wattsense',
