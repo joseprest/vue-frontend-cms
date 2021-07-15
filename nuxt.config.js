@@ -55,6 +55,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/getMeta.js',
+    '~/plugins/getStructuredData.js',
     '~/plugins/getUrlFromCms.js',
     '~/plugins/getComponentFromCms.js',
     '~/plugins/richTextImageUrls.js',
@@ -89,12 +91,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    [
-      '@nuxtjs/robots',
-      {
-        /* module options */
-      },
-    ],
+    '@nuxtjs/robots',
     '@nuxtjs/style-resources',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
@@ -114,13 +111,35 @@ export default {
     // ],
     ['@nuxtjs/redirect-module', {}],
     '@nuxtjs/markdownit',
+    // always declare the sitemap module at end of the array
+    '@nuxtjs/sitemap',
   ],
+
+  sitemap: () => {
+    return {
+      hostname: 'https://wattsense.com',
+      gzip: true,
+      exclude: ['/compatibility?page*'],
+      i18n: {
+        locales: ['en', 'fr', 'de'],
+        routesNameSeparator: '___',
+      },
+    }
+  },
 
   // For module nuxt/robots
   robots: () => {
     return {
       UserAgent: '*',
-      Disallow: '/',
+      Disallow: [
+        '/404',
+        '/*.rss',
+        '/tag/',
+        '/u/',
+        '/v1/',
+        '/compatibility?page=*',
+        '/*?utm*',
+      ],
     }
   },
 
@@ -138,7 +157,7 @@ export default {
   i18n: {
     locales: [
       { code: 'en', iso: 'en' },
-      { code: 'fr', iso: 'fr-FR' },
+      { code: 'fr', iso: 'fr' },
       { code: 'de', iso: 'de' },
     ],
     defaultLocale: 'en',
@@ -150,6 +169,7 @@ export default {
     vueI18n: {
       fallbackLocale: 'en',
     },
+    seo: true,
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -169,6 +189,7 @@ export default {
   server: {
     host: process.env.HOST || '0.0.0.0',
     port: process.env.PORT || 8080,
+    host: process.env.HOST || '0.0.0.0',
   },
 
   env: {

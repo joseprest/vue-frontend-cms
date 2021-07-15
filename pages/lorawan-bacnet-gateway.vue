@@ -52,10 +52,16 @@ export default {
             i18n.localeProperties.iso
         )
       ),
+      $axios.get(
+        $getUrlFromCms('/navbar?_locale=' + i18n.localeProperties.iso)
+      ),
     ])
     return {
       cmsData: {
         ...content[0].data,
+      },
+      navbarData: {
+        ...content[1].data,
       },
     }
   },
@@ -63,11 +69,11 @@ export default {
   head() {
     return {
       title: this.cmsData.meta.title,
-      meta: [
+      meta: this.$getMeta(this.cmsData.meta),
+      script: [
         {
-          vmid: 'description',
-          name: 'description',
-          content: this.cmsData.meta.description,
+          type: 'application/ld+json',
+          json: this.$getStructuredData(),
         },
       ],
     }

@@ -1,6 +1,5 @@
 <template>
   <nav
-    v-if="navbar && navbar.length"
     class="navbar is-transparent"
     role="navigation"
     aria-label="main navigation"
@@ -27,12 +26,13 @@
       </div>
 
       <div
+        v-if="cmsData && cmsData.length"
         class="navbar-menu has-text-weight-semibold"
         :class="{ 'is-active': showMenu }"
       >
         <div class="navbar-end">
           <span
-            v-for="item in navbar"
+            v-for="item in cmsData"
             :key="`navitem${item.id}`"
             class="navbar-item"
             :class="{
@@ -203,12 +203,15 @@ export default {
       type: Boolean,
       default: false,
     },
+    cmsData: {
+      type: Array,
+      default: () => [],
+    },
   },
 
   data() {
     return {
       showMenu: false,
-      navbar: () => [],
       locale: 'en',
     }
   },
@@ -221,7 +224,6 @@ export default {
 
   created() {
     this.locale = this.$i18n.locale
-    this.loadCmsData()
   },
 
   methods: {
@@ -238,22 +240,12 @@ export default {
       }
     },
 
-    async loadCmsData() {
-      const content = await this.$axios.get(
-        this.$getUrlFromCms(
-          '/navbar?_locale=' + this.$i18n.localeProperties.iso
-        )
-      )
-      this.navbar = [...content.data.dropdown]
-    },
-
     toggleMenu() {
       this.showMenu = !this.showMenu
     },
 
     changedLanguage() {
       this.$i18n.setLocale(this.locale)
-      this.loadCmsData()
     },
   },
 }
