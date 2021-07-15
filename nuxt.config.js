@@ -189,7 +189,6 @@ export default {
   server: {
     host: process.env.HOST || '0.0.0.0',
     port: process.env.PORT || 8080,
-    host: process.env.HOST || '0.0.0.0',
   },
 
   env: {
@@ -197,5 +196,5 @@ export default {
     CONSOLE_API: process.env.CONSOLE_API || 'https://console.wattsense.com/api',
   },
 
-  ssr: true, // process.env.SSR === 'true',
+  ssr: process.env.SSR === 'true',
 }
