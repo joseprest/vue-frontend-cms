@@ -55,9 +55,8 @@ export default {
   },
 
   async fetch() {
-    const content = await this.$axios.get(this.$getUrlFromCms('/integrators'))
-    const data = content.data
-    this.integrators = data
+    const { data } = await this.$axios.get(this.$getUrlFromCms('/integrators'))
+    this.integrators = { ...data }
   },
 
   computed: {

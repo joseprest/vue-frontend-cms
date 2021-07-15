@@ -87,6 +87,13 @@ export default {
     }
   },
 
+  async fetch() {
+    const content = await axios.get(
+      this.$getUrlFromCms('/footer?_locale=' + this.$i18n.localeProperties.iso)
+    )
+    this.cmsData = content.data
+  },
+
   computed: {
     date() {
       const _date = new Date()
@@ -99,13 +106,6 @@ export default {
       else if (this.$route.query.partner) return 'partner'
       return null
     },
-  },
-
-  async created() {
-    const content = await axios.get(
-      this.$getUrlFromCms('/footer?_locale=' + this.$i18n.localeProperties.iso)
-    )
-    this.cmsData = content.data
   },
 }
 </script>

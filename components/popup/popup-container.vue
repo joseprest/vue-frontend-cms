@@ -57,6 +57,13 @@ export default {
     cmsData: null,
   }),
 
+  async fetch() {
+    const { data } = await this.$axios.get(
+      this.$getUrlFromCms('/forms?_locale=' + this.$i18n.localeProperties.iso)
+    )
+    this.cmsData = { ...data }
+  },
+
   watch: {
     show(_new) {
       const backdrop = document.getElementById('modal-backdrop')
@@ -66,13 +73,6 @@ export default {
         backdrop.classList.remove('is-active')
       }
     },
-  },
-
-  async created() {
-    const { data } = await this.$axios.get(
-      this.$getUrlFromCms('/forms?_locale=' + this.$i18n.localeProperties.iso)
-    )
-    this.cmsData = { ...data }
   },
 }
 </script>

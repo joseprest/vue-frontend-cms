@@ -24,7 +24,7 @@ export default {
     cmsData: null,
   }),
 
-  async created() {
+  async fetch() {
     const { data } = await this.$axios.get(
       this.$getUrlFromCms(
         '/page-404?_locale=' + this.$i18n.localeProperties.iso
