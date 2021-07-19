@@ -39,7 +39,7 @@
         v-else-if="
           cmsData.url &&
           (cmsData.url[0] !== '#' ||
-            RegExp('^https?://|^//').test(cmsData.url) ||
+            $isExternalUrl(cmsData.url) ||
             cmsData.url.indexOf('mailto') !== -1)
         "
         :href="cmsData.url"
