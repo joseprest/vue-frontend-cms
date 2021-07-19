@@ -1,10 +1,16 @@
 <template>
   <ul class="links mt-25">
     <li v-for="rec in links" :key="rec.id">
-      <nuxt-link :to="rec.link">
+      <nuxt-link v-if="!$isExternalUrl(rec.link)" :to="rec.link">
         {{ rec.text }}
-        <!-- TODO: target -->
       </nuxt-link>
+      <a
+        v-else
+        :href="rec.link"
+        :target="rec.open_new_tab ? '_blank' : '_self'"
+      >
+        {{ rec.text }}
+      </a>
     </li>
   </ul>
 </template>
