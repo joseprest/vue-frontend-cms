@@ -23,8 +23,8 @@
         type="button"
         class="button is-pulled-right mt-15"
         :class="{ 'is-loading': sending }"
-        :disabled="!info || !emailIsOk || sending"
-        @click="send"
+        :disabled="sending"
+        @click.prevent="send"
       >
         <span v-if="!sending">
           {{ cmsData.form_button_text }}
@@ -40,17 +40,24 @@
         {{ errorMsg }}
       </p>
     </template>
-    <template v-else>
-      {{ $t('compatibility.subscription.success') }}
-    </template>
+    <template v-else>Success!</template>
   </form>
 </template>
 
 <script>
-import BackEndServices from '@/services/BackEnd.services.js'
+import { validationMixin } from 'vuelidate'
+// eslint-disable-next-line import/extensions
+import { required, email } from 'vuelidate/lib/validators'
 
 export default {
   name: 'RequestEquipment',
+
+  mixins: [validationMixin],
+
+  validations: {
+    info: { required },
+    email: { required, email },
+  },
 
   props: {
     cmsData: {
@@ -70,18 +77,9 @@ export default {
     }
   },
 
-  computed: {
-    emailIsOk() {
-      return BackEndServices.isEmailValid(this.email)
-    },
-  },
-
   methods: {
     async send() {
-      this.error = null
-      this.sending = true
-      this.success = false
-      this.errorMsg = this.$t('compatibility.subscription.error-email')
+      if (!this.validate()) return false
 
       this.$gtm.push({
         event: 'uaevent',
@@ -91,25 +89,55 @@ export default {
       })
 
       try {
-        await BackEndServices.requestEquipment(this.email, this.info)
-        this.error = null
+        this.sending = true
+        await this.$sendFormToBackend('requestEquipment', {
+          info: this.info,
+          user: this.email,
+        })
         this.success = true
       } catch (err) {
-        if (typeof err === 'string') {
-          this.errorMsg = err
-          this.error = true
-        } else if (err.response) {
-          if (err.response.status !== 400) {
-            this.errorMsg = this.cmsData.error_server_text
-            this.error = true
-          } else this.success = true
+        if (err.status === 500) {
+          this.errorMsg = this.cmsData.error_server_text
         } else {
-          this.errorMsg = this.cmsData.error_other_text
-          this.error = true
+          try {
+            const allErrors = err.data.errors
+            if (!allErrors) {
+              this.errorMsg = err.data || this.cmsData.error_server_text
+            }
+            for (const error in allErrors) {
+              this.errorMsg += allErrors[error]?.join(', ')
+            }
+          } catch {
+            this.errorMsg = this.cmsData.error_other_text
+          }
         }
+        this.error = true
       } finally {
         this.sending = false
       }
+    },
+
+    validate() {
+      this.success = false
+      this.error = false
+
+      this.$v.$touch()
+
+      if (this.$v.$invalid) {
+        if (this.$v.info.$error) {
+          this.errorMsg = 'Model invalid'
+          this.error = true
+          return false
+        }
+
+        if (this.$v.email.$error) {
+          this.errorMsg = 'E-mail invalid'
+          this.error = true
+          return false
+        }
+      }
+
+      return !this.$v.$invalid
     },
   },
 }
