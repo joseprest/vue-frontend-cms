@@ -64,11 +64,10 @@ export default {
         $getUrlFromCms('/navbar?_locale=' + i18n.localeProperties.iso)
       ),
     ])
+
     return {
       cmsData: { ...content[0].data[0], globals: content[1].data?.globals },
-      navbarData: {
-        ...content[2].data,
-      },
+      navbarData: [...content[2].data.dropdown],
     }
   },
 

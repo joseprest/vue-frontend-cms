@@ -21,6 +21,9 @@ export default ({ app }, inject) => {
         }
       }
 
+      // if there's no image, return empty image
+      if (image === undefined) return require('@/assets/imgs/empty.gif')
+
       const finalSource = image.url
       return finalSource?.substr(0, 5) === 'https'
         ? finalSource
