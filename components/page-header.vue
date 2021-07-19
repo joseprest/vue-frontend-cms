@@ -9,11 +9,11 @@
               {{ cmsData.badge }}
             </span>
           </h1>
-          <p
+          <div
             v-if="cmsData.description"
             class="page-title__description"
             v-html="$md.render(cmsData.description)"
-          ></p>
+          ></div>
           <div v-if="cmsData.buttons" class="mt-25">
             <ws-button
               v-for="btn in cmsData.buttons"

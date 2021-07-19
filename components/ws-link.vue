@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <span>
     <template v-if="cmsData">
       <template v-if="cmsData.popup">
         <a
@@ -123,7 +123,7 @@
         </span>
       </nuxt-link>
     </template>
-  </div>
+  </span>
 </template>
 
 <script>
