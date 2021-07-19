@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <span>
     <template v-if="cmsData">
       <template v-if="cmsData.popup">
         <a
@@ -44,7 +44,7 @@
           </span>
         </a>
         <nuxt-link
-          v-else-if="!RegExp('^https?://|^//').test(url)"
+          v-else-if="!RegExp('^https?://|^//').test(cmsData.url)"
           :to="localePath(cmsData.url)"
           :title="cmsData.title"
           :class="{
@@ -123,7 +123,7 @@
         </span>
       </nuxt-link>
     </template>
-  </div>
+  </span>
 </template>
 
 <script>
