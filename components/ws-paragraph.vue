@@ -1,7 +1,7 @@
 <template>
-  <p class="ws-paragraph">
+  <div class="ws-paragraph">
     <slot />
-  </p>
+  </div>
 </template>
 
 <script>

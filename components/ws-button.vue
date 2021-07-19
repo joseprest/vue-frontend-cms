@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <span>
     <template v-if="cmsData.popup">
       <button
         class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
@@ -67,7 +67,7 @@
         </slot>
       </nuxt-link>
     </template>
-  </div>
+  </span>
 </template>
 
 <script>
