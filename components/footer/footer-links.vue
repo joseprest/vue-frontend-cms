@@ -1,10 +1,12 @@
 <template>
   <ul class="links mt-25">
     <li v-for="rec in links" :key="rec.id">
-      <nuxt-link :to="rec.link">
+      <component
+        :is="RegExp('^https?://|^//').test(rec.link) ? 'a' : 'nuxt-link'"
+        v-bind="setProps(rec.link)"
+      >
         {{ rec.text }}
-        <!-- TODO: target -->
-      </nuxt-link>
+      </component>
     </li>
   </ul>
 </template>
@@ -22,6 +24,21 @@ export default {
   computed: {
     links() {
       return this.cmsData?.links
+    },
+  },
+
+  methods: {
+    setProps(element) {
+      // eslint-disable-next-line prefer-regex-literals
+      if (element && RegExp('^https?://|^//').test(element)) {
+        return {
+          target: '_blank',
+          href: element,
+        }
+      }
+      return {
+        to: element ? this.localePath(element) : '',
+      }
     },
   },
 }
