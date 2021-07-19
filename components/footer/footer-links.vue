@@ -1,16 +1,12 @@
 <template>
   <ul class="links mt-25">
     <li v-for="rec in links" :key="rec.id">
-      <nuxt-link v-if="!$isExternalUrl(rec.link)" :to="rec.link">
-        {{ rec.text }}
-      </nuxt-link>
-      <a
-        v-else
-        :href="rec.link"
-        :target="rec.open_new_tab ? '_blank' : '_self'"
+      <component
+        :is="$isExternalUrl(rec.link) ? 'a' : 'nuxt-link'"
+        v-bind="setProps(rec.link)"
       >
         {{ rec.text }}
-      </a>
+      </component>
     </li>
   </ul>
 </template>
@@ -28,6 +24,20 @@ export default {
   computed: {
     links() {
       return this.cmsData?.links
+    },
+  },
+
+  methods: {
+    setProps(element) {
+      if (this.$isExternalUrl(element)) {
+        return {
+          target: '_blank',
+          href: element,
+        }
+      }
+      return {
+        to: element ? this.localePath(element) : '',
+      }
     },
   },
 }

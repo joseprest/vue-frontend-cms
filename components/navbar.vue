@@ -31,7 +31,7 @@
         :class="{ 'is-active': showMenu }"
       >
         <div class="navbar-end">
-          <span
+          <div
             v-for="item in cmsData"
             :key="`navitem${item.id}`"
             class="navbar-item"
@@ -136,7 +136,7 @@
                 </div>
               </template>
             </div>
-          </span>
+          </div>
           <div class="field">
             <div class="control has-icons-left ml-3">
               <div class="select is-small">
