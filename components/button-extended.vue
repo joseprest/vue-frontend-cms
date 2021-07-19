@@ -1,19 +1,15 @@
 <template>
   <component
-    :is="
-      cmsData.file || RegExp('^https?://|^//').test(cmsData.url)
-        ? 'a'
-        : 'nuxt-link'
-    "
+    :is="cmsData.file || $isExternalUrl(cmsData.url) ? 'a' : 'nuxt-link'"
     :to="
-      !cmsData.file && !RegExp('^https?://|^//').test(cmsData.url)
+      !cmsData.file && !$isExternalUrl(cmsData.url)
         ? localePath(cmsData.url)
         : ''
     "
     :href="
       cmsData.file
         ? $getUrlFromCms(cmsData.file.url)
-        : RegExp('^https?://|^//').test(cmsData.url)
+        : $isExternalUrl(cmsData.url)
         ? cmsData.url
         : localePath(cmsData.url)
     "

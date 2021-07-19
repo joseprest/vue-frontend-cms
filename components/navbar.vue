@@ -42,7 +42,7 @@
             <component
               :is="
                 item.main_link
-                  ? RegExp('^https?://|^//').test(item.main_link)
+                  ? $isExternalUrl(item.main_link)
                     ? 'a'
                     : 'nuxt-link'
                   : 'span'
@@ -70,9 +70,7 @@
                   {{ sub.title }}
                 </a>
                 <a
-                  v-else-if="
-                    sub.link && RegExp('^https?://|^//').test(sub.link)
-                  "
+                  v-else-if="$isExternalUrl(sub.link)"
                   :key="`sub${sub.id}`"
                   :href="sub.link"
                   class="navbar-item"
@@ -116,10 +114,7 @@
                           {{ link.title }}
                         </a>
                         <a
-                          v-else-if="
-                            link.link &&
-                            RegExp('^https?://|^//').test(link.link)
-                          "
+                          v-else-if="$isExternalUrl(link.link)"
                           :key="`link${link.id}`"
                           :href="link.link"
                           target="_blank"
@@ -228,8 +223,7 @@ export default {
 
   methods: {
     setProps(element) {
-      // eslint-disable-next-line prefer-regex-literals
-      if (element && RegExp('^https?://|^//').test(element)) {
+      if (this.$isExternalUrl(element)) {
         return {
           target: '_blank',
           href: element,

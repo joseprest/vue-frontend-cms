@@ -44,7 +44,7 @@
           </span>
         </a>
         <nuxt-link
-          v-else-if="!RegExp('^https?://|^//').test(url)"
+          v-else-if="!$isExternalUrl(cmsData.url)"
           :to="localePath(cmsData.url)"
           :title="cmsData.title"
           :class="{
