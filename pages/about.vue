@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  name: 'Index',
+  name: 'About',
   nuxtI18n: {
     paths: {
       en: '/about',

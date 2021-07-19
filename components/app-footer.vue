@@ -48,14 +48,24 @@
         <div class="level-right">
           <div class="level-item">
             <p class="bottom">
-              <nuxt-link
-                v-for="link in cmsData.bottom_links"
-                :key="`bottom-link${link.id}`"
-                class="has-text-weight-light is-7 ml-10"
-                :to="localePath(link.link)"
-              >
-                {{ link.text }}
-              </nuxt-link>
+              <template v-for="link in cmsData.bottom_links">
+                <nuxt-link
+                  v-if="$isExternalUrl(link.link)"
+                  :key="`bottom-link${link.id}`"
+                  class="has-text-weight-light is-7 ml-10"
+                  :to="link.link"
+                >
+                  {{ link.text }}
+                </nuxt-link>
+                <a
+                  v-else
+                  :key="`bottom-link${link.id}`"
+                  class="has-text-weight-light is-7 ml-10"
+                  :href="link.link"
+                >
+                  {{ link.text }}
+                </a>
+              </template>
             </p>
           </div>
         </div>

@@ -1,5 +1,9 @@
 <template>
-  <page-container v-if="cmsData" :cms-data="cmsData.page_title">
+  <page-container
+    v-if="cmsData"
+    :cms-data="cmsData.page_title"
+    :navbar-data="navbarData.dropdown"
+  >
     <section class="section">
       <div
         v-if="error.statusCode === 404"
@@ -13,6 +17,7 @@
 <script>
 export default {
   layout: 'error',
+
   props: {
     error: {
       type: Object,
@@ -22,6 +27,7 @@ export default {
 
   data: () => ({
     cmsData: null,
+    navbarData: null,
   }),
 
   async fetch() {
@@ -30,7 +36,13 @@ export default {
         '/page-404?_locale=' + this.$i18n.localeProperties.iso
       )
     )
+
+    const { data: navbarData } = await this.$axios.get(
+      this.$getUrlFromCms('/navbar?_locale=' + this.$i18n.localeProperties.iso)
+    )
+
     this.cmsData = { ...data }
+    this.navbarData = { ...navbarData }
   },
 }
 </script>

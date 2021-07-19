@@ -5,6 +5,7 @@
       :title="cmsData.title"
       class="has-text-left mb-10"
     />
+
     <div
       v-if="!$fetchState.pending && !$fetchState.error && integrators.length"
       class="columns is-multiline"
@@ -56,7 +57,7 @@ export default {
 
   async fetch() {
     const { data } = await this.$axios.get(this.$getUrlFromCms('/integrators'))
-    this.integrators = { ...data }
+    this.integrators = [...data]
   },
 
   computed: {
@@ -73,7 +74,7 @@ export default {
     }
   },
   // call fetch only on client-side
-  fetchOnServer: false,
+  fetchOnServer: true,
 }
 </script>
 

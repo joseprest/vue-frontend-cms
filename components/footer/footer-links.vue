@@ -2,7 +2,7 @@
   <ul class="links mt-25">
     <li v-for="rec in links" :key="rec.id">
       <component
-        :is="RegExp('^https?://|^//').test(rec.link) ? 'a' : 'nuxt-link'"
+        :is="$isExternalUrl(rec.link) ? 'a' : 'nuxt-link'"
         v-bind="setProps(rec.link)"
       >
         {{ rec.text }}
@@ -29,8 +29,7 @@ export default {
 
   methods: {
     setProps(element) {
-      // eslint-disable-next-line prefer-regex-literals
-      if (element && RegExp('^https?://|^//').test(element)) {
+      if (this.$isExternalUrl(element)) {
         return {
           target: '_blank',
           href: element,

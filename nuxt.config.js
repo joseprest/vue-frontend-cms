@@ -41,6 +41,8 @@ export default {
   },
 
   router: {
+    middleware: ['redirects'],
+
     scrollBehavior(to) {
       if (to.hash) {
         const element = document.querySelector(to.hash)
@@ -64,6 +66,7 @@ export default {
     '~/plugins/getImageUrlFromCms.js',
     '~/plugins/isEmailValid.js',
     '~/plugins/sendToBack.js',
+    '~/plugins/isExternalUrl.js',
     { src: '~/plugins/vue-lazyload', ssr: false },
     { src: '~plugins/onAppReady', ssr: false },
   ],
@@ -106,11 +109,6 @@ export default {
         },
       },
     ],
-    // [
-    //   'nuxt-lazy-load',
-    //   { directiveOnly: true, defaultImage: '/imgs/empty.gif' },
-    // ],
-    ['@nuxtjs/redirect-module', {}],
     '@nuxtjs/markdownit',
     // always declare the sitemap module at end of the array
     '@nuxtjs/sitemap',
@@ -154,7 +152,6 @@ export default {
     html: true,
     // use: ['markdown-it-div', 'markdown-it-attrs'],
   },
-  redirect: [{ from: '^/pricing$', to: '/pricing/box', statusCode: 301 }],
   i18n: {
     locales: [
       { code: 'en', iso: 'en' },
@@ -196,6 +193,4 @@ export default {
     CMS_URL: process.env.CMS_URL || 'http://localhost:1337',
     CONSOLE_API: process.env.CONSOLE_API || 'https://console.wattsense.com/api',
   },
-
-  ssr: process.env.SSR === 'true',
 }

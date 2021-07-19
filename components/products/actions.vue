@@ -23,7 +23,14 @@
                 :key="`element${element.id}`"
                 check-type="check-blue"
               >
-                <nuxt-link v-if="element.link" :to="element.link">
+                <a
+                  v-if="$isExternalUrl(element.link)"
+                  :href="element.link"
+                  :target="element.open_new_tab ? '_blank' : null"
+                >
+                  {{ element.text }}
+                </a>
+                <nuxt-link v-else-if="element.link" :to="element.link">
                   {{ element.text }}
                 </nuxt-link>
                 <span v-else>{{ element.text }}</span>
@@ -37,6 +44,7 @@
       <nuxt-link
         class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
         :class="{ 'is-inverted': cmsData.button.inverted }"
+        style="z-index: 10"
         :to="cmsData.button.url"
       >
         {{ cmsData.button.title }}
