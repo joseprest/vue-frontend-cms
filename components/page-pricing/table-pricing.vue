@@ -196,16 +196,20 @@ export default {
 </style>
 
 <style lang="scss" scoped>
+.table {
+  box-shadow: 0 0px 20px rgba(24, 69, 101, 0.06);
+}
+
 .columns.table {
   margin-top: 1em;
   .column {
     padding: 0;
-    &:active {
-      box-shadow: 0 16px 165px rgba(24, 69, 101, 0.06) !important;
-    }
+    // &:active {
+    //   box-shadow: 0 16px 165px rgba(24, 69, 101, 0.06) !important;
+    // }
   }
   .column:not(:first-child) {
-    box-shadow: 0 16px 165px rgba(24, 69, 101, 0.06);
+    // box-shadow: 0 16px 165px rgba(24, 69, 101, 0.06);
     border-right: 1px solid $gray_2;
     position: relative;
     @include mobile {
