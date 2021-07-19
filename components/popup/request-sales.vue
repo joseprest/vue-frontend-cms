@@ -68,9 +68,9 @@
           <label class="label is-size-7"> {{ cmsData.country }}* </label>
           <div class="control has-icons-left">
             <div class="select is-medium">
-              <select v-model="selected_country">
-                <option v-for="country of listOfCountries" :key="country.code">
-                  {{ country.name }}
+              <select v-model="country">
+                <option v-for="coun of listOfCountries" :key="coun.code">
+                  {{ coun.name }}
                 </option>
               </select>
             </div>
@@ -119,27 +119,43 @@
       </form>
 
       <div v-if="errors.length > 0" class="notification is-danger mt-15">
-        <div v-if="errors.length > 0" class="content">
+        <div class="content">
           <ul>
-            <li v-for="(error, key) in errors" :key="key">
-              {{ error.msg }}
+            <li v-for="(error, index) in errors" :key="`error_${index}`">
+              {{ error }}
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div v-if="success" class="notification is-success">
+    <div v-else class="notification is-success">
       <span>{{ cmsData.success_msg_request_sales }}</span>
     </div>
   </div>
 </template>
 
 <script>
-import listCountries from '@/components/helpers/countries.json'
+import LIST_COUNTRIES from '@/components/helpers/countries.json'
+import { validationMixin } from 'vuelidate'
+// eslint-disable-next-line import/extensions
+import { required, email } from 'vuelidate/lib/validators'
 
 export default {
   name: 'RequestSalesForm',
+
+  mixins: [validationMixin],
+
+  validations: {
+    name: { required },
+    email: { required, email },
+    company: {},
+    phone: {},
+    country: {},
+    project: { required },
+    comments: {},
+  },
+
   props: {
     cmsData: {
       type: Object,
@@ -159,80 +175,87 @@ export default {
       success: false,
       errors: [],
       fieldErrors: {},
-      countries: listCountries,
-      selected_country: 'France',
+      country: 'France',
     }
   },
 
   computed: {
     listOfCountries() {
-      return this.countries
+      return LIST_COUNTRIES
     },
   },
 
   methods: {
     async submit() {
-      this.$gtm.trackEvent({
+      if (!this.validate()) return false
+
+      this.$gtm.push({
         event: 'uaevent',
         category: 'lead generation',
-        action: 'question about pricing',
-        label: 'question about pricing',
+        action: 'contact sales',
+        label: 'contact sales',
       })
 
-      this.errors = []
-
-      this.validateForm()
-      if (Object.keys(this.fieldErrors).length !== 0) return
-
-      this.saving = true
-
       try {
-        await this.$sendToBack({
+        this.saving = true
+        await this.$sendFormToBackend('requestSales', {
           name: this.name,
           email: this.email,
           phone: this.phone,
           company: this.company,
-          selected_country: this.selected_country,
+          country: this.country,
           project: this.project,
           comments: this.comments,
         })
         this.errors = []
         this.success = true
       } catch (err) {
-        if (err.response) {
-          for (const error of err.response.data.errors) {
-            this.fieldErrors[error.param] = error.msg
-          }
+        if (err.status === 500) {
+          this.errors = [this.cmsData.error_msg_request_sales]
         } else {
-          this.errors = [
-            {
-              msg: this.$t('request-sales.error'),
-            },
-          ]
+          try {
+            const allErrors = err.data.errors
+            if (!allErrors) {
+              this.errors = err.data
+            }
+            for (const error in allErrors) {
+              this.fieldErrors[error] = allErrors[error]?.join(', ')
+              this.errors = [...this.errors, ...allErrors[error]]
+            }
+          } catch {
+            this.errors = [this.cmsData.error_msg_request_sales]
+          }
+        }
+      } finally {
+        this.saving = false
+      }
+    },
+
+    validate() {
+      this.errors = []
+      this.fieldErrors = {}
+
+      this.$v.$touch()
+
+      if (this.$v.$invalid) {
+        if (this.$v.name.$error) {
+          this.fieldErrors.name = this.cmsData.error_name
+        }
+
+        if (this.$v.email.$error) {
+          this.fieldErrors.email = this.cmsData.error_email
+        }
+
+        if (this.$v.company.$error) {
+          this.fieldErrors.company = this.cmsData.error_company
+        }
+
+        if (this.$v.project.$error) {
+          this.fieldErrors.project = this.cmsData.error_project
         }
       }
 
-      this.saving = false
-    },
-
-    validateForm() {
-      this.fieldErrors = {}
-
-      if (!this.name || this.name.trim() === '') {
-        this.fieldErrors.name = this.cmsData.error_name
-      }
-
-      if (!this.$isEmailValid(this.email)) {
-        this.fieldErrors.email = this.cmsData.error_email
-      }
-
-      if (!this.company || this.company.trim() === '') {
-        this.fieldErrors.company = this.cmsData.error_company
-      }
-
-      if (!this.project || this.project.trim() === '') {
-        this.fieldErrors.project = this.cmsData.error_project
-      }
+      return !this.$v.$invalid
     },
   },
 }

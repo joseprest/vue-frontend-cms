@@ -65,7 +65,7 @@
           <label class="label is-size-7"> {{ cmsData.country }}* </label>
           <div class="control has-icons-left">
             <div class="select is-medium">
-              <select v-model="form.selected_country">
+              <select v-model="form.country">
                 <option v-for="country of listOfCountries" :key="country.code">
                   {{ country.name }}
                 </option>
@@ -105,27 +105,46 @@
       </form>
 
       <div v-if="errors.length > 0" class="notification is-danger mt-15">
-        <div v-if="errors.length > 0" class="content">
+        <div class="content">
           <ul>
-            <li v-for="(error, key) in errors" :key="key">
-              {{ error.msg }}
+            <li v-for="(error, index) in errors" :key="`error_${index}`">
+              {{ error }}
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div v-if="success" class="notification is-success">
+    <div v-else class="notification is-success">
       <span>{{ cmsData.success_msg_request_pricing }}</span>
     </div>
   </div>
 </template>
 
 <script>
-import listCountries from '@/components/helpers/countries.json'
+import LIST_COUNTRIES from '@/components/helpers/countries.json'
+import { validationMixin } from 'vuelidate'
+// eslint-disable-next-line import/extensions
+import { required, email } from 'vuelidate/lib/validators'
 
 export default {
   name: 'RequestPricesForm',
+
+  mixins: [validationMixin],
+
+  validations: {
+    form: {
+      name: { required },
+      email: { required, email },
+      company: {},
+      phone: {},
+      product: {},
+      segment: {},
+      country: {},
+      comments: {},
+    },
+  },
+
   props: {
     cmsData: {
       type: Object,
@@ -145,11 +164,10 @@ export default {
         phone: null,
         comments: null,
         company: null,
-        product: null,
-        segment: null,
-        selected_country: 'France',
+        product: this.product,
+        // segment: null,
+        country: 'France',
       },
-      countries: listCountries,
       saving: false,
       success: false,
       errors: [],
@@ -159,7 +177,7 @@ export default {
 
   computed: {
     listOfCountries() {
-      return this.countries
+      return LIST_COUNTRIES
     },
   },
 
@@ -173,53 +191,65 @@ export default {
     },
 
     async submit() {
-      this.$gtm.trackEvent({
+      if (!this.validate()) return false
+
+      this.$gtm.push({
         event: 'uaevent',
         category: 'lead generation',
         action: 'question about pricing',
         label: 'question about pricing',
       })
 
-      this.errors = []
-      this.validateForm()
-      if (Object.keys(this.fieldErrors).length !== 0) return
-
-      this.saving = true
-
       try {
-        await this.$sendToBack('request-prices', this.form)
+        this.saving = true
+        await this.$sendFormToBackend('requestPrices', {
+          ...this.form,
+          product: this.form.product || this.product,
+        })
         this.success = true
       } catch (err) {
-        if (err.response) {
-          for (const error of err.response.data.errors) {
-            this.fieldErrors[error.param] = error.msg
-          }
+        if (err.status === 500) {
+          this.errors = [this.cmsData.error_msg_request_pricing]
         } else {
-          this.errors = [
-            {
-              msg: this.cmsData.error_msg_request_pricing,
-            },
-          ]
+          try {
+            const allErrors = err.data.errors
+            if (!allErrors) {
+              this.errors = err.data
+            }
+            for (const error in allErrors) {
+              this.fieldErrors[error] = allErrors[error]?.join(', ')
+              this.errors = [...this.errors, ...allErrors[error]]
+            }
+          } catch {
+            this.errors = [this.cmsData.error_msg_request_pricing]
+          }
+        }
+      } finally {
+        this.saving = false
+      }
+    },
+
+    validate() {
+      this.errors = []
+      this.fieldErrors = {}
+
+      this.$v.$touch()
+
+      if (this.$v.$invalid) {
+        if (this.$v.form.name.$error) {
+          this.fieldErrors.name = this.cmsData.error_name
+        }
+
+        if (this.$v.form.email.$error) {
+          this.fieldErrors.email = this.cmsData.error_email
+        }
+
+        if (this.$v.form.company.$error) {
+          this.fieldErrors.company = this.cmsData.error_company
         }
       }
 
-      this.saving = false
-    },
-
-    validateForm() {
-      this.fieldErrors = {}
-
-      if (!this.form.name || this.form.name.trim() === '') {
-        this.fieldErrors.name = this.cmsData.error_name
-      }
-
-      if (!this.$isEmailValid(this.form.email)) {
-        this.fieldErrors.email = this.$t('request-prices.email-error')
-      }
-
-      if (!this.form.company || this.form.company.trim() === '') {
-        this.fieldErrors.company = this.cmsData.error_company
-      }
+      return !this.$v.$invalid
     },
   },
 }

@@ -17,31 +17,6 @@ export default {
   },
 
   /**
-   * Subscribe email to Communication Protocols
-   * @param  {string} email
-   * @return {Promise}
-   */
-  subscribeToCommunicationProtocols(email) {
-    return new Promise((resolve, reject) => {
-      if (!this.isEmailValid(email)) {
-        reject(new Error('Invalid e-mail address'))
-        throw new Error('Invalid e-mail address')
-      }
-
-      axios
-        .post(`${SERVER}/subscribe`, {
-          email,
-        })
-        .then((resp) => {
-          resolve(resp.data)
-        })
-        .catch((err) => {
-          reject(err)
-        })
-    })
-  },
-
-  /**
    * Subscribe email to Newsletter
    * @param  {string} email
    * @return {Promise}

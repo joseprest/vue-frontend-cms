@@ -39,7 +39,7 @@ export default {
 
   methods: {
     linkClick(htmlElem) {
-      this.$gtm.trackEvent({
+      this.$gtm.push({
         event: 'uaevent',
         category: 'navigation',
         action: 'footer',
