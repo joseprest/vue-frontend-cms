@@ -10,9 +10,9 @@
           <div class="column is-6-tablet is-4-widescreen">
             <ws-title :title="cmsData.title" align="left" class="mb-35" />
             <div v-html="$md.render(cmsData.text)" />
-            <p class="buttons is-flex align-center mt-25">
+            <div class="buttons is-flex align-center mt-25">
               <ws-button class="mt-20" :cms-data="cmsData.button" />
-            </p>
+            </div>
           </div>
           <div class="column is-6-tablet is-8-widescreen">
             <div class="columns is-multiline">

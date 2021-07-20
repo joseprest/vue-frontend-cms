@@ -4,18 +4,21 @@
       <ws-title :title="cmsData.title" align="left" />
 
       <div class="columns has-text-justified">
-        <p class="column is-5 text" v-html="$md.render(cmsData.left_column)" />
+        <div
+          class="column is-5 text"
+          v-html="$md.render(cmsData.left_column)"
+        />
 
         <div class="column is-5 is-offset-1">
-          <p class="text" v-html="$md.render(cmsData.right_column)" />
+          <div class="text" v-html="$md.render(cmsData.right_column)" />
 
-          <p class="buttons is-flex align-center mt-25">
+          <div class="buttons is-flex align-center mt-25">
             <ws-button
               v-if="cmsData.get_demo"
               class="mt-20"
               :cms-data="cmsData.get_demo"
             />
-          </p>
+          </div>
         </div>
       </div>
     </div>

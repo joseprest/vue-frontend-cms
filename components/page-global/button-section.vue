@@ -2,9 +2,9 @@
   <div>
     <div class="columns is-vcentered">
       <div class="column is-12">
-        <p class="buttons">
+        <div class="buttons">
           <ws-button :cms-data="cmsData.button" />
-        </p>
+        </div>
       </div>
     </div>
   </div>
