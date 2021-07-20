@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="=pt-0">
-      <navbar :cms-data="navbarData.dropdown" :home="false" />
+      <navbar :cms-data="navbarData" :home="false" />
     </header>
     <customer-story-header :cms-data="cmsData" />
     <section class="section main">
