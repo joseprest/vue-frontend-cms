@@ -43,7 +43,7 @@
         <div class="field">
           <label class="label is-size-7"> {{ cmsData.phone }} </label>
           <div class="control">
-            <input v-model="telephone" type="tel" class="input is-medium" />
+            <input v-model="phone" type="tel" class="input is-medium" />
           </div>
         </div>
 
@@ -78,10 +78,10 @@
       </form>
 
       <div v-if="errors.length > 0" class="notification is-danger mt-15">
-        <div v-if="errors.length > 0" class="content">
+        <div class="content">
           <ul>
-            <li v-for="(error, key) in errors" :key="key">
-              {{ error.msg }}
+            <li v-for="(error, index) in errors" :key="`error_${index}`">
+              {{ error }}
             </li>
           </ul>
         </div>
@@ -95,8 +95,22 @@
 </template>
 
 <script>
+import { validationMixin } from 'vuelidate'
+// eslint-disable-next-line import/extensions
+import { required, email } from 'vuelidate/lib/validators'
+
 export default {
   name: 'RequestPartnerForm',
+
+  mixins: [validationMixin],
+
+  validations: {
+    name: { required },
+    email: { required, email },
+    company: {},
+    phone: {},
+  },
+
   props: {
     cmsData: {
       type: Object,
@@ -108,7 +122,7 @@ export default {
     return {
       name: null,
       email: null,
-      telephone: null,
+      phone: null,
       company: null,
       saving: false,
       success: false,
@@ -119,60 +133,69 @@ export default {
 
   methods: {
     async submit() {
-      this.$gtm.trackEvent({
+      if (!this.validate()) return false
+
+      this.$gtm.push({
         event: 'uaevent',
         category: 'lead generation',
         action: 'become a partner',
         label: 'become a partner',
       })
 
-      this.errors = []
-
-      this.validateForm()
-      if (Object.keys(this.fieldErrors).length !== 0) return
-
-      this.saving = true
-
       try {
-        await this.$sendToBack('request-partner', {
+        this.saving = true
+        await this.$sendFormToBackend('requestPartner', {
           name: this.name,
           email: this.email,
-          phone: this.telephone,
+          phone: this.phone,
           company: this.company,
+          lang: this.$i18n.locale || 'en',
         })
-        this.errors = []
+
         this.success = true
       } catch (err) {
-        if (err.response) {
-          for (const error of err.response.data.errors) {
-            this.fieldErrors[error.param] = error.msg
-          }
+        if (err.status === 500) {
+          this.errors = [this.cmsData.error_msg_request_partner]
         } else {
-          this.errors = [
-            {
-              msg: this.cmsData.error_msg_request_partner,
-            },
-          ]
+          try {
+            const allErrors = err.data.errors
+            if (!allErrors) {
+              this.errors = err.data
+            }
+            for (const error in allErrors) {
+              this.fieldErrors[error] = allErrors[error]?.join(', ')
+              this.errors = [...this.errors, ...allErrors[error]]
+            }
+          } catch {
+            this.errors = [this.cmsData.error_msg_request_partner]
+          }
+        }
+      } finally {
+        this.saving = false
+      }
+    },
+
+    validate() {
+      this.errors = []
+      this.fieldErrors = {}
+
+      this.$v.$touch()
+
+      if (this.$v.$invalid) {
+        if (this.$v.name.$error) {
+          this.fieldErrors.name = this.cmsData.error_name
+        }
+
+        if (this.$v.email.$error) {
+          this.fieldErrors.email = this.cmsData.error_email
+        }
+
+        if (this.$v.company.$error) {
+          this.fieldErrors.company = this.cmsData.error_company
         }
       }
 
-      this.saving = false
-    },
-
-    validateForm() {
-      this.fieldErrors = {}
-
-      if (!this.name || this.name.trim() === '') {
-        this.fieldErrors.name = this.cmsData.error_name
-      }
-
-      if (!this.$isEmailValid(this.email)) {
-        this.fieldErrors.email = this.cmsData.error_email
-      }
-
-      if (!this.company || this.company.trim() === '') {
-        this.fieldErrors.company = this.cmsData.error_company
-      }
+      return !this.$v.$invalid
     },
   },
 }

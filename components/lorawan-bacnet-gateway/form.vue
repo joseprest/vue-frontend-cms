@@ -22,7 +22,7 @@
           />
         </div>
         <p v-if="fieldErrors.name" class="help is-danger">
-          {{ cmsData.name_input_error }}
+          {{ fieldErrors.name }}
         </p>
       </div>
 
@@ -41,7 +41,7 @@
           />
         </div>
         <p v-if="fieldErrors.email" class="help is-danger">
-          {{ cmsData.email_input_error }}
+          {{ fieldErrors.email }}
         </p>
       </div>
 
@@ -79,8 +79,21 @@
 </template>
 
 <script>
+import { validationMixin } from 'vuelidate'
+// eslint-disable-next-line import/extensions
+import { required, email } from 'vuelidate/lib/validators'
+
 export default {
   name: 'LorawanBacnetGatewayForm',
+
+  mixins: [validationMixin],
+
+  validations: {
+    form: {
+      name: { required },
+      email: { required, email },
+    },
+  },
 
   props: {
     cmsData: {
@@ -103,62 +116,64 @@ export default {
   },
 
   methods: {
-    submit() {
-      this.errors = []
-      this.fieldErrors = {}
-      this.validateForm()
-      if (Object.keys(this.fieldErrors).length > 0) return
-
-      this.saving = true
+    async submit() {
+      if (!this.validate()) return false
 
       try {
-        // await BackEndServices.requestGateway({
-        // 	name: this.name,
-        // 	email: this.email,
-        // 	lang: i18n.locale
-        // });
+        this.saving = true
+        await this.$sendFormToBackend('lorawanLeaflet', {
+          ...this.form,
+          lang: this.$i18n.locale,
+        })
         this.successSubmitForm = true
 
-        window.open(this.cmsData.file.url, '_blank')
+        this.$gtm.push({
+          event: 'uaevent',
+          category: 'landing gateway',
+          action: 'download leaflet',
+          label: 'download leaflet',
+        })
 
-        // this.$gtm.trackEvent({
-        // 	event: "uaevent",
-        // 	category: "landing gateway",
-        // 	action: "download leaflet",
-        // 	label: "download leaflet"
-        // });
+        window.open(this.cmsData.file.url, '_blank')
       } catch (err) {
-        this.errors = [this.cmsData.error_message]
-        // if (
-        // 	err.response &&
-        // 	err.response.data !== "failed_sending_mail_request_gateway"
-        // ) {
-        // 	for (let error of err.response.data.errors) {
-        // 		this.fieldErrors[error.param] = error.msg;
-        // 	}
-        // } else {
-        // 	this.errors = [
-        // 		{
-        // 			msg:
-        // 				"We had a problem with your request. Please, send us a message to contact@wattsense.com."
-        // 		}
-        // 	];
-        // }
+        if (err.status === 500) {
+          this.errors = [this.cmsData.error_message]
+        } else {
+          try {
+            const allErrors = err.data.errors
+            if (!allErrors) {
+              this.errors = err.data
+            }
+            for (const error in allErrors) {
+              this.fieldErrors[error] = allErrors[error]?.join(', ')
+              this.errors = [...this.errors, ...allErrors[error]]
+            }
+          } catch {
+            this.errors = [this.cmsData.error_message]
+          }
+        }
       } finally {
         this.saving = false
       }
     },
 
-    validateForm() {
+    validate() {
+      this.errors = []
       this.fieldErrors = {}
 
-      if (!this.form.name || this.form.name.trim() === '') {
-        this.fieldErrors.name = 'invalid'
+      this.$v.$touch()
+
+      if (this.$v.$invalid) {
+        if (this.$v.form.name.$error) {
+          this.fieldErrors.name = this.cmsData.name_input_error
+        }
+
+        if (this.$v.form.email.$error) {
+          this.fieldErrors.email = this.cmsData.email_input_error
+        }
       }
 
-      if (!this.$isEmailValid(this.form.email?.trim())) {
-        this.fieldErrors.email = 'invalid'
-      }
+      return !this.$v.$invalid
     },
   },
 }

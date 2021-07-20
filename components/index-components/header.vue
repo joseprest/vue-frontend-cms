@@ -128,7 +128,7 @@ export default {
     },
 
     // requestDemo(product) {
-    // 	this.$gtm.trackEvent({
+    // 	this.$gtm.push({
     // 		event: "uaevent",
     // 		category: "navigation",
     // 		action: "get a demo",

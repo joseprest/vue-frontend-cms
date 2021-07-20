@@ -81,12 +81,31 @@
     <div v-else class="notification" :class="{ 'is-success': success }">
       <span>{{ cmsData.success_message }}</span>
     </div>
+    <div v-if="errors && errors.length" class="notification is-danger">
+      <ul>
+        <li v-for="(error, index) in errors" :key="`error_${index}`">
+          {{ error }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
+import { validationMixin } from 'vuelidate'
+// eslint-disable-next-line import/extensions
+import { required, email } from 'vuelidate/lib/validators'
 export default {
   name: 'FormContact',
+
+  mixins: [validationMixin],
+
+  validations: {
+    name: { required },
+    email: { required, email },
+    company: { required },
+    message: { required },
+  },
 
   props: {
     cmsData: {
@@ -112,7 +131,7 @@ export default {
     async send() {
       if (!this.validate()) return false
 
-      this.$gtm.trackEvent({
+      this.$gtm.push({
         event: 'uaevent',
         category: 'lead generation',
         action: 'contact us',
@@ -122,7 +141,7 @@ export default {
       this.sending = true
 
       try {
-        await this.$sendToBack('contact', {
+        await this.$sendFormToBackend('requestContact', {
           name: this.name,
           email: this.email,
           company: this.company,
@@ -131,81 +150,52 @@ export default {
         this.errors = []
         this.success = true
       } catch (err) {
-        if (err.response) {
-          if (err.response.status === 500) {
-            this.errors = [
-              {
-                msg: this.cmsData.error_message,
-              },
-            ]
-          } else {
-            this.errors = err.response.data.errors
-            for (const error of this.errors) {
-              this.fieldErrors[error.param] = error.msg
-            }
-          }
+        if (err.status === 500) {
+          this.errors = [this.cmsData.error_message]
         } else {
-          this.errors = [
-            {
-              msg: this.cmsData.error_message,
-            },
-          ]
+          try {
+            const allErrors = err.data.errors
+            if (!allErrors) {
+              this.errors = err.data
+            }
+            for (const error in allErrors) {
+              this.fieldErrors[error] = allErrors[error]?.join(', ')
+              this.errors = [...this.errors, ...allErrors[error]]
+            }
+          } catch {
+            this.errors = [this.cmsData.error_message]
+          }
         }
+      } finally {
+        this.sending = false
       }
-
-      this.sending = false
     },
 
     validate() {
       this.errors = []
       this.fieldErrors = {}
 
-      if (this.name === null || this.name.trim().length < 1) {
-        this.errors.push({
-          param: 'name',
-          msg: this.cmsData.error_name,
-        })
-        this.fieldErrors.name = this.cmsData.error_name
-        return false
+      this.$v.$touch()
+
+      if (this.$v.$invalid) {
+        if (this.$v.name.$error) {
+          this.fieldErrors.name = this.cmsData.error_name
+        }
+
+        if (this.$v.email.$error) {
+          this.fieldErrors.email = this.cmsData.error_email
+        }
+
+        if (this.$v.company.$error) {
+          this.fieldErrors.company = this.cmsData.error_company
+        }
+
+        if (this.$v.message.$error) {
+          this.fieldErrors.message = 'Required'
+        }
       }
 
-      if (this.email === null || this.email.trim().length < 1) {
-        this.errors.push({
-          param: 'email',
-          msg: this.cmsData.error_email,
-        })
-        this.fieldErrors.email = this.cmsData.error_email
-        return false
-      }
-
-      if (!this.$isEmailValid(this.email)) {
-        this.errors.push({
-          param: 'email',
-          msg: this.cmsData.error_email,
-        })
-        this.fieldErrors.email = this.cmsData.error_email
-        return false
-      }
-
-      if (this.company === null || this.company.trim().length < 1) {
-        this.errors.push({
-          param: 'company',
-          msg: this.cmsData.error_company,
-        })
-        this.fieldErrors.company = this.cmsData.error_company
-        return false
-      }
-
-      if (this.message === null || this.message.trim().length < 5) {
-        this.errors.push({
-          param: 'message',
-          msg: this.cmsData.error_message,
-        })
-        this.fieldErrors.message = this.cmsData.error_message
-        return false
-      }
-
-      return true
+      return !this.$v.$invalid
     },
   },
 }

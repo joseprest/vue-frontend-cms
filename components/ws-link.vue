@@ -83,7 +83,7 @@
     </template>
     <template v-else>
       <a
-        v-if="RegExp('^https?://|^//').test(url)"
+        v-if="$isExternalUrl(url)"
         :href="url"
         :title="title"
         :class="{

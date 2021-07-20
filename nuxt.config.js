@@ -65,8 +65,10 @@ export default {
     '~/plugins/richTextImageUrls.js',
     '~/plugins/getImageUrlFromCms.js',
     '~/plugins/isEmailValid.js',
-    '~/plugins/sendToBack.js',
+    '~/plugins/axios.js',
+    '~/plugins/sendFormToBackend.js',
     '~/plugins/isExternalUrl.js',
+    { src: '~/plugins/vuelidate.js', ssr: false },
     { src: '~/plugins/vue-lazyload', ssr: false },
     { src: '~plugins/onAppReady', ssr: false },
   ],
@@ -87,7 +89,7 @@ export default {
 
   gtm: {
     id: 'GTM-PVCJNK9',
-    enabled: false,
+    enabled: process.env.NODE_ENV === 'production',
     debug: process.env.NODE_ENV === 'development',
     pageTracking: true,
     loadScript: true,
@@ -191,6 +193,7 @@ export default {
 
   env: {
     CMS_URL: process.env.CMS_URL || 'http://localhost:1337',
-    CONSOLE_API: process.env.CONSOLE_API || 'https://console.wattsense.com/api',
+    API_ENDPOINT:
+      process.env.API_ENDPOINT || 'https://console.wattsense.com/api/website',
   },
 }

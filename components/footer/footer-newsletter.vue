@@ -15,7 +15,7 @@
           class="button is-success inverted no-border"
           :class="{ 'is-loading': sending }"
           :disabled="sending"
-          @click="send"
+          @click.prevent="send"
         >
           {{ cmsData.button_text }}
         </button>
@@ -36,8 +36,18 @@
 </template>
 
 <script>
+import { validationMixin } from 'vuelidate'
+// eslint-disable-next-line import/extensions
+import { required, email } from 'vuelidate/lib/validators'
+
 export default {
   name: 'FooterNewsletter',
+
+  mixins: [validationMixin],
+
+  validations: {
+    email: { required, email },
+  },
 
   props: {
     cmsData: {
@@ -52,52 +62,72 @@ export default {
       sending: false,
       success: false,
       error: null,
-      errorMsg: 'Ops! Inform a valid e-mail address!',
+      errorMsg: null,
     }
   },
 
-  computed: {
-    newsletter() {
-      return this.cmsData?.newsletter
-    },
-  },
-
   methods: {
-    send() {
-      this.error = null
-      this.sending = true
+    async send() {
+      if (!this.validate()) return false
+
+      this.$gtm.push({
+        event: 'uaevent',
+        category: 'lead generation',
+        action: 'subscribe to the newsletter',
+        label: 'body',
+      })
+
+      try {
+        this.sending = true
+        await this.$sendFormToBackend('subscribeNewsletter', {
+          email: this.email,
+        })
+        this.success = true
+      } catch (err) {
+        if (err.status === 500) {
+          this.errorMsg =
+            'Ops! Something went wrong with our server! Send us a message to contact@wattsense.com, please!'
+        } else {
+          try {
+            const allErrors = err.data.errors
+            if (!allErrors) {
+              this.errorMsg = err.data
+            }
+            for (const error in allErrors) {
+              this.errorMsg += allErrors[error]?.join(', ')
+            }
+          } catch {
+            this.errorMsg =
+              'Ops! Something went wrong with our server! Send us a message to contact@wattsense.com, please!'
+          }
+        }
+        this.error = true
+      } finally {
+        this.sending = false
+      }
+    },
+
+    validate() {
+      this.error = false
       this.success = false
-      this.errorMsg = 'Ops! Inform a valid e-mail address!'
+      this.errorMsg = null
 
-      // this.$gtm.trackEvent({
-      //   event: 'uaevent',
-      //   category: 'lead generation',
-      //   action: 'subscribe to the newsletter',
-      //   label: 'body',
-      // })
+      this.$v.$touch()
 
-      // try {
-      //   await BackEndServices.subscribeToNewsletter(this.email)
-      //   this.error = null
-      //   this.success = true
-      // } catch (err) {
-      //   if (typeof err === 'string') {
-      //     this.errorMsg = err
-      //     this.error = true
-      //   } else if (err.response) {
-      //     if (err.response.status !== 400) {
-      //       this.errorMsg =
-      //         'Ops! Something went wrong with our server! Send us a message to contact@wattsense.com, please!'
-      //       this.error = true
-      //     } else this.success = true
-      //   } else {
-      //     this.errorMsg =
-      //       'Ops! Something went wrong... Check if your e-mail is valid, please!'
-      //     this.error = true
-      //   }
-      // }
+      if (this.$v.$invalid) {
+        this.error = true
+        if (this.$v.email.$error) {
+          if (this.$i18n.locale === 'fr') {
+            this.errorMsg = 'Ops! E-mail invalide!'
+          } else if (this.$i18n.locale === 'de') {
+            this.errorMsg = 'Ops! E-mail ungültig!'
+          } else {
+            this.errorMsg = 'Ops! E-mail invalid!'
+          }
+        }
+      }
 
-      this.sending = false
+      return !this.$v.$invalid
     },
   },
 }
