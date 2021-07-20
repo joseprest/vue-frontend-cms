@@ -3,14 +3,16 @@
     <div class="container">
       <div class="columns is-multiline content">
         <div class="column is-6 is-12-touch">
-          <div class="code">
-            <codes-menu
-              :cms-data="cmsData"
-              :active="content"
-              @select-code="showContent"
-            />
-            <codes-content :code="content" />
-          </div>
+          <client-only>
+            <div class="code">
+              <codes-menu
+                :cms-data="cmsData"
+                :active="content"
+                @select-code="showContent"
+              />
+              <codes-content :code="content" />
+            </div>
+          </client-only>
         </div>
         <div class="column is-6 is-12-touch">
           <ws-title

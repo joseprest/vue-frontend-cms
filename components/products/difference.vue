@@ -10,18 +10,19 @@
     </div>
 
     <table v-show="showTable" class="table is-fullwidth mt-50">
-      <thead class="is-hidden-mobile">
-        <th width="40%" class="features">
-          {{ cmsData.captions[0].text }}
-        </th>
-        <th width="30%" class="has-background-white has-text-centered">
-          {{ cmsData.captions[1].text }}
-        </th>
-        <th wodth="30%" class="has-background-white has-text-centered">
-          {{ cmsData.captions[2].text }}
-        </th>
-      </thead>
-
+      <client-only>
+        <thead class="is-hidden-mobile">
+          <th width="40%" class="features">
+            {{ cmsData.captions[0].text }}
+          </th>
+          <th width="30%" class="has-background-white has-text-centered">
+            {{ cmsData.captions[1].text }}
+          </th>
+          <th wodth="30%" class="has-background-white has-text-centered">
+            {{ cmsData.captions[2].text }}
+          </th>
+        </thead>
+      </client-only>
       <tbody>
         <tr v-for="d in cmsData.differences" :key="`difference${d.id}`">
           <td>

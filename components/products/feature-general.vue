@@ -1,74 +1,76 @@
 <template>
-  <div v-if="cmsData.image_position === 'left'" class="columns is-multiline">
-    <div class="column is-6 is-12-touch" style="position: relative">
-      <template v-if="cmsData.images.length > 1">
-        <div class="content-slider">
-          <div class="slider">
-            <button class="prev" @click.prevent="slidePrev">
-              <img src="~/assets/imgs/arrow.svg" alt="prev" />
-            </button>
-            <button class="next" @click.prevent="slideNext">
-              <img src="~/assets/imgs/arrow.svg" alt="next" />
-            </button>
-            <hooper ref="carousel" :settings="hooperSettings">
-              <slide v-for="img in cmsData.images" :key="`slide${img.id}`">
-                <div class="content-slide">
-                  <img
-                    :src="$getImageUrlFromCms(img)"
-                    :alt="img.alternativeText"
-                  />
-                </div>
-              </slide>
-            </hooper>
+  <div>
+    <div v-if="cmsData.image_position === 'left'" class="columns is-multiline">
+      <div class="column is-6 is-12-touch" style="position: relative">
+        <template v-if="cmsData.images.length > 1">
+          <div class="content-slider">
+            <div class="slider">
+              <button class="prev" @click.prevent="slidePrev">
+                <img src="~/assets/imgs/arrow.svg" alt="prev" />
+              </button>
+              <button class="next" @click.prevent="slideNext">
+                <img src="~/assets/imgs/arrow.svg" alt="next" />
+              </button>
+              <hooper ref="carousel" :settings="hooperSettings">
+                <slide v-for="img in cmsData.images" :key="`slide${img.id}`">
+                  <div class="content-slide">
+                    <img
+                      :src="$getImageUrlFromCms(img)"
+                      :alt="img.alternativeText"
+                    />
+                  </div>
+                </slide>
+              </hooper>
+            </div>
           </div>
-        </div>
-        <div class="image">
+          <div class="image">
+            <ws-image
+              :src="require('@/assets/imgs/products/features/desktop.png')"
+              :alt="cmsData.title"
+            />
+          </div>
+        </template>
+        <div v-else class="image">
           <ws-image
-            :src="require('@/assets/imgs/products/features/desktop.png')"
-            :alt="cmsData.title"
+            :src="$getImageUrlFromCms(cmsData.images[0])"
+            :alt="cmsData.images[0].alternativeText"
           />
         </div>
-      </template>
-      <div v-else class="image">
-        <ws-image
-          :src="$getImageUrlFromCms(cmsData.images[0])"
-          :alt="cmsData.images[0].alternativeText"
+      </div>
+      <div class="column is-6 is-12-touch">
+        <ws-title
+          :title="cmsData.title"
+          :description="cmsData.text"
+          align="left"
+          :class="{ 'mb-10': cmsData.button }"
         />
+        <ws-link v-if="cmsData.button" :cms-data="cmsData.button" />
       </div>
     </div>
-    <div class="column is-6 is-12-touch">
-      <ws-title
-        :title="cmsData.title"
-        :description="cmsData.text"
-        align="left"
-        :class="{ 'mb-10': cmsData.button }"
-      />
-      <ws-link v-if="cmsData.button" :cms-data="cmsData.button" />
-    </div>
-  </div>
-  <div v-else class="columns is-multiline">
-    <div class="column is-6 is-12-touch">
-      <ws-title
-        :title="cmsData.title"
-        :description="cmsData.text"
-        align="left"
-      />
-      <ws-link
-        v-if="cmsData.button"
-        :title="cmsData.button.title"
-        :url="
-          cmsData.button.file ? cmsData.button.file.url : cmsData.button.url
-        "
-        :target="cmsData.button.target ? '_blank' : ''"
-        class="mt-25"
-      />
-    </div>
-    <div class="column is-6 is-12-touch">
-      <div v-if="cmsData.images.length === 1" class="image">
-        <ws-image
-          :src="$getImageUrlFromCms(cmsData.images[0])"
-          :alt="cmsData.images[0].alternativeText"
+    <div v-else class="columns is-multiline">
+      <div class="column is-6 is-12-touch">
+        <ws-title
+          :title="cmsData.title"
+          :description="cmsData.text"
+          align="left"
         />
+        <ws-link
+          v-if="cmsData.button"
+          :title="cmsData.button.title"
+          :url="
+            cmsData.button.file ? cmsData.button.file.url : cmsData.button.url
+          "
+          :target="cmsData.button.target ? '_blank' : ''"
+          class="mt-25"
+        />
+      </div>
+      <div class="column is-6 is-12-touch">
+        <div v-if="cmsData.images.length === 1" class="image">
+          <ws-image
+            :src="$getImageUrlFromCms(cmsData.images[0])"
+            :alt="cmsData.images[0].alternativeText"
+          />
+        </div>
       </div>
     </div>
   </div>
