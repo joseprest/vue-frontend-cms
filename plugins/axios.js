@@ -8,7 +8,7 @@ export default function ({ $axios, error: nuxtError }) {
       })
     }
 
-    // I've to add this because all errors form API were redirecting to 404 page
+    // if it's an error from somewhere else, simply return as rejected
     return Promise.reject(error)
   })
 }

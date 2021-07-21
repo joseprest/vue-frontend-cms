@@ -1,10 +1,11 @@
 <template>
   <span v-if="showAnim">
     <span
-      v-for="protocol in protocols"
+      v-for="protocol in protocolsList"
       :id="`protocol${protocol.id}`"
       :key="`index_${protocol.id}`"
-      :class="`protocol protocol${protocol.id} ${$i18n.locale}`"
+      :class="`protocol type${protocol.__displayInfos__.type}`"
+      :style="`top: ${protocol.__displayInfos__.top}%`"
     >
       {{ protocol.text }}
     </span>
@@ -13,6 +14,22 @@
 
 <script>
 import animate, { setupPause } from '@/assets/js/animateplus.js'
+
+/**
+ * getRandomNumber
+ * @param {Number} min Min value (inclusive)
+ * @param {Number} max Max value (exclusive)
+ * @param {Boolean} asInt output an integer
+ */
+function getRandomNumber(min, max, asInt = false) {
+  if (!asInt) {
+    return Math.random() * (max - min) + min
+  }
+
+  min = Math.ceil(min)
+  max = Math.floor(max)
+  return Math.floor(Math.random() * (max - min) + min)
+}
 
 export default {
   name: 'Animation',
@@ -23,11 +40,34 @@ export default {
       default: () => [],
     },
   },
+
   data() {
     return {
       showAnim: true,
       triggerAnim: true,
     }
+  },
+
+  computed: {
+    protocolsList() {
+      const total = this.protocols.length
+      // calculate position for each protocol in a range between 5% and 95% (that will be used on top style)
+      const position = 90 / total // [90 = 95 - 5]
+      let lastType = -1
+      return this.protocols.map((protocol, index) => {
+        // different styles for each element (styles are in scss)
+        if (lastType + 1 > 5) {
+          lastType = -1
+        }
+        return {
+          ...protocol,
+          __displayInfos__: {
+            top: 5 + position * index + getRandomNumber(-3, 3), // generate a random position with min value for 5 (47 is the height of the element)
+            type: ++lastType,
+          },
+        }
+      })
+    },
   },
 
   updated() {
@@ -59,7 +99,7 @@ export default {
         animate({
           elements: document.querySelector(`#protocol${protocol.id}`),
           easing: 'linear',
-          duration: protocol.duration,
+          duration: protocol.duration * getRandomNumber(1, 1.6),
           delay: protocol.delay,
           opacity: protocol.fade ? [0, 1] : [1, 1],
           loop: true,
@@ -87,126 +127,31 @@ export default {
   align-items: center;
   justify-content: center;
   z-index: 1;
+  right: 0;
 
-  &.protocol1 {
-    top: 5%;
-    right: -20px;
+  &.type1 {
     background: rgba($cyan, 0.2);
     color: $cyan;
   }
 
-  &.protocol2 {
-    top: 10%;
-    right: -40px;
+  &.type2 {
     background: rgba($red, 0.2);
     color: $red;
   }
 
-  &.protocol3 {
-    top: 15%;
-    right: 0;
+  &.type3 {
+    background: rgba($green, 0.4);
+    color: $green;
   }
 
-  &.protocol4 {
-    top: 25%;
-    right: -50px;
-  }
-
-  &.protocol5 {
-    top: 30%;
-    right: -30px;
-    background: rgba($cyan, 0.2);
+  &.type4 {
+    background: rgba($cyan, 0.4);
     color: $cyan;
   }
 
-  &.protocol6 {
-    top: 50%;
-    right: 0;
-  }
-
-  &.protocol7 {
-    top: 55%;
-    right: -20px;
-  }
-
-  &.protocol8 {
-    top: 45%;
-    right: -40px;
-    background: rgba($red, 0.2);
+  &.type5 {
+    background: rgba($red, 0.4);
     color: $red;
-  }
-
-  &.protocol9 {
-    top: 40%;
-    right: -50px;
-  }
-
-  &.protocol10 {
-    top: 25%;
-    right: 0;
-  }
-
-  &.protocol11 {
-    top: 75%;
-    right: -160px;
-    background: rgba($red, 0.2);
-    color: $red;
-  }
-
-  &.protocol12 {
-    top: 63%;
-    right: -100px;
-    background: rgba($cyan, 0.2);
-    color: $cyan;
-  }
-
-  &.protocol13 {
-    top: 15%;
-    right: 0;
-  }
-
-  &.protocol14 {
-    top: 28%;
-    right: 0;
-    background: rgba($red, 0.2);
-    color: $red;
-  }
-
-  &.protocol15 {
-    top: 65%;
-    &.fr {
-      right: 0;
-    }
-    &.en {
-      right: -40px;
-    }
-    &.de {
-      right: -100px;
-    }
-  }
-
-  &.protocol16 {
-    top: 48%;
-    right: -120px;
-  }
-
-  &.protocol17 {
-    top: 35%;
-    right: -90px;
-    background: rgba($red, 0.2);
-    color: $red;
-  }
-
-  &.protocol18 {
-    top: 40%;
-    right: -20px;
-    background: rgba($cyan, 0.2);
-    color: $cyan;
-  }
-
-  &.protocol19 {
-    top: 75%;
-    right: 0;
   }
 }
 </style>

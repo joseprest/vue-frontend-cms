@@ -187,7 +187,7 @@ export default {
   },
 
   env: {
-    CMS_URL: process.env.CMS_URL || 'http://localhost:1337',
+    CMS_URL: process.env.CMS_URL || 'https://strapi.wattsense.com',
     API_ENDPOINT:
       process.env.API_ENDPOINT || 'https://console.wattsense.com/api/website',
   },
