@@ -61,7 +61,7 @@ export default {
           easing: 'linear',
           duration: protocol.duration,
           delay: protocol.delay,
-          opacity: protocol.fade ? [0, 1] : 1,
+          opacity: protocol.fade ? [0, 1] : [1, 1],
           loop: true,
           direction: 'normal',
           transform: [
