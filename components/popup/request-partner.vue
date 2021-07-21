@@ -154,10 +154,10 @@ export default {
 
         this.success = true
       } catch (err) {
-        if (err.status === 500) {
-          this.errors = [this.cmsData.error_msg_request_partner]
-        } else {
-          try {
+        try {
+          if (err.status === 500) {
+            this.errors = [this.cmsData.error_msg_request_partner]
+          } else {
             const allErrors = err.data.errors
             if (!allErrors) {
               this.errors = err.data
@@ -166,9 +166,9 @@ export default {
               this.fieldErrors[error] = allErrors[error]?.join(', ')
               this.errors = [...this.errors, ...allErrors[error]]
             }
-          } catch {
-            this.errors = [this.cmsData.error_msg_request_partner]
           }
+        } catch (error) {
+          this.errors = [this.cmsData.error_msg_request_partner]
         }
       } finally {
         this.saving = false
