@@ -6,7 +6,7 @@
         <div id="columnapi" class="column is-12">
           <figure class="image is-hidden-tablet new-box-pic">
             <ws-image
-              :src="require('@/assets/imgs/new-box-v1.png')"
+              :src="$getUrlFromCms(cmsData.image.url)"
               alt="Wattsense Box"
             />
           </figure>
