@@ -1,7 +1,9 @@
 <template>
   <div class="card">
     <div class="card-image">
-      <router-link :to="`/resources/customer-stories/${cmsData.slug}`">
+      <router-link
+        :to="localePath(`/resources/customer-stories/${cmsData.slug}`)"
+      >
         <figure class="image">
           <ws-image
             :src="$getImageUrlFromCms(cmsData.card.image)"

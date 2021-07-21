@@ -37,6 +37,7 @@ export default {
     paths: {
       en: '/lorawan-bacnet-gateway',
       fr: '/passerelle-lorawan-bacnet',
+      de: '/lorawan-bacnet-gateway',
     },
   },
 

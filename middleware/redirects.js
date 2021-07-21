@@ -9,7 +9,7 @@ export default function (ctx) {
     { from: '^/fr/produits$', to: '/fr/produits/box', statusCode: 301 },
     { from: '^/de/produkte$', to: '/de/produkte/box', statusCode: 301 },
 
-    // customer stories - index
+    // customer stories
     {
       from: '^/customer-stories$',
       to: '/resources/customer-stories',
@@ -17,12 +17,12 @@ export default function (ctx) {
     },
     {
       from: '^/experiences-client$',
-      to: '/ressources/experiences-client',
+      to: '/fr/ressources/experiences-client',
       statusCode: 301,
     },
     {
       from: '^/kundengeschichten$',
-      to: '/ressourcen/kundengeschichten',
+      to: '/de/ressourcen/kundengeschichten',
       statusCode: 301,
     },
 

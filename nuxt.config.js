@@ -161,11 +161,6 @@ export default {
       { code: 'de', iso: 'de' },
     ],
     defaultLocale: 'en',
-    paths: {
-      en: '/resources/customer-stories/:slug',
-      fr: '/ressources/experiences-client/:slug',
-      de: '/ressourcen/kundengeschichten/:slug',
-    },
     vueI18n: {
       fallbackLocale: 'en',
     },

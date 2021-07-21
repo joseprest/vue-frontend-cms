@@ -2,7 +2,7 @@
   <div v-if="cmsData">
     <section class="header">
       <div class="container">
-        <nuxt-link class="logo" to="/">
+        <nuxt-link class="logo" :to="localePath('/')">
           <img width="181" height="35" :src="getLogoImg" alt="Wattsense" />
         </nuxt-link>
         <div class="actions">

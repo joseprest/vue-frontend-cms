@@ -40,6 +40,14 @@ import WidgetGetDemo from '@/components/customer-stories-components/widget-get-d
 
 export default {
   name: 'CustomerStory',
+  nuxtI18n: {
+    paths: {
+      en: '/resources/customer-stories/:slug',
+      fr: '/ressources/experiences-client/:slug',
+      de: '/ressourcen/kundengeschichten/:slug',
+    },
+  },
+
   components: {
     WidgetCompany,
     WidgetGetDemo,
