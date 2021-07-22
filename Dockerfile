@@ -1,10 +1,8 @@
-FROM node:lts
+FROM node:14
 
 WORKDIR /app
 
 COPY . .
-
-RUN rm .env*
 
 RUN yarn install \
   --prefer-offline \
@@ -16,7 +14,8 @@ RUN yarn install \
 ENV HOST 0.0.0.0
 ENV PORT 8080
 ENV CMS_URL "https://strapi.wattsense.com"
-ENV CONSOLE_API "https://console.wattsense.com/api"
+ENV API_ENDPOINT "https://console.wattsense.com/api/website/"
+ENV TARGET "server"
 
 RUN yarn build
 
