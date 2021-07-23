@@ -42,7 +42,7 @@ export default ({ app }, inject) => {
     if (params.og_image) {
       meta.push({
         property: 'og:image',
-        content: process.env.CMS_URL + params.og_image.url,
+        content: params.og_image.url,
       })
     }
 
