@@ -8,15 +8,25 @@
       <button class="next" @click.prevent="slideNext">
         <img src="~/assets/imgs/arrow.svg" alt="next" />
       </button>
-      <hooper ref="carousel" :settings="hooperSettings" @slide="updateCarousel">
-        <template v-for="(testimonial, index) in cmsData.testimonial">
-          <slide :key="testimonial.id" :index="index">
+      <client-only>
+        <hooper
+          ref="carousel"
+          :settings="hooperSettings"
+          @slide="updateCarousel"
+        >
+          <slide
+            v-for="(testimonial, index) in cmsData.testimonial"
+            :key="testimonial.id"
+            :index="index"
+          >
             <div class="content-slide">
               <div class="story">
                 <p class="info">
                   {{ testimonial.title }}
                 </p>
-                <p class="text" v-html="$md.render(testimonial.content)" />
+                <p class="text">
+                  {{ testimonial.content }}
+                </p>
 
                 <div class="infos">
                   <p class="name">
@@ -26,7 +36,7 @@
                     {{ testimonial.author_job }}
                   </p>
                 </div>
-                <p class="link">
+                <div class="link">
                   <ws-link
                     :title="cmsData.read_full_story_button"
                     :url="testimonial.link"
@@ -34,13 +44,13 @@
                     :is-halftransparent="true"
                     class="mt-25 is-size-7"
                   />
-                </p>
+                </div>
               </div>
             </div>
           </slide>
-        </template>
-        <hooper-pagination slot="hooper-addons"></hooper-pagination>
-      </hooper>
+          <hooper-pagination slot="hooper-addons"></hooper-pagination>
+        </hooper>
+      </client-only>
     </div>
   </section>
 </template>

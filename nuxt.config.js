@@ -155,6 +155,7 @@ export default {
     // use: ['markdown-it-div', 'markdown-it-attrs'],
   },
   i18n: {
+    baseUrl: 'https://wattsense.com',
     locales: [
       { code: 'en', iso: 'en' },
       { code: 'fr', iso: 'fr' },
@@ -162,7 +163,7 @@ export default {
     ],
     defaultLocale: 'en',
     vueI18n: {
-      fallbackLocale: 'en',
+      fallbackLocale: ['en', 'fr'],
     },
     seo: true,
   },

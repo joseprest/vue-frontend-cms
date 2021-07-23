@@ -39,7 +39,7 @@
         <div class="protocols is-hidden-touch">
           <img
             class="bg"
-            src="@/assets/imgs/about/complexity-animation-bg.png"
+            src="@/assets/imgs/about/complexity-animation-bg-min.png"
             alt="protocols"
           />
           <div class="protocol-container">

@@ -4,7 +4,7 @@
       {{ cmsData.caption }}
     </span>
     <h1 v-html="cmsData.title" />
-    <p
+    <div
       class="lorawan-bacnet-gateway-header-content"
       v-html="$md.render(cmsData.content)"
     />
