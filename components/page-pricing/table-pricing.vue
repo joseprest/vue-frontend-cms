@@ -35,11 +35,12 @@
               {{ colTitle.title }}
             </span>
           </li>
-          <template v-for="(row, rowIndex) in cmsData.rows">
+          <template v-for="row in cmsData.rows">
             <li
               v-if="colIndex === 0"
               :key="`row-title-${row.id}`"
-              :class="row.title_bold ? 'empty-line features-title' : 'others'"
+              class="others"
+              :class="row.title_bold ? 'others__bold' : ''"
             >
               <span
                 class="feature"
@@ -61,13 +62,7 @@
             <li
               v-else
               :key="`row-${row.id}-col-${colIndex}`"
-              :class="{
-                others: row.value.length > 0,
-                'others-last': rowIndex === cmsData.rows.length - 1,
-                'empty-line': row.value.length === 0 && rowIndex > 0,
-                'empty-line empty-line-header':
-                  row.value.length === 0 && rowIndex === 0,
-              }"
+              :class="row.value.length > 0 ? 'others' : 'empty-line'"
             >
               <template v-if="row.value.length > 0">
                 <span class="feature touch">
@@ -97,7 +92,7 @@
               </template>
               <span
                 v-else
-                class="is-hidden-desktop has-text-weight-bold is-size-7 has-text-centered"
+                class="is-hidden-desktop is-size-7 has-text-weight-semibold has-text-centered"
               >
                 {{ row.title }}
               </span>
@@ -105,6 +100,7 @@
           </template>
 
           <!-- Price info buttons -->
+          <!-- TODO: button handler -- popup form -->
           <li class="infoprices" />
           <li class="infoprice">
             <ws-button
@@ -220,22 +216,20 @@ export default {
     }
 
     &:not(:first-child) {
-      // box-shadow: 0 16px 165px rgba(24, 69, 101, 0.06);
       border-right: 1px solid $gray_2;
       position: relative;
-      @include mobile {
-        border-right: 0;
+    }
+
+    &.features {
+      &:active {
+        box-shadow: none !important;
       }
     }
   }
+
   @include desktop {
     .column:last-child {
       border-right: 0;
-    }
-  }
-  .column.features {
-    &:active {
-      box-shadow: none !important;
     }
   }
 }
@@ -321,38 +315,24 @@ li.others {
     margin: 0;
     margin-bottom: 0.35rem;
     padding-left: 0.5rem;
-    height: 2.4rem;
+    height: 2.48rem;
     background-color: rgba(153, 178, 197, 0.1);
   }
 }
 
 .empty-line {
-  height: 2.15em;
+  height: 1.85em;
   background-color: rgba(153, 178, 197, 0.1);
   margin-right: -1px;
-  padding-top: 0rem;
+  padding-top: 2.45rem;
   display: block;
   @include touch {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: auto;
     min-height: 4.5em;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid rgba($gray-lighter, 0.5);
-    margin-top: -0.6em;
-  }
-
-  &-header {
-    margin-top: 0;
-  }
-
-  &.features-title {
-    padding-top: 0.5em;
-
-    span {
-      font-size: 0.8em;
-    }
   }
 }
 
@@ -384,13 +364,6 @@ li.others {
       }
     }
   }
-
-  &-last {
-    @include touch {
-      border-bottom: 0;
-      margin-bottom: 0;
-    }
-  }
 }
 li.others:first-of-type {
   margin-top: 1.2em;
@@ -415,7 +388,7 @@ li.infoprices {
   }
 }
 li.infoprice {
-  height: 2.6em;
+  height: 2.5em;
   display: flex;
   align-items: center;
   justify-content: center;
