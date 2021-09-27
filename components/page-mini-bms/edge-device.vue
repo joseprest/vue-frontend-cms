@@ -7,7 +7,11 @@
         :key="`wattsense-equip-index-${equip.id}`"
         class="column .is-variable is-6 is-hidden-touch"
       >
-        <ws-title :title="equip.tip" align="left" class="underline" />
+        <ws-title
+          :title="equip.tip"
+          :align="index == 0 ? 'left' : `center`"
+          class="underline"
+        />
         <figure class="image has-text-centered" :id="`item-${index}`">
           <ws-image :src="$getImageUrlFromCms(equip.image)" :alt="equip.tip" />
         </figure>

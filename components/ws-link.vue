@@ -14,7 +14,7 @@
           <slot>
             {{ cmsData.title }}
           </slot>
-          <span class="icon">
+          <span v-if="isIcon" class="icon">
             <ico-arrow />
           </span>
         </a>
@@ -39,7 +39,7 @@
           rel="noopener"
         >
           {{ cmsData.title }}
-          <span class="icon">
+          <span v-if="isIcon" class="icon">
             <ico-arrow />
           </span>
         </a>
@@ -57,7 +57,7 @@
           <slot>
             {{ cmsData.title }}
           </slot>
-          <span class="icon">
+          <span v-if="isIcon" class="icon">
             <ico-arrow />
           </span>
         </nuxt-link>
@@ -75,7 +75,7 @@
           <slot>
             {{ cmsData.title }}
           </slot>
-          <span class="icon">
+          <span v-if="isIcon" class="icon">
             <ico-arrow />
           </span>
         </a>
@@ -98,7 +98,7 @@
         @click="action"
       >
         <slot>{{ title }} </slot>
-        <span class="icon">
+        <span v-if="isIcon" class="icon">
           <ico-arrow />
         </span>
       </a>
@@ -111,6 +111,7 @@
           inverted: isInverted,
           small: isSmall,
           transparent: isTransparent,
+          decoration: isDecoration,
           halftransparent: isHalftransparent,
         }"
         @click.native="action"
@@ -118,7 +119,7 @@
         <slot>
           {{ title }}
         </slot>
-        <span class="icon">
+        <span v-if="isIcon" class="icon">
           <ico-arrow />
         </span>
       </nuxt-link>
@@ -170,9 +171,17 @@ export default {
       type: Boolean,
       default: false,
     },
+    isDecoration: {
+      type: Boolean,
+      default: false,
+    },
     isHalftransparent: {
       type: Boolean,
       default: false,
+    },
+    isIcon: {
+      type: Boolean,
+      default: true,
     },
   },
 
@@ -226,6 +235,9 @@ a.transparent {
   &:hover {
     background-color: rgba($blue-dark, 0.04);
   }
+}
+a.decoration {
+  text-decoration: underline;
 }
 
 a.halftransparent {

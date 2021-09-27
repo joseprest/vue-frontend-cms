@@ -4,7 +4,13 @@
       {{ cmsData.title }}
     </ws-title>
     <div class="feature-anchor has-text-centered">
-      <ws-link :url="cmsData.anchor_url" class="mt-25">
+      <ws-link
+        :url="cmsData.anchor_url"
+        isTransparent
+        isDecoration
+        :isIcon="false"
+        class="mt-25"
+      >
         {{ cmsData.anchor_text }}
       </ws-link>
     </div>
@@ -22,7 +28,7 @@
             />
           </figure>
           <div class="has-text-centered">
-            <ws-title :title="feature.tip" align="center" />
+            <ws-title :title="feature.tip" class="underline" align="center" />
             <p class="description is-size-6">
               {{ feature.description }}
             </p>
