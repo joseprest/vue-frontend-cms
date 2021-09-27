@@ -1,27 +1,18 @@
 <template>
   <div class="container py-6">
     <div class="columns is-multiline">
-      <ws-title
-          :title="cmsData.title"
-          :description="cmsData.text"
-        />
-      <div 
+      <ws-title :title="cmsData.title" :description="cmsData.text" />
+      <div
         v-for="(equip, index) in cmsData.equipments"
         :key="`wattsense-equip-index-${equip.id}`"
-        class="column .is-variable is-6 is-hidden-touch">
-        <ws-title
-          :title="equip.tip"
-          align="left"
-          class="underline"
-        />
+        class="column .is-variable is-6 is-hidden-touch"
+      >
+        <ws-title :title="equip.tip" align="left" class="underline" />
         <figure class="image has-text-centered" :id="`item-${index}`">
-          <ws-image
-            :src="$getImageUrlFromCms(equip.image)"
-            :alt="equip.tip"
-          />
+          <ws-image :src="$getImageUrlFromCms(equip.image)" :alt="equip.tip" />
         </figure>
         <div class="description px-4">
-        <p>{{equip.description}}</p>
+          <p>{{ equip.description }}</p>
         </div>
       </div>
     </div>
@@ -62,11 +53,9 @@ export default {
           height: 100px;
         }
       }
-      
       img {
         width: auto;
         height: auto;
-          
       }
     }
   }

@@ -9,34 +9,33 @@
       </ws-link>
     </div>
     <div class="columns is-multiline feature-steps">
-        <div
-          v-for="feature in cmsData.miniFeatures"
-          :key="`customer-feature-index-${feature.id}`"
-          class="column is-6 is-12-mobile"
-        >
-          <div class="card">
-            <div class="card-image">
-              <figure class="image">
-                <ws-image
-                  :src="$getImageUrlFromCms(feature.image)"
-                  :alt="feature.tip"
-                />
-              </figure>
-            </div>
-            <div class="card-content has-text-centered">
-              <ws-title
-                :title="feature.tip"
-                align="center"
-              />
-              <p class="description is-size-6">
-                {{ feature.description }}
-              </p>
-            </div>
+      <div
+        v-for="feature in cmsData.miniFeatures"
+        :key="`customer-feature-index-${feature.id}`"
+        class="column is-6 is-12-mobile"
+      >
+        <div class="align-top is-flex-column box box-green">
+          <figure class="image">
+            <ws-image
+              :src="$getImageUrlFromCms(feature.image)"
+              :alt="feature.tip"
+            />
+          </figure>
+          <div class="has-text-centered">
+            <ws-title :title="feature.tip" align="center" />
+            <p class="description is-size-6">
+              {{ feature.description }}
+            </p>
           </div>
         </div>
+      </div>
     </div>
     <div class="has-text-centered">
-      <ws-link :url="cmsData.contact_us_url" class="mt-25">
+      <ws-link
+        :url="cmsData.contact_us_url"
+        isTransparent
+        class="mt-25 contactus-link"
+      >
         {{ cmsData.contact_us_text }}
       </ws-link>
     </div>
@@ -74,12 +73,29 @@ export default {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    figure {
-      margin-bottom: 1rem;
-      justify-content: center;
-      display: flex;
+    .is-flex-column {
+      height: 100%;
+    }
+    .box {
+      background: #ffffff;
+      box-shadow: 10px 10px 40px rgba(39, 54, 77, 0.1);
+      border-radius: 15px;
+      figure {
+        margin-bottom: 1rem;
+        justify-content: center;
+        display: flex;
+        img {
+          height: 250px;
+          width: auto;
+        }
+      }
     }
   }
 }
-
+.contactus-link {
+  box-shadow: 5px 5px 20px rgb(39 54 77 / 10%);
+  border-radius: 5px;
+  padding: 12px 30px;
+  background: #fff;
+}
 </style>
