@@ -5,7 +5,7 @@
       <div
         v-for="(equip, index) in cmsData.equipments"
         :key="`wattsense-equip-index-${equip.id}`"
-        class="column .is-variable is-6 is-hidden-touch"
+        class="column .is-variable is-6"
       >
         <ws-title
           :title="equip.tip"
@@ -38,6 +38,12 @@ export default {
 <style lang="scss" scoped>
 .section.edge-device {
   margin-bottom: 1.5rem;
+}
+@include touch {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 .columns {
   .column {

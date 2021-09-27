@@ -65,6 +65,12 @@ export default {
 }
 .midsize-pricing {
   background: linear-gradient(to bottom, white, #f1f5f7);
+  @include touch {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
 }
 
 .columns {
