@@ -1,16 +1,18 @@
 <template>
-  <div class="container">
-    <ws-title :title="cmsData.title" align="center" />
-    <div class="columns is-multiline mb-25 integration">
-      <div
-        v-for="btn in cmsData.sources"
-        :key="`res-${btn.id}`"
-        class="column is-4-widescreen is-6-desktop is-6-tablet is-12-mobile"
-      >
-        <button-extended :cms-data="btn" color="green" />
+  <section class="section">
+    <div class="container">
+      <ws-title :title="cmsData.title" class="has-text-white" align="center" />
+      <div class="columns is-multiline mb-25 integration">
+        <div
+          v-for="btn in cmsData.sources"
+          :key="`res-${btn.id}`"
+          class="column is-4-widescreen is-6-desktop is-6-tablet is-12-mobile"
+        >
+          <button-extended :cms-data="btn" color="green" />
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -26,13 +28,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.section.main {
-  background-image: linear-gradient(to bottom, white, #f0f5f7);
-}
-.container {
-  @include touch {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+.section {
+  background: linear-gradient(
+    180deg,
+    #34455e 8.14%,
+    rgba(52, 69, 94, 0.88) 85.01%
+  );
+  .container {
+    @include touch {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
   }
 }
 
