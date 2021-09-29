@@ -9,7 +9,9 @@
       >
         <div class="align-top is-flex-column">
           <div class="has-text-left">
-            <p class="is-size-4 has-text-weight-bold">{{ system.tip }}</p>
+            <p class="is-size-4 has-text-weight-bold has-text-grey-light">
+              {{ system.tip }}
+            </p>
             <p class="description is-size-6">
               {{ system.description }}
             </p>
@@ -52,11 +54,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.columns {
-  line-height: 2em;
-  margin-bottom: 1em;
+.container {
   @include touch {
-    margin-bottom: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .columns {
+    line-height: 2em;
+    margin-bottom: 1em;
+    @include touch {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -64,7 +72,6 @@ export default {
   margin-top: 3rem !important;
   justify-content: space-between;
   border-radius: 5px;
-  padding: 0 40px;
   .column {
     padding: 40px 20px;
     min-height: 100%;

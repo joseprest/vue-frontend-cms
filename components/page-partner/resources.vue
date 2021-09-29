@@ -29,6 +29,12 @@ export default {
 .section.main {
   background-image: linear-gradient(to bottom, white, #f0f5f7);
 }
+.container {
+  @include touch {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
 
 .title {
   width: 100%;

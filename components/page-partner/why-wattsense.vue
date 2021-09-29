@@ -77,8 +77,25 @@ export default {
   },
 }
 </script>
-
+<style>
+.page-title {
+  margin-bottom: 0 !important;
+}
+</style>
 <style lang="scss" scoped>
+.why-wattsense {
+  @include touch {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .hero {
+    padding-bottom: 30px;
+    background: #2bc47c38;
+    span {
+      color: #0c0c0c;
+    }
+  }
+}
 .steps {
   background: inherit;
   box-shadow: none;
