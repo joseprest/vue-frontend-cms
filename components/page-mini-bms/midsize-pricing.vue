@@ -26,9 +26,7 @@
                 <p class="step-title has-text-weight-bold mb-3">
                   {{ step.tip }}
                 </p>
-                <p class="subtitle">
-                  {{ step.description }}
-                </p>
+                <div class="sub-title" v-html="$md.render(step.description)" />
               </div>
             </div>
           </div>
@@ -112,7 +110,7 @@ export default {
         }
       }
       .step-title,
-      .subtitle {
+      .sub-title {
         font-size: 18px;
       }
     }
@@ -124,5 +122,11 @@ export default {
   border-radius: 5px;
   padding: 12px 30px;
   background: #fff;
+}
+</style>
+<style>
+.step-link {
+  color: #2bc47b;
+  text-decoration-line: underline;
 }
 </style>
