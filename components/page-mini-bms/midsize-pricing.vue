@@ -33,13 +33,7 @@
         </div>
       </div>
       <div class="has-text-centered">
-        <ws-link
-          :url="cmsData.pricing_url"
-          isTransparent
-          class="explore-link mt-25"
-        >
-          {{ cmsData.pricing_url_text }}
-        </ws-link>
+        <ws-button :cms-data="cmsData.pricing_explore_btn" class="mt-25" />
       </div>
     </div>
   </div>
