@@ -112,6 +112,31 @@ $size-draw-small: 50px;
   &.inverted {
     color: white;
   }
+  &.underline {
+      .ws-title__title {
+        &:before {
+          display: none;
+        }
+        &:after {
+          content: '';
+          background: url('~/assets/imgs/title-divider.svg') no-repeat center;
+          position: absolute;
+          bottom: -20px;
+          left: 0;
+          right: auto;
+          height: 10px;
+          width: $size-draw;
+        }
+      }
+       &.has-text-centered {
+        .ws-title__title {
+          &:after {
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+       }
+    }
 
   &__title {
     line-height: 1.4;
@@ -153,6 +178,7 @@ $size-draw-small: 50px;
         background: none;
       }
     }
+    
 
     &:before {
       content: '';
