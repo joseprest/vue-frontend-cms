@@ -19,9 +19,9 @@ export default {
   name: 'PageMiniBMS',
   nuxtI18n: {
     paths: {
-      en: '/mini-bms',
-      fr: '/mini-gtb',
-      de: '/mini-bms',
+      en: '/products/mini-bms',
+      fr: '/produits/mini-gtb',
+      de: '/produkte/mini-bms',
     },
   },
   async asyncData({ i18n, $axios, $getUrlFromCms }) {
