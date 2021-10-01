@@ -41,6 +41,7 @@
                 v-for="item in cmsData.features_col_2"
                 :key="`feature2-${item.id}`"
                 class="has-text-weight-bold"
+                v-bind:class="{ 'item-list__check': item.is_check }"
               >
                 {{ item.title }}
                 <div v-if="item.text" class="has-text-weight-normal">
@@ -98,6 +99,10 @@ li.item-list {
 .button.link {
   display: inline-block;
   text-align: left;
+}
+.column.is-8 li.item-list__check {
+  font-weight: 600 !important;
+  font-size: 18px;
 }
 
 .box-info {
