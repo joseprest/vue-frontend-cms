@@ -6,7 +6,7 @@
         v-if="comp.__component === 'index-components.header'"
         :key="`body-${comp.__component}-${comp.id}`"
         :cms-data="comp"
-        :navbar-data="navbarData.dropdown"
+        :navbar-data="navbarData"
       />
       <section
         v-else

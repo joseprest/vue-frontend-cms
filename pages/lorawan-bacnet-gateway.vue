@@ -2,6 +2,7 @@
   <div v-if="cmsData">
     <lorawan-bacnet-gateway-navbar
       :cms-data="cmsData.navbar"
+      :extras-navbar="navbarData.extras"
       @changed-language="changedLocale"
     />
     <section class="section">

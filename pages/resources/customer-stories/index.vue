@@ -1,8 +1,5 @@
 <template>
-  <page-container
-    :cms-data="cmsData.page_title"
-    :navbar-data="navbarData.dropdown"
-  >
+  <page-container :cms-data="cmsData.page_title" :navbar-data="navbarData">
     <section class="section main">
       <div class="container">
         <div class="columns is-centered is-multiline">

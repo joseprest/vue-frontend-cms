@@ -1,6 +1,13 @@
 <template>
-  <div v-if="cmsData">
-    <section class="header">
+  <div>
+    <template v-for="comp of extrasNavbar">
+      <component
+        :is="$getComponentFromCms(comp.__component)"
+        :key="`navigation-extra-${comp.__component}-${comp.id}`"
+        :cms-data="comp"
+      />
+    </template>
+    <section v-if="cmsData" class="header">
       <div class="container">
         <nuxt-link class="logo" :to="localePath('/')">
           <img width="181" height="35" :src="getLogoImg" alt="Wattsense" />
@@ -66,6 +73,10 @@ export default {
     cmsData: {
       type: Object,
       default: null,
+    },
+    extrasNavbar: {
+      type: Array,
+      default: () => [],
     },
   },
 

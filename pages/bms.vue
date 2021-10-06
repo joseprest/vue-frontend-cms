@@ -2,7 +2,7 @@
   <page-container
     v-if="Object.keys(cmsData).length > 0"
     :cms-data="cmsData.page_title"
-    :navbar-data="navbarData.dropdown"
+    :navbar-data="navbarData"
   >
     <template v-for="comp in cmsData.body">
       <component
