@@ -17,8 +17,8 @@ export default {
       default: null,
     },
     navbarData: {
-      type: Array,
-      default: () => [],
+      type: Object,
+      default: () => ({}), // {dropdown: [], extras: []}
     },
   },
 }

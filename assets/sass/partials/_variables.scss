@@ -54,6 +54,7 @@ $box-shadow: 1px 1px 5px rgba($black, 0.25);
 
 $strong-color: inherit;
 $darker-green: #30443b;
+$darker-blue: #27364D;
 $addColors: (
 	"darker-green": (
 		$darker-green,
@@ -62,7 +63,11 @@ $addColors: (
 	"green-neon": (
 		$green-neon,
 		findColorInvert($green-neon)
-	)
+	),
+  "darker-blue": (
+    $darker-blue,
+    findColorInvert($darker-blue)
+  )
 );
 $colors: map-merge($colors, $addColors);
 
