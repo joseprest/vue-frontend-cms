@@ -1,8 +1,5 @@
 <template>
-  <page-container
-    :cms-data="cmsData.page_title"
-    :navbar-data="navbarData.dropdown"
-  >
+  <page-container :cms-data="cmsData.page_title" :navbar-data="navbarData">
     <section
       v-for="comp in cmsData.body"
       :key="`body-${comp.__component}-${comp.id}`"

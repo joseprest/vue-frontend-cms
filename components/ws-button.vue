@@ -24,10 +24,7 @@
       <a
         v-if="cmsData.file"
         :href="$getUrlFromCms(cmsData.file.url)"
-        :title="cmsData.title"
-        class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
-        :class="{ 'is-inverted': cmsData.inverted }"
-        :target="cmsData.open_new_tab ? '_blank' : ''"
+        v-bind="defaultAttrs"
         noref="noref"
         rel="noopener"
       >
@@ -43,10 +40,7 @@
             cmsData.url.indexOf('mailto') !== -1)
         "
         :href="cmsData.url"
-        :title="cmsData.title"
-        class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
-        :class="{ 'is-inverted': cmsData.inverted }"
-        :target="cmsData.open_new_tab ? '_blank' : ''"
+        v-bind="defaultAttrs"
         noref="noref"
         rel="noopener"
       >
@@ -57,10 +51,7 @@
       <nuxt-link
         v-else
         :to="cmsData.url[0] === '#' ? cmsData.url : localePath(cmsData.url)"
-        :title="cmsData.title"
-        :target="cmsData.open_new_tab ? '_blank' : ''"
-        class="button is-success has-text-weight-semibold has-shadow btn-big is-uppercase"
-        :class="{ 'is-inverted': cmsData.inverted }"
+        v-bind="defaultAttrs"
       >
         <slot>
           {{ cmsData.title }}
@@ -94,6 +85,58 @@ export default {
     return {
       showPopup: false,
     }
+  },
+  computed: {
+    defaultAttrs() {
+      return {
+        title: this.cmsData.title,
+        class: this.buttonClass.join(' '),
+        target: this.cmsData.open_new_tab ? '_blank' : '',
+      }
+    },
+
+    buttonClass() {
+      const classes = [
+        'button',
+        'has-text-weight-semibold',
+        'has-shadow',
+        'is-uppercase',
+      ]
+      if (this.cmsData.inverted) {
+        classes.push('is-inverted')
+      }
+      if (
+        ['green', 'blue', 'dark_blue', 'yellow', 'red'].includes(
+          this.cmsData.color
+        )
+      ) {
+        const mapColors = {
+          green: 'success',
+          blue: 'info',
+          dark_blue: 'darker-blue',
+          yellow: 'warning',
+          red: 'danger',
+        }
+        classes.push(`is-${mapColors[this.cmsData.color]}`)
+      } else {
+        classes.push('is-success')
+      }
+
+      if (this.isSmall) {
+        classes.push('is-small')
+      } else if (['small', 'normal', 'big'].includes(this.cmsData.size)) {
+        if (this.cmsData.size === 'small') {
+          classes.push('is-small')
+        } else if (this.cmsData.size === 'big') {
+          classes.push('btn-big')
+        }
+      } else {
+        // default of the button, unfortunately (but we can fix that!!!), is to have btn-big class :facepalm:
+        classes.push('btn-big')
+      }
+
+      return classes
+    },
   },
 
   mounted() {

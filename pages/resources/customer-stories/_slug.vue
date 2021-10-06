@@ -75,7 +75,7 @@ export default {
 
     return {
       cmsData: { ...content[0].data[0], globals: content[1].data?.globals },
-      navbarData: [...content[2].data.dropdown],
+      navbarData: { ...content[2].data },
     }
   },
 

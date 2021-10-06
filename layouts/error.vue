@@ -2,14 +2,10 @@
   <page-container
     v-if="cmsData"
     :cms-data="cmsData.page_title"
-    :navbar-data="navbarData.dropdown"
+    :navbar-data="navbarData"
   >
     <section class="section">
-      <div
-        v-if="error.statusCode === 404"
-        class="container"
-        v-html="$md.render(cmsData.text)"
-      ></div>
+      <div class="container" v-html="$md.render(cmsData.text)" />
     </section>
   </page-container>
 </template>
