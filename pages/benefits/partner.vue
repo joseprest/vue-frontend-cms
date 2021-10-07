@@ -2,7 +2,7 @@
   <page-container
     v-if="Object.keys(cmsData).length > 0"
     :cms-data="cmsData.page_title"
-    :navbar-data="navbarData.dropdown"
+    :navbar-data="navbarData"
   >
     <template v-for="comp in cmsData.body">
       <component
@@ -19,9 +19,9 @@ export default {
   name: 'PagePartner',
   nuxtI18n: {
     paths: {
-      en: '/partner',
-      fr: '/partenaire',
-      de: '/partner',
+      en: '/benefits/partner',
+      fr: '/benefices/partenaire',
+      de: '/benefits/partner',
     },
   },
   async asyncData({ i18n, $axios, $getUrlFromCms }) {

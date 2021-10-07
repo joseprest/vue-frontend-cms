@@ -5,7 +5,7 @@
         {{ cmsData.portal_text_1 }}
         <ws-link
           :url="cmsData.portal_url"
-          isTransparent
+          is-transparent
           class="explore-link mt-25"
         >
           {{ cmsData.portal_text_2 }}
