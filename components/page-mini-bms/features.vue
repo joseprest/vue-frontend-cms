@@ -27,11 +27,12 @@
               :alt="feature.tip"
             />
           </figure>
-          <div class="has-text-centered">
+          <div class="has-text-centered description">
             <ws-title :title="feature.tip" class="underline" align="center" />
-            <p class="description is-size-6">
-              {{ feature.description }}
-            </p>
+            <div
+              class="detail-text is-size-6"
+              v-html="$md.render(feature.description)"
+            />
           </div>
         </div>
       </div>
@@ -93,6 +94,12 @@ export default {
         img {
           height: 250px;
           width: auto;
+        }
+      }
+      .description {
+        .detail-text::v-deep a {
+          color: #2bc47b;
+          text-decoration-line: underline;
         }
       }
     }
