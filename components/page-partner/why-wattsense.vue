@@ -93,6 +93,9 @@ export default {
     background: #2bc47c38;
     span {
       color: #0c0c0c;
+      &::v-deep a {
+        padding: 3px 10px;
+      }
     }
   }
 }
