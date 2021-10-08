@@ -3,7 +3,7 @@
     <section
       v-for="comp in cmsData.body"
       :key="`body-${comp.__component}-${comp.id}`"
-      class="pricing-box section"
+      class="pricing-box section mini-bms-pricing"
       :class="
         comp.__component.replace('page-global.', '') +
         (comp.background === 'light-gray' ? ' bg-accent' : '')
@@ -118,5 +118,8 @@ section.table-pricing {
       top: -122px;
     }
   }
+}
+.mini-bms-pricing::v-deep .table {
+  padding-left: 15px;
 }
 </style>

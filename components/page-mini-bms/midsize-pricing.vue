@@ -106,6 +106,10 @@ export default {
       .step-title,
       .sub-title {
         font-size: 18px;
+        &::v-deep a {
+          color: #2bc47b;
+          text-decoration-line: underline;
+        }
       }
     }
   }
@@ -116,11 +120,5 @@ export default {
   border-radius: 5px;
   padding: 12px 30px;
   background: #fff;
-}
-</style>
-<style>
-.step-link {
-  color: #2bc47b;
-  text-decoration-line: underline;
 }
 </style>
