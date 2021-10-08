@@ -47,6 +47,7 @@
                   v-if="step.link_1_url"
                   :url="step.link_1_url"
                   class="mt-25"
+                  target="_blank"
                 >
                   {{ step.link_1_text }}
                 </ws-link>
@@ -54,6 +55,7 @@
                   v-if="step.link_2_url"
                   :url="step.link_2_url"
                   class="mt-25"
+                  target="_blank"
                 >
                   {{ step.link_2_text }}
                 </ws-link>
