@@ -10,11 +10,14 @@ RUN yarn install \
   --non-interactive \
   --production=false
 
+ARG CMS_URL="https://strapi.wattsense.com"
+ARG API_ENDPOINT="https://console.wattsense.com/api/website/"
+ENV CMS_URL=$CMS_URL
+ENV API_ENDPOINT=$API_ENDPOINT
 
-ENV HOST 0.0.0.0
+ENV HOST "0.0.0.0"
 ENV PORT 8080
-ENV CMS_URL "https://strapi.wattsense.com"
-ENV API_ENDPOINT "https://console.wattsense.com/api/website/"
+
 ENV TARGET "server"
 
 RUN yarn build
