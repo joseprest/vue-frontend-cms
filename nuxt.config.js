@@ -190,6 +190,6 @@ export default {
   env: {
     CMS_URL: process.env.CMS_URL || 'https://strapi.s.wattsense.com',
     API_ENDPOINT:
-      process.env.API_ENDPOINT || 'https://console.s.wattsense.com/api/website',
+      process.env.API_ENDPOINT || 'https://console.wattsense.com/api/website/',
   },
 }
