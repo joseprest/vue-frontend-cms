@@ -49,7 +49,7 @@
         </slot>
       </a>
       <nuxt-link
-        v-else
+        v-else-if="cmsData.url"
         :to="cmsData.url[0] === '#' ? cmsData.url : localePath(cmsData.url)"
         v-bind="defaultAttrs"
       >
@@ -57,6 +57,9 @@
           {{ cmsData.title }}
         </slot>
       </nuxt-link>
+      <span v-else>
+        {{ cmsData }}
+      </span>
     </template>
   </div>
 </template>
@@ -86,6 +89,7 @@ export default {
       showPopup: false,
     }
   },
+
   computed: {
     defaultAttrs() {
       return {
