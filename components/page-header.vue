@@ -58,6 +58,10 @@ export default {
     .container {
       padding-left: 1.5rem;
       padding-right: 1.5rem;
+      & > div {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
     }
   }
 

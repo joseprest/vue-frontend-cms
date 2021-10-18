@@ -26,6 +26,9 @@
         </div>
       </div>
     </div>
+    <div class="has-text-centered">
+      <ws-button :cms-data="cmsData.button" class="mt-25" />
+    </div>
   </div>
 </template>
 

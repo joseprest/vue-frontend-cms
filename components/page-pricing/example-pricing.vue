@@ -10,7 +10,7 @@
       </span>
     </a>
     <div v-if="showDetails" class="img-example">
-      <figure class="image">
+      <figure v-if="cmsData.icon" class="image">
         <ws-image :src="$getImageUrlFromCms(cmsData.icon)" alt="example" />
       </figure>
     </div>
