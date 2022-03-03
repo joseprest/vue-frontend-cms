@@ -13,8 +13,8 @@ RUN yarn install \
   --production=false
 
 
-ARG CMS_URL="https://strapi.s.wattsense.com"
-ARG API_ENDPOINT="https://console.s.wattsense.com/api/website/"
+ARG CMS_URL="https://strapi.s.site.com"
+ARG API_ENDPOINT="https://console.s.site.com/api/website/"
 ENV CMS_URL=$CMS_URL
 ENV API_ENDPOINT=$API_ENDPOINT
 

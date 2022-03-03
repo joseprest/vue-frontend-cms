@@ -1,7 +1,7 @@
 <template>
   <!-- prettier-ignore -->
   <codes-highlight>requests.put(
-    'https://api.wattsense.com/api/devices/mydev/properties/schedule-zone-1',
+    'https://api.site.com/api/devices/mydev/properties/schedule-zone-1',
     json={
     "payload": [
     [{"hour":  "06", "minute":  "00", "value":  "ON"}, {"hour":  "22", "minute":  "00", "value":  "OFF"}],

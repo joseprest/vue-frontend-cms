@@ -10,7 +10,7 @@
         <div class="is-flex-tablet">
           <div
             v-for="step in cmsData.steps"
-            :key="`wattsense-step-index-${step.id}`"
+            :key="`site-step-index-${step.id}`"
             class="column is-4 is-12-mobile"
           >
             <div class="align-top is-flex-column box box-green">

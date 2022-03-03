@@ -13,7 +13,7 @@
           <img width="181" height="35" :src="getLogoImg" alt="Wattsense" />
         </nuxt-link>
         <div class="actions">
-          <a :class="buttonClass" href="mailto:contact@wattsense.com">
+          <a :class="buttonClass" href="mailto:contact@site.com">
             <span>{{ cmsData.contact_us }}</span>
           </a>
           <!-- Language -->
@@ -43,7 +43,7 @@
           </div>
         </div>
       </div>
-      <a :class="mobileButtonClass" href="mailto:contact@wattsense.com">
+      <a :class="mobileButtonClass" href="mailto:contact@site.com">
         <span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@
 </template>
 
 <script>
-import normalLogo from '@/assets/imgs/wattsense-header-logo.svg'
+import normalLogo from '@/assets/imgs/site-header-logo.svg'
 export default {
   name: 'LorawanBacnetGatewayNavbar',
 

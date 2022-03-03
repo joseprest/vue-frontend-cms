@@ -21,11 +21,11 @@ export default ({ app }, inject) => {
       },
       {
         property: 'twitter:site',
-        content: '@wattsense',
+        content: '@site',
       },
       {
         property: 'twitter:creator',
-        content: '@wattsense',
+        content: '@site',
       },
       {
         property: 'og:locale',

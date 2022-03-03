@@ -1,7 +1,7 @@
 <template>
   <!-- prettier-ignore -->
   <codes-highlight>requests.post(
-    'https://api.wattsense.com/api/devices/mydev/configs/draft/properties',
+    'https://api.site.com/api/devices/mydev/configs/draft/properties',
     json = {
     'name': 'Navipass Weekly Schedule',
     'slug': 'schedule-zone-1',

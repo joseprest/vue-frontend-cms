@@ -1,5 +1,5 @@
 <template>
-  <div class="why-wattsense">
+  <div class="why-site">
     <div class="hero has-text-centered">
       <span>
         {{ cmsData.portal_text_1 }}
@@ -16,13 +16,13 @@
       <ws-title
         :title="cmsData.title"
         align="center"
-        class="why-wattsense__title pt-4"
+        class="why-site__title pt-4"
       />
       <div class="columns is-multiline steps">
         <div class="is-flex-tablet">
           <div
             v-for="step in cmsData.steps"
-            :key="`wattsense-step-index-${step.id}`"
+            :key="`site-step-index-${step.id}`"
             class="column is-4 is-12-mobile"
           >
             <div class="align-top is-flex-column">
@@ -85,7 +85,7 @@ export default {
 }
 </style>
 <style lang="scss" scoped>
-.why-wattsense {
+.why-site {
   @include touch {
     padding-left: 1.5rem;
     padding-right: 1.5rem;

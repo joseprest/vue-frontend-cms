@@ -1,7 +1,7 @@
 <template>
   <!-- prettier-ignore -->
   <codes-highlight>resource = requests.post(
-    'https://api.wattsense.com/api/fileResources',
+    'https://api.site.com/api/fileResources',
     data = {
     'fileResourceType': 'PLUGIN',
     'level': 'ORGANIZATION',

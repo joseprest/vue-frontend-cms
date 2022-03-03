@@ -86,7 +86,7 @@ export default {
       } catch (err) {
         if (err.status === 500) {
           this.errorMsg =
-            'Ops! Something went wrong with our server! Send us a message to contact@wattsense.com, please!'
+            'Ops! Something went wrong with our server! Send us a message to contact@site.com, please!'
         } else {
           try {
             const allErrors = err.data.errors
@@ -98,7 +98,7 @@ export default {
             }
           } catch {
             this.errorMsg =
-              'Ops! Something went wrong with our server! Send us a message to contact@wattsense.com, please!'
+              'Ops! Something went wrong with our server! Send us a message to contact@site.com, please!'
           }
         }
         this.error = true

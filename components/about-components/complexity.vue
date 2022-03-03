@@ -28,10 +28,10 @@
               alt="right"
             />
           </div>
-          <div class="actor wattsense">
+          <div class="actor site">
             <img
-              src="@/assets/imgs/about/complexity-wattsense.svg"
-              alt="wattsense"
+              src="@/assets/imgs/about/complexity-site.svg"
+              alt="site"
             />
           </div>
         </div>

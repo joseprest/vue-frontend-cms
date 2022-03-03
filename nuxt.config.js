@@ -2,7 +2,7 @@ export default {
   target: process.env.TARGET || 'server',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Wattsense',
+    title: 'site',
     htmlAttrs: {
       lang: 'en',
     },
@@ -118,7 +118,7 @@ export default {
 
   sitemap: () => {
     return {
-      hostname: 'https://wattsense.com',
+      hostname: 'https://site.com',
       gzip: true,
       exclude: ['/compatibility?page*'],
       i18n: {
@@ -155,7 +155,7 @@ export default {
     // use: ['markdown-it-div', 'markdown-it-attrs'],
   },
   i18n: {
-    baseUrl: 'https://wattsense.com',
+    baseUrl: 'https://site.com',
     locales: [
       { code: 'en', iso: 'en' },
       { code: 'fr', iso: 'fr' },
@@ -188,8 +188,8 @@ export default {
   },
 
   env: {
-    CMS_URL: process.env.CMS_URL || 'https://strapi.wattsense.com',
+    CMS_URL: process.env.CMS_URL || 'https://strapi.site.com',
     API_ENDPOINT:
-      process.env.API_ENDPOINT || 'https://console.wattsense.com/api/website/',
+      process.env.API_ENDPOINT || 'https://console.site.com/api/website/',
   },
 }

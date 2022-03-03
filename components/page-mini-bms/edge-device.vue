@@ -4,7 +4,7 @@
       <ws-title :title="cmsData.title" :description="cmsData.text" />
       <div
         v-for="(equip, index) in cmsData.equipments"
-        :key="`wattsense-equip-index-${equip.id}`"
+        :key="`site-equip-index-${equip.id}`"
         class="column .is-variable is-6"
       >
         <ws-title

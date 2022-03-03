@@ -194,7 +194,7 @@
 </template>
 
 <script>
-import normalLogo from '@/assets/imgs/wattsense-header-logo.svg'
+import normalLogo from '@/assets/imgs/site-header-logo.svg'
 import greenLogo from '@/assets/imgs/logo.svg'
 
 export default {
@@ -222,7 +222,7 @@ export default {
       showMenu: false,
       locale: 'en',
       buttonData: {
-        url: 'https://blog.wattsense.com',
+        url: 'https://blog.site.com',
         title: 'READ MORE',
         inverted: true,
         color: 'dark_blue',

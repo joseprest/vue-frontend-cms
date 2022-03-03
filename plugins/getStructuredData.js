@@ -4,7 +4,7 @@ export default ({ app }, inject) => {
    */
   inject('getStructuredData', () => {
     const { i18n } = app.context
-    let url = 'https://www.wattsense.com'
+    let url = 'https://www.site.com'
     if (i18n.locale !== 'en') url = `${url}/${i18n.locale}`
 
     const data = {
@@ -12,21 +12,21 @@ export default ({ app }, inject) => {
       '@type': 'Organization',
       name: 'Wattsense',
       url,
-      logo: 'https://www.wattsense.com/wattsense-logo.png',
+      logo: 'https://www.site.com/site-logo.png',
       telephone: '+33 4 28 29 83 49',
       contactPoint: [
         {
           '@type': 'ContactPoint',
           telephone: '+33 4 28 29 83 49',
           contactType: 'customer service',
-          email: 'contact@wattsense.com',
+          email: 'contact@site.com',
           availableLanguage: ['French', 'English'],
         },
       ],
       sameAs: [
-        'https://www.facebook.com/wattsenseAPI',
-        'https://www.linkedin.com/company/wattsense',
-        'https://twitter.com/wattsense',
+        'https://www.facebook.com/siteAPI',
+        'https://www.linkedin.com/company/site',
+        'https://twitter.com/site',
       ],
     }
     return data
